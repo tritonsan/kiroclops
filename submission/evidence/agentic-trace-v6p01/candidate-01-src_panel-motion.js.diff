@@ -1,0 +1,14 @@
+--- baseline/src/panel-motion.js
++++ candidate-01/src/panel-motion.js
+@@ -17,8 +17,10 @@
+ // that group's delay. The delay restarts on every mode change, so an
+ // interrupted or reversed group pauses in place and then resumes from the
+ // exact position and velocity it had, now pursuing the latest mode's goal.
++// Content spring refit against every calibration clip (all viewports,
++// open/close/interrupt/reverse): slightly softer, same damping ratio.
+ const TITLE = { closed: 24, stiffness: 229, damping: 20.8, openDelay: 0.08, closeDelay: 0.12 };
+-const CONTENT = { closed: 40, stiffness: 198, damping: 18.7, openDelay: 0.16, closeDelay: 0.04 };
++const CONTENT = { closed: 40, stiffness: 196, damping: 18.5, openDelay: 0.16, closeDelay: 0.04 };
+ 
+ const groupGoal = (group, open) => (open ? 0 : group.closed);
+ 

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://kiroclops_heart_integrity/wall_coyote.gd" id="1"]
+
+[node name="WallCoyotePreservation" type="Node2D"]
+script = ExtResource("1")

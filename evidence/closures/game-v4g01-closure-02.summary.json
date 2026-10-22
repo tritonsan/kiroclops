@@ -1,0 +1,17 @@
+{
+  "kind": "V3StandaloneGroundDomainClosure",
+  "version": "v3-standalone-ground-domain-closure-v2",
+  "status": "pass",
+  "domain_behavior_acceptance": true,
+  "source_epoch": "d81e71b5942f57a0321ffa617a217aa286f5f783b8bdd0b74a26544d310edc6f",
+  "acceptance_profile": "ground-floor-speed-aware-v1",
+  "axes": {
+    "measurement": "pass",
+    "behavior": "pass",
+    "preserved_functions": "pass",
+    "improvement": "recorded_game_gate",
+    "independent_raw_review": "pass",
+    "source": "pass",
+    "native_origin": "pass"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "InvitedBetaWakeTest",
+  "checked_at": "2026-10-20T10:58:34.556153+00:00",
+  "deployment": "phase3b-service-20261020102326",
+  "recording": "before/realistic-suite-panel-calibration-reverse-w960-r1",
+  "job_id": "1c9936d99dc6f433b996714082366185",
+  "status": "succeeded",
+  "wake_to_result_seconds": 45.9,
+  "timeline": [
+    {
+      "t_s": 0.0,
+      "instance": "stopped",
+      "job": null
+    },
+    {
+      "t_s": 20.5,
+      "instance": "running",
+      "job": "queued"
+    },
+    {
+      "t_s": 45.9,
+      "instance": "running",
+      "job": "succeeded"
+    }
+  ],
+  "remote_opencv_version": "5.1.0-dev",
+  "policy_equivalent": false,
+  "policy_differences": 8,
+  "posthoc_runtime_excluded_equivalent": true,
+  "posthoc_label": "POST-HOC: observations.opencv_runtime excluded, see COOL_V6_REPORT.md"
+}

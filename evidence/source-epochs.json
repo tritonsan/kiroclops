@@ -1,0 +1,42 @@
+{
+ "v4-final": {
+  "kind": "FrozenPhase3DV4FinalSources",
+  "created_at": "2026-10-13T08:45:44.023964+00:00",
+  "file_count": 975,
+  "source_tree_sha256": "b44bac61aa52796ce66a4dd9a9c1fd0ac8c9d069c1aa2210d0b28d8a0215c43e",
+  "kiroclops_tree_sha256": "b6adb17ea861e00779848bfaab4feb582deca0dc312a1159d37361235c524b6e",
+  "epoch_json_sha256": "6b5e85ce16f00644288a19d7262aca85920c83666fa384385607b35d176ec0dc"
+ },
+ "v5b": {
+  "kind": "FrozenPhase3DV5bSources",
+  "created_at": "2026-10-13T16:16:09.981453+00:00",
+  "file_count": 996,
+  "source_tree_sha256": "e89679ab0d3cffd401a99608802ab1fdfdde50e905d59b2dc0b9f00c9d7cd369",
+  "kiroclops_tree_sha256": "11d90aa4e8362d31264dcb0fd195e1cd5b5face6c3f8365f5ea5218cc5002317",
+  "epoch_json_sha256": "5f0126e3d8588f5fdde691ac0d2b48ecaac2c1f382fc9ea7a80937adcb9f1d84"
+ },
+ "v6": {
+  "kind": "FrozenPhase4V6Sources",
+  "created_at": "2026-10-15T20:52:31.788261+00:00",
+  "file_count": 1017,
+  "source_tree_sha256": "c8c90f77d5350efc416aa32316b184cac3298840c0e1a029310bc76021bfe8ee",
+  "kiroclops_tree_sha256": "679edb152eb891808e39d80ce584727c0207621d9fb67ac23b1855bfbf02b986",
+  "epoch_json_sha256": "e952d2769fa8d9f118ea0c9b8352467c617cb603dc34415e511cfe65f6309cb6"
+ },
+ "v6b": {
+  "kind": "FrozenPhase4V6bSources",
+  "created_at": "2026-10-16T00:43:57.584304+00:00",
+  "file_count": 1026,
+  "source_tree_sha256": "fc7247654822fbe4462eba6daec1d1d706971624c359814a0d5a736c97bab514",
+  "kiroclops_tree_sha256": "7e7c5aec8a56b6c54e12ef5e26bf2fe5c63c537353a80593eaa668647273e916",
+  "epoch_json_sha256": "2e8acd1dec540807dfb3d45970c725638837ddb47aa93084d9392f320ec66e87"
+ },
+ "v6c": {
+  "kind": "FrozenPhase4V6cSources",
+  "created_at": "2026-10-22T09:18:50.638678+00:00",
+  "file_count": 1038,
+  "source_tree_sha256": "7962d42397b5266537402312b7f366d148c33a6a287768994a3fae53fa868174",
+  "kiroclops_tree_sha256": "c628db07831ecdaccd59d4253f25345cba306191ee9ae817c872a5efebd0b0ce",
+  "epoch_json_sha256": "440dcb9597e82b399defe7b9db6838ac6de5e12e715f1b09d1555bc7b230e61e"
+ }
+}

@@ -1,0 +1,48 @@
+--- baseline/src/motion/input-clock.js
++++ candidate-02/src/motion/input-clock.js
+@@ -0,0 +1,45 @@
++// Input clock: when the latest discrete input (click, key press, pointer
++// release/cancel, resize) arrived and the timestamp of the current animation
++// frame, both on the performance.now() clock in milliseconds.
++//
++// The motion law uses them to anchor a new mode at the input instant rather
++// than at whichever frame boundary happened to precede it, so the response
++// does not depend on where inside a frame the input landed.
++let lastInputMs = -Infinity;
++let frameMs = NaN;
++
++const hasClock = typeof performance !== 'undefined' && typeof performance.now === 'function';
++const hasWindow = hasClock && typeof window !== 'undefined' && typeof window.addEventListener === 'function';
++
++function markInput() {
++  lastInputMs = performance.now();
++}
++
++if (hasWindow) {
++  for (const type of ['click', 'keydown', 'pointerup', 'pointercancel']) {
++    window.addEventListener(type, markInput, true);
++  }
++  window.addEventListener('resize', markInput);
++  // Registered while this module is evaluated, i.e. before the app's render
++  // loop. Animation frame callbacks run in registration order and receive
++  // the same timestamp, so the renderer always sees the current frame time.
++  if (typeof window.requestAnimationFrame === 'function') {
++    const tick = (t) => { frameMs = t; window.requestAnimationFrame(tick); };
++    window.requestAnimationFrame(tick);
++  }
++}
++
++// Age of the latest input, in seconds, measured back from the timestamp of
++// the current frame (whose step of `step` seconds is being computed). It may
++// exceed the step when the input preceded the previous frame, or be slightly
++// negative when the input was handled after the frame's timestamp but before
++// its callbacks ran. Returns null when no recent input or no current frame
++// clock is known.
++export function latestInputAge(step) {
++  if (!hasWindow || !(step > 0) || !Number.isFinite(frameMs) || !Number.isFinite(lastInputMs)) return null;
++  const now = performance.now();
++  if (now - frameMs > 50 || now < frameMs - 1) return null; // not inside the current frame
++  const age = (frameMs - lastInputMs) / 1000;
++  if (age > step + 0.05 || age < -0.05) return null; // not this frame's input
++  return age;
++}

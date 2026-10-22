@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "domain": "svg",
+  "objects": [
+    {
+      "id": "a",
+      "roi": [
+        422,
+        380,
+        30,
+        34
+      ],
+      "anchor": [
+        14.5,
+        16.5
+      ],
+      "method": "template",
+      "selection_source": "rendered_natural_artwork_pixels",
+      "frame_index": 0,
+      "min_score": 0.75,
+      "min_margin": 0.015,
+      "max_color_rmse": 12,
+      "search_radius": 90,
+      "pixel_anchor": {
+        "method": "foreground_color_mass_v1",
+        "foreground_rgb": [
+          77,
+          208,
+          225
+        ]
+      },
+      "reacquisition_policy": "full_image_unique_v1",
+      "first_appearance_frame": 0,
+      "geometry": {
+        "method": "contour",
+        "segmentation": "reference_fill",
+        "roi": [
+          412,
+          369,
+          136,
+          56
+        ],
+        "search_radius": 90,
+        "min_area_ratio": 0.7,
+        "selection_source": "Connected rendered card-fill contour; visible outline ROI"
+      },
+      "active_intervals_s": [
+        [
+          0.007050275802612305,
+          2.9907000064849854
+        ]
+      ],
+      "visibility_brackets": {
+        "start": {
+          "interval_s": [
+            0.006800174713134766,
+            0.007300138473510742
+          ],
+          "frame_indices": [
+            0
+          ],
+          "clip_censored": true
+        },
+        "end": {
+          "interval_s": [
+            2.9904000759124756,
+            2.990999937057495
+          ],
+          "frame_indices": [
+            179
+          ],
+          "clip_censored": true
+        }
+      }
+    },
+    {
+      "id": "b",
+      "roi": [
+        422,
+        231,
+        30,
+        33
+      ],
+      "anchor": [
+        14.5,
+        16.0
+      ],
+      "method": "template",
+      "selection_source": "rendered_natural_artwork_pixels",
+      "frame_index": 0,
+      "min_score": 0.75,
+      "min_margin": 0.015,
+      "max_color_rmse": 12,
+      "search_radius": 90,
+      "pixel_anchor": {
+        "method": "foreground_color_mass_v1",
+        "foreground_rgb": [
+          255,
+          209,
+          102
+        ]
+      },
+      "reacquisition_policy": "full_image_unique_v1",
+      "first_appearance_frame": 0,
+      "geometry": {
+        "method": "contour",
+        "segmentation": "reference_fill",
+        "roi": [
+          412,
+          220,
+          136,
+          55
+        ],
+        "search_radius": 90,
+        "min_area_ratio": 0.7,
+        "selection_source": "Connected rendered card-fill contour; visible outline ROI"
+      },
+      "active_intervals_s": [
+        [
+          0.007050275802612305,
+          2.9907000064849854
+        ]
+      ],
+      "visibility_brackets": {
+        "start": {
+          "interval_s": [
+            0.006800174713134766,
+            0.007300138473510742
+          ],
+          "frame_indices": [
+            0
+          ],
+          "clip_censored": true
+        },
+        "end": {
+          "interval_s": [
+            2.9904000759124756,
+            2.990999937057495
+          ],
+          "frame_indices": [
+            179
+          ],
+          "clip_censored": true
+        }
+      }
+    },
+    {
+      "id": "c",
+      "roi": [
+        422,
+        530,
+        30,
+        33
+      ],
+      "anchor": [
+        14.5,
+        16.0
+      ],
+      "method": "template",
+      "selection_source": "rendered_natural_artwork_pixels",
+      "frame_index": 0,
+      "min_score": 0.75,
+      "min_margin": 0.015,
+      "max_color_rmse": 12,
+      "search_radius": 90,
+      "pixel_anchor": {
+        "method": "foreground_color_mass_v1",
+        "foreground_rgb": [
+          230,
+          139,
+          196
+        ]
+      },
+      "reacquisition_policy": "full_image_unique_v1",
+      "first_appearance_frame": 0,
+      "geometry": {
+        "method": "contour",
+        "segmentation": "reference_fill",
+        "roi": [
+          412,
+          519,
+          136,
+          55
+        ],
+        "search_radius": 90,
+        "min_area_ratio": 0.7,
+        "selection_source": "Connected rendered card-fill contour; visible outline ROI"
+      },
+      "active_intervals_s": [
+        [
+          0.007050275802612305,
+          2.9907000064849854
+        ]
+      ],
+      "visibility_brackets": {
+        "start": {
+          "interval_s": [
+            0.006800174713134766,
+            0.007300138473510742
+          ],
+          "frame_indices": [
+            0
+          ],
+          "clip_censored": true
+        },
+        "end": {
+          "interval_s": [
+            2.9904000759124756,
+            2.990999937057495
+          ],
+          "frame_indices": [
+            179
+          ],
+          "clip_censored": true
+        }
+      }
+    },
+    {
+      "id": "d",
+      "roi": [
+        175,
+        462,
+        29,
+        34
+      ],
+      "anchor": [
+        14.0,
+        16.5
+      ],
+      "method": "template",
+      "selection_source": "rendered_natural_artwork_pixels",
+      "frame_index": 26,
+      "min_score": 0.75,
+      "min_margin": 0.015,
+      "max_color_rmse": 12,
+      "search_radius": 90,
+      "pixel_anchor": {
+        "method": "foreground_color_mass_v1",
+        "foreground_rgb": [
+          191,
+          165,
+          255
+        ]
+      },
+      "reacquisition_policy": "full_image_unique_v1",
+      "first_appearance_frame": 26,
+      "geometry": {
+        "method": "contour",
+        "segmentation": "reference_fill",
+        "roi": [
+          165,
+          451,
+          136,
+          56
+        ],
+        "search_radius": 90,
+        "min_area_ratio": 0.7,
+        "selection_source": "Connected rendered card-fill contour; visible outline ROI"
+      },
+      "active_intervals_s": [
+        [
+          0.4402501583099365,
+          2.9907000064849854
+        ]
+      ],
+      "visibility_brackets": {
+        "start": {
+          "interval_s": [
+            0.42440009117126465,
+            0.44050002098083496
+          ],
+          "frame_indices": [
+            25,
+            26
+          ],
+          "clip_censored": false
+        },
+        "end": {
+          "interval_s": [
+            2.9904000759124756,
+            2.990999937057495
+          ],
+          "frame_indices": [
+            179
+          ],
+          "clip_censored": true
+        }
+      }
+    }
+  ],
+  "connections": [
+    {
+      "id": "a-b",
+      "from_object": "a",
+      "to_object": "b",
+      "method": "line",
+      "corridor_px": 8
+    },
+    {
+      "id": "a-c",
+      "from_object": "a",
+      "to_object": "c",
+      "method": "line",
+      "corridor_px": 8
+    },
+    {
+      "id": "a-d",
+      "from_object": "a",
+      "to_object": "d",
+      "method": "line",
+      "corridor_px": 8
+    }
+  ],
+  "relative_motion": [],
+  "background_rois": [
+    [
+      24,
+      12,
+      220,
+      70
+    ]
+  ],
+  "camera_max_shift_px": 1.5,
+  "source": "Reference PNG natural artwork and visible contour pixels only; no DOM oracle",
+  "reference_package_sha256": "5301f29b2041109e7a134f5ee79155f1282fe21a2a14d72b5f5b8d3cd1c6d179",
+  "lifecycle_bindings": {
+    "a": [
+      {
+        "start": {
+          "kind": "clip_start"
+        },
+        "end": {
+          "kind": "clip_end"
+        }
+      }
+    ],
+    "b": [
+      {
+        "start": {
+          "kind": "clip_start"
+        },
+        "end": {
+          "kind": "clip_end"
+        }
+      }
+    ],
+    "c": [
+      {
+        "start": {
+          "kind": "clip_start"
+        },
+        "end": {
+          "kind": "clip_end"
+        }
+      }
+    ],
+    "d": [
+      {
+        "start": {
+          "kind": "input",
+          "action": "click",
+          "selector": "#add-node",
+          "ordinal": 0,
+          "offset_s": 0.01184988021850586
+        },
+        "end": {
+          "kind": "clip_end"
+        }
+      }
+    ]
+  },
+  "input_origin_s": 0.42840027809143066
+}

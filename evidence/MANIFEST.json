@@ -1,0 +1,244 @@
+{
+ "kind": "PublicEvidenceManifest",
+ "files": {
+  "closures/game-v4g01-closure-02.summary.json": {
+   "source": "C:\\kc3d\\r\\v4g01-closure-02\\summary.json",
+   "source_sha256": "bb1955fa3d59642cb3f02ddf9c712d9d92e6ea9be34bb01bb7e6e1e1a07b971d",
+   "transform": "copied",
+   "report_section": "Summary, 6.2",
+   "sha256": "bb1955fa3d59642cb3f02ddf9c712d9d92e6ea9be34bb01bb7e6e1e1a07b971d"
+  },
+  "closures/svg-v5s01c-closure-01.summary.json": {
+   "source": "C:\\kc3d\\r\\v5s01c-closure-01\\summary.json",
+   "source_sha256": "0a70b737f0a07414f67c73e766a27a5793c10fbc4bc2ddfedd60ce69f05743c8",
+   "transform": "copied",
+   "report_section": "Summary, 6.2",
+   "sha256": "0a70b737f0a07414f67c73e766a27a5793c10fbc4bc2ddfedd60ce69f05743c8"
+  },
+  "svg-focus-ring-blind-qualification.json": {
+   "source": "C:\\kc3d\\r\\v5s-ring-score-01\\result.json",
+   "source_sha256": "ee36d213b6f55e9f08fe644dac093e2134beac3823ce04b53fefd17976b36494",
+   "transform": "copied",
+   "report_section": "3.1",
+   "sha256": "ee36d213b6f55e9f08fe644dac093e2134beac3823ce04b53fefd17976b36494"
+  },
+  "opencv5-symbol-diff/README.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\opencv-symbol-diff-01\\README.md",
+   "source_sha256": "34c70388132341c5afb6bb862e373f4c89e2ec21fe8797320279db30b80758da",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "34c70388132341c5afb6bb862e373f4c89e2ec21fe8797320279db30b80758da"
+  },
+  "opencv5-symbol-diff/diff.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\opencv-symbol-diff-01\\diff.json",
+   "source_sha256": "8ca3c937ebfa117cadb2444ab2213e8554b9ee9fe75b32e6733c7bcfe8b089f2",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "8ca3c937ebfa117cadb2444ab2213e8554b9ee9fe75b32e6733c7bcfe8b089f2"
+  },
+  "opencv5-symbol-diff/opencv-4.14.0-symbols.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\opencv-symbol-diff-01\\opencv-4.14.0-symbols.json",
+   "source_sha256": "99058d8b6edfe83039ef17620b9113792c77c337e16429c3301d91bc98bb5cb6",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "99058d8b6edfe83039ef17620b9113792c77c337e16429c3301d91bc98bb5cb6"
+  },
+  "opencv5-symbol-diff/opencv-5.0.0-symbols.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\opencv-symbol-diff-01\\opencv-5.0.0-symbols.json",
+   "source_sha256": "6a17457a613e6b9e394a73dddfd7f5206724cfa3aedeb11daeb4bfcbcba6d5ae",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "6a17457a613e6b9e394a73dddfd7f5206724cfa3aedeb11daeb4bfcbcba6d5ae"
+  },
+  "subpixel-benchmark/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\subpixel-benchmark-01\\REPORT.md",
+   "source_sha256": "333e0d483a1bd505af3a6f3db1433e55b548dcb921d35965c1ac240f22e901e9",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "333e0d483a1bd505af3a6f3db1433e55b548dcb921d35965c1ac240f22e901e9"
+  },
+  "subpixel-benchmark/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\subpixel-benchmark-01\\report.json",
+   "source_sha256": "05d21303548a2c8767d768e3336225186e00d7553879e024612976aecf80f425",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "05d21303548a2c8767d768e3336225186e00d7553879e024612976aecf80f425"
+  },
+  "marks-error/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\marks-error-01\\REPORT.md",
+   "source_sha256": "4c8f88ce3339ae57fb6c1f1a63594725c1ab6fc7a2d29d58df7b0e45ba6b2d0e",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "4c8f88ce3339ae57fb6c1f1a63594725c1ab6fc7a2d29d58df7b0e45ba6b2d0e"
+  },
+  "marks-error/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\marks-error-01\\report.json",
+   "source_sha256": "c4b6863b215ea7fe7c5d8904339030070b180bc737130e44bbf34d5aabf299d1",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "c4b6863b215ea7fe7c5d8904339030070b180bc737130e44bbf34d5aabf299d1"
+  },
+  "feature-cross-check/panel/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\cross-check-01\\panel-cal\\REPORT.md",
+   "source_sha256": "efee34d753bf0f44ca3564b265dea53f308a80a119a87515979f36ecc7ba8823",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "efee34d753bf0f44ca3564b265dea53f308a80a119a87515979f36ecc7ba8823"
+  },
+  "feature-cross-check/panel/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\cross-check-01\\panel-cal\\report.json",
+   "source_sha256": "381bb8d89356da96376b6370fc71ae36d55f83b98dff3bebdb8e2950bff6d651",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "381bb8d89356da96376b6370fc71ae36d55f83b98dff3bebdb8e2950bff6d651"
+  },
+  "feature-cross-check/svg/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\cross-check-01\\svg-cal\\REPORT.md",
+   "source_sha256": "17e47359b848453f169cfac9e0816a72447b6294ece087dfda32bb799677420c",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "17e47359b848453f169cfac9e0816a72447b6294ece087dfda32bb799677420c"
+  },
+  "feature-cross-check/svg/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\cross-check-01\\svg-cal\\report.json",
+   "source_sha256": "7b016b6197f1b242f956ce928f5f391e611bcca20e4c3d8eda8c2dedc6b5079f",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "7b016b6197f1b242f956ce928f5f391e611bcca20e4c3d8eda8c2dedc6b5079f"
+  },
+  "v6-tracker-equivalence/panel/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\equivalence-01\\panel-cal\\REPORT.md",
+   "source_sha256": "3bd3ce77fa2fb94c971d30dcf076e408b5a3887863ae395b67f150d70a1559fc",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "3bd3ce77fa2fb94c971d30dcf076e408b5a3887863ae395b67f150d70a1559fc"
+  },
+  "v6-tracker-equivalence/panel/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\equivalence-01\\panel-cal\\report.json",
+   "source_sha256": "a2c87094b59c00708a8eb3edee62b86a16ce24e609284212d80eadc77a9a3313",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "a2c87094b59c00708a8eb3edee62b86a16ce24e609284212d80eadc77a9a3313"
+  },
+  "v6-tracker-equivalence/svg/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\equivalence-01\\svg-cal\\REPORT.md",
+   "source_sha256": "55b5d2f92ac8d3c644c52c64ff94271cb51ceb0e671696f9ae435c86f148db32",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "55b5d2f92ac8d3c644c52c64ff94271cb51ceb0e671696f9ae435c86f148db32"
+  },
+  "v6-tracker-equivalence/svg/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\equivalence-01\\svg-cal\\report.json",
+   "source_sha256": "6050e947685d06507a7fb43ba544ee82c56e5b843da0c1510d5cf74d1fb2d553",
+   "transform": "copied",
+   "report_section": "3.3",
+   "sha256": "6050e947685d06507a7fb43ba544ee82c56e5b843da0c1510d5cf74d1fb2d553"
+  },
+  "lightglue-sweep/main.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-sweep-01\\results\\main.json",
+   "source_sha256": "c597fa864b00f0d5dc6088451e6fcc9d7c83a4bb5f6b5840b67ee5327e635626",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "c597fa864b00f0d5dc6088451e6fcc9d7c83a4bb5f6b5840b67ee5327e635626"
+  },
+  "lightglue-sweep/order-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-sweep-01\\results\\order-1.json",
+   "source_sha256": "404669e238fdcb9bbd0067b50522c4324a5ac46439ce0a04e11191f5e2f37c63",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "404669e238fdcb9bbd0067b50522c4324a5ac46439ce0a04e11191f5e2f37c63"
+  },
+  "lightglue-sweep/order-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-sweep-01\\results\\order-2.json",
+   "source_sha256": "aab4f7e9303898105a51114f25f7cb558cb92685cb2c9b6c4a99817b807b1ca6",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "aab4f7e9303898105a51114f25f7cb558cb92685cb2c9b6c4a99817b807b1ca6"
+  },
+  "inspect-window-post-freeze/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\post-freeze-inspect-window-01\\result.json",
+   "source_sha256": "521c520be355a25e4f52237497426d36f9c828babf4693499b9bb0145e44ca4a",
+   "transform": "copied",
+   "report_section": "6.4",
+   "sha256": "521c520be355a25e4f52237497426d36f9c828babf4693499b9bb0145e44ca4a"
+  },
+  "tests/full-tests-02.result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\full-tests-02\\result.json",
+   "source_sha256": "2cd98b6615ce4b175e62e20a1e339e367e7123470d7045ce9f188b589c8623ee",
+   "transform": "copied",
+   "report_section": "6.4",
+   "sha256": "2cd98b6615ce4b175e62e20a1e339e367e7123470d7045ce9f188b589c8623ee"
+  },
+  "tests/full-tests-03.result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\full-tests-03\\result.json",
+   "source_sha256": "f1149ef76fb3f49e51083fb1ce220b16aa838e71484737a56dcadc8c8a6f789c",
+   "transform": "copied",
+   "report_section": "6.4",
+   "sha256": "f1149ef76fb3f49e51083fb1ce220b16aa838e71484737a56dcadc8c8a6f789c"
+  },
+  "aws/speed/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\speed-01\\REPORT.md",
+   "source_sha256": "280b72fc16f9d393a6307f0de62919d5b0bcfa8fc569f396aea9d32a0d088af8",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "280b72fc16f9d393a6307f0de62919d5b0bcfa8fc569f396aea9d32a0d088af8"
+  },
+  "aws/speed/report.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\speed-01\\report.json",
+   "source_sha256": "353f995e6ef27d224ce6c728b2bd83ea675e6975b01617e6cbbbcf9fc13aac9c",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "353f995e6ef27d224ce6c728b2bd83ea675e6975b01617e6cbbbcf9fc13aac9c"
+  },
+  "aws/cool-equivalence/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\v6-cool-equivalence-02\\result.json",
+   "source_sha256": "634df4b8c3b9c568d9ee51a7da978452970584c3d51eabdb7a95dd46812be9a5",
+   "transform": "masked user path or AWS account number",
+   "report_section": "5.2",
+   "sha256": "a4753dd57dee658d7d1208e27897f3a1be5daa8ce522c309202ff29083c4fc5a"
+  },
+  "aws/cool-equivalence/posthoc-runtime-excluded.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\v6-cool-equivalence-02\\posthoc-runtime-excluded.json",
+   "source_sha256": "fa0a57c057ce9a34cc48f0281f725a17935e2de44a49736e6178f84c1e33175d",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "fa0a57c057ce9a34cc48f0281f725a17935e2de44a49736e6178f84c1e33175d"
+  },
+  "aws/standard-equivalence/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\v6-equivalence-01\\result.json",
+   "source_sha256": "6d2d0694143355368fd3d03807692de5ddf6747dc4d6a5e5d4b1cef45b3b9184",
+   "transform": "masked user path or AWS account number",
+   "report_section": "5.2",
+   "sha256": "ec03357398417890205a445464c2e4b7f2378b59f27f797b62b632540e3f2b00"
+  },
+  "aws/wake/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\live-cool-wake-02\\result.json",
+   "source_sha256": "99e464cd2d01975fca51b212111da27a06b2b1a1fb988a508ebdc4481430f6fd",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "99e464cd2d01975fca51b212111da27a06b2b1a1fb988a508ebdc4481430f6fd"
+  },
+  "panel-v6p01/heldout-outcome.json": {
+   "source": "C:\\kc3d\\s\\v6p01\\measurements\\d19d9b76a015463fbf9708cb4fbde348\\comparison.json",
+   "source_sha256": "f15cf5c812c5c84f76fd2e58dfca0242636904c17ff77419f9dfea290dd5b3ed",
+   "transform": "extracted per case",
+   "report_section": "6.2",
+   "sha256": "0f78f525ee7c0a397de8d7966f2bb45f22fa63bc2e85779da6dd072c4a0e8cdc"
+  },
+  "source-epochs.json": {
+   "source": "C:\\kc3d\\code",
+   "source_sha256": null,
+   "transform": "tree hashes of frozen source epochs",
+   "report_section": "6.4, 8",
+   "sha256": "ec5ac87d3b8e50df64e452ec1b60e69fa1af7e4becfd0c3d8f2f8cd9a784fe02"
+  },
+  "tests/public-tree-tests.log": {
+   "source": "unittest run of this public tree (clean copy, no evidence folders, models or Kiro installation)",
+   "source_sha256": "41f270e47949c2fa2ab31cbf10adab6e92091823195e11d70e7f3a9067f61ef9",
+   "transform": "masked user path or AWS account number",
+   "report_section": "6.4",
+   "sha256": "578044881547749c9184d331bbc7a873b42126bf92b3b607fad05eaa87eae23e"
+  }
+ },
+ "not_copied": []
+}

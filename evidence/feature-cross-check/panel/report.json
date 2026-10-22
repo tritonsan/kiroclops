@@ -1,0 +1,2268 @@
+{
+  "kind": "V6EquivalenceReplay",
+  "schema_version": 1,
+  "created_at": "2026-10-16T01:20:40.398508+00:00",
+  "contract": {
+    "min_valid_ratio": 0.95,
+    "require_static_camera": true
+  },
+  "records": 16,
+  "identical": 16,
+  "refinement": null,
+  "cross_check": "features_v1",
+  "results": [
+    {
+      "role": "reference",
+      "case": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-interrupt-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-interrupt-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 3.9403702999989036,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 609.3081755000167,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 155,
+            "located": 148,
+            "located_fraction": 0.9548387096774194,
+            "median_consistency_px": 0.9870155725613267,
+            "p95_consistency_px": 1.229877043941743,
+            "max_consistency_px": 1.7681728818949223,
+            "median_scale": 1.0071009091610388,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 21.0,
+            "not_located_reasons": {
+              "too_few_matches": 6,
+              "matcher_engine_failure": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 155,
+            "located": 115,
+            "located_fraction": 0.7419354838709677,
+            "median_consistency_px": 0.7291970114377305,
+            "p95_consistency_px": 1.112975928531648,
+            "max_consistency_px": 1.3056308029632773,
+            "median_scale": 1.0090443336104928,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23,
+            "not_located_reasons": {
+              "matcher_engine_failure": 32,
+              "too_few_matches": 7,
+              "no_consistent_similarity": 1
+            }
+          },
+          "star": {
+            "frames_checked": 155,
+            "located": 146,
+            "located_fraction": 0.9419354838709677,
+            "median_consistency_px": 0.8166891511827952,
+            "p95_consistency_px": 0.9132919535041659,
+            "max_consistency_px": 221.49899600490386,
+            "median_scale": 1.023135441482842,
+            "median_inlier_ratio": 0.9761904761904762,
+            "median_matches": 39.5,
+            "not_located_reasons": {
+              "matcher_engine_failure": 7,
+              "too_few_matches": 1,
+              "no_consistent_similarity": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-open-close-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-open-close-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 5.159635199990589,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 856.9731139999931,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.9342397964347455,
+            "p95_consistency_px": 1.0951552858846494,
+            "max_consistency_px": 1.4660160906692112,
+            "median_scale": 1.0132599076078297,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 21.0,
+            "not_located_reasons": {
+              "too_few_matches": 5
+            }
+          },
+          "handle": {
+            "frames_checked": 211,
+            "located": 112,
+            "located_fraction": 0.5308056872037915,
+            "median_consistency_px": 0.7270865126660333,
+            "p95_consistency_px": 1.1788296966363376,
+            "max_consistency_px": 1.6065109532000974,
+            "median_scale": 1.0090443336104928,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23.0,
+            "not_located_reasons": {
+              "too_few_matches": 19,
+              "matcher_engine_failure": 80
+            }
+          },
+          "star": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.7469486443130878,
+            "p95_consistency_px": 0.8941330491248236,
+            "max_consistency_px": 220.11328071323098,
+            "median_scale": 1.018076055558682,
+            "median_inlier_ratio": 0.9886363636363636,
+            "median_matches": 37.5,
+            "not_located_reasons": {
+              "too_few_matches": 3,
+              "matcher_engine_failure": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-panel-calibration-open-w960-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-open-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-open-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.15158999999403,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 163,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 163,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 163,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 639.804452100012,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 163,
+            "located": 158,
+            "located_fraction": 0.9693251533742331,
+            "median_consistency_px": 0.8162760652320477,
+            "p95_consistency_px": 1.0095214980585359,
+            "max_consistency_px": 1.4892125347043321,
+            "median_scale": 1.019405666539707,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 25.0,
+            "not_located_reasons": {
+              "too_few_matches": 5
+            }
+          },
+          "handle": {
+            "frames_checked": 163,
+            "located": 8,
+            "located_fraction": 0.049079754601226995,
+            "median_consistency_px": 0.7369950247671062,
+            "p95_consistency_px": 0.943051114824614,
+            "max_consistency_px": 0.943051114824614,
+            "median_scale": 1.0079020612969833,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23.5,
+            "not_located_reasons": {
+              "too_few_matches": 13,
+              "matcher_engine_failure": 142
+            }
+          },
+          "star": {
+            "frames_checked": 163,
+            "located": 158,
+            "located_fraction": 0.9693251533742331,
+            "median_consistency_px": 0.7108951537479028,
+            "p95_consistency_px": 0.8600808227085298,
+            "max_consistency_px": 220.3670777883536,
+            "median_scale": 1.0153499999424482,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 38.0,
+            "not_located_reasons": {
+              "too_few_matches": 3,
+              "matcher_engine_failure": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-reverse-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-suite-panel-calibration-reverse-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 5.375885700021172,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 827.1408004999976,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.8494005676299075,
+            "p95_consistency_px": 1.0654711432368211,
+            "max_consistency_px": 1.5607995139065856,
+            "median_scale": 1.019405666539707,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 25.0,
+            "not_located_reasons": {
+              "too_few_matches": 5
+            }
+          },
+          "handle": {
+            "frames_checked": 211,
+            "located": 15,
+            "located_fraction": 0.07109004739336493,
+            "median_consistency_px": 0.7091501395288574,
+            "p95_consistency_px": 0.9827820155826853,
+            "max_consistency_px": 0.9827820155826853,
+            "median_scale": 1.0051218559580712,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23,
+            "not_located_reasons": {
+              "matcher_engine_failure": 180,
+              "too_few_matches": 16
+            }
+          },
+          "star": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.707908675522964,
+            "p95_consistency_px": 0.7469486443130878,
+            "max_consistency_px": 220.1585993985654,
+            "median_scale": 1.015624303847673,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 38.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 4,
+              "too_few_matches": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v3-suite-panel-calibration-interrupt-w768-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v3-suite-panel-calibration-interrupt-w768-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 3.335526300012134,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 603.7052876999951,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 155,
+            "located": 147,
+            "located_fraction": 0.9483870967741935,
+            "median_consistency_px": 0.9870155725613267,
+            "p95_consistency_px": 1.175969135034832,
+            "max_consistency_px": 1.5874592731437087,
+            "median_scale": 1.008830285836151,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 21,
+            "not_located_reasons": {
+              "too_few_matches": 6,
+              "matcher_engine_failure": 1,
+              "no_consistent_similarity": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 155,
+            "located": 111,
+            "located_fraction": 0.7161290322580646,
+            "median_consistency_px": 0.721042824594179,
+            "p95_consistency_px": 1.1008763851835046,
+            "max_consistency_px": 1.4589211153768866,
+            "median_scale": 1.0090443336104928,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23,
+            "not_located_reasons": {
+              "too_few_matches": 13,
+              "matcher_engine_failure": 31
+            }
+          },
+          "star": {
+            "frames_checked": 155,
+            "located": 143,
+            "located_fraction": 0.9225806451612903,
+            "median_consistency_px": 0.8124504720164932,
+            "p95_consistency_px": 0.8941330491248236,
+            "max_consistency_px": 219.75859356338083,
+            "median_scale": 1.022038559306005,
+            "median_inlier_ratio": 0.9761904761904762,
+            "median_matches": 40,
+            "not_located_reasons": {
+              "no_consistent_similarity": 3,
+              "matcher_engine_failure": 6,
+              "too_few_matches": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v3-suite-panel-calibration-interrupt-w768-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v3-suite-panel-calibration-interrupt-w768-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 3.6368855999899097,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 611.3161136000126,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 155,
+            "located": 148,
+            "located_fraction": 0.9548387096774194,
+            "median_consistency_px": 0.9857826510644139,
+            "p95_consistency_px": 1.1216583456793305,
+            "max_consistency_px": 1.5790962144421417,
+            "median_scale": 1.0083098266189756,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 21.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 2,
+              "too_few_matches": 5
+            }
+          },
+          "handle": {
+            "frames_checked": 155,
+            "located": 114,
+            "located_fraction": 0.7354838709677419,
+            "median_consistency_px": 0.7270251100206955,
+            "p95_consistency_px": 1.1705677629897346,
+            "max_consistency_px": 1.3621008179503542,
+            "median_scale": 1.0090443336104928,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 31,
+              "too_few_matches": 10
+            }
+          },
+          "star": {
+            "frames_checked": 155,
+            "located": 143,
+            "located_fraction": 0.9225806451612903,
+            "median_consistency_px": 0.8109318281170179,
+            "p95_consistency_px": 0.8941330491248236,
+            "max_consistency_px": 220.5632257653317,
+            "median_scale": 1.0223240278216148,
+            "median_inlier_ratio": 0.9761904761904762,
+            "median_matches": 40,
+            "not_located_reasons": {
+              "too_few_matches": 6,
+              "matcher_engine_failure": 4,
+              "no_consistent_similarity": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v3-suite-panel-calibration-reverse-w768-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v3-suite-panel-calibration-reverse-w768-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.617500399996061,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 828.7943421999807,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.8426893819589535,
+            "p95_consistency_px": 1.1521490666274432,
+            "max_consistency_px": 1.512620350109411,
+            "median_scale": 1.0155142084643027,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 24.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 2,
+              "too_few_matches": 3
+            }
+          },
+          "handle": {
+            "frames_checked": 211,
+            "located": 14,
+            "located_fraction": 0.06635071090047394,
+            "median_consistency_px": 0.7060312504706765,
+            "p95_consistency_px": 1.1232798248638738,
+            "max_consistency_px": 1.1232798248638738,
+            "median_scale": 1.0065293232295742,
+            "median_inlier_ratio": 0.9838709677419355,
+            "median_matches": 26.0,
+            "not_located_reasons": {
+              "too_few_matches": 15,
+              "matcher_engine_failure": 182
+            }
+          },
+          "star": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.6746996792198702,
+            "p95_consistency_px": 0.7631812062896769,
+            "max_consistency_px": 220.19624023028177,
+            "median_scale": 1.0145244536212699,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 37.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.366502199991373,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 162,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 162,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 162,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 630.0179904000252,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 162,
+            "located": 156,
+            "located_fraction": 0.9629629629629629,
+            "median_consistency_px": 1.042833356608111,
+            "p95_consistency_px": 1.1856981427650513,
+            "max_consistency_px": 1.772347120206751,
+            "median_scale": 1.0051852519665716,
+            "median_inlier_ratio": 0.9183333333333333,
+            "median_matches": 22.0,
+            "not_located_reasons": {
+              "too_few_matches": 4,
+              "matcher_engine_failure": 1,
+              "no_consistent_similarity": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 162,
+            "located": 126,
+            "located_fraction": 0.7777777777777778,
+            "median_consistency_px": 0.5169597947419756,
+            "p95_consistency_px": 1.1749498806224,
+            "max_consistency_px": 1.3302681488729966,
+            "median_scale": 1.0220043832572347,
+            "median_inlier_ratio": 0.9655172413793104,
+            "median_matches": 27.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 33,
+              "too_few_matches": 3
+            }
+          },
+          "star": {
+            "frames_checked": 162,
+            "located": 148,
+            "located_fraction": 0.9135802469135802,
+            "median_consistency_px": 0.7140985442684283,
+            "p95_consistency_px": 0.8299340603786693,
+            "max_consistency_px": 220.81097295174771,
+            "median_scale": 1.0294749854215297,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 35.0,
+            "not_located_reasons": {
+              "no_consistent_similarity": 5,
+              "matcher_engine_failure": 4,
+              "too_few_matches": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.3413089999812655,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 162,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 162,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 162,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 637.6089300000167,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 162,
+            "located": 155,
+            "located_fraction": 0.9567901234567902,
+            "median_consistency_px": 1.035850754838219,
+            "p95_consistency_px": 1.1707858073142494,
+            "max_consistency_px": 1.325085413670859,
+            "median_scale": 1.0079204323451785,
+            "median_inlier_ratio": 0.9411764705882353,
+            "median_matches": 22,
+            "not_located_reasons": {
+              "too_few_matches": 6,
+              "no_consistent_similarity": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 162,
+            "located": 124,
+            "located_fraction": 0.7654320987654321,
+            "median_consistency_px": 0.5169597947419756,
+            "p95_consistency_px": 1.1965495186520203,
+            "max_consistency_px": 1.47258152924751,
+            "median_scale": 1.0215960037225866,
+            "median_inlier_ratio": 0.9655172413793104,
+            "median_matches": 27.0,
+            "not_located_reasons": {
+              "no_consistent_similarity": 1,
+              "matcher_engine_failure": 29,
+              "too_few_matches": 8
+            }
+          },
+          "star": {
+            "frames_checked": 162,
+            "located": 149,
+            "located_fraction": 0.9197530864197531,
+            "median_consistency_px": 0.7140985442684283,
+            "p95_consistency_px": 0.8235074356220102,
+            "max_consistency_px": 220.87177487779263,
+            "median_scale": 1.028558632127787,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 34,
+            "not_located_reasons": {
+              "no_consistent_similarity": 4,
+              "matcher_engine_failure": 5,
+              "too_few_matches": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v4-suite-panel-calibration-open-wide-w1280-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v4-suite-panel-calibration-open-wide-w1280-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.543234800017672,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 164,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 164,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 164,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 643.7070447999868,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 164,
+            "located": 159,
+            "located_fraction": 0.9695121951219512,
+            "median_consistency_px": 0.8185363851393541,
+            "p95_consistency_px": 1.0210287575839598,
+            "max_consistency_px": 1.369418721123348,
+            "median_scale": 1.0205416287880542,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 24,
+            "not_located_reasons": {
+              "too_few_matches": 4,
+              "matcher_engine_failure": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 164,
+            "located": 5,
+            "located_fraction": 0.03048780487804878,
+            "median_consistency_px": 0.500502531294928,
+            "p95_consistency_px": 0.7781311636050166,
+            "max_consistency_px": 0.7781311636050166,
+            "median_scale": 1.0094952978607952,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 27,
+            "not_located_reasons": {
+              "too_few_matches": 4,
+              "matcher_engine_failure": 155
+            }
+          },
+          "star": {
+            "frames_checked": 164,
+            "located": 158,
+            "located_fraction": 0.9634146341463414,
+            "median_consistency_px": 0.6727320200994855,
+            "p95_consistency_px": 0.7789374139444292,
+            "max_consistency_px": 220.87177487779263,
+            "median_scale": 1.0140138702106705,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 37.0,
+            "not_located_reasons": {
+              "too_few_matches": 3,
+              "matcher_engine_failure": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.311114600015571,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 158,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 158,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 158,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 618.3033284999838,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 158,
+            "located": 151,
+            "located_fraction": 0.9556962025316456,
+            "median_consistency_px": 1.035850754838219,
+            "p95_consistency_px": 1.187984380635211,
+            "max_consistency_px": 1.7476970433699126,
+            "median_scale": 1.0079204323451785,
+            "median_inlier_ratio": 0.9166666666666666,
+            "median_matches": 22,
+            "not_located_reasons": {
+              "too_few_matches": 6,
+              "matcher_engine_failure": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 158,
+            "located": 125,
+            "located_fraction": 0.7911392405063291,
+            "median_consistency_px": 0.5169597947419756,
+            "p95_consistency_px": 1.0081842503637646,
+            "max_consistency_px": 1.610064814234673,
+            "median_scale": 1.0213872150086802,
+            "median_inlier_ratio": 0.9655172413793104,
+            "median_matches": 28,
+            "not_located_reasons": {
+              "matcher_engine_failure": 27,
+              "too_few_matches": 6
+            }
+          },
+          "star": {
+            "frames_checked": 158,
+            "located": 145,
+            "located_fraction": 0.9177215189873418,
+            "median_consistency_px": 0.7140985442684283,
+            "p95_consistency_px": 0.8451535306034261,
+            "max_consistency_px": 220.87177487779263,
+            "median_scale": 1.0285556368211648,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 35,
+            "not_located_reasons": {
+              "no_consistent_similarity": 4,
+              "matcher_engine_failure": 5,
+              "too_few_matches": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 4.331255800003419,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 158,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 158,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 158,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 616.3795494000078,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 158,
+            "located": 152,
+            "located_fraction": 0.9620253164556962,
+            "median_consistency_px": 1.0358743504195362,
+            "p95_consistency_px": 1.214165914300034,
+            "max_consistency_px": 1.7071361978476838,
+            "median_scale": 1.007297710720024,
+            "median_inlier_ratio": 0.9354166666666667,
+            "median_matches": 22.0,
+            "not_located_reasons": {
+              "too_few_matches": 5,
+              "matcher_engine_failure": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 158,
+            "located": 126,
+            "located_fraction": 0.7974683544303798,
+            "median_consistency_px": 0.5169597947419756,
+            "p95_consistency_px": 0.9983331029517315,
+            "max_consistency_px": 1.719321323653543,
+            "median_scale": 1.0212959744956087,
+            "median_inlier_ratio": 0.9666666666666667,
+            "median_matches": 28.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 23,
+              "too_few_matches": 9
+            }
+          },
+          "star": {
+            "frames_checked": 158,
+            "located": 145,
+            "located_fraction": 0.9177215189873418,
+            "median_consistency_px": 0.7140985442684283,
+            "p95_consistency_px": 0.8202115043766653,
+            "max_consistency_px": 219.34736110291112,
+            "median_scale": 1.0278572050871282,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 35,
+            "not_located_reasons": {
+              "matcher_engine_failure": 6,
+              "no_consistent_similarity": 4,
+              "too_few_matches": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w768-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w768-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 3.9114421000122093,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 153,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 153,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 153,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 605.4447556999803,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 153,
+            "located": 144,
+            "located_fraction": 0.9411764705882353,
+            "median_consistency_px": 0.9870155725613267,
+            "p95_consistency_px": 1.187614290275359,
+            "max_consistency_px": 1.7681728818949223,
+            "median_scale": 1.0069086684522444,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 21.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 3,
+              "too_few_matches": 5,
+              "no_consistent_similarity": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 153,
+            "located": 114,
+            "located_fraction": 0.7450980392156863,
+            "median_consistency_px": 0.7270251100206955,
+            "p95_consistency_px": 1.112975928531648,
+            "max_consistency_px": 1.382344161425665,
+            "median_scale": 1.0090443336104928,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 30,
+              "too_few_matches": 9
+            }
+          },
+          "star": {
+            "frames_checked": 153,
+            "located": 142,
+            "located_fraction": 0.9281045751633987,
+            "median_consistency_px": 0.832755080305795,
+            "p95_consistency_px": 0.8959031321067753,
+            "max_consistency_px": 221.49899600490386,
+            "median_scale": 1.0214071200893133,
+            "median_inlier_ratio": 0.9761904761904762,
+            "median_matches": 40.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 6,
+              "too_few_matches": 3,
+              "no_consistent_similarity": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w768-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-interrupt-early-w768-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 3.089464000018779,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 152,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 152,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 152,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 596.7488515999867,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 152,
+            "located": 144,
+            "located_fraction": 0.9473684210526315,
+            "median_consistency_px": 0.9870155725613267,
+            "p95_consistency_px": 1.1921104123712425,
+            "max_consistency_px": 1.5874592731437087,
+            "median_scale": 1.0073488745423946,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 21.0,
+            "not_located_reasons": {
+              "too_few_matches": 7,
+              "matcher_engine_failure": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 152,
+            "located": 116,
+            "located_fraction": 0.7631578947368421,
+            "median_consistency_px": 0.721042824594179,
+            "p95_consistency_px": 1.154132391703963,
+            "max_consistency_px": 1.4371689875637128,
+            "median_scale": 1.0090443336104928,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 23.0,
+            "not_located_reasons": {
+              "matcher_engine_failure": 22,
+              "too_few_matches": 14
+            }
+          },
+          "star": {
+            "frames_checked": 152,
+            "located": 139,
+            "located_fraction": 0.9144736842105263,
+            "median_consistency_px": 0.8341642499444902,
+            "p95_consistency_px": 0.8941330491248236,
+            "max_consistency_px": 220.0671712082605,
+            "median_scale": 1.022038559306005,
+            "median_inlier_ratio": 0.9761904761904762,
+            "median_matches": 42,
+            "not_located_reasons": {
+              "too_few_matches": 4,
+              "matcher_engine_failure": 7,
+              "no_consistent_similarity": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 5.676502100017387,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 827.6018201000115,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.8409019100308847,
+            "p95_consistency_px": 1.0836928942306265,
+            "max_consistency_px": 1.483347346284378,
+            "median_scale": 1.0205416287880542,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 24.0,
+            "not_located_reasons": {
+              "too_few_matches": 4,
+              "matcher_engine_failure": 1
+            }
+          },
+          "handle": {
+            "frames_checked": 211,
+            "located": 14,
+            "located_fraction": 0.06635071090047394,
+            "median_consistency_px": 0.7107433552799652,
+            "p95_consistency_px": 1.0381847327336744,
+            "max_consistency_px": 1.0381847327336744,
+            "median_scale": 1.010537530886094,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 24.0,
+            "not_located_reasons": {
+              "no_consistent_similarity": 1,
+              "matcher_engine_failure": 190,
+              "too_few_matches": 6
+            }
+          },
+          "star": {
+            "frames_checked": 211,
+            "located": 203,
+            "located_fraction": 0.9620853080568721,
+            "median_consistency_px": 0.6735999967748938,
+            "p95_consistency_px": 0.7966970993920413,
+            "max_consistency_px": 220.62331346444077,
+            "median_scale": 1.0177283175487308,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 37,
+            "not_located_reasons": {
+              "no_consistent_similarity": 2,
+              "matcher_engine_failure": 5,
+              "too_few_matches": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "record": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5p02-cal\\reference\\realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 5.737110400019446,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "handle": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "star": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 211,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {},
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 824.5872891000181,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "bookmark": {
+            "frames_checked": 211,
+            "located": 206,
+            "located_fraction": 0.976303317535545,
+            "median_consistency_px": 0.8338998971824356,
+            "p95_consistency_px": 1.0836002694268516,
+            "max_consistency_px": 1.5669886527536832,
+            "median_scale": 1.0205416287880542,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 24.0,
+            "not_located_reasons": {
+              "too_few_matches": 5
+            }
+          },
+          "handle": {
+            "frames_checked": 211,
+            "located": 17,
+            "located_fraction": 0.08056872037914692,
+            "median_consistency_px": 0.5680690432519517,
+            "p95_consistency_px": 1.0607338443735908,
+            "max_consistency_px": 1.0607338443735908,
+            "median_scale": 1.0094952978607952,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 26,
+            "not_located_reasons": {
+              "too_few_matches": 8,
+              "matcher_engine_failure": 186
+            }
+          },
+          "star": {
+            "frames_checked": 211,
+            "located": 204,
+            "located_fraction": 0.966824644549763,
+            "median_consistency_px": 0.6673006118189921,
+            "p95_consistency_px": 0.7519823077139399,
+            "max_consistency_px": 219.83425210061569,
+            "median_scale": 1.0177576471314216,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 37.0,
+            "not_located_reasons": {
+              "too_few_matches": 1,
+              "matcher_engine_failure": 5,
+              "no_consistent_similarity": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "summary_sha256": "2237c348522fae3e1d04a68941e303b40f1bd987d619610abce66e8f43e6607e"
+}

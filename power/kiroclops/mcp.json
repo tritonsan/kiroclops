@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "kiroclops": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "kiroclops.integration.mcp", "--session", "${KIROCLOPS_SESSION}"],
+      "env": {"PYTHONPATH": "${KIROCLOPS_ROOT}"}
+    }
+  }
+}

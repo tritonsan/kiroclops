@@ -1,0 +1,916 @@
+{
+  "kind": "V6EquivalenceReplay",
+  "schema_version": 1,
+  "created_at": "2026-10-15T22:16:31.355091+00:00",
+  "contract": {
+    "min_valid_ratio": 0.95,
+    "require_static_camera": true
+  },
+  "records": 5,
+  "identical": 5,
+  "refinement": null,
+  "cross_check": "features_v1",
+  "results": [
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 12.201394400006393,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 684.8349486000079,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6354403292564051,
+            "p95_consistency_px": 1.1287599611069101,
+            "max_consistency_px": 1.5933424437207717,
+            "median_scale": 0.9997611229774926,
+            "median_inlier_ratio": 0.8181818181818182,
+            "median_matches": 25,
+            "not_located_reasons": {}
+          },
+          "b": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.5954783953246758,
+            "p95_consistency_px": 0.5954783953246758,
+            "max_consistency_px": 0.5954783953246758,
+            "median_scale": 1.0084877337838334,
+            "median_inlier_ratio": 0.9714285714285714,
+            "median_matches": 35,
+            "not_located_reasons": {}
+          },
+          "c": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6165112279718373,
+            "p95_consistency_px": 0.7703475816860693,
+            "max_consistency_px": 0.9686225390296591,
+            "median_scale": 0.9998385826008144,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 30,
+            "not_located_reasons": {}
+          },
+          "d": {
+            "frames_checked": 25,
+            "located": 16,
+            "located_fraction": 0.64,
+            "median_consistency_px": 0.5418930164676768,
+            "p95_consistency_px": 0.6462710782928814,
+            "max_consistency_px": 0.6462710782928814,
+            "median_scale": 1.0091015309880411,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 10.0,
+            "not_located_reasons": {
+              "too_few_matches": 5,
+              "no_consistent_similarity": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 12.027148699999088,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 695.0474424999848,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6354403292564051,
+            "p95_consistency_px": 0.9316250580346738,
+            "max_consistency_px": 1.165038122744184,
+            "median_scale": 0.9997611229774926,
+            "median_inlier_ratio": 0.8,
+            "median_matches": 25,
+            "not_located_reasons": {}
+          },
+          "b": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.5954783953246758,
+            "p95_consistency_px": 0.5954783953246758,
+            "max_consistency_px": 0.5954783953246758,
+            "median_scale": 1.0084877337838334,
+            "median_inlier_ratio": 0.9714285714285714,
+            "median_matches": 35,
+            "not_located_reasons": {}
+          },
+          "c": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6111185464187285,
+            "p95_consistency_px": 0.7703475816860693,
+            "max_consistency_px": 0.9686235030839405,
+            "median_scale": 0.9995617304762867,
+            "median_inlier_ratio": 0.9705882352941176,
+            "median_matches": 30,
+            "not_located_reasons": {}
+          },
+          "d": {
+            "frames_checked": 25,
+            "located": 20,
+            "located_fraction": 0.8,
+            "median_consistency_px": 0.5418930164676768,
+            "p95_consistency_px": 0.6593761948128429,
+            "max_consistency_px": 0.6593761948128429,
+            "median_scale": 1.0091015309880411,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 10.0,
+            "not_located_reasons": {
+              "no_consistent_similarity": 4,
+              "too_few_matches": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.714266900002258,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 154,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 154
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 906.0837724000157,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6411531437432682,
+            "p95_consistency_px": 0.8029084692337543,
+            "max_consistency_px": 0.9768442597773512,
+            "median_scale": 0.9961163078888906,
+            "median_inlier_ratio": 0.8235294117647058,
+            "median_matches": 17,
+            "not_located_reasons": {}
+          },
+          "b": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.5954783953246758,
+            "p95_consistency_px": 0.5954783953246758,
+            "max_consistency_px": 0.5954783953246758,
+            "median_scale": 1.0084877337838334,
+            "median_inlier_ratio": 0.9714285714285714,
+            "median_matches": 35,
+            "not_located_reasons": {}
+          },
+          "c": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.3959272854379276,
+            "p95_consistency_px": 0.7328641742331361,
+            "max_consistency_px": 0.9312268914677426,
+            "median_scale": 0.9970561605836676,
+            "median_inlier_ratio": 0.9333333333333333,
+            "median_matches": 19,
+            "not_located_reasons": {}
+          },
+          "d": {
+            "frames_checked": 154,
+            "located": 154,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6436123188442198,
+            "p95_consistency_px": 0.7244565483125608,
+            "max_consistency_px": 0.9241324378372576,
+            "median_scale": 0.9975355980253724,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 12.0,
+            "not_located_reasons": {}
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 8.820507199998247,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 155
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 1053.7368112000113,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "frames_checked": 180,
+            "located": 180,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6411531437432682,
+            "p95_consistency_px": 0.8776669719179183,
+            "max_consistency_px": 0.9119663157876982,
+            "median_scale": 0.9961156090930428,
+            "median_inlier_ratio": 0.8235294117647058,
+            "median_matches": 17.0,
+            "not_located_reasons": {}
+          },
+          "b": {
+            "frames_checked": 180,
+            "located": 180,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.5954783953246758,
+            "p95_consistency_px": 0.5954783953246758,
+            "max_consistency_px": 0.5954783953246758,
+            "median_scale": 1.0084877337838334,
+            "median_inlier_ratio": 0.9714285714285714,
+            "median_matches": 35.0,
+            "not_located_reasons": {}
+          },
+          "c": {
+            "frames_checked": 180,
+            "located": 180,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.38956546931509406,
+            "p95_consistency_px": 0.7536494980792293,
+            "max_consistency_px": 1.004767130163522,
+            "median_scale": 0.9970561605836676,
+            "median_inlier_ratio": 0.9148550724637681,
+            "median_matches": 19.0,
+            "not_located_reasons": {}
+          },
+          "d": {
+            "frames_checked": 155,
+            "located": 155,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6586270192931599,
+            "p95_consistency_px": 0.7962999211688602,
+            "max_consistency_px": 1.136954880407643,
+            "median_scale": 0.9971483215087309,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 12,
+            "not_located_reasons": {}
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-svg-six-node-measurement",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-svg-six-node-measurement\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-svg-six-node-measurement\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 10.350507099996321,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "e": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "f": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-e": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-f": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "cross_check": {
+        "method": "features_v1",
+        "seconds": 1618.9105061999871,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "frames_checked": 179,
+            "located": 152,
+            "located_fraction": 0.8491620111731844,
+            "median_consistency_px": 0.9122476462391307,
+            "p95_consistency_px": 0.9122476462391307,
+            "max_consistency_px": 0.9122476462391307,
+            "median_scale": 0.9905618848593305,
+            "median_inlier_ratio": 0.7692307692307693,
+            "median_matches": 13.0,
+            "not_located_reasons": {
+              "no_consistent_similarity": 27
+            }
+          },
+          "b": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.4951180451341544,
+            "p95_consistency_px": 0.8009862391631432,
+            "max_consistency_px": 0.824776806351808,
+            "median_scale": 0.9947786958137859,
+            "median_inlier_ratio": 0.8285714285714286,
+            "median_matches": 35,
+            "not_located_reasons": {}
+          },
+          "c": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.34938555772039837,
+            "p95_consistency_px": 0.34938555772039837,
+            "max_consistency_px": 0.42332367083085454,
+            "median_scale": 0.9968826182252432,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 20,
+            "not_located_reasons": {}
+          },
+          "d": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.6683073836429853,
+            "p95_consistency_px": 1.0595682163494884,
+            "max_consistency_px": 1.0595682163494884,
+            "median_scale": 0.9856123820685435,
+            "median_inlier_ratio": 0.8571428571428571,
+            "median_matches": 14,
+            "not_located_reasons": {}
+          },
+          "e": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.41849681607758044,
+            "p95_consistency_px": 0.5735266044185361,
+            "max_consistency_px": 0.5735266044185361,
+            "median_scale": 0.9949933411230624,
+            "median_inlier_ratio": 1.0,
+            "median_matches": 28,
+            "not_located_reasons": {}
+          },
+          "f": {
+            "frames_checked": 179,
+            "located": 179,
+            "located_fraction": 1.0,
+            "median_consistency_px": 0.8375308864799467,
+            "p95_consistency_px": 0.9278625275528694,
+            "max_consistency_px": 0.9278625275528694,
+            "median_scale": 1.0042692108339715,
+            "median_inlier_ratio": 0.9666666666666667,
+            "median_matches": 30,
+            "not_located_reasons": {}
+          }
+        }
+      }
+    }
+  ],
+  "summary_sha256": "314c6958615c03e4b6739cbc7c48162f79c4b428d54b8b9335aac7f514ca798d"
+}

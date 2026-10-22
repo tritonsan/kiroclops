@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "objects": [
+    {
+      "id": "character",
+      "roi": [
+        116,
+        105,
+        6,
+        3
+      ],
+      "anchor": [
+        1,
+        2
+      ],
+      "frame_index": 0,
+      "method": "template",
+      "min_score": 0.75,
+      "min_margin": 0.03,
+      "body_height_px": 7,
+      "horizontal_mirror": false,
+      "template_rotations": [
+        0
+      ],
+      "search_radius": 8
+    }
+  ],
+  "background_rois": [
+    [
+      16,
+      108,
+      24,
+      16
+    ]
+  ],
+  "camera_max_shift_px": 1,
+  "boundaries": [],
+  "connections": []
+}

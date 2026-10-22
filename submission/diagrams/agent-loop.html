@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KiroClops agent loop</title>
+<link rel="stylesheet" href="diagram.css">
+<style>
+  @page { size: 1600px 940px; margin: 0; }
+  #canvas { height: 940px; }
+</style>
+</head>
+<body>
+<div id="canvas">
+  <div class="title" data-solid data-box>Perception, decision and action in one agent session</div>
+  <div class="subtitle" data-solid data-box style="top:82px">OpenCV 5 measures every re-recorded candidate; that measurement decides the agent's next edit, its next tool call and when to stop.</div>
+
+  <div class="zone zone-local" id="loopzone" data-box style="left:40px;top:128px;width:980px;height:572px">
+    <div class="zone-label" data-head>Authoring loop</div>
+  </div>
+  <div class="zone zone-local" id="gatezone" data-box style="left:1060px;top:128px;width:500px;height:572px">
+    <div class="zone-label" data-head>After sealing</div>
+  </div>
+
+  <!-- Loop ---------------------------------------------------------------- -->
+  <div class="node agent" id="act" data-solid data-box data-in="#loopzone" style="left:365px;top:147px;width:330px;height:146px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M10 9l-5 5 5 5M18 9l5 5-5 5M15.5 6l-3 16"/></svg><div class="t">Act</div></div>
+    <div class="s">The agent edits the target's motion code; the guard allows nothing else.</div>
+    <div class="chips"><span class="chip">fs_write</span><span class="chip">str_replace</span></div>
+  </div>
+  <div class="node cv strong" id="perceive" data-solid data-box data-in="#loopzone" style="left:60px;top:341px;width:330px;height:146px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M2 14c3.5-6 8-8.5 12-8.5S22.5 8 26 14c-3.5 6-8 8.5-12 8.5S5.5 20 2 14z"/><circle cx="14" cy="14" r="4"/></svg><div class="t">Perceive</div></div>
+    <div class="s">Re-record all 16 calibration cases; OpenCV 5 tracks objects and events.</div>
+    <div class="chips"><span class="chip">evaluate_candidate</span></div>
+  </div>
+  <div class="node cv" id="feedback" data-solid data-box data-in="#loopzone" style="left:365px;top:535px;width:330px;height:146px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M4 24h21M7 24v-7M12 24V11M17 24v-5M22 24V8"/><path d="M3 13h22" stroke-dasharray="2 2.5"/></svg><div class="t">Feedback</div></div>
+    <div class="s">Per-window error against its limit, lag, regressions and image strips.</div>
+    <div class="chips"><span class="chip">get_job</span><span class="chip">inspect_window</span></div>
+  </div>
+  <div class="node agent" id="decide" data-solid data-box data-in="#loopzone" style="left:670px;top:325px;width:330px;height:178px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M4 14h8l7-7h5M12 14l7 7h5M21 4l3 3-3 3M21 18l3 3-3 3"/></svg><div class="t">Decide</div></div>
+    <div class="s">Edit again, probe chosen cases, or finalize the best candidate.</div>
+    <div class="chips"><span class="chip">evaluate_candidate(case_ids)</span><span class="chip">finalize_candidate</span></div>
+  </div>
+  <div class="center-note" id="budget" data-solid data-box data-in="#loopzone" style="left:420px;top:364px;width:220px;height:100px">
+    <div class="big">≤ 3 candidates</div>
+    <div class="small">60-minute budget</div>
+    <div class="small">probes do not count</div>
+  </div>
+
+  <!-- Exit ---------------------------------------------------------------- -->
+  <div class="node evidence" id="seal" data-solid data-box data-in="#gatezone" style="left:1092px;top:182px;width:436px;height:124px">
+    <div class="head"><svg viewBox="0 0 28 28"><rect x="6" y="12.5" width="16" height="11.5" rx="2"/><path d="M9.5 12.5V9a4.5 4.5 0 0 1 9 0v3.5"/></svg><div class="t">Finalize seals the best candidate</div></div>
+    <div class="s">Lowest calibration error wins; code editing closes.</div>
+    <div class="chips"><span class="chip">finalize_candidate</span></div>
+  </div>
+  <div class="node neutral" id="heldout" data-solid data-box data-in="#gatezone" style="left:1092px;top:338px;width:436px;height:96px">
+    <div class="head"><svg viewBox="0 0 28 28"><rect x="5" y="4" width="18" height="20" rx="2.5"/><path d="M9 10h10M9 14.5h10M9 19h6"/></svg><div class="t">56 held-out cases are revealed</div></div>
+    <div class="s">44 regression and 12 validation cases, never seen.</div>
+  </div>
+  <div class="node evidence" id="verdict" data-solid data-box data-in="#gatezone" style="left:1092px;top:466px;width:436px;height:110px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M14 3l10 4v7c0 6-4.5 10-10 12C8.5 24 4 20 4 14V7z"/><path d="M9.5 14l3 3 6-6.5"/></svg><div class="t">Verdict and blind review</div></div>
+    <div class="s">Native audit of agent logs, raw-pixel and source review by separate AI agents, closure receipt.</div>
+  </div>
+
+  <div class="node warn" id="outcome" data-solid data-box data-in="#gatezone" style="left:1092px;top:606px;width:436px;height:76px;justify-content:center">
+    <div class="s">v6p01: held-out 55/56; one drag-release regression, so the run is recorded as failed.</div>
+  </div>
+
+  <!-- Recorded session ------------------------------------------------------ -->
+  <div class="panel-head" data-solid data-box style="left:48px;top:722px">Recorded session v6p01 · 16 October 2026</div>
+  <div class="track" style="left:58px;top:765px;width:1254px"></div>
+  <div class="dot cv" style="left:58px;top:766px"></div>
+  <div class="dot agent" style="left:309px;top:766px"></div>
+  <div class="dot agent" style="left:559px;top:766px"></div>
+  <div class="dot cv" style="left:810px;top:766px"></div>
+  <div class="dot agent" style="left:1061px;top:766px"></div>
+  <div class="dot dark" style="left:1311px;top:766px"></div>
+  <div class="mile" data-solid data-box style="left:51px;top:786px;width:236px"><b>0–7 min</b><br>prepare: reference and baseline measured</div>
+  <div class="mile" data-solid data-box style="left:302px;top:786px;width:236px"><b>13 → 24 min</b><br>candidate 01: calibration error 0.0244</div>
+  <div class="mile" data-solid data-box style="left:552px;top:786px;width:236px"><b>25–33 min</b><br>agent reads lag, tracks glyphs, fits latency</div>
+  <div class="mile" data-solid data-box style="left:803px;top:786px;width:236px"><b>33 min</b><br>probe on three chosen cases</div>
+  <div class="mile" data-solid data-box style="left:1054px;top:786px;width:236px"><b>36 → 48 min</b><br>candidate 02: calibration error 0.0067</div>
+  <div class="mile" data-solid data-box style="left:1304px;top:786px;width:248px"><b>49 min</b><br>sealed; held-out 55/56, one regression caught</div>
+
+  <div class="rail" data-solid data-box style="left:48px;top:876px">
+    <span class="panel-head" style="position:static">Human control</span>
+    <span class="pill">Author pre-registers thresholds</span>
+    <span class="pill">Author approves every run</span>
+    <span class="pill">Guard checks every tool call</span>
+    <span class="pill">Native audit of agent logs</span>
+    <span class="pill">Results never rewritten</span>
+  </div>
+</div>
+<script>
+window.EDGES = [
+  { id: 'a1', from: '#act', fromSide: 'left', to: '#perceive', toSide: 'top', route: 'curve', k: 60, color: 'cv', width: 2.8 },
+  { id: 'a2', from: '#perceive', fromSide: 'bottom', to: '#feedback', toSide: 'left', route: 'curve', k: 60, color: 'cv', width: 2.8 },
+  { id: 'a3', from: '#feedback', fromSide: 'right', to: '#decide', toSide: 'bottom', route: 'curve', k: 60, color: 'agent', width: 2.8 },
+  { id: 'a4', from: '#decide', fromSide: 'top', to: '#act', toSide: 'right', route: 'curve', k: 60, color: 'agent', width: 2.8 },
+  { id: 'x1', from: '#decide', fromSide: 'right', to: '#seal', toSide: 'left', route: 'hvh', via: 1040, color: 'agent', width: 2.8 },
+  { id: 'x2', from: '#seal', fromSide: 'bottom', to: '#heldout', toSide: 'top', align: true },
+  { id: 'x3', from: '#heldout', fromSide: 'bottom', to: '#verdict', toSide: 'top', align: true },
+  { id: 'x4', from: '#verdict', fromSide: 'bottom', to: '#outcome', toSide: 'top', align: true, color: 'muted', dashed: true }
+];
+</script>
+<script src="diagram.js"></script>
+</body>
+</html>

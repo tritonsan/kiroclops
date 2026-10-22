@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "note": "Upstream license/credit texts retained verbatim in vendor and work copies. Asset credits do not imply the source-code MIT license applies to all assets.",
+  "files": [
+    {
+      "path": "vendor/tiny/UNLICENSE",
+      "sha256": "a4ef5224f5b38684bbc95521f04b96325c2402c03da3ecb35e232d82a996282f",
+      "text": "This is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org/>"
+    },
+    {
+      "path": "vendor/tiny/readme.md",
+      "sha256": "ddf86dc7351dca575d1017fe3b92348a56626ae619edd519f182cabf4e457f7d",
+      "text": "# ![icon](media/image/icon.png) Tiny Crate\nMade with Godot 3.6\n\nPrecision Puzzle Platformer Game\n\nPlay on itch.io [harmonymonroe.itch.io/tinycrate](https://harmonymonroe.itch.io/tinycrate) ! (:\n\n## License\nThis is free and unencumbered software! See [UNLICENSE](UNLICENSE) for more information.\n\n## Screenshots\n![shot1](media/image/screens/1.png)\n![shot2](media/image/screens/2.png)\n![shot3](media/image/screens/3.png)\n![shot4](media/image/screens/4.png)\n![shot5](media/image/screens/5.png)\n![shot6](media/image/screens/6.png)\n![shot7](media/image/screens/7.png)\n![shot8](media/image/screens/8.png)\n![shot9](media/image/screens/9.png)\n![shot10](media/image/screens/10.png)\n"
+    },
+    {
+      "path": "vendor/slay/LICENSE",
+      "sha256": "662657bc16b5c4dc579a439a5e2bc5532353c3feb8edddbf05539cc0ec72375f",
+      "text": "MIT License\n\nCopyright (c) 2025 slayhorizon\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    },
+    {
+      "path": "vendor/slay/README.md",
+      "sha256": "771e0a53ef45f9ccd8537cad0055c1580510a53744afb80ea363c9c7d189d819",
+      "text": "[README.fr.md](./README.fr.md) — 🇫🇷 Version française *(French version)*\n\n# 2D Platformer Demo (Godot 4.4+)\n\nAn **open-source 2D platformer demo**, originally created as an educational material for a school lesson.  \nNow freely available for anyone to explore, learn from, or extend.\n\n![411270231-e2cbc3d7-36ad-466b-b927-05d2405c129c](https://github.com/user-attachments/assets/c0ff6526-d402-4b85-a378-53434a0f8e15)\n\n---\n\n## Features & What You Could Learn\n\n### Player\n- Simple **State machine** via **callback functions**\n- **Double jump**, **wall slide**, and **wall jump** mechanics\n- **Custom characters** defined through resource files\n\n### Game Systems\n- **Collectibles**\n- **Moving platforms**\n- **Grid-based camera**\n- **HUD** score display + buttons for **music control** and **level reset**\n- **Music Player**\n- **Shaders**: scene transitions and scrolling textures\n\n### Godot-Specific\n- Various use cases of **`@tool` scripts** within this project\n- **Custom plugin** for placing collectibles (TileMap-like)\n- **Event Bus (Autoload)** for centralized event handling\n\n### Bonus\n- **Automated Build & Deployment** to **itch.io** via **GitHub Actions**\n\n---\n\n## License\n\nProject’s source code under **MIT License**.  \nAsset-specific licenses and credits are listed in their respective folder.\n\n> Feel free to contribute or suggest improvements.\n"
+    },
+    {
+      "path": "vendor/slay/assets/pixel-adventure/credit.txt",
+      "sha256": "ce5e1f1935479cef5d02fa14e5a1fcbeab346cac923c85d79ad6a93ba80a7a5c",
+      "text": "https://pixelfrog-assets.itch.io/pixel-adventure-1\n"
+    },
+    {
+      "path": "vendor/slay/assets/node_icons/credit.txt",
+      "sha256": "52018f36af0b6426df414df3674fca2b18f796a9a672da20ca520e2c2e11205b",
+      "text": "License concerning assets inside this folder node_icons/:\n\t> License\n\t>\n\t> They are released under the Creative Commons Zero (CC0) license.\n\t>\n\t> You can use any and all of the assets found in this package in your own games, even commercial ones\n\t>\n\t> No need to credit me.\n\nSource:\n\t> https://pixel-boy.itch.io/icon-godot-node\n"
+    },
+    {
+      "path": "vendor/slay/assets/audio/music/credit.txt",
+      "sha256": "ff0e3eb9af97d7aa973f145358c67e6ebb4fcbb4a88fd14f96854641f770dd59",
+      "text": "Credit: https://fettuccini.itch.io/noodle-cafe\n"
+    }
+  ]
+}

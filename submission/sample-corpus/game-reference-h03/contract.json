@@ -1,0 +1,5 @@
+{
+  "min_valid_ratio": 0.95,
+  "require_static_camera": true,
+  "camera_max_shift_px": 1.0
+}

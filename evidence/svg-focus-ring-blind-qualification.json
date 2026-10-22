@@ -1,0 +1,700 @@
+{
+  "kind": "SvgFocusRingBlindQualificationV5",
+  "schema_version": 1,
+  "status": "pass",
+  "criterion": {
+    "within_px": 2.0,
+    "required_within": 30,
+    "required_decision_agreement": 30,
+    "samples": 32
+  },
+  "production_within_2px": 32,
+  "decision_agreement": 32,
+  "independent_within_2px": 28,
+  "independent_decision_agreement": 32,
+  "manual_contact_counts": {
+    "touching": 32,
+    "gap": 0
+  },
+  "samples": [
+    {
+      "sample": 0,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "1to2",
+      "manual": [
+        695.0,
+        444.5
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        694.403493115861,
+        444.1789353988784
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.6774237528449701,
+      "independent_error_px": 0.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 1,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "fill",
+      "manual": [
+        480.0,
+        281.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        480.59887686915613,
+        281.9754979798047
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.1446614403452537,
+      "independent_error_px": 1.118033988749895,
+      "decision_agrees": true
+    },
+    {
+      "sample": 2,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "le1",
+      "manual": [
+        479.0,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        478.2494983633769,
+        280.9586982786647
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.2175200598300677,
+      "independent_error_px": 1.118033988749895,
+      "decision_agrees": true
+    },
+    {
+      "sample": 3,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "fill",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 4,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "le1",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 5,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        238.5,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        237.88043440077962,
+        223.7673938802954
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.6617908571908033,
+      "independent_error_px": 2.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 6,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        343.5,
+        248.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        343.8794074707243,
+        248.19511658135076
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.4266386165824767,
+      "independent_error_px": 1.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 7,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "fill",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 8,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "le1",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 9,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "le1",
+      "manual": [
+        487.0,
+        282.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        486.94374605952333,
+        282.8655834286616
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.8674094637440203,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 10,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "le1",
+      "manual": [
+        492.5,
+        283.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        492.19835463458037,
+        283.9090909347945
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9578289274211189,
+      "independent_error_px": 1.118033988749895,
+      "decision_agrees": true
+    },
+    {
+      "sample": 11,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        275.0,
+        232.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        274.28993623206213,
+        231.39473460394402
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9330255913965753,
+      "independent_error_px": 1.4142135623730951,
+      "decision_agrees": true
+    },
+    {
+      "sample": 12,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "1to2",
+      "manual": [
+        695.0,
+        444.5
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        694.403493115861,
+        444.1789353988784
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.6774237528449701,
+      "independent_error_px": 0.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 13,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "le1",
+      "manual": [
+        479.0,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        478.326349781356,
+        280.9581794925577
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.171286710006239,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 14,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "gt2",
+      "manual": [
+        359.0,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        359.0422954559197,
+        224.2705789351776
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.2738646851153065,
+      "independent_error_px": 2.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 15,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "le1",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 16,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "fill",
+      "manual": [
+        534.0,
+        347.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        534.773844957312,
+        347.7070897841342
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.0482423292274499,
+      "independent_error_px": 1.4142135623730951,
+      "decision_agrees": true
+    },
+    {
+      "sample": 17,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        257.0,
+        228.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        256.1248052560021,
+        227.5115762130447
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.0022592656520097,
+      "independent_error_px": 1.4142135623730951,
+      "decision_agrees": true
+    },
+    {
+      "sample": 18,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "le1",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 19,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "le1",
+      "manual": [
+        478.5,
+        279.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        478.1562772447378,
+        279.99742198021124
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.0549862269686556,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 20,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "fill",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 21,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "fill",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 22,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        243.5,
+        225.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        242.97372801038944,
+        224.65841265295123
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.6274106491863839,
+      "independent_error_px": 1.8027756377319946,
+      "decision_agrees": true
+    },
+    {
+      "sample": 23,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "fill",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 24,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "fill",
+      "manual": [
+        484.5,
+        281.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        484.4391806735461,
+        281.97585218783064
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9777456126028649,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 25,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "gt2",
+      "manual": [
+        268.5,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        268.01132317004567,
+        223.76065706570193
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.5441416031995903,
+      "independent_error_px": 2.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 26,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        238.5,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        237.88043440077962,
+        223.7673938802954
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.6617908571908033,
+      "independent_error_px": 2.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 27,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        481.0,
+        281.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        480.6470581584472,
+        281.9922367210235
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 1.0531389528766826,
+      "independent_error_px": 0.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 28,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "1to2",
+      "manual": [
+        328.5,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        328.88655654993886,
+        224.22414383969652
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.4468404941078358,
+      "independent_error_px": 1.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 29,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "gt2",
+      "manual": [
+        359.0,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        359.0422954559197,
+        224.2705789351776
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.2738646851153065,
+      "independent_error_px": 2.0,
+      "decision_agrees": true
+    },
+    {
+      "sample": 30,
+      "case_id": "realistic-svg-focus-ring-qualification-v5a-r1",
+      "stratum": "gt2",
+      "manual": [
+        268.5,
+        224.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        268.01132317004567,
+        223.76065706570193
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.5441416031995903,
+      "independent_error_px": 2.5,
+      "decision_agrees": true
+    },
+    {
+      "sample": 31,
+      "case_id": "realistic-svg-focus-ring-qualification-v5b-r1",
+      "stratum": "le1",
+      "manual": [
+        479.5,
+        280.0
+      ],
+      "manual_contact": "touching",
+      "manual_attached": true,
+      "produced": [
+        479.5000018140226,
+        280.99999989072154
+      ],
+      "produced_occluded": true,
+      "produced_attached": true,
+      "raw_attached": true,
+      "production_error_px": 0.9999998907231853,
+      "independent_error_px": 1.0,
+      "decision_agrees": true
+    }
+  ],
+  "marks_sha256": "f948d0a43f044136dd2697704ec2384c4c5f15daf78bd9793ea7de71c616c838",
+  "sample_manifest_sha256": "63638f92874883f5070cdd93cb9f8392641d7390bbb2a3508ca261a65f6a61de",
+  "reviewer": "blind marker (Sonnet 5.5 subagent)",
+  "producer_sha256": "964c4b30591a65928475d58acb1c37a1f7a9729c342622c63a15b4d810d5db79",
+  "single_scoring_run": true,
+  "tuned_on_these_samples": false,
+  "scope": "Blind endpoint accuracy and attachment decisions at focus rings only; not SVG behavior acceptance."
+}

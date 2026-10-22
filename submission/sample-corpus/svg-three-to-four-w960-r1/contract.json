@@ -1,0 +1,8 @@
+{
+  "event_options": {
+    "connection_tolerance_px": 2.0,
+    "rest_duration_s": 0.25
+  },
+  "min_valid_ratio": 0.95,
+  "require_static_camera": true
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kiroclops"
+version = "0.1.0"
+description = "Measure reference movement, transfer it, and verify the rendered result."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.en.md"
+dependencies = ["opencv-python==5.0.0.93", "numpy==2.2.6"]
+
+[project.optional-dependencies]
+# Headless Chromium capture of web targets (kiroclops.web_local).
+web = ["playwright==1.63.0"]
+# Kiro CLI authoring sessions: MCP server, guard hook, launcher (kiroclops.local_engine).
+kiro = ["mcp==2.2.0", "playwright==1.63.0", "pywin32==312; sys_platform == 'win32'"]
+# Optional AWS analysis service client (kiroclops.cloud) and service deployment (services/).
+cloud = ["boto3>=1.34"]
+# OpenCV 5 learned-feature models are fetched separately: scripts/fetch_opencv5_models.py
+
+[project.scripts]
+kiroclops = "kiroclops.cli:main"
+kiroclops-local = "kiroclops.local_engine.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["kiroclops*"]

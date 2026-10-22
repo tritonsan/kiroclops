@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "experiment_id": "ground-motion-v1",
+  "registered_before_runs": true,
+  "cli_session_ids": ["cli-ground-01", "cli-ground-02", "cli-ground-03"],
+  "ide_session_ids": ["ide-ground-01"],
+  "baseline_session_ids": [],
+  "parent_session_id": "ide-02",
+  "parent_candidate_id": "candidate-01",
+  "model": "claude-opus-5",
+  "effort": "high",
+  "max_candidates": 3,
+  "max_seconds": 1800,
+  "replacement_runs": false,
+  "note": "Registration defines the acceptance cohort before any Phase 2B model call. Failed runs remain failures; engineering probes are separate and contain no controller solution."
+}

@@ -1,0 +1,951 @@
+{
+  "kind": "InspectWindowPostFreezeCheck",
+  "schema_version": 1,
+  "checked_at": "2026-10-22T08:29:28.639526+00:00",
+  "session": "C:\\kc3d\\s\\v6p01",
+  "job_id": "ef4d46e4d3c44a018197c738f83db961",
+  "tolerance": 0.15,
+  "ratio": "inspection rmse_px / scale_px divided by the comparison window position_rmse (1.0 = identical)",
+  "sources": {
+    "current": "3518904b7ef91259cdd19ad145666a3bb716cee44c6e0c23442e76d58421d1ee",
+    "frozen_v6b": "c7637718f87afb04a64c9b714a3b597c1d0d600c3b853e406a765a0b8fd510e7",
+    "script": "b7e447011274db919d06d2b9acafeaaf5ecabbfe3888574489c75c1ab9cedd7b"
+  },
+  "relative_windows": 68,
+  "totals": {
+    "current": {
+      "windows": 102,
+      "errors": 0,
+      "median_ratio": 0.9990937970524885,
+      "within_tolerance": 98,
+      "worst_ratio": 1.602911350323555
+    },
+    "frozen_v6b": {
+      "windows": 102,
+      "errors": 0,
+      "median_ratio": 13.707831187094566,
+      "within_tolerance": 22,
+      "worst_ratio": 79.86587584225163
+    }
+  },
+  "windows": [
+    {
+      "case_id": "realistic-suite-panel-calibration-open-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.0026696113755384416,
+      "current": 0.9527528080847685,
+      "frozen_v6b": 13.393781042052343
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.0017298690146882087,
+      "current": 0.8810870287406897,
+      "frozen_v6b": 0.8810870287406897
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.0028469007566432423,
+      "current": 1.0047545144366186,
+      "frozen_v6b": 7.505023101367444
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.013647406222826779,
+      "current": 0.9971946570094716,
+      "frozen_v6b": 19.62348107821228
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.015345422269055156,
+      "current": 1.0042164450210025,
+      "frozen_v6b": 21.56776961451816
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.011489572082127099,
+      "current": 0.9980577782488607,
+      "frozen_v6b": 0.9980577782488607
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.012950616061242759,
+      "current": 0.998369931792714,
+      "frozen_v6b": 1.0942766830645152
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.012989857191043858,
+      "current": 0.998819516982267,
+      "frozen_v6b": 12.158843913203851
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.014620964882613432,
+      "current": 0.9985457940868673,
+      "frozen_v6b": 13.349918763668303
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.036161595603058,
+      "current": 0.9681379280146538,
+      "frozen_v6b": 19.23615069416862
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.012724401361588618,
+      "current": 0.9958113074939792,
+      "frozen_v6b": 42.129013195634926
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.027996915146070313,
+      "current": 0.9823347281514928,
+      "frozen_v6b": 0.9823347281514928
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.010564986661512928,
+      "current": 0.9939408240453934,
+      "frozen_v6b": 2.006131227446937
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.04479543058343038,
+      "current": 0.8849549504843639,
+      "frozen_v6b": 15.166911409872023
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.013249944573768125,
+      "current": 1.0112699332991586,
+      "frozen_v6b": 39.51069571450879
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.04666452275470239,
+      "current": 0.9963720846691528,
+      "frozen_v6b": 20.104814280149917
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.022907828410441665,
+      "current": 0.8786850997518783,
+      "frozen_v6b": 43.115550671435244
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.011367100269060054,
+      "current": 1.0102045254593772,
+      "frozen_v6b": 70.30434369453775
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.03877770938965461,
+      "current": 1.0123880344573672,
+      "frozen_v6b": 1.0123880344573672
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.03470920685601671,
+      "current": 1.0038709545004496,
+      "frozen_v6b": 1.19094778373494
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "handle",
+      "window_id": "motion-2",
+      "relative_to_reference": null,
+      "position_rmse": 0.015154130717760455,
+      "current": 1.0015720713861163,
+      "frozen_v6b": 2.2078920669493263
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.03208913909007183,
+      "current": 0.8907836030915088,
+      "frozen_v6b": 17.128004524132077
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02172939386894133,
+      "current": 0.9934972978356609,
+      "frozen_v6b": 26.607199845243155
+    },
+    {
+      "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+      "object_id": "star",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.017044994961178176,
+      "current": 1.000891089599288,
+      "frozen_v6b": 27.494732573434877
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02840132695393806,
+      "current": 0.9922925777245734,
+      "frozen_v6b": 12.459653915721166
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.018077521507218402,
+      "current": 1.0025965574821225,
+      "frozen_v6b": 15.961467249481853
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.022475102906232454,
+      "current": 0.9968119737978333,
+      "frozen_v6b": 0.9968119737978333
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.014645703069446186,
+      "current": 0.9967201043035742,
+      "frozen_v6b": 1.2473484833896333
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.03093822149411552,
+      "current": 0.937445251797402,
+      "frozen_v6b": 8.723318372342122
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.016741909452680125,
+      "current": 1.004539864822212,
+      "frozen_v6b": 13.13755597419366
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.028566862199204752,
+      "current": 0.9936231491269535,
+      "frozen_v6b": 14.111302968372636
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.015725973050770958,
+      "current": 0.9990275379191244,
+      "frozen_v6b": 19.86791332977874
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.025542656412459883,
+      "current": 0.9998268754618158,
+      "frozen_v6b": 0.9998268754618158
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.012964284426698225,
+      "current": 1.0028073580428265,
+      "frozen_v6b": 1.5261579039268445
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02552210955868921,
+      "current": 0.9838531646636475,
+      "frozen_v6b": 12.0237024645108
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.014846246123599575,
+      "current": 1.0066349205836358,
+      "frozen_v6b": 16.028632412042384
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.027305581199222297,
+      "current": 0.9893255185765405,
+      "frozen_v6b": 12.501921215327007
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02022910831845484,
+      "current": 0.9251671431256292,
+      "frozen_v6b": 20.061509371652814
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.013385376335211904,
+      "current": 1.0154750768322207,
+      "frozen_v6b": 25.3840267931839
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.021862684157768007,
+      "current": 0.9933450572450223,
+      "frozen_v6b": 0.9933450572450223
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.02956439833401334,
+      "current": 1.0092391307679998,
+      "frozen_v6b": 0.8738052063068483
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-2",
+      "relative_to_reference": null,
+      "position_rmse": 0.015750531299860593,
+      "current": 1.0002366752971907,
+      "frozen_v6b": 1.3741216920334105
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.021846014025805792,
+      "current": 0.9835794052513196,
+      "frozen_v6b": 9.196053800948562
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.022207189728151677,
+      "current": 1.0041218134854772,
+      "frozen_v6b": 10.70632179785475
+    },
+    {
+      "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.016580936269501183,
+      "current": 1.004106930804414,
+      "frozen_v6b": 12.068087233361958
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.023660124757336844,
+      "current": 1.0021380924061478,
+      "frozen_v6b": 29.73048622662848
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.019855941649023913,
+      "current": 1.000378261751157,
+      "frozen_v6b": 1.000378261751157
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.0210998214720078,
+      "current": 1.0025900513268047,
+      "frozen_v6b": 19.80450885819752
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.03763756367586235,
+      "current": 1.008123616487156,
+      "frozen_v6b": 30.460158427487112
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.026894878223920428,
+      "current": 1.005986551212066,
+      "frozen_v6b": 32.56570982871608
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.03128288323170233,
+      "current": 1.012386622094334,
+      "frozen_v6b": 1.012386622094334
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.02324627189095077,
+      "current": 1.0024399545195828,
+      "frozen_v6b": 1.0409006196873742
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.042006881898872465,
+      "current": 0.9629517284163759,
+      "frozen_v6b": 20.769359944983563
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02613494756571976,
+      "current": 1.0046194809631492,
+      "frozen_v6b": 25.50160326732255
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.03706049157784055,
+      "current": 1.0108474168521844,
+      "frozen_v6b": 30.741706281598155
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.023737755157637024,
+      "current": 1.002310363516353,
+      "frozen_v6b": 38.02527285127477
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.031122485425670064,
+      "current": 1.0113629609074943,
+      "frozen_v6b": 1.0113629609074943
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.020642003932667772,
+      "current": 1.0001570258933021,
+      "frozen_v6b": 1.208118298248155
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.043505618303459906,
+      "current": 0.9671599808783152,
+      "frozen_v6b": 19.930914386317927
+    },
+    {
+      "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02285540503721738,
+      "current": 1.0014227201586854,
+      "frozen_v6b": 30.052954843622707
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.035568318589826946,
+      "current": 0.9510999554169233,
+      "frozen_v6b": 12.37967669315515
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.014915804909540241,
+      "current": 1.0005131971991066,
+      "frozen_v6b": 21.61675015128889
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.02472894303647936,
+      "current": 0.980486955319713,
+      "frozen_v6b": 0.980486955319713
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.012848502284978493,
+      "current": 0.9933347656519625,
+      "frozen_v6b": 1.3824981953634776
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.0381891317102281,
+      "current": 0.7529716796466925,
+      "frozen_v6b": 14.988966351344487
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.017791405562204647,
+      "current": 1.022131741793983,
+      "frozen_v6b": 23.578811643926915
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.021111055328616075,
+      "current": 0.973199301226261,
+      "frozen_v6b": 12.368802557146902
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.015864439631332463,
+      "current": 1.0085693112888359,
+      "frozen_v6b": 11.086279700420693
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.014152542487954637,
+      "current": 1.0164848705781566,
+      "frozen_v6b": 1.0164848705781566
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.014334780729867597,
+      "current": 0.9936703851375621,
+      "frozen_v6b": 0.6760674716138394
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.025568658589564218,
+      "current": 0.7578468662223548,
+      "frozen_v6b": 13.27864382300422
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.02065873982732688,
+      "current": 1.0142557007888828,
+      "frozen_v6b": 11.08217713264852
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.04380226447996507,
+      "current": 0.9582846013515827,
+      "frozen_v6b": 32.00456244015841
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.025232942956616683,
+      "current": 1.0076752233294326,
+      "frozen_v6b": 37.15463505690296
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.033626530936346245,
+      "current": 1.0021671635140312,
+      "frozen_v6b": 1.0021671635140312
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.02067577293887842,
+      "current": 1.0053100052718678,
+      "frozen_v6b": 1.0900047332352232
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.047816211033285975,
+      "current": 0.7691179577186822,
+      "frozen_v6b": 38.32366365758906
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.028877420195004444,
+      "current": 1.0173576495847059,
+      "frozen_v6b": 42.44129572197244
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.028824599521614664,
+      "current": 1.110313587785299,
+      "frozen_v6b": 41.685470770911834
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.05087383247008906,
+      "current": 1.0014401968066802,
+      "frozen_v6b": 22.75165404172816
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.0274462824826886,
+      "current": 1.052299560672904,
+      "frozen_v6b": 1.052299560672904
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.01864660241734174,
+      "current": 0.9818269735358742,
+      "frozen_v6b": 1.4907460131032502
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.027396098450199646,
+      "current": 1.602911350323555,
+      "frozen_v6b": 57.11609223335874
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.10766708568567036,
+      "current": 1.0067872247691585,
+      "frozen_v6b": 14.02188133213679
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.04290766503349292,
+      "current": 0.9723419280182786,
+      "frozen_v6b": 29.75276657148645
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.03830645498314764,
+      "current": 0.9178173718602075,
+      "frozen_v6b": 34.40309638088399
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "bookmark",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.015659821511811403,
+      "current": 1.0037516357525524,
+      "frozen_v6b": 74.6132658865105
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.0360005135735418,
+      "current": 0.9894382757815818,
+      "frozen_v6b": 0.9894382757815818
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.034970469823603335,
+      "current": 0.9813690696604106,
+      "frozen_v6b": 1.051489165573991
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "handle",
+      "window_id": "motion-2",
+      "relative_to_reference": null,
+      "position_rmse": 0.017622712052127378,
+      "current": 0.9991600561858527,
+      "frozen_v6b": 1.8502008749255623
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.042702343094834026,
+      "current": 0.8933778187692341,
+      "frozen_v6b": 17.591103080239442
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.026341381748560915,
+      "current": 0.9698955515151791,
+      "frozen_v6b": 29.437239249471215
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "object_id": "star",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.018649829411904687,
+      "current": 1.0033699985984508,
+      "frozen_v6b": 36.860353017257125
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.041434330585202746,
+      "current": 0.9766014243714886,
+      "frozen_v6b": 30.811182684557078
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.03517157943036228,
+      "current": 0.9186177461697467,
+      "frozen_v6b": 37.44132226543798
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "bookmark",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.015394637220880329,
+      "current": 1.0031845285640653,
+      "frozen_v6b": 79.86587584225163
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-0",
+      "relative_to_reference": null,
+      "position_rmse": 0.0359380677021428,
+      "current": 0.9911901247328292,
+      "frozen_v6b": 0.9911901247328292
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-1",
+      "relative_to_reference": null,
+      "position_rmse": 0.03371255103134492,
+      "current": 1.0063184294695873,
+      "frozen_v6b": 1.0899276423995707
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "handle",
+      "window_id": "motion-2",
+      "relative_to_reference": null,
+      "position_rmse": 0.017075508719145687,
+      "current": 0.9976060049409509,
+      "frozen_v6b": 2.009349639222333
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-0",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.034286173116486754,
+      "current": 0.9070476581243423,
+      "frozen_v6b": 21.933677369895054
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-1",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.024319935035208642,
+      "current": 0.9873242643886296,
+      "frozen_v6b": 31.89364920058063
+    },
+    {
+      "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "object_id": "star",
+      "window_id": "motion-2",
+      "relative_to_reference": "handle",
+      "position_rmse": 0.017769648653539673,
+      "current": 1.0015427937354824,
+      "frozen_v6b": 40.76311438401365
+    }
+  ]
+}

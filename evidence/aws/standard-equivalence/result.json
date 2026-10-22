@@ -1,0 +1,513 @@
+{
+  "kind": "V6AwsServiceEquivalence",
+  "checked_at": "2026-10-19T13:30:43.569475+00:00",
+  "deployment": {
+    "schema_version": 1,
+    "run": "phase3b-service-20261019131037",
+    "stack": "phase3b-service-20261019131037",
+    "bucket": "kiroclops-probe-002071550319-phase3b-service-20261019131037",
+    "region": "us-east-1",
+    "purpose": "internal-jwt-e2e",
+    "created_at": "2026-10-19T13:10:37.288120+00:00",
+    "stack_id": "arn:aws:cloudformation:us-east-1:<account>:stack/phase3b-service-20261019131037/895dd9d0-cbbe-11f1-92e7-0e8d22d250ef",
+    "ami": "ami-0d0f26d09ffd9af92",
+    "status": "creating",
+    "bundle_sha256": "1ac7251e9dd31b138d9894c397606ff4c3b9dd31b7e893a1b0ece1ceaeea8537",
+    "api_sha256": "02b90ff6ae3b4f75d9cd754af100e8d3e8f47a9306627e8f8fc662de4fd129eb",
+    "Table": "phase3b-service-20261019131037-Table-GK3S4SHMJ7B9",
+    "ApiUrl": "https://n4besu96l1.execute-api.us-east-1.amazonaws.com",
+    "InstanceId": "i-09bf08b256a4fa75b",
+    "AgentClient": "7kuev8o4k0rjped6pt945do2sc",
+    "Pool": "us-east-1_J688m9xGJ",
+    "Client": "3tv7onn8j0on8716a1g72g4gan",
+    "Controller": "phase3b-service-20261019131037-Controller-Owc4rGZ8WzCH",
+    "Queue": "https://sqs.us-east-1.amazonaws.com/002071550319/phase3b-service-20261019131037-Queue-ycaGi0G0zew5",
+    "GuardName": "phase3b-service-20261019131037-Guard-YRLkvp3rG1Ia",
+    "stack_status": "CREATE_COMPLETE"
+  },
+  "status": "fail",
+  "equivalent": 17,
+  "recordings": 17,
+  "exact": 0,
+  "analysis_sources_match": false,
+  "local_engine": {
+    "schema_version": 1,
+    "opencv_version": "5.0.0",
+    "numpy_version": "2.2.6",
+    "python_version": "3.10.11",
+    "architecture": "AMD64",
+    "system": "Windows",
+    "build_information_sha256": "f71df2f163323276b66a0c26f605490476e207bf50042bae19501cff4f1d865a",
+    "threads": 4,
+    "opencl_enabled": true,
+    "optimized": true,
+    "native_libraries": {
+      "cv2.pyd": "f1e76ab01cf4d33af780adf8ada1a26c5eaeecc55d2cbe8a5e288195e8f9b0dd",
+      "opencv_videoio_ffmpeg500_64.dll": "7aabff029d1fa47cf56ede4dbbe05dc62da3208f07cd16471d4c966a33f9aa31"
+    },
+    "mapped_libraries": {}
+  },
+  "remote_engine_sha256": "c4d6613b43d63df935aafc746bce33fe615e25b91d399ce0085ea02c16923226",
+  "rows": [
+    {
+      "id": "reference/realistic-suite-panel-calibration-interrupt-w960-r1",
+      "job_id": "15ab37252c491fd2ca897c908d1480b1",
+      "status": "succeeded",
+      "end_to_end_seconds": 18.75,
+      "local_seconds": 3.797,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-open-close-w960-r1",
+      "job_id": "51210211dc444cad445b271b02bdd8ac",
+      "status": "succeeded",
+      "end_to_end_seconds": 23.906,
+      "local_seconds": 4.25,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-open-w960-r1",
+      "job_id": "e9bd2eeffe2cb883c82d394a9b77d7c1",
+      "status": "succeeded",
+      "end_to_end_seconds": 19.422,
+      "local_seconds": 4.015,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-reverse-w960-r1",
+      "job_id": "5c39598b2b3358f36ecaa10b44005d92",
+      "status": "succeeded",
+      "end_to_end_seconds": 23.203,
+      "local_seconds": 4.641,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "job_id": "bb380b39952f8dea11876d5742c0b4ec",
+      "status": "succeeded",
+      "end_to_end_seconds": 17.89,
+      "local_seconds": 3.563,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "job_id": "6bdcb921e1e5fbdbec393e61e755e190",
+      "status": "succeeded",
+      "end_to_end_seconds": 17.031,
+      "local_seconds": 3.625,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "job_id": "26f18ecab83d537171f7c9e492c3ba16",
+      "status": "succeeded",
+      "end_to_end_seconds": 22.953,
+      "local_seconds": 4.547,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "job_id": "860a88898ea9ec1c86fb2fc918033707",
+      "status": "succeeded",
+      "end_to_end_seconds": 21.437,
+      "local_seconds": 4.094,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "job_id": "2854811afbeea49a97c93137dc77a318",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.11,
+      "local_seconds": 3.781,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "job_id": "7553e8fb0a104666a7749db77e2d1b0f",
+      "status": "succeeded",
+      "end_to_end_seconds": 22.375,
+      "local_seconds": 4.187,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "job_id": "4dc98f839f6062413a51196696f45966",
+      "status": "succeeded",
+      "end_to_end_seconds": 21.172,
+      "local_seconds": 4.25,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "job_id": "ad53a350a7f256d94923416d35cf4133",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.219,
+      "local_seconds": 4.219,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "job_id": "6ee0bd6d86db011a90c723dbe8f38068",
+      "status": "succeeded",
+      "end_to_end_seconds": 18.016,
+      "local_seconds": 4.484,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "job_id": "46d65851c68d5217ceca266fe3ecc434",
+      "status": "succeeded",
+      "end_to_end_seconds": 33.5,
+      "local_seconds": 4.328,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "job_id": "1bd2ed6491660eab5f36a7b418354a4b",
+      "status": "succeeded",
+      "end_to_end_seconds": 54.328,
+      "local_seconds": 5.891,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "job_id": "1ecb1eb678223271e28f8f9c0eac0410",
+      "status": "succeeded",
+      "end_to_end_seconds": 32.203,
+      "local_seconds": 5.359,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    },
+    {
+      "id": "kiro-candidate-02/realistic-suite-panel-calibration-reverse-w960-r1",
+      "job_id": "23cfd02371f597e72fb40b079cfb1079",
+      "status": "succeeded",
+      "end_to_end_seconds": 23.735,
+      "local_seconds": 5.156,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": true,
+        "differences": []
+      },
+      "remote_opencv_version": "5.0.0"
+    }
+  ],
+  "scope": "Cross-engine measurement equivalence of frozen V6 recordings. No acceptance, movement-threshold or Kiro claim. Phase 4 AWS addition after the V6 freeze."
+}

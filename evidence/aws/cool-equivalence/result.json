@@ -1,0 +1,1128 @@
+{
+  "kind": "V6AwsServiceEquivalence",
+  "checked_at": "2026-10-20T07:26:10.701417+00:00",
+  "deployment": {
+    "schema_version": 1,
+    "run": "phase3b-service-20261020070448",
+    "stack": "phase3b-service-20261020070448",
+    "bucket": "kiroclops-probe-002071550319-phase3b-service-20261020070448",
+    "region": "us-east-1",
+    "purpose": "internal-jwt-e2e-cool",
+    "created_at": "2026-10-20T07:04:48.890201+00:00",
+    "stack_id": "arn:aws:cloudformation:us-east-1:<account>:stack/phase3b-service-20261020070448/9a48fdb0-cc54-11f1-bfca-12ffe154840b",
+    "ami": "ami-033e481a24f94c8cb",
+    "status": "creating",
+    "bundle_sha256": "1ac7251e9dd31b138d9894c397606ff4c3b9dd31b7e893a1b0ece1ceaeea8537",
+    "api_sha256": "02b90ff6ae3b4f75d9cd754af100e8d3e8f47a9306627e8f8fc662de4fd129eb",
+    "engine": "cool-marketplace",
+    "ami_name": "Graviton5-COOL-v3-prod-k6u24vxijyzvg",
+    "ami_product_code": "aajkmdd4qo3r7yhqg61a7aah9",
+    "Table": "phase3b-service-20261020070448-Table-DB2DJOINA730",
+    "ApiUrl": "https://4l79q0xkcc.execute-api.us-east-1.amazonaws.com",
+    "InstanceId": "i-0b329c7ef88f87cd0",
+    "AgentClient": "1jklnal3847jde9r8o3puuo5u3",
+    "Pool": "us-east-1_YRLT4ou6V",
+    "Client": "468ni7moc6o9932lv19dna7i4t",
+    "Controller": "phase3b-service-20261020070448-Controller-QQtg4LQJJX4y",
+    "Queue": "https://sqs.us-east-1.amazonaws.com/002071550319/phase3b-service-20261020070448-Queue-AGWSR1LgGZ2r",
+    "GuardName": "phase3b-service-20261020070448-Guard-ohKQzFI7YbKj",
+    "stack_status": "CREATE_COMPLETE"
+  },
+  "status": "fail",
+  "equivalent": 0,
+  "recordings": 17,
+  "exact": 0,
+  "analysis_sources_match": true,
+  "local_engine": {
+    "schema_version": 1,
+    "opencv_version": "5.0.0",
+    "numpy_version": "2.2.6",
+    "python_version": "3.10.11",
+    "architecture": "AMD64",
+    "system": "Windows",
+    "build_information_sha256": "f71df2f163323276b66a0c26f605490476e207bf50042bae19501cff4f1d865a",
+    "threads": 4,
+    "opencl_enabled": true,
+    "optimized": true,
+    "native_libraries": {
+      "cv2.pyd": "f1e76ab01cf4d33af780adf8ada1a26c5eaeecc55d2cbe8a5e288195e8f9b0dd",
+      "opencv_videoio_ffmpeg500_64.dll": "7aabff029d1fa47cf56ede4dbbe05dc62da3208f07cd16471d4c966a33f9aa31"
+    },
+    "mapped_libraries": {}
+  },
+  "remote_engine_sha256": "da9c4d3f27750178d3deef4082421459372b478ccdf89734c668b12655c30d18",
+  "rows": [
+    {
+      "id": "reference/realistic-suite-panel-calibration-interrupt-w960-r1",
+      "job_id": "e21f78158c5931333bb9cbaa78b209db",
+      "status": "succeeded",
+      "end_to_end_seconds": 17.891,
+      "local_seconds": 3.328,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-open-close-w960-r1",
+      "job_id": "62b509ef4693301cb8ec4de1e5d4ea16",
+      "status": "succeeded",
+      "end_to_end_seconds": 22.281,
+      "local_seconds": 4.172,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-open-w960-r1",
+      "job_id": "02a0bcaffed704ee2e65894e5179830b",
+      "status": "succeeded",
+      "end_to_end_seconds": 19.125,
+      "local_seconds": 3.453,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-reverse-w960-r1",
+      "job_id": "a2d9772eebcab76ed0bb73ae462517d2",
+      "status": "succeeded",
+      "end_to_end_seconds": 22.156,
+      "local_seconds": 4.36,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "job_id": "bd2bfaedcdf597ef309a3e34bbd55bee",
+      "status": "succeeded",
+      "end_to_end_seconds": 32.797,
+      "local_seconds": 3.25,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "job_id": "2b6040f0bec278c44b88e02b5a3af6e0",
+      "status": "succeeded",
+      "end_to_end_seconds": 17.171,
+      "local_seconds": 3.234,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "job_id": "60d1e1e7dec87f86cd1514dcac8c69a2",
+      "status": "succeeded",
+      "end_to_end_seconds": 29.968,
+      "local_seconds": 4.187,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "job_id": "567043948d37640e6a73b3d64079af42",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.485,
+      "local_seconds": 3.578,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "job_id": "67692f40e48e860455796fa420433996",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.422,
+      "local_seconds": 3.531,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "job_id": "136c9a651a9a54b4b3f2bae55d812d10",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.657,
+      "local_seconds": 3.719,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "job_id": "97343b3d573a5ae0ea15051a33f4e9e8",
+      "status": "succeeded",
+      "end_to_end_seconds": 21.219,
+      "local_seconds": 3.625,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "job_id": "77eea1469a61ff62302b1c082678ec2d",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.281,
+      "local_seconds": 3.594,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "job_id": "ba251adaee491d7cf4b501e377692cda",
+      "status": "succeeded",
+      "end_to_end_seconds": 17.25,
+      "local_seconds": 3.203,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "job_id": "47122122461f2c7f41eb0e0bfb4d855a",
+      "status": "succeeded",
+      "end_to_end_seconds": 20.953,
+      "local_seconds": 3.219,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "job_id": "31f73dbdcf0e37b6d52a9c1ba016e749",
+      "status": "succeeded",
+      "end_to_end_seconds": 26.812,
+      "local_seconds": 4.688,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "job_id": "36a2bf11b1fda2b5dcd696ed37a0ceaa",
+      "status": "succeeded",
+      "end_to_end_seconds": 27.891,
+      "local_seconds": 4.75,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    },
+    {
+      "id": "kiro-candidate-02/realistic-suite-panel-calibration-reverse-w960-r1",
+      "job_id": "520a2ab901d9f02da31eea1420728dc6",
+      "status": "succeeded",
+      "end_to_end_seconds": 22.391,
+      "local_seconds": 4.344,
+      "equivalence": {
+        "policy": {
+          "id": "engine-equivalence-v1",
+          "numeric_absolute_tolerance": 5e-05,
+          "numeric_relative_tolerance": 1e-06,
+          "maximum_recorded_differences": 30,
+          "exact_fields": "All categorical, validity, object, event and frame identities",
+          "provenance_fields_excluded": [
+            "opencv_version",
+            "observation_sha256",
+            "event_sha256"
+          ],
+          "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+        },
+        "policy_sha256": "35fbe3e76b8a90ceb964f2caaf3a0848a9987678aab6c22fb253e23cb0607859",
+        "exact": false,
+        "equivalent": false,
+        "differences": [
+          {
+            "path": "/observations/opencv_runtime/modules",
+            "reason": "different_length"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/15",
+            "left": "video",
+            "right": "ts"
+          },
+          {
+            "path": "/observations/opencv_runtime/modules/16",
+            "left": "videoio",
+            "right": "video"
+          },
+          {
+            "path": "/observations/opencv_runtime/version",
+            "left": "5.0.0",
+            "right": "5.1.0-dev"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/ci_build",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/contrib",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/headless",
+            "reason": "missing_field"
+          },
+          {
+            "path": "/observations/opencv_runtime/wheel/rolling",
+            "reason": "missing_field"
+          }
+        ]
+      },
+      "remote_opencv_version": "5.1.0-dev"
+    }
+  ],
+  "scope": "Cross-engine measurement equivalence of frozen V6 recordings. No acceptance, movement-threshold or Kiro claim. Phase 4 AWS addition after the V6 freeze."
+}

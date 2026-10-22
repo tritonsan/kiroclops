@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "fps": 60,
+  "warmup_ticks": 60,
+  "start_tick": 30,
+  "frame_count": 240,
+  "calibration_hold_ticks": [3, 24],
+  "validation_hold_ticks": [8, 14],
+  "repeats": 3,
+  "validation_spawn_offsets": [0, 24],
+  "acceptance": {
+    "valid_ratio": 0.95,
+    "control_points_per_game": 20,
+    "position_median_px_floor": 1,
+    "position_median_body_fraction": 0.05,
+    "event_error_frames": 2,
+    "curve_rmse_body": 0.15,
+    "minimum_improvement": 0.5,
+    "height_relative_error": 0.1,
+    "duration_relative_error": 0.1
+  }
+}

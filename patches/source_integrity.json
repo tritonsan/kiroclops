@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "vendor": {
+    "tiny": {
+      "head": "c9b835c46ac5a98cf2aaaa0ee824378af14ff003",
+      "expected_head": "c9b835c46ac5a98cf2aaaa0ee824378af14ff003",
+      "clean": true,
+      "matches_pin": true,
+      "status_output": ""
+    },
+    "slay": {
+      "head": "6944ec4c323dcbad470ff7654fec665f010f50d1",
+      "expected_head": "6944ec4c323dcbad470ff7654fec665f010f50d1",
+      "clean": true,
+      "matches_pin": true,
+      "status_output": ""
+    }
+  },
+  "changed_game_source_files": {
+    "tiny": [],
+    "slay-before": [],
+    "slay-after": [
+      "source/characters/player/player.gd",
+      "source/characters/player/state_machine/states/jump.gd"
+    ]
+  },
+  "fixture_vs_normal": {
+    "before": {
+      "fixture_manifest": "artifacts/runs/slay-before-h03-x0-r1/manifest.json",
+      "normal_manifest": "artifacts/normal/slay-before-h03/manifest.json",
+      "same_controller_hashes": true,
+      "controller_hashes": {
+        "source/characters/player/player.gd": "edc2758c07b2d3a8003d485dad7c02f371836995260c75f2457a0feff1eaf828",
+        "source/characters/player/state_machine/states/appear.gd": "7d5acf1c2c7addb70d1f8abc54d326909cde9d829b9d7d382694764f28825cbb",
+        "source/characters/player/state_machine/states/double_jump.gd": "4c4e10af13c9449d9d12fbfa0bd463f4738daa09270aa8fb67b411291cddab1f",
+        "source/characters/player/state_machine/states/fall.gd": "0740357b92b2cbfb33aa5063acd2e56f3861a165d8375d859729771d9bde712e",
+        "source/characters/player/state_machine/states/hit.gd": "1ffabef503211081ad305a027ed543f13db9eb2589d176782539de33c3adac01",
+        "source/characters/player/state_machine/states/idle.gd": "f74d45f1c14586c173cdd26a51d09b6f30d37b57b4f6826d55dba8c2330cb60e",
+        "source/characters/player/state_machine/states/jump.gd": "87dde99aee83bd4649554535b040ab08b74b6a1ac5d5ba1182e5ab17f7731c6b",
+        "source/characters/player/state_machine/states/run.gd": "aa6685d47671ddc1998fe06534c173dbacd0655e49b7f8e6be20ed23caa4d40a",
+        "source/characters/player/state_machine/states/wall_jump.gd": "79634fc5c7c71db1b69df1e3dc32c7a87e31226742a2bddda1f6087375a3b47e"
+      }
+    },
+    "after": {
+      "fixture_manifest": "artifacts/runs/slay-after-h03-x0-r1/manifest.json",
+      "normal_manifest": "artifacts/normal/slay-after-h24-final/manifest.json",
+      "same_controller_hashes": true,
+      "controller_hashes": {
+        "source/characters/player/player.gd": "b38643169361598cf5cc0bddf89b529f28d3bea4d44822afa0f51a3806853f96",
+        "source/characters/player/state_machine/states/appear.gd": "7d5acf1c2c7addb70d1f8abc54d326909cde9d829b9d7d382694764f28825cbb",
+        "source/characters/player/state_machine/states/double_jump.gd": "4c4e10af13c9449d9d12fbfa0bd463f4738daa09270aa8fb67b411291cddab1f",
+        "source/characters/player/state_machine/states/fall.gd": "0740357b92b2cbfb33aa5063acd2e56f3861a165d8375d859729771d9bde712e",
+        "source/characters/player/state_machine/states/hit.gd": "1ffabef503211081ad305a027ed543f13db9eb2589d176782539de33c3adac01",
+        "source/characters/player/state_machine/states/idle.gd": "f74d45f1c14586c173cdd26a51d09b6f30d37b57b4f6826d55dba8c2330cb60e",
+        "source/characters/player/state_machine/states/jump.gd": "9ac79f666b7e633512ec11df212b3656b0e2831f71fa72a203c50d2ccf514b8f",
+        "source/characters/player/state_machine/states/run.gd": "aa6685d47671ddc1998fe06534c173dbacd0655e49b7f8e6be20ed23caa4d40a",
+        "source/characters/player/state_machine/states/wall_jump.gd": "79634fc5c7c71db1b69df1e3dc32c7a87e31226742a2bddda1f6087375a3b47e"
+      }
+    }
+  },
+  "scope_note": "Work project settings, import caches and added capture scenes are setup changes; original game source comparison covers gd/gdshader/tscn/tres under src or source."
+}

@@ -1,0 +1,216 @@
+{
+  "kind": "CalibrationBenchmark",
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "game-before-h03",
+      "domain": "game",
+      "split": "calibration",
+      "package": "game-before-h03/package",
+      "package_sha256": "12fbc46a5cd1e9c3ec3fc3647ad6f1626334ebac3b7129e369616162e48cc4e2",
+      "selection_sha256": "1bb797c247ce4c207a5b0dc9ea67fa09d8db274d686d9e3f964470520646ff55",
+      "contract_sha256": "52c2139aa8c666b0c04049f7326de8208602a71e1881e6ad07f836bec7710f14",
+      "historical_sha256": "6b1758e81283a1295d6fb46c0d963f62af233510446f4cb4c87a348d82d2c9d1",
+      "frame_count": 240,
+      "image_size": [
+        320,
+        180
+      ],
+      "bytes": 224596
+    },
+    {
+      "id": "game-before-h24",
+      "domain": "game",
+      "split": "calibration",
+      "package": "game-before-h24/package",
+      "package_sha256": "977310b8381db5e4071e5066cc009f0d3bebdcfadf94254f18f043cb74beddc9",
+      "selection_sha256": "1bb797c247ce4c207a5b0dc9ea67fa09d8db274d686d9e3f964470520646ff55",
+      "contract_sha256": "52c2139aa8c666b0c04049f7326de8208602a71e1881e6ad07f836bec7710f14",
+      "historical_sha256": "1dc5afe988b57c9c810a7fed4abb338a588cf2d59fccc832fe55f5c7b78959d2",
+      "frame_count": 240,
+      "image_size": [
+        320,
+        180
+      ],
+      "bytes": 224872
+    },
+    {
+      "id": "game-reference-h03",
+      "domain": "game",
+      "split": "calibration",
+      "package": "game-reference-h03/package",
+      "package_sha256": "288ba479cd3449823215151291718662028bad746501895284cac8a3f9498cec",
+      "selection_sha256": "5b97b3e4c5ca4814ad0bfa9af82671a0566c7cd5daaaa570016f998956667128",
+      "contract_sha256": "9405bc71cce82517d350219116bd9d3e52d0edc5f83ce90883ad0e2f2e947cc7",
+      "historical_sha256": "266f89134d32f74b10da852ecb7e9a41792dbe03d1379dae04a9bf14d6c85b8d",
+      "frame_count": 240,
+      "image_size": [
+        228,
+        128
+      ],
+      "bytes": 84867
+    },
+    {
+      "id": "game-reference-h24",
+      "domain": "game",
+      "split": "calibration",
+      "package": "game-reference-h24/package",
+      "package_sha256": "1f2d4277770e436899bc886105d196d337cd941cb51944fc89dfcc9d3ee82c44",
+      "selection_sha256": "5b97b3e4c5ca4814ad0bfa9af82671a0566c7cd5daaaa570016f998956667128",
+      "contract_sha256": "9405bc71cce82517d350219116bd9d3e52d0edc5f83ce90883ad0e2f2e947cc7",
+      "historical_sha256": "f84fcef7a76866b367750f086b37f15ba4eebe54fad66f7fe96e1c1ce3dffbb8",
+      "frame_count": 240,
+      "image_size": [
+        228,
+        128
+      ],
+      "bytes": 85137
+    },
+    {
+      "id": "panel-open-close-w960-r1",
+      "domain": "panel",
+      "split": "calibration",
+      "package": "panel-open-close-w960-r1/package",
+      "package_sha256": "66880b055b759431cd0d98d1e3056612aa3699d84c537cee395dc509ff82007f",
+      "selection_sha256": "cb0933400556ec035c14556d0354fc390780155df413fa0e3f1eb16ca3f286ec",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "0890057b5a3d27f9aed901b8952aebbf50c86a61bc69b838aba69df592da4fdc",
+      "frame_count": 212,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 14719256
+    },
+    {
+      "id": "panel-open-close-w960-r2",
+      "domain": "panel",
+      "split": "calibration",
+      "package": "panel-open-close-w960-r2/package",
+      "package_sha256": "7cec318c9583df5007a0c628606f9d3f131653d84aafdc6243d1abaf11e48205",
+      "selection_sha256": "83098f88135fd8db246df64f997cbf8977624f0ee58fc5d8ff550deb75d39392",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "34b856cdc9a33726a4ca1f847ba0337634646ac73b62ec88e871a404e2cd5eae",
+      "frame_count": 212,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 14722769
+    },
+    {
+      "id": "panel-open-w960-r1",
+      "domain": "panel",
+      "split": "calibration",
+      "package": "panel-open-w960-r1/package",
+      "package_sha256": "8eea29b96b809f38493210f5b2c32768c104add0915367db8566d2357bba02ee",
+      "selection_sha256": "7b7d858463778265dd3ac4825b3957b6c4de9ee211e0687d442e98bd2618afbf",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "3c6d37192f6540fe0a40a341de708c5a96360edef55f5930641d48b410d593dc",
+      "frame_count": 164,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 11076375
+    },
+    {
+      "id": "panel-open-w960-r2",
+      "domain": "panel",
+      "split": "calibration",
+      "package": "panel-open-w960-r2/package",
+      "package_sha256": "78080acc707c1f8c8e5e6696cf7c78e5d84f319fb1f8308b15f34f7d01a9be16",
+      "selection_sha256": "5f4c4fcf1af39245c8086b41436a96610e6e8ef0400414423ff9610fd0f34d4a",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "ed164168271728b3171e6de7970da1803174c2cfc59fd14325788bd937a306b5",
+      "frame_count": 164,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 11075666
+    },
+    {
+      "id": "svg-four-to-three-w960-r1",
+      "domain": "svg",
+      "split": "calibration",
+      "package": "svg-four-to-three-w960-r1/package",
+      "package_sha256": "d6bcbd8ada4a0031eae7782db0ff209978bd1eddb53f93daac5313cee0950f68",
+      "selection_sha256": "32487bc6c7371fec63e65c9f126365f7f69ad00c91cbf95d750cf3fd6523923c",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "57d1c46e22388b5d2bfb9478e40ef2eb4d38856cfb5b037b16200c6a8c2fec33",
+      "frame_count": 180,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 6587834
+    },
+    {
+      "id": "svg-four-to-three-w960-r2",
+      "domain": "svg",
+      "split": "calibration",
+      "package": "svg-four-to-three-w960-r2/package",
+      "package_sha256": "195fb4dca239daa7ca8e45dc03e5fcd8dfbbc1566226384813d92bedec17ad4b",
+      "selection_sha256": "75f7472497ae3e9450fae7044233115f0c380501cb47a3f98cf34c509c0b889c",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "d26486c6322c1998fc45a202624dc20db5238ae61afbe06c590f488317913bd2",
+      "frame_count": 180,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 6587747
+    },
+    {
+      "id": "svg-three-to-four-w960-r1",
+      "domain": "svg",
+      "split": "calibration",
+      "package": "svg-three-to-four-w960-r1/package",
+      "package_sha256": "5301f29b2041109e7a134f5ee79155f1282fe21a2a14d72b5f5b8d3cd1c6d179",
+      "selection_sha256": "ee40cdb12968135ffbc22a1c4633f6e75470cb90adae506265a4a86984e6b45a",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "10a264c4a1f2309eead0cd3bef4c4f274719add07f94bd648158a4793a559bf8",
+      "frame_count": 180,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 6897909
+    },
+    {
+      "id": "svg-three-to-four-w960-r2",
+      "domain": "svg",
+      "split": "calibration",
+      "package": "svg-three-to-four-w960-r2/package",
+      "package_sha256": "aafb867f4c29430fb69e11a953de48bdbdeaa53233c4044e0763b39053c97111",
+      "selection_sha256": "a7611df581bb8d706843fc4cad4ea814051033a6f68996d9f672fbdb9fbf3da6",
+      "contract_sha256": "1e43e7f52d375e3b7cae8cf9f372f83a706dc0d7777d66d6adb27888f22fcb04",
+      "historical_sha256": "33ddfb285805ba55e0ae43202dcc3a12aa1c3ffc47664673390742cb186fa2d9",
+      "frame_count": 181,
+      "image_size": [
+        960,
+        640
+      ],
+      "bytes": 6940308
+    }
+  ],
+  "analysis_sources": {
+    "kiroclops/visual/__init__.py": "d128ee7da1e1f0f1b600f7cec657eef56354b20fc2957853c68a0d9047e93b11",
+    "kiroclops/visual/comparison.py": "4137b5b37fb607b4817ec6cc3e3e20b8696b700287d2c2984eb9a8111b478f4d",
+    "kiroclops/visual/compat.py": "38ebb697dccaa6b060ec5b27b0c53d23ddcdc47c7fd3d56159b17f71e35abec2",
+    "kiroclops/visual/events.py": "3ff3aa0cb6f2eac31ed8326aa219bff702a96c170a9ddd8dc3308d65c4a09924",
+    "kiroclops/visual/package.py": "0f8a52ccab3ebd8e51f1c347ef1af215843cb744409895059cf13a2a419a9d97",
+    "kiroclops/visual/pixel_anchor.py": "42c164cbf835365fc509bb66e4add224cd44cd66b63804e380f49a975d450570",
+    "kiroclops/visual/polyline.py": "08d4282f9126ff4c511deff35adff7fe7dcde777e0b706ec669fb3ef31c7518d",
+    "kiroclops/visual/schema.py": "5c19d709141ca0bde6d0e3cf4150af81b34b2a3fe922cdf8f1d00f99cb679bbd",
+    "kiroclops/visual/selection.py": "a4c292da65c3164d3e71c5f67173973da39e53a64b53561a501adccf86b97012",
+    "kiroclops/visual/tracking.py": "b6e369575551d6972aa5886293acfffcac56a6e2f981a28a05c4b8f4397daebe",
+    "kiroclops/visual/visibility.py": "678317f8d47438eac7ca449981701ecdd884b3ecc7dbfa02196c1e4b3847558d"
+  },
+  "analysis_sources_sha256": "308629867290f9d51342159c39b8b96b4a7568ec97e2622f97d4a99599689a7f",
+  "selection_policy": "Registered calibration only; first native repeat for reference/target, all four web calibration clips",
+  "package_policy": "PNG bytes/times/inputs unchanged; provenance metadata removed; hash bindings rebased",
+  "index_for_recommendations": false,
+  "corpus_sha256": "174e587f52d342bdd0f69a189ba480d374529a3890c8f8c6d0aa6c75d129ad1d"
+}

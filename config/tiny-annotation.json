@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "template_run": "D:\\Amazon Developer Hackathon\\artifacts\\calibration\\tiny-h03-r1",
+  "template_frame": 0,
+  "roi": [
+    116,
+    105,
+    6,
+    3
+  ],
+  "anchor_offset": [
+    1,
+    2
+  ],
+  "body_height_px": 7,
+  "background_rois": [
+    [
+      16,
+      108,
+      24,
+      16
+    ]
+  ],
+  "min_score": 0.75,
+  "min_margin": 0.03,
+  "template_rotations": [
+    0
+  ],
+  "control_points": [
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "frame_index": 0,
+      "x": 117,
+      "y": 107,
+      "source": "assistant_visual",
+      "frame_sha256": "c579575dbb1ad977414f0282392bcb7023fb3bd33acc9632844ee4200a784be4",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "frame_index": 30,
+      "x": 117,
+      "y": 104,
+      "source": "assistant_visual",
+      "frame_sha256": "5b95d27c2c05fa82b447439c6b1aaa3812c58e09484907ac241ec877c9ee52cd",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "frame_index": 36,
+      "x": 117,
+      "y": 97,
+      "source": "assistant_visual",
+      "frame_sha256": "649bb450dc9bbc68b61524d1a9b9e98f9dbe20cbeceb8d87487dbfb8104b6703",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "frame_index": 42,
+      "x": 117,
+      "y": 98,
+      "source": "assistant_visual",
+      "frame_sha256": "72cb2f93c3f848a5f0e29b8c0475dd1d4a3bb10d0652cd7ada4cb7b95e154200",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "frame_index": 49,
+      "x": 117,
+      "y": 106,
+      "source": "assistant_visual",
+      "frame_sha256": "5db23ec3ae7ccebc02263568a182679b7e18f3508f0a3c095514c8cddfcce1ff",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "frame_index": 0,
+      "x": 117,
+      "y": 107,
+      "source": "assistant_visual",
+      "frame_sha256": "c579575dbb1ad977414f0282392bcb7023fb3bd33acc9632844ee4200a784be4",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "frame_index": 33,
+      "x": 117,
+      "y": 99,
+      "source": "assistant_visual",
+      "frame_sha256": "3b83527508a243dd803f8231f337e3480610420fc0c038fbf61e17afd84ab245",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "frame_index": 45,
+      "x": 117,
+      "y": 83,
+      "source": "assistant_visual",
+      "frame_sha256": "5d08e6ebc384e26670ef59aa038a36638a58ae6d8d2dd3dc8a1bc198fa21dac7",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "frame_index": 55,
+      "x": 117,
+      "y": 78,
+      "source": "assistant_visual",
+      "frame_sha256": "ccd456c8578c0ad6ee95684ec5da550cd48129693bb4b3156c61ec96fe1af2d1",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "frame_index": 65,
+      "x": 117,
+      "y": 93,
+      "source": "assistant_visual",
+      "frame_sha256": "c536f7ab30ebbe184ce82ebd0beb0dfa67d1ad2fde5b8040bd809eac58f20c51",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h08-x0-r1",
+      "frame_index": 0,
+      "x": 117,
+      "y": 107,
+      "source": "assistant_visual",
+      "frame_sha256": "c579575dbb1ad977414f0282392bcb7023fb3bd33acc9632844ee4200a784be4",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h08-x0-r1",
+      "frame_index": 33,
+      "x": 117,
+      "y": 99,
+      "source": "assistant_visual",
+      "frame_sha256": "3b83527508a243dd803f8231f337e3480610420fc0c038fbf61e17afd84ab245",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h08-x0-r1",
+      "frame_index": 42,
+      "x": 117,
+      "y": 90,
+      "source": "assistant_visual",
+      "frame_sha256": "1e9bf3a6c1234e372461b20ac7cd96a34fe262a1c78e81384261039fc5edfce7",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h08-x0-r1",
+      "frame_index": 50,
+      "x": 117,
+      "y": 94,
+      "source": "assistant_visual",
+      "frame_sha256": "70595db5a5cc4b42f8bcc155b6ec374485c234e27628bfb97a946bc84de87b33",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h08-x0-r1",
+      "frame_index": 60,
+      "x": 117,
+      "y": 106,
+      "source": "assistant_visual",
+      "frame_sha256": "5db23ec3ae7ccebc02263568a182679b7e18f3508f0a3c095514c8cddfcce1ff",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h14-x0-r1",
+      "frame_index": 0,
+      "x": 117,
+      "y": 107,
+      "source": "assistant_visual",
+      "frame_sha256": "c579575dbb1ad977414f0282392bcb7023fb3bd33acc9632844ee4200a784be4",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h14-x0-r1",
+      "frame_index": 33,
+      "x": 117,
+      "y": 99,
+      "source": "assistant_visual",
+      "frame_sha256": "3b83527508a243dd803f8231f337e3480610420fc0c038fbf61e17afd84ab245",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h14-x0-r1",
+      "frame_index": 45,
+      "x": 117,
+      "y": 83,
+      "source": "assistant_visual",
+      "frame_sha256": "5d08e6ebc384e26670ef59aa038a36638a58ae6d8d2dd3dc8a1bc198fa21dac7",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h14-x0-r1",
+      "frame_index": 55,
+      "x": 117,
+      "y": 84,
+      "source": "assistant_visual",
+      "frame_sha256": "762b785efc64b8054c7415f89a1a77cfc5fc7b88c36aa244daa2b410f9ccc458",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h14-x0-r1",
+      "frame_index": 65,
+      "x": 117,
+      "y": 105,
+      "source": "assistant_visual",
+      "frame_sha256": "cab5fb3bcb1c3862e940b08f4bf420bc5c1b11dcb34bef337bb7494e0cbed3b5",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h14.png"
+    }
+  ],
+  "control_events": [
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 39,
+      "landing_frame": 49,
+      "source": "assistant_visual",
+      "method": "Independent inspection of raw pixel contact sheets; last-ground takeoff, midpoint of visible apex plateau, first visible ground contact."
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 53,
+      "landing_frame": 71,
+      "source": "assistant_visual",
+      "method": "Independent inspection of raw pixel contact sheets; last-ground takeoff, midpoint of visible apex plateau, first visible ground contact."
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h08-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 44,
+      "landing_frame": 58,
+      "source": "assistant_visual",
+      "method": "Raw-pixel contact-sheet inspection: last grounded frame, midpoint of highest plateau, first visible floor contact. No analysis coordinates used.",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h08-events.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h14-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 50,
+      "landing_frame": 67,
+      "source": "assistant_visual",
+      "method": "Raw-pixel contact-sheet inspection: last grounded frame, midpoint of highest plateau, first visible floor contact. No analysis coordinates used.",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\tiny-val-h14-events.png"
+    }
+  ],
+  "control_point_source": null,
+  "control_event_source": null,
+  "validation_status": "pending"
+}

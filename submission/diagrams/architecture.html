@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>KiroClops architecture</title>
+<link rel="stylesheet" href="diagram.css">
+<style>
+  @page { size: 1600px 940px; margin: 0; }
+  #canvas { height: 940px; }
+</style>
+</head>
+<body>
+<div id="canvas">
+  <div class="title" data-solid data-box>KiroClops architecture</div>
+  <div class="subtitle" data-solid data-box style="top:82px">OpenCV 5 measures every candidate a coding agent writes; the same measurement runs on AWS Graviton4 with COOL.</div>
+
+  <!-- Developer machine -------------------------------------------------- -->
+  <div class="zone zone-local" id="zone-local" data-box style="left:40px;top:128px;width:820px;height:576px">
+    <div class="zone-label" data-head>Developer machine · local default</div>
+  </div>
+  <div class="zone harness" id="harness" data-box style="left:356px;top:168px;width:484px;height:492px">
+    <div class="zone-label" data-head>KiroClops harness</div>
+  </div>
+
+  <div class="node agent" id="agent" data-solid data-box data-in="#zone-local" style="left:96px;top:200px;width:210px;height:124px">
+    <div class="head"><svg viewBox="0 0 28 28"><rect x="5" y="9" width="18" height="14" rx="3"/><circle cx="10.5" cy="16" r="1.5"/><circle cx="17.5" cy="16" r="1.5"/><path d="M14 5v4M3 14v4M25 14v4"/></svg><div class="t">Kiro CLI agent</div></div>
+    <div class="s">Claude Opus 5.5 in a copied workspace</div>
+  </div>
+  <div class="node neutral" id="ref" data-solid data-box data-in="#zone-local" style="left:96px;top:361px;width:210px;height:108px">
+    <div class="head"><svg viewBox="0 0 28 28"><rect x="3" y="6" width="22" height="16" rx="3"/><path d="M12 10.5l6 3.5-6 3.5z"/></svg><div class="t">Reference clip</div></div>
+    <div class="s">video or a recorded reference app</div>
+  </div>
+  <div class="node neutral" id="target" data-solid data-box data-in="#zone-local" style="left:96px;top:524px;width:210px;height:110px">
+    <div class="head"><svg viewBox="0 0 28 28"><rect x="3" y="5" width="22" height="18" rx="2.5"/><path d="M3 10h22M7 15h8M7 19h12"/></svg><div class="t">Target app</div></div>
+    <div class="s">game, web panel or SVG editor</div>
+  </div>
+
+  <div class="node agent" id="mcp" data-solid data-box data-in="#harness" style="left:376px;top:216px;width:444px;height:92px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M10 3v6M18 3v6M6 9h16v4a8 8 0 0 1-16 0zM14 21v4"/></svg><div class="t">MCP server · eight tools</div></div>
+    <div class="s">prepare · evaluate · inspect_window · finalize</div>
+  </div>
+  <div class="node cv strong" id="core" data-solid data-box data-in="#harness" style="left:376px;top:348px;width:444px;height:134px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M2 14c3.5-6 8-8.5 12-8.5S22.5 8 26 14c-3.5 6-8 8.5-12 8.5S5.5 20 2 14z"/><circle cx="14" cy="14" r="4"/></svg><div class="t">OpenCV 5 measurement core</div></div>
+    <div class="s">Tracking: NCC templates, LK flow, contours<br>OpenCV 5 features: ALIKED + LightGlue<br>Events, window comparison, sub-pixel peaks</div>
+  </div>
+  <div class="node cv" id="capture" data-solid data-box data-in="#harness" style="left:376px;top:524px;width:214px;height:110px">
+    <div class="head"><svg viewBox="0 0 28 28"><rect x="3" y="8" width="22" height="15" rx="2.5"/><path d="M9.5 8l2-3h5l2 3"/><circle cx="14" cy="15.5" r="4"/></svg><div class="t">Capture</div></div>
+    <div class="s">headless Chromium via CDP, or Godot</div>
+  </div>
+  <div class="node evidence" id="evidence" data-solid data-box data-in="#harness" style="left:606px;top:524px;width:214px;height:110px">
+    <div class="head"><svg viewBox="0 0 28 28"><path d="M14 3l10 4v7c0 6-4.5 10-10 12C8.5 24 4 20 4 14V7z"/><path d="M9.5 14l3 3 6-6.5"/></svg><div class="t">Evidence &amp; audit</div></div>
+    <div class="s">hashes, guard log, closure receipts</div>
+  </div>
+
+  <!-- AWS --------------------------------------------------------------- -->
+  <div class="zone aws-cloud" id="aws" data-box style="left:900px;top:128px;width:660px;height:576px">
+    <div class="group-head" data-head><img src="icons/aws-cloud.svg" alt=""><span>AWS Cloud</span></div>
+  </div>
+  <div class="zone aws-region" id="region" data-box style="left:920px;top:184px;width:620px;height:500px">
+    <div class="group-head" data-head><img src="icons/region.svg" alt=""><span>AWS Region · us-east-1</span></div>
+  </div>
+
+  <div class="svc" id="cognito" data-solid data-box data-in="#region" style="left:950px;top:244px;width:150px">
+    <img src="icons/cognito.svg" alt=""><div class="t">Amazon Cognito</div><div class="s">JWT authorizer</div>
+  </div>
+  <div class="svc" id="apigw" data-solid data-box data-in="#region" style="left:950px;top:387px;width:150px">
+    <img src="icons/api-gateway.svg" alt=""><div class="t">Amazon API Gateway</div><div class="s">HTTP API</div>
+  </div>
+  <div class="svc" id="lambda" data-solid data-box data-in="#region" style="left:1130px;top:387px;width:110px">
+    <img src="icons/lambda.svg" alt=""><div class="t">AWS Lambda</div><div class="s">API handler</div>
+  </div>
+  <div class="stack" id="state" data-solid data-box data-in="#region" style="left:1300px;top:314px;width:220px;padding:10px;gap:10px">
+    <div class="row"><img src="icons/s3.svg" alt=""><div><div class="t">Amazon S3</div><div class="s">packages, results</div></div></div>
+    <div class="row"><img src="icons/dynamodb.svg" alt=""><div><div class="t">Amazon DynamoDB</div><div class="s">jobs, quotas</div></div></div>
+    <div class="row"><img src="icons/sqs.svg" alt=""><div><div class="t">Amazon SQS</div><div class="s">job queue</div></div></div>
+  </div>
+  <div class="node cv strong" id="worker" data-solid data-box data-in="#region" style="left:950px;top:556px;width:570px;height:112px;flex-direction:row;align-items:center;gap:14px">
+    <img src="icons/ec2.svg" alt="" style="width:48px;height:48px;flex:none">
+    <div style="display:flex;flex-direction:column;gap:5px;flex:1">
+      <div class="t">Graviton4 worker · c8g.xlarge · COOL AMI</div>
+      <div class="s">OpenCV 5.1.0-dev from AWS Marketplace runs the same kiroclops.visual code, signs a receipt, stops when idle.</div>
+    </div>
+    <img src="icons/marketplace.svg" alt="" style="width:40px;height:40px;flex:none">
+  </div>
+
+  <!-- Flow list and legend ----------------------------------------------- -->
+  <div class="panel-head" data-solid data-box style="left:48px;top:724px">Flow</div>
+  <div class="steps" data-solid data-box style="left:48px;top:756px">
+    <div class="step"><span class="num cv">1</span>The reference clip is measured once with OpenCV 5.</div>
+    <div class="step"><span class="num agent">2</span>The agent calls KiroClops through eight MCP tools.</div>
+    <div class="step"><span class="num agent">3</span>The agent edits only the target's motion code.</div>
+    <div class="step"><span class="num cv">4</span>Every candidate is re-recorded in Chromium or Godot.</div>
+    <div class="step"><span class="num cv">5</span>OpenCV 5 tracks objects, finds events, compares windows.</div>
+  </div>
+  <div class="steps" data-solid data-box style="left:600px;top:756px">
+    <div class="step"><span class="num agent">6</span>Feedback returns to the agent; held-out cases stay sealed.</div>
+    <div class="step"><span class="num aws">7</span>Optional: the same request goes to the AWS API.</div>
+    <div class="step"><span class="num aws">8</span>Lambda stores the job and queues it.</div>
+    <div class="step"><span class="num aws">9</span>A Graviton4 COOL worker measures it and signs a receipt.</div>
+  </div>
+  <div class="panel-head" data-solid data-box style="left:1160px;top:724px">Legend</div>
+  <div class="legend" data-solid data-box style="left:1160px;top:756px">
+    <div class="item"><svg viewBox="0 0 40 14"><path d="M2 7h30" stroke="#15803d" stroke-width="2.4"/><path d="M30 2l8 5-8 5z" fill="#15803d"/></svg>Pixels and OpenCV 5 measurement</div>
+    <div class="item"><svg viewBox="0 0 40 14"><path d="M2 7h30" stroke="#6d28d9" stroke-width="2.4"/><path d="M30 2l8 5-8 5z" fill="#6d28d9"/></svg>Agent actions and feedback</div>
+    <div class="item"><svg viewBox="0 0 40 14"><path d="M2 7h30" stroke="#c2410c" stroke-width="2.4"/><path d="M30 2l8 5-8 5z" fill="#c2410c"/></svg>AWS cloud path</div>
+    <div class="item"><svg viewBox="0 0 40 14"><path d="M2 7h30" stroke="#334155" stroke-width="2.4" stroke-dasharray="7 6"/><path d="M30 2l8 5-8 5z" fill="#334155"/></svg>Optional path or authorization</div>
+    <div class="item"><span class="sw" style="border-color:#16a34a;background:#f0fdf4"></span>Runs OpenCV 5</div>
+  </div>
+</div>
+<script>
+window.EDGES = [
+  { id: 'e1', from: '#ref', fromSide: 'right', to: '#core', toSide: 'left', color: 'cv', badge: '1', badgeClass: 'cv', badgeAt: 0.357, align: true },
+  { id: 'e2', from: '#agent', fromSide: 'right', to: '#mcp', toSide: 'left', color: 'agent', both: true, badge: '2', badgeClass: 'agent', badgeAt: 0.357, align: true },
+  { id: 'e3', from: '#agent', fromSide: 'left', to: '#target', toSide: 'left', route: 'hvh', via: 68, color: 'agent', badge: '3', badgeClass: 'agent' },
+  { id: 'e4', from: '#target', fromSide: 'right', to: '#capture', toSide: 'left', color: 'cv', badge: '4', badgeClass: 'cv', badgeAt: 0.357, align: true },
+  { id: 'e5', from: '#capture', fromSide: 'top', to: '#core', toSide: 'bottom', align: true, color: 'cv', badge: '5', badgeClass: 'cv', badgeOffset: [28, 0] },
+  { id: 'e6', from: '#core', fromSide: 'top', fromShift: 98, to: '#mcp', toSide: 'bottom', align: true, color: 'agent', badge: '6', badgeClass: 'agent', badgeOffset: [28, 0] },
+  { id: 'e7', from: '#core', fromSide: 'right', to: '#apigw img', toSide: 'left', color: 'aws', dashed: true, badge: '7', badgeClass: 'aws', badgeAt: 0.339, align: true },
+  { id: 'e7a', from: '#cognito', fromSide: 'bottom', to: '#apigw img', toSide: 'top', color: 'aws', dashed: true, align: true },
+  { id: 'e8a', from: '#apigw img', fromSide: 'right', to: '#lambda img', toSide: 'left', color: 'aws', align: true },
+  { id: 'e8', from: '#lambda img', fromSide: 'right', to: '#state', toSide: 'left', color: 'aws', badge: '8', badgeClass: 'aws', badgeAt: 0.54, align: true },
+  { id: 'e9', from: '#state', fromSide: 'bottom', to: '#worker', toSide: 'top', align: true, color: 'aws', both: true, badge: '9', badgeClass: 'aws', badgeOffset: [28, 0] }
+];
+</script>
+<script src="diagram.js"></script>
+</body>
+</html>

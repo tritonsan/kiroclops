@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "game": "tiny",
+  "template_run": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r06-x0-r1",
+  "template_frame": 0,
+  "roi": [
+    116,
+    105,
+    6,
+    3
+  ],
+  "anchor_offset": [
+    1.5,
+    2
+  ],
+  "body_height_px": 7,
+  "background_rois": [
+    [
+      16,
+      112,
+      24,
+      16
+    ]
+  ],
+  "horizontal_mirror": true,
+  "min_score": 0.75,
+  "min_margin": 0.03,
+  "camera_max_shift_px": 1,
+  "control_points": [
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 30,
+      "x": 117.5,
+      "y": 105,
+      "frame_sha256": "1afc0d485eb5583de03ee4e042810dfe4cc16637f5bed543d7dffc0626392750",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-30",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 32,
+      "x": 118.5,
+      "y": 105,
+      "frame_sha256": "1ebdd7915af91080fe44a87a3b14e17bc3b9c59eb47518016b9c3d16ed007b37",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-32",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 34,
+      "x": 119.5,
+      "y": 105,
+      "frame_sha256": "cae2cfa4015dec2b7062ce9dd19c9fa5b3e9d85af5c48ad95cc63c47a5c5ed65",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-34",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 36,
+      "x": 120.5,
+      "y": 105,
+      "frame_sha256": "b42bd2b377c0cbeadb9ec0709a76b021639b4e087adb7dd64d71913404eba701",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-36",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 38,
+      "x": 122.5,
+      "y": 105,
+      "frame_sha256": "d25e49249a5d2b473e7abd4466607731854233a19c47c1dc32efc4ae74f040d1",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-38",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 40,
+      "x": 124.5,
+      "y": 105,
+      "frame_sha256": "0dc44e9e3ae007d8b6a0984cd7d2bd25d3e65edc4f207c509344021063286b87",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-40",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 42,
+      "x": 126.5,
+      "y": 106,
+      "frame_sha256": "f871584d75501d9d290ff42c0761749bf67ec11b3e84609633022e4eac4a5078",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-42",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 44,
+      "x": 128.5,
+      "y": 106,
+      "frame_sha256": "0923e3713e2ba16e6941d795413cef69b72b39a086a8b0e1a167d7de4c201993",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-44",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 46,
+      "x": 129.5,
+      "y": 106,
+      "frame_sha256": "3ff5ff3dc0864eea0eef880d5c09c3fc3837b0224d54c00826f1539fba01c0b7",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-46",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 48,
+      "x": 131.5,
+      "y": 105,
+      "frame_sha256": "257a4c1e41bf1cdde64c117a83c08a551eb574740f35cf35250b9d9bc4d62d31",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-48",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-0.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 50,
+      "x": 133.5,
+      "y": 105,
+      "frame_sha256": "fabff9a6f47515fdc3dbd4e559be6a94d208ec080d0b45eb08ca294ada892ec7",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-50",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 54,
+      "x": 137.5,
+      "y": 105,
+      "frame_sha256": "d5fec49413852d7b16325b2b102a6207329d766ceda35f733f369a62fb3bc319",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-54",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 58,
+      "x": 140.5,
+      "y": 105,
+      "frame_sha256": "df395dbf541289809451e1e9c8a940f502347a455cf4277c02732f5d804f87f1",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-58",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 62,
+      "x": 144.5,
+      "y": 106,
+      "frame_sha256": "ccf62e5d6e4c59e7583a832b532c8e2ee2d5b6aeacc500bc9d60fd897cc50e13",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-62",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 66,
+      "x": 147.5,
+      "y": 105,
+      "frame_sha256": "86034778e2219a29ce610ff7934cade1c06f30d72d51f3cbe2fcf59e6fed6c63",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-66",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 70,
+      "x": 151.5,
+      "y": 105,
+      "frame_sha256": "c7541944a271c6abfce61cc6990ad302044efb24fc45d15566b6edcb9e2b990c",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-70",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 74,
+      "x": 155.5,
+      "y": 105,
+      "frame_sha256": "a7c935ccd973a0ee3b37d2d67d177978fb9c2cbba86e6ba3e132f0f8c6e54395",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-74",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 78,
+      "x": 158.5,
+      "y": 106,
+      "frame_sha256": "45fb93aa10d2ea0bdd68429216c3db87a16545a257b58202b89877ff2f04f54d",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-78",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 82,
+      "x": 159.5,
+      "y": 106,
+      "frame_sha256": "989b20291862f6d9c81eac9ca3e7a19a1152ee5639ac1049331803cb32099f04",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-82",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\reference\\r48-x0-r1",
+      "frame_index": 86,
+      "x": 160.5,
+      "y": 106,
+      "frame_sha256": "f242357bc202d4e6d1ca68af8920688c4a1307d5bdfb0845a9f5bd43e5ee966e",
+      "source": "assistant_visual",
+      "observation_id": "ground-cal-tiny-86",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\phase2b\\setup\\tiny-controls-1.png"
+    }
+  ],
+  "control_events": [],
+  "annotation_note": "Fixed cap/face patch. Standing feet/body midline x117.5 projected to the face row; mirrored anchor transforms with the same physical body point. Native standing height7."
+}

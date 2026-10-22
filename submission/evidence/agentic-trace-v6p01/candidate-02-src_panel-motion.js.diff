@@ -1,0 +1,137 @@
+--- baseline/src/panel-motion.js
++++ candidate-02/src/panel-motion.js
+@@ -2,7 +2,8 @@
+ // input.open is the requested mode; input.dragging means the pointer owns x.
+ // Keep finite x/velocity, titleY/titleVelocity and contentY/contentVelocity.
+ // Additional state fields persist between calls. Rendering is in app.js.
+-import { stepSpring, stepHeldSpring } from './motion/spring.js';
++import { stepSpring, stepHeldSpring, rewindSpring } from './motion/spring.js';
++import { latestInputAge } from './motion/input-clock.js';
+ 
+ // Panel travel: underdamped spring (about 5% overshoot, ~0.35 s to first peak).
+ // It always continues from the current position and velocity, so retargeting
+@@ -18,40 +19,110 @@
+ // interrupted or reversed group pauses in place and then resumes from the
+ // exact position and velocity it had, now pursuing the latest mode's goal.
+ const TITLE = { closed: 24, stiffness: 229, damping: 20.8, openDelay: 0.08, closeDelay: 0.12 };
+-const CONTENT = { closed: 40, stiffness: 198, damping: 18.7, openDelay: 0.16, closeDelay: 0.04 };
++const CONTENT = { closed: 40, stiffness: 196, damping: 18.5, openDelay: 0.16, closeDelay: 0.04 };
++
++// Response timing. A click, key press or resize lands somewhere inside a
++// frame interval; the new goal takes effect a fixed RESPONSE_LEAD before the
++// input instant, independent of where the surrounding frame boundaries fall.
++// Without an input timestamp (or after a drag, where the pointer owned x) the
++// new goal applies from the previous frame boundary as before.
++const RESPONSE_LEAD = 0.0075;
++// Longest stretch of already-advanced motion that may be re-anchored.
++const MAX_REANCHOR = 0.03;
+ 
+ const groupGoal = (group, open) => (open ? 0 : group.closed);
++const groupDelay = (group, open) => (open ? group.openDelay : group.closeDelay);
+ 
+ function advanceGroup(group, y, vy, elapsedBefore, dt, open) {
+-  const goal = groupGoal(group, open);
+-  const delay = open ? group.openDelay : group.closeDelay;
+-  const hold = Math.max(0, delay - elapsedBefore);
+-  const s = stepHeldSpring(y, vy, goal, hold, dt, group.stiffness, group.damping);
++  if (!(dt > 0)) return { y, vy };
++  const hold = Math.max(0, groupDelay(group, open) - elapsedBefore);
++  const s = stepHeldSpring(y, vy, groupGoal(group, open), hold, dt, group.stiffness, group.damping);
+   return { y: s.position, vy: s.velocity };
+ }
+ 
++// Undo the last `back` seconds of a group's motion under one mode. The group
++// only moved after its hold, so only that part of the span is rewound.
++function rewindGroup(group, y, vy, elapsedAtEnd, back, open) {
++  const moving = Math.min(back, Math.max(0, elapsedAtEnd - groupDelay(group, open)));
++  if (!(moving > 0)) return { y, vy };
++  const r = rewindSpring(y, vy, groupGoal(group, open), moving, group.stiffness, group.damping);
++  return { y: r.position, vy: r.velocity };
++}
++
++const finiteOr = (value, fallback) => (Number.isFinite(value) ? value : fallback);
++
+ export function advanceMotion(state, target, dt, input) {
+   const open = !!input.open;
++  const dragging = !!input.dragging;
+   const step = Number.isFinite(dt) && dt > 0 ? dt : 0;
+ 
+   // Mode bookkeeping persists between frames; a fresh or reset state starts settled.
+   const fresh = typeof state.motionOpen !== 'boolean';
+-  const changed = !fresh && state.motionOpen !== open;
+-  const previous = Number.isFinite(state.motionElapsed) ? state.motionElapsed : Infinity;
+-  const elapsedBefore = fresh ? Infinity : changed ? 0 : previous;
++  const previousOpen = fresh ? open : state.motionOpen;
++  const previousGoal = finiteOr(state.motionGoal, target);
++  const modeChanged = !fresh && previousOpen !== open;
++  const goalChanged = !fresh && previousGoal !== target;
++  const elapsedOld = fresh ? Infinity : finiteOr(state.motionElapsed, Infinity);
++  const sinceChange = fresh ? Infinity : finiteOr(state.motionSince, Infinity);
+ 
++  // Where inside this step the new goal starts. `before` seconds still follow
++  // the old goal; `back` seconds of old motion are re-anchored when the lead
++  // reaches past the previous frame boundary.
++  let before = 0, back = 0;
++  if ((modeChanged || goalChanged) && step > 0 && !dragging && !state.motionDragging) {
++    const age = latestInputAge(step);
++    if (age !== null) {
++      const startAge = Math.max(0, age + RESPONSE_LEAD);
++      if (startAge <= step) before = step - startAge;
++      else back = Math.min(startAge - step, MAX_REANCHOR, sinceChange);
++    }
++  }
++  const after = step - before + back;
++
++  // Panel: old goal until the response start, then the new goal.
++  let px = finiteOr(state.x, target), pv = finiteOr(state.velocity, 0);
++  if (back > 0) {
++    const r = rewindSpring(px, pv, previousGoal, back, PANEL.stiffness, PANEL.damping);
++    px = r.position; pv = r.velocity;
++  } else if (before > 0) {
++    const s = stepSpring(px, pv, previousGoal, before, PANEL.stiffness, PANEL.damping);
++    px = s.position; pv = s.velocity;
++  }
+   // While dragging, app.js keeps the pointer-owned x and zeroes velocity, so
+   // the spring resumes from the released position with no stored momentum.
+-  const panel = stepSpring(state.x, state.velocity, target, step, PANEL.stiffness, PANEL.damping);
+-  const t = advanceGroup(TITLE, state.titleY, state.titleVelocity, elapsedBefore, step, open);
+-  const c = advanceGroup(CONTENT, state.contentY, state.contentVelocity, elapsedBefore, step, open);
++  const panel = stepSpring(px, pv, target, after, PANEL.stiffness, PANEL.damping);
+ 
++  // Title and content groups follow the mode with their own holds.
++  let ty = finiteOr(state.titleY, groupGoal(TITLE, open)), tv = finiteOr(state.titleVelocity, 0);
++  let cy = finiteOr(state.contentY, groupGoal(CONTENT, open)), cv = finiteOr(state.contentVelocity, 0);
++  let elapsed;
++  if (modeChanged) {
++    if (back > 0) {
++      ({ y: ty, vy: tv } = rewindGroup(TITLE, ty, tv, elapsedOld, back, previousOpen));
++      ({ y: cy, vy: cv } = rewindGroup(CONTENT, cy, cv, elapsedOld, back, previousOpen));
++    } else if (before > 0) {
++      ({ y: ty, vy: tv } = advanceGroup(TITLE, ty, tv, elapsedOld, before, previousOpen));
++      ({ y: cy, vy: cv } = advanceGroup(CONTENT, cy, cv, elapsedOld, before, previousOpen));
++    }
++    ({ y: ty, vy: tv } = advanceGroup(TITLE, ty, tv, 0, after, open));
++    ({ y: cy, vy: cv } = advanceGroup(CONTENT, cy, cv, 0, after, open));
++    elapsed = after;
++  } else {
++    ({ y: ty, vy: tv } = advanceGroup(TITLE, ty, tv, elapsedOld, step, open));
++    ({ y: cy, vy: cv } = advanceGroup(CONTENT, cy, cv, elapsedOld, step, open));
++    elapsed = elapsedOld + step;
++  }
++
++  const changed = modeChanged || goalChanged;
+   return {
+     ...state,
+     x: panel.position, velocity: panel.velocity,
+-    titleY: t.y, titleVelocity: t.vy,
+-    contentY: c.y, contentVelocity: c.vy,
++    titleY: ty, titleVelocity: tv,
++    contentY: cy, contentVelocity: cv,
+     motionOpen: open,
+-    motionElapsed: Math.min(60, elapsedBefore + step),
++    motionGoal: target,
++    motionDragging: dragging,
++    motionElapsed: Math.min(60, elapsed),
++    motionSince: Math.min(60, changed ? after : sinceChange + step),
+   };
+ }

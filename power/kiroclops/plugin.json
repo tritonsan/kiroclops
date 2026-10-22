@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kiroclops",
+  "version": "0.2.0",
+  "description": "Measure reference game motion from pixels, edit the target controller, and verify recorded candidate motion.",
+  "author": {"name": "KiroClops"},
+  "keywords": ["kiroclops", "motion calibration", "reference video", "jump physics", "game feel", "godot"]
+}

@@ -1,0 +1,2637 @@
+{
+  "kind": "V6EquivalenceReplay",
+  "schema_version": 1,
+  "created_at": "2026-10-15T08:54:23.725201+00:00",
+  "contract": {
+    "min_valid_ratio": 0.95,
+    "require_static_camera": true
+  },
+  "records": 15,
+  "identical": 15,
+  "refinement": "upsampled_v1",
+  "cross_check": null,
+  "results": [
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 11.902431099995738,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 14.233518299995922,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 25,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 25
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-four-to-three-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 11.812715399995795,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 14.15087680000579,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 25,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 25
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.617931700006011,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 154,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 154
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 9.47940200001176,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 154,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 151,
+              "clamped_to_half_pixel": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-suite-svg-calibration-three-to-four-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.597530600003665,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 155
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 9.606289899995318,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "b": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "c": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179,
+              "clamped_to_half_pixel": 1
+            }
+          },
+          "d": {
+            "frames": 155,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 152,
+              "clamped_to_half_pixel": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "reference",
+      "case": "realistic-svg-six-node-measurement",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-svg-six-node-measurement\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\reference\\realistic-svg-six-node-measurement\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 8.478390100004617,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "e": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "f": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-e": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-f": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 12.854826900002081,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "e": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "f": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "before",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-four-to-three-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-four-to-three-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 12.010569200007012,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 14.594262899991008,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "b": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "c": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "d": {
+            "frames": 25,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 25
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "before",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-four-to-three-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-four-to-three-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 11.678330700000515,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 14.096115099993767,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 25,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 25
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "before",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-three-to-four-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-three-to-four-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.556682299997192,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 155,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 155
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 9.495431499992264,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "b": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "c": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 175,
+              "clamped_to_half_pixel": 5
+            }
+          },
+          "d": {
+            "frames": 155,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 153,
+              "clamped_to_half_pixel": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "before",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-three-to-four-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-suite-svg-calibration-three-to-four-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.781649299999117,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 181,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 181,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 181,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 156,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 181
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 181
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 156
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 9.535280299998703,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 181,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 181
+            }
+          },
+          "b": {
+            "frames": 181,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 181
+            }
+          },
+          "c": {
+            "frames": 181,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 175,
+              "clamped_to_half_pixel": 6
+            }
+          },
+          "d": {
+            "frames": 156,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 154,
+              "clamped_to_half_pixel": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "before",
+      "case": "realistic-svg-six-node-measurement",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-svg-six-node-measurement\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\before\\realistic-svg-six-node-measurement\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 8.088063999995939,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "e": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "f": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-e": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-f": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 12.51086330000544,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "b": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "c": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "d": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "e": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "f": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "original",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-four-to-three-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-four-to-three-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 11.822330399998464,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 14.149446099996567,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 25,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 25
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "original",
+      "case": "realistic-suite-svg-calibration-four-to-three-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-four-to-three-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-four-to-three-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 11.809127799991984,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 25,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 25
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 14.620476000010967,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "d": {
+            "frames": 25,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 25
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "original",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r1",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-three-to-four-w960-r1\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-three-to-four-w960-r1\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.726961600012146,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 154,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 154
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 9.584297599998536,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 168,
+              "clamped_to_half_pixel": 11
+            }
+          },
+          "d": {
+            "frames": 154,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 153,
+              "clamped_to_half_pixel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "original",
+      "case": "realistic-suite-svg-calibration-three-to-four-w960-r2",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-three-to-four-w960-r2\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-suite-svg-calibration-three-to-four-w960-r2\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 6.64567050000187,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 179,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 154,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 179
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 154
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 9.611543600010918,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "b": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 179
+            }
+          },
+          "c": {
+            "frames": 179,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 169,
+              "clamped_to_half_pixel": 10
+            }
+          },
+          "d": {
+            "frames": 154,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 153,
+              "clamped_to_half_pixel": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "role": "original",
+      "case": "realistic-svg-six-node-measurement",
+      "record": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-svg-six-node-measurement\\record.json",
+      "package": "C:\\kc3d\\p\\v5s01-cal\\original\\realistic-svg-six-node-measurement\\attempt-01\\package",
+      "stored_opencv": "5.0.0",
+      "fresh_opencv": "5.0.0",
+      "fresh_runtime": {
+        "version": "5.0.0",
+        "major": 5,
+        "wheel": {
+          "opencv_version": "5.0.0.93",
+          "contrib": false,
+          "headless": false,
+          "rolling": false,
+          "ci_build": true
+        },
+        "modules": [
+          "calib",
+          "core",
+          "dnn",
+          "features",
+          "flann",
+          "geometry",
+          "highgui",
+          "imgcodecs",
+          "imgproc",
+          "objdetect",
+          "photo",
+          "ptcloud",
+          "python3",
+          "stereo",
+          "stitching",
+          "video",
+          "videoio"
+        ],
+        "opencv5_symbols": {
+          "ALIKED": true,
+          "LightGlueMatcher": true,
+          "DISK": true,
+          "ANNIndex": true,
+          "finiteMask": true
+        },
+        "shared_symbols_present": true
+      },
+      "seconds": 8.24748809999437,
+      "comparison": {
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "objects": {
+          "a": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "b": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "c": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "d": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "e": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          },
+          "f": {
+            "max_abs_delta_px": 0.0,
+            "validity_mismatches": 0,
+            "frames_compared": 180,
+            "valid_ratio": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "connections": {
+          "a-b": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-c": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-d": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-e": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          },
+          "a-f": {
+            "max_endpoint_delta_px": 0.0,
+            "mismatches": 0,
+            "frames_compared": 180
+          }
+        },
+        "camera_max_shift_delta_px": 0.0,
+        "identical": true
+      },
+      "refinement": {
+        "method": "upsampled_v1",
+        "seconds": 12.61534550000215,
+        "status": [
+          "ok",
+          "ok"
+        ],
+        "offsets": {
+          "a": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "b": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "c": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "d": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "e": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          },
+          "f": {
+            "frames": 180,
+            "mean_abs_offset_px": 0.0,
+            "max_offset_px": 0.0,
+            "median_abs_dx": 0.0,
+            "median_abs_dy": 0.0,
+            "fraction_over_quarter_px": 0.0,
+            "statuses": {
+              "interior": 180
+            }
+          }
+        }
+      }
+    }
+  ],
+  "summary_sha256": "184768b9f55920fb3b78f14c7ff38f1e827c75c5ea3f1e89e01bf67de48c3289"
+}

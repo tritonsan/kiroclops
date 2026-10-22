@@ -1,0 +1,19 @@
+.venv/
+.venv-kiro/
+.venv-local/
+experiments/
+sessions/
+.tools/
+vendor/
+work/
+artifacts/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.runtime/
+
+# Local outputs of the judge check and the cloud client
+/service.json
+judge-check-*/
+*.private.json

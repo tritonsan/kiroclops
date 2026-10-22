@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "tiny": {
+    "url": "https://github.com/HarmonyHoney/tiny_crate.git",
+    "commit": "c9b835c46ac5a98cf2aaaa0ee824378af14ff003",
+    "engine": "3.6.stable",
+    "controller": "src/actor/Player.gd"
+  },
+  "slay": {
+    "url": "https://github.com/SlayHorizon/godot-2d-platformer-demo.git",
+    "commit": "6944ec4c323dcbad470ff7654fec665f010f50d1",
+    "engine": "4.5.1.stable",
+    "controller": "source/characters/player/player.gd"
+  }
+}

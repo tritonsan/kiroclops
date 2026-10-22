@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KiroClops · Motion desk</title><link rel="stylesheet" href="style.css">
+<body><header><strong>Motion desk</strong><span>Interactive panel · local example</span></header>
+<main><section class="intro"><p class="eyebrow">A PLACE FOR IDEAS</p><h1>Make room<br>for the next idea.</h1><p>Open the panel, interrupt its motion or drag the handle.</p>
+<nav><button id="open-panel">Open panel</button><button id="close-panel">Close panel</button><button id="reset">Reset</button></nav>
+<p class="hint">The panel stays interactive while it moves.</p></section>
+<div id="track" aria-label="Panel motion area"><div id="panel">
+<div id="panel-handle" role="slider" tabindex="0" aria-label="Drag panel"><svg viewBox="0 0 28 28" width="28" height="28" aria-hidden="true"><path fill="#bfa5ff" d="M7 3h5v5H7zm9 0h5v5h-5zM7 12h5v5H7zm9 0h5v5h-5zM7 21h5v5H7zm9 0h5v5h-5z"/></svg><span>DRAG TO EXPLORE</span></div>
+<div class="panel-body"><div class="panel-title"><svg class="bookmark" width="28" height="28" viewBox="0 0 28 28" aria-label="Saved collection"><path fill="#4dd0e1" d="M5 2h18v24l-9-6-9 6z"/><path stroke="#173343" stroke-width="3" d="M10 8h8M10 12h8"/></svg><p>YOUR COLLECTION</p><h2>Small ideas.<br>Good motion.</h2></div><div class="panel-content"><div class="note"><svg class="star" width="30" height="30" viewBox="0 0 30 30" aria-label="Featured idea"><path fill="#ffd166" d="m15 1 4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z"/><circle cx="15" cy="15" r="3" fill="#544329"/></svg><span>Keep the useful things close.</span></div></div></div></div></div></main>
+<script type="module" src="src/app.js"></script></body></html>

@@ -1,0 +1,523 @@
+{
+  "kind": "PostHocRuntimeExcludedEquivalence",
+  "label": "POST-HOC: written after the results were seen; the original result.json is unchanged",
+  "checked_at": "2026-10-20T09:51:16.841632+00:00",
+  "source": "artifacts\\phase4-aws\\v6-cool-equivalence-02",
+  "policy": {
+    "id": "engine-equivalence-v1",
+    "numeric_absolute_tolerance": 5e-05,
+    "numeric_relative_tolerance": 1e-06,
+    "maximum_recorded_differences": 30,
+    "exact_fields": "All categorical, validity, object, event and frame identities",
+    "provenance_fields_excluded": [
+      "opencv_version",
+      "observation_sha256",
+      "event_sha256"
+    ],
+    "note": "This is a cross-engine numerical check, never an exact-cache equivalence rule. Movement acceptance thresholds are unchanged."
+  },
+  "original": {
+    "status": "fail",
+    "equivalent": 0
+  },
+  "rows_measured": 17,
+  "original_reproduced": 17,
+  "runtime_excluded_equivalent": 17,
+  "runtime_and_phase_shifts_excluded_equivalent": 17,
+  "largest_numeric_difference": 1.430511474609375e-06,
+  "rows": [
+    {
+      "id": "reference/realistic-suite-panel-calibration-interrupt-w960-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 14728,
+        "identical": 14242,
+        "max_abs": 1.0728836059570312e-06,
+        "max_path": "/observations/objects/1/frames/53/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 4.4078513949999945
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-open-close-w960-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 20541,
+        "identical": 19839,
+        "max_abs": 1.430511474609375e-06,
+        "max_path": "/observations/objects/0/frames/121/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 5.541814923999993
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-open-w960-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 15509,
+        "identical": 14917,
+        "max_abs": 1.3709068298339844e-06,
+        "max_path": "/observations/objects/0/frames/33/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 4.4458733539999855
+    },
+    {
+      "id": "reference/realistic-suite-panel-calibration-reverse-w960-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 19850,
+        "identical": 19088,
+        "max_abs": 1.430511474609375e-06,
+        "max_path": "/observations/objects/1/frames/35/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 5.503020335999992
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 14644,
+        "identical": 14170,
+        "max_abs": 1.1324882507324219e-06,
+        "max_path": "/observations/objects/1/frames/63/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 3.9262004930000103
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 14643,
+        "identical": 14179,
+        "max_abs": 1.2218952178955078e-06,
+        "max_path": "/observations/objects/0/frames/40/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 3.8814080519999834
+    },
+    {
+      "id": "reference/realistic-v3-suite-panel-calibration-reverse-w768-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 19919,
+        "identical": 19198,
+        "max_abs": 1.430511474609375e-06,
+        "max_path": "/observations/objects/0/frames/80/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 5.462770088000013
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 15352,
+        "identical": 14722,
+        "max_abs": 1.430511474609375e-06,
+        "max_path": "/observations/objects/1/frames/66/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 4.9362740650000205
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 15271,
+        "identical": 14636,
+        "max_abs": 1.0728836059570312e-06,
+        "max_path": "/observations/objects/1/frames/73/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 4.570393690000003
+    },
+    {
+      "id": "reference/realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 15608,
+        "identical": 15068,
+        "max_abs": 1.3709068298339844e-06,
+        "max_path": "/observations/objects/0/frames/40/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 4.934676686999978
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 15082,
+        "identical": 14487,
+        "max_abs": 1.1920928955078125e-06,
+        "max_path": "/observations/objects/0/frames/39/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 5.0119406879999815
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 15007,
+        "identical": 14415,
+        "max_abs": 1.3709068298339844e-06,
+        "max_path": "/observations/objects/0/frames/82/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 4.941969827999969
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 14545,
+        "identical": 14076,
+        "max_abs": 1.1324882507324219e-06,
+        "max_path": "/observations/objects/1/frames/11/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 3.9181224180000527
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 14551,
+        "identical": 14093,
+        "max_abs": 1.0728836059570312e-06,
+        "max_path": "/observations/objects/1/frames/15/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 3.871276812000019
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 19951,
+        "identical": 19323,
+        "max_abs": 1.3709068298339844e-06,
+        "max_path": "/observations/objects/1/frames/127/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 6.053053888000022
+    },
+    {
+      "id": "reference/realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 19948,
+        "identical": 19323,
+        "max_abs": 1.430511474609375e-06,
+        "max_path": "/observations/objects/1/frames/93/margin"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 6.053137496999966
+    },
+    {
+      "id": "kiro-candidate-02/realistic-suite-panel-calibration-reverse-w960-r1",
+      "status": "succeeded",
+      "original_reproduced": true,
+      "full_policy": {
+        "equivalent": false,
+        "differences": 8,
+        "paths_outside_runtime": []
+      },
+      "runtime_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": []
+      },
+      "runtime_and_phase_shifts_excluded": {
+        "equivalent": true,
+        "exact": false,
+        "differences": 0
+      },
+      "numeric_spread_runtime_excluded": {
+        "compared": 19882,
+        "identical": 19101,
+        "max_abs": 1.3113021850585938e-06,
+        "max_path": "/observations/objects/1/frames/102/score"
+      },
+      "remote_opencv_version": "5.1.0-dev",
+      "local_opencv_version": "5.0.0",
+      "worker_wall_seconds": 5.518815213000039
+    }
+  ]
+}

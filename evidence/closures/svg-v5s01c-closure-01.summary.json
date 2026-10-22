@@ -1,0 +1,12 @@
+{
+  "kind": "StandaloneWebDomainClosure",
+  "version": "standalone-web-domain-closure-v1",
+  "domain": "svg",
+  "status": "pass",
+  "domain_behavior_acceptance": true,
+  "historical_native_only": true,
+  "new_model_generation": false,
+  "ordinary_reader_compatibility_claimed": false,
+  "full_behavior_acceptance": false,
+  "full_phase_acceptance": false
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "LocalEngineeringFullSuite",
+  "status": "fail",
+  "tests_run": 3791,
+  "failures": 1,
+  "errors": 2,
+  "skipped": 40,
+  "sources_unchanged": true,
+  "legacy_count": 81,
+  "heart_v2_count": 25,
+  "elapsed_seconds": 2729.651342868805,
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "model_started": false,
+  "versions": {
+    "opencv-python": "5.0.0.93",
+    "numpy": "2.2.6",
+    "mcp": "2.2.0",
+    "playwright": "1.63.0"
+  },
+  "evidence": {
+    "start.json": "9a59a64b2585e4bcb73e40c2db0008c4e3d8e4e1d512cfd0b60a89b1b66903a0",
+    "tests.log": "b40487e05c2f6cfa6abd538e4e235ab7ecdd85c2202a4d4ad1690538e2b50775"
+  }
+}

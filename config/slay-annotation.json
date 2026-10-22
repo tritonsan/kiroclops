@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "template_run": "D:\\Amazon Developer Hackathon\\artifacts\\calibration\\slay-h03-r1",
+  "template_frame": 0,
+  "roi": [
+    314,
+    265,
+    16,
+    6
+  ],
+  "anchor_offset": [
+    3,
+    4
+  ],
+  "body_height_px": 24,
+  "background_rois": [
+    [
+      16,
+      284,
+      32,
+      24
+    ]
+  ],
+  "min_score": 0.75,
+  "min_margin": 0.03,
+  "template_rotations": [
+    0
+  ],
+  "control_points": [
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-before-h03-x0-r1",
+      "frame_index": 0,
+      "x": 317,
+      "y": 269,
+      "source": "assistant_visual",
+      "frame_sha256": "6b0c31c2016dbdcfc1ccded7d8f0a6a70c269d9906a7c448bd928a5b263448fe",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-before-h03-x0-r1",
+      "frame_index": 30,
+      "x": 317,
+      "y": 262,
+      "source": "assistant_visual",
+      "frame_sha256": "57bd3e9690ae14e535f0423e7c361b6f3bbbe1b599b7b0d2bcd929368373354b",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-before-h03-x0-r1",
+      "frame_index": 42,
+      "x": 317,
+      "y": 221,
+      "source": "assistant_visual",
+      "frame_sha256": "38f1c5fbfed9eac80fe3669b91c255cce31966044e9dda47bf9af3f058bddf53",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-before-h03-x0-r1",
+      "frame_index": 55,
+      "x": 317,
+      "y": 223,
+      "source": "assistant_visual",
+      "frame_sha256": "a4b0b3406adcf5aa1b07c6cebd427c45e075d1ad6db6eb7dcc9850a307033094",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-before-h03-x0-r1",
+      "frame_index": 68,
+      "x": 317,
+      "y": 269,
+      "source": "assistant_visual",
+      "frame_sha256": "cc342ac129af842d1df26252958dbcb53bf8f83d94ba68f21b6add58221fff32",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-cal-h03.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h24-x0-r1",
+      "frame_index": 0,
+      "x": 317,
+      "y": 269,
+      "source": "assistant_visual",
+      "frame_sha256": "6b0c31c2016dbdcfc1ccded7d8f0a6a70c269d9906a7c448bd928a5b263448fe",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-after-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h24-x0-r1",
+      "frame_index": 33,
+      "x": 317,
+      "y": 247,
+      "source": "assistant_visual",
+      "frame_sha256": "21ae2414ac189b1463710b812bf0e5f3ab90042090cf07b5f9df2b846891c50f",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-after-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h24-x0-r1",
+      "frame_index": 45,
+      "x": 317,
+      "y": 187,
+      "source": "assistant_visual",
+      "frame_sha256": "01ae08743862bc33acf14ade98ffcff7fe109f4ce6826cba62957984007ed2e4",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-after-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h24-x0-r1",
+      "frame_index": 55,
+      "x": 317,
+      "y": 171,
+      "source": "assistant_visual",
+      "frame_sha256": "2ec3c86754443f7d5d3c117591e95e335edaa9cd63181b39ef7395bd9443c11e",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-after-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h24-x0-r1",
+      "frame_index": 65,
+      "x": 317,
+      "y": 221,
+      "source": "assistant_visual",
+      "frame_sha256": "cc1209a8a3bc6363647af73459250786478d5d2abeb80c93400be5aa52c0fc48",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-after-cal-h24.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h08-x0-r1",
+      "frame_index": 0,
+      "x": 317,
+      "y": 269,
+      "source": "assistant_visual",
+      "frame_sha256": "6b0c31c2016dbdcfc1ccded7d8f0a6a70c269d9906a7c448bd928a5b263448fe",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h08-x0-r1",
+      "frame_index": 33,
+      "x": 317,
+      "y": 247,
+      "source": "assistant_visual",
+      "frame_sha256": "21ae2414ac189b1463710b812bf0e5f3ab90042090cf07b5f9df2b846891c50f",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h08-x0-r1",
+      "frame_index": 42,
+      "x": 317,
+      "y": 213,
+      "source": "assistant_visual",
+      "frame_sha256": "ec982e6d2726a01eb5d22fced43ef2f5ad33ca344cccc77cee3fc3c4f8bd4426",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h08-x0-r1",
+      "frame_index": 50,
+      "x": 317,
+      "y": 227,
+      "source": "assistant_visual",
+      "frame_sha256": "52069f96da0e5e35b033612265715862e309f270b574034e96a4156581f23c4d",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h08-x0-r1",
+      "frame_index": 60,
+      "x": 317,
+      "y": 271,
+      "source": "assistant_visual",
+      "frame_sha256": "f130e80c2e9b5b5240bf0ccac239e9dc2f53dcd75e3c99dcf3e07610f58dc559",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h14-x0-r1",
+      "frame_index": 0,
+      "x": 317,
+      "y": 269,
+      "source": "assistant_visual",
+      "frame_sha256": "6b0c31c2016dbdcfc1ccded7d8f0a6a70c269d9906a7c448bd928a5b263448fe",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h14-x0-r1",
+      "frame_index": 33,
+      "x": 317,
+      "y": 247,
+      "source": "assistant_visual",
+      "frame_sha256": "21ae2414ac189b1463710b812bf0e5f3ab90042090cf07b5f9df2b846891c50f",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h14-x0-r1",
+      "frame_index": 45,
+      "x": 317,
+      "y": 189,
+      "source": "assistant_visual",
+      "frame_sha256": "6046f40e9a842436186b5e10508e9747ede3091dbf3aa30fef91fed69d0097d1",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h14-x0-r1",
+      "frame_index": 55,
+      "x": 317,
+      "y": 194,
+      "source": "assistant_visual",
+      "frame_sha256": "ac9e500ea4497a6d630405ecf80266c30e5211d89c23a9a9b5b76910650f2736",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14.png"
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h14-x0-r1",
+      "frame_index": 65,
+      "x": 317,
+      "y": 265,
+      "source": "assistant_visual",
+      "frame_sha256": "1762eac43c4c4d7b872eeeaf379c571a8ac29b61373b102c88df7a9ca4d51430",
+      "evidence": "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14.png"
+    }
+  ],
+  "control_events": [
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-before-h03-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 48,
+      "landing_frame": 69,
+      "source": "assistant_visual",
+      "method": "Independent inspection of raw pixel contact sheets; last-ground takeoff, midpoint of visible apex plateau, first visible ground contact."
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h24-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 53,
+      "landing_frame": 71,
+      "source": "assistant_visual",
+      "method": "Raw-pixel inspection; apex52-53 plateau midpoint, first floor contact71."
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h08-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 44,
+      "landing_frame": 57,
+      "source": "assistant_visual",
+      "method": "Raw-pixel contact-sheet inspection: last grounded frame, midpoint of highest plateau, first visible floor contact. No analysis coordinates used.",
+      "evidence": [
+        "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08-apex.png",
+        "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h08-landing.png"
+      ]
+    },
+    {
+      "run_id": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\slay-after-h14-x0-r1",
+      "takeoff_frame": 29,
+      "apex_frame": 50,
+      "landing_frame": 66,
+      "source": "assistant_visual",
+      "method": "Raw-pixel contact-sheet inspection: last grounded frame, midpoint of highest plateau, first visible floor contact. No analysis coordinates used.",
+      "evidence": [
+        "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14-apex.png",
+        "D:\\Amazon Developer Hackathon\\artifacts\\manual\\slay-val-h14-landing.png"
+      ]
+    }
+  ],
+  "control_point_source": null,
+  "control_event_source": null,
+  "validation_status": "pending"
+}

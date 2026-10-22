@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "template_run": "D:\\Amazon Developer Hackathon\\artifacts\\phase2c\\setup\\calibration\\jump\\h03-x0-r1",
+  "template_frame": 0,
+  "roi": [
+    107,
+    144,
+    10,
+    6
+  ],
+  "anchor_offset": [
+    4.5,
+    4
+  ],
+  "body_height_px": 16,
+  "background_rois": [
+    [
+      16,
+      160,
+      24,
+      16
+    ]
+  ],
+  "min_score": 0.75,
+  "min_margin": 0.03,
+  "camera_max_shift_px": 1,
+  "control_points": [],
+  "control_events": [],
+  "annotation_note": "Calibration-selected skull patch excludes animated outside outline. Anchor remains body midline eye row x111.5/y148; natural body height16. Score .75 and margin .03 unchanged; no held-out input used.",
+  "horizontal_mirror": true
+}

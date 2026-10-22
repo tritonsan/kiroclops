@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "template_run": "D:\\Amazon Developer Hackathon\\artifacts\\phase2c\\setup\\calibration\\jump\\h03-x0-r1",
+  "template_frame": 0,
+  "roi": [
+    106,
+    144,
+    12,
+    7
+  ],
+  "anchor_offset": [
+    5.5,
+    4
+  ],
+  "body_height_px": 16,
+  "background_rois": [
+    [
+      16,
+      160,
+      24,
+      16
+    ]
+  ],
+  "min_score": 0.75,
+  "min_margin": 0.03,
+  "camera_max_shift_px": 1,
+  "control_points": [],
+  "control_events": [],
+  "annotation_note": "Manually selected fixed skull, anchor at body midline on eye row; natural standing extent y144..159 =16 pixels. No collision or engine coordinate input.",
+  "horizontal_mirror": false
+}

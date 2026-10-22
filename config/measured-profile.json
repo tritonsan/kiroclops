@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "family": "held_velocity",
+  "v0_body_s": 12.447667529067122,
+  "gravity_body_s2": 103.977288855424,
+  "hold_ticks": 17,
+  "validation_status": "pending",
+  "fit_diagnostics": {
+    "bic": -882.6794466237234,
+    "rmse_body": 0.08248308869602324,
+    "sample_count": 180,
+    "families": [
+      {
+        "family": "ballistic",
+        "v0_body_s": 15.842265938819423,
+        "gravity_body_s2": 40.25883678124596,
+        "hold_ticks": 0,
+        "bic": -10.198692932044818,
+        "rmse_body": 0.9444245650125334,
+        "sample_count": 180,
+        "parameter_count": 2
+      },
+      {
+        "family": "held_velocity",
+        "v0_body_s": 12.447667529067122,
+        "gravity_body_s2": 103.977288855424,
+        "hold_ticks": 17,
+        "bic": -882.6794466237234,
+        "rmse_body": 0.08248308869602324,
+        "sample_count": 180,
+        "parameter_count": 3
+      }
+    ],
+    "selection": "least-squares with BIC; 2 versus 3 parameters",
+    "hold_cap_at_search_boundary": false,
+    "integration": "60Hz: held steps set upward velocity to v0; free steps apply gravity then move",
+    "hold_timing": "pressed ticks [start,start+min(input_hold,cap)); remaining steps = release-1-last_ground_tick",
+    "limits": "Only these two families compared; no claim to recover original engine parameters."
+  },
+  "provenance": {
+    "source": "calibration rendered-pixel observations only",
+    "fps": 60,
+    "calibration_runs": [
+      "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1",
+      "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r2",
+      "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r3",
+      "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1",
+      "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r2",
+      "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r3"
+    ],
+    "analysis_files": [
+      {
+        "path": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r1\\analysis.json",
+        "sha256": "f2f19a6fced382e8aa6c0efce34fd8e5aac3d347a0800447ca857ed99e2e8bc0"
+      },
+      {
+        "path": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r2\\analysis.json",
+        "sha256": "a10af0adc116b626e383e8724d2bce82ef24f6b6e4eb9de5ca0a045ed0a7b1b0"
+      },
+      {
+        "path": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h03-x0-r3\\analysis.json",
+        "sha256": "988f116cf50d68551d054674336b4a3133766c91373c26beace40cd792502039"
+      },
+      {
+        "path": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r1\\analysis.json",
+        "sha256": "0670cfd48656a0eda1cad1e2671534c7869cca8c99fe203dc7aa92efdc105857"
+      },
+      {
+        "path": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r2\\analysis.json",
+        "sha256": "e05755f5e7932ecda13ad926a951bcda146536d41f981015043358829c0d0437"
+      },
+      {
+        "path": "D:\\Amazon Developer Hackathon\\artifacts\\runs\\tiny-reference-h24-x0-r3\\analysis.json",
+        "sha256": "4ae2cf011c29b32eec6cf1f48d04d30b60a79c39e158c513327082dd39184a9c"
+      }
+    ]
+  }
+}

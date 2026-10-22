@@ -1,0 +1,487 @@
+{
+ "kind": "V6PanelHeldOutOutcome",
+ "session": "v6p01",
+ "job": "d19d9b76a015463fbf9708cb4fbde348",
+ "candidate": "candidate-02",
+ "cases": 56,
+ "passed": 55,
+ "by_role": {
+  "regression": {
+   "cases": 44,
+   "passed": 43
+  },
+  "validation": {
+   "cases": 12,
+   "passed": 12
+  }
+ },
+ "rows": [
+  {
+   "case_id": "realistic-suite-known-panel-interrupt-w768-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.0069,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-interrupt-w768-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.0082,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-interrupt-w1280-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00603,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-interrupt-w1280-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00512,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-drag-release-w768-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00421,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-drag-release-w768-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.01252,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-drag-release-w1280-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00492,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-drag-release-w1280-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00409,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-reverse-w768-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00534,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-reverse-w768-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00502,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-reverse-w1280-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00956,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-known-panel-reverse-w1280-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00743,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-interrupt-new-w768-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.0092,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-interrupt-new-w768-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00993,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-interrupt-new-w1280-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00813,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-interrupt-new-w1280-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.0079,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-reverse-new-w768-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00705,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-reverse-new-w768-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00498,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-reverse-new-w1280-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00654,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-reverse-new-w1280-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00531,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-drag-release-new-w768-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00711,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-drag-release-new-w768-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00673,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-drag-release-new-w1280-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00957,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-suite-panel-validation-drag-release-new-w1280-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.01074,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w640-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00432,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w640-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00446,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w1120-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00556,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w1120-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00563,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w640-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00582,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w640-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.0077,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w1120-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00901,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w1120-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.01002,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1024-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00695,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1024-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00867,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1440-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00697,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1440-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00541,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1024-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00626,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1024-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00836,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1440-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00881,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1440-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.01066,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1024-r1",
+   "role": "regression",
+   "pass": true,
+   "score": 0.0092,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1024-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.00839,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r1",
+   "role": "regression",
+   "pass": false,
+   "score": 0.27668,
+   "failure_class": "required_order_unobservable",
+   "failing_windows": [
+    {
+     "object": "bookmark",
+     "window": "motion-2",
+     "position_rmse": 0.7822,
+     "rmse_limit": 0.0756
+    },
+    {
+     "object": "handle",
+     "window": "motion-2",
+     "position_rmse": 0.8617,
+     "rmse_limit": 0.05
+    },
+    {
+     "object": "star",
+     "window": "motion-2",
+     "position_rmse": 0.8099,
+     "rmse_limit": 0.05
+    }
+   ]
+  },
+  {
+   "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r2",
+   "role": "regression",
+   "pass": true,
+   "score": 0.01107,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w896-r1",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00792,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w896-r2",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00509,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w1360-r1",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00667,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w1360-r2",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00634,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w896-r1",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00596,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w896-r2",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00556,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w1360-r1",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00691,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w1360-r2",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00541,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w896-r1",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00714,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w896-r2",
+   "role": "validation",
+   "pass": true,
+   "score": 0.00593,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w1360-r1",
+   "role": "validation",
+   "pass": true,
+   "score": 0.01075,
+   "failure_class": null,
+   "failing_windows": []
+  },
+  {
+   "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w1360-r2",
+   "role": "validation",
+   "pass": true,
+   "score": 0.01039,
+   "failure_class": null,
+   "failing_windows": []
+  }
+ ]
+}

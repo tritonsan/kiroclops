@@ -1,0 +1,1544 @@
+{
+ "kind": "AgenticVisionTrace",
+ "session": "v6p01",
+ "audit_rows": 230,
+ "tool_counts": {
+  "tool_load": 1,
+  "inspect_session": 4,
+  "list_directory": 1,
+  "prepare_experiment": 1,
+  "execute_pwsh": 61,
+  "read_file": 6,
+  "get_job": 126,
+  "fs_write": 18,
+  "str_replace": 7,
+  "evaluate_candidate": 3,
+  "cancel_job": 1,
+  "finalize_candidate": 1
+ },
+ "timeline": [
+  {
+   "t_s": 0.0,
+   "tool": "tool_load",
+   "detail": "{'tool_ids': ['kiroclops::*']}",
+   "allowed": true
+  },
+  {
+   "t_s": 2.2,
+   "tool": "inspect_session",
+   "detail": "",
+   "allowed": true
+  },
+  {
+   "t_s": 6.5,
+   "tool": "list_directory",
+   "detail": "target",
+   "allowed": true
+  },
+  {
+   "t_s": 6.6,
+   "tool": "prepare_experiment",
+   "detail": "",
+   "allowed": true
+  },
+  {
+   "t_s": 40.4,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem -Recurse -File src | Select-Object FullName, Length | Format-Table -AutoSize",
+   "allowed": true
+  },
+  {
+   "t_s": 40.9,
+   "tool": "read_file",
+   "detail": "index.html",
+   "allowed": true
+  },
+  {
+   "t_s": 41.0,
+   "tool": "read_file",
+   "detail": "style.css",
+   "allowed": true
+  },
+  {
+   "t_s": 43.3,
+   "tool": "read_file",
+   "detail": "app.js",
+   "allowed": true
+  },
+  {
+   "t_s": 44.1,
+   "tool": "read_file",
+   "detail": "panel-motion.js",
+   "allowed": true
+  },
+  {
+   "t_s": 44.1,
+   "tool": "read_file",
+   "detail": "spring.js",
+   "allowed": true
+  },
+  {
+   "t_s": 50.6,
+   "tool": "execute_pwsh",
+   "detail": "$j = Get-Content -Raw '.kiroclops-evidence\\inspect\\9494b111d3dca4a1848caf2880a59470684dfbd",
+   "allowed": true
+  },
+  {
+   "t_s": 56.4,
+   "tool": "execute_pwsh",
+   "detail": "$j = Get-Content -Raw '.kiroclops-evidence\\inspect\\9494b111d3dca4a1848caf2880a59470684dfbd",
+   "allowed": true
+  },
+  {
+   "t_s": 62.8,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 93.7,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 121.9,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 152.6,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence | Select-Object Name, LastWriteTime | Format-Table -Auto",
+   "allowed": true
+  },
+  {
+   "t_s": 155.6,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 188.3,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 189.8,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 219.9,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 221.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 251.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 251.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 251.6,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 279.7,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 280.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 308.7,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 337.1,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 367.1,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 397.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 397.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 427.4,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 457.5,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 458.8,
+   "tool": "get_job",
+   "detail": "job f4c1465c wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 470.3,
+   "tool": "execute_pwsh",
+   "detail": "$p='.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b482a42dcc7\\c2670c757447427b4c8db10e9b73",
+   "allowed": true
+  },
+  {
+   "t_s": 474.7,
+   "tool": "execute_pwsh",
+   "detail": "$p='.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b482a42dcc7\\c2670c757447427b4c8db10e9b73",
+   "allowed": true
+  },
+  {
+   "t_s": 479.5,
+   "tool": "execute_pwsh",
+   "detail": "$p='.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b482a42dcc7\\c2670c757447427b4c8db10e9b73",
+   "allowed": true
+  },
+  {
+   "t_s": 485.1,
+   "tool": "execute_pwsh",
+   "detail": "$p='.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b482a42dcc7\\c2670c757447427b4c8db10e9b73",
+   "allowed": true
+  },
+  {
+   "t_s": 490.4,
+   "tool": "execute_pwsh",
+   "detail": "$p='.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b482a42dcc7\\c2670c757447427b4c8db10e9b73",
+   "allowed": true
+  },
+  {
+   "t_s": 504.7,
+   "tool": "execute_pwsh",
+   "detail": "$p='.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b482a42dcc7\\c2670c757447427b4c8db10e9b73",
+   "allowed": true
+  },
+  {
+   "t_s": 505.8,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence | Select-Object Name | Format-Table -AutoSize | Out-Stri",
+   "allowed": true
+  },
+  {
+   "t_s": 511.4,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json d=json.load(open(r'.kiroclops-evidence\\calibration\\full-measuremen",
+   "allowed": true
+  },
+  {
+   "t_s": 517.0,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json d=json.load(open(r'.kiroclops-evidence\\calibration\\full-measuremen",
+   "allowed": true
+  },
+  {
+   "t_s": 523.5,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence\\calibration\\before\\realistic-suite-panel-calibration-ope",
+   "allowed": true
+  },
+  {
+   "t_s": 528.5,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json m=json.load(open(r'.kiroclops-evidence\\calibration\\before\\realisti",
+   "allowed": true
+  },
+  {
+   "t_s": 540.3,
+   "tool": "fs_write",
+   "detail": "extract.py (1189 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 540.8,
+   "tool": "execute_pwsh",
+   "detail": "python .kiroclops-scratch\\extract.py",
+   "allowed": true
+  },
+  {
+   "t_s": 557.3,
+   "tool": "fs_write",
+   "detail": "sim.py (1982 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 557.8,
+   "tool": "execute_pwsh",
+   "detail": "python .kiroclops-scratch\\sim.py | Select-Object -First 8",
+   "allowed": true
+  },
+  {
+   "t_s": 590.0,
+   "tool": "fs_write",
+   "detail": "fit.py (2790 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 590.5,
+   "tool": "execute_pwsh",
+   "detail": "python fit.py",
+   "allowed": true
+  },
+  {
+   "t_s": 595.2,
+   "tool": "str_replace",
+   "detail": "sim.py (317 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 595.7,
+   "tool": "execute_pwsh",
+   "detail": "python fit.py",
+   "allowed": true
+  },
+  {
+   "t_s": 603.3,
+   "tool": "fs_write",
+   "detail": "fit2.py (356 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 603.4,
+   "tool": "execute_pwsh",
+   "detail": "python fit2.py",
+   "allowed": true
+  },
+  {
+   "t_s": 610.7,
+   "tool": "fs_write",
+   "detail": "cmp.py (821 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 611.5,
+   "tool": "execute_pwsh",
+   "detail": "python cmp.py interrupt-early-w1280-r2",
+   "allowed": true
+  },
+  {
+   "t_s": 625.8,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json d=json.load(open(r'.kiroclops-evidence\\jobs\\f4c1465c61d64a5ab9b43b",
+   "allowed": true
+  },
+  {
+   "t_s": 637.3,
+   "tool": "fs_write",
+   "detail": "phase.py (1205 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 637.8,
+   "tool": "execute_pwsh",
+   "detail": "python phase.py -0.002",
+   "allowed": true
+  },
+  {
+   "t_s": 652.4,
+   "tool": "execute_pwsh",
+   "detail": "python cmp.py reverse-w768-r1 | Select-Object -First 50",
+   "allowed": true
+  },
+  {
+   "t_s": 680.2,
+   "tool": "execute_pwsh",
+   "detail": "python -c \"import numpy, scipy; print(numpy.__version__, scipy.__version__)\"",
+   "allowed": true
+  },
+  {
+   "t_s": 684.2,
+   "tool": "execute_pwsh",
+   "detail": "python -c \"import numpy; print(numpy.__version__)\"",
+   "allowed": true
+  },
+  {
+   "t_s": 710.3,
+   "tool": "fs_write",
+   "detail": "fit3.py (4287 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 710.7,
+   "tool": "execute_pwsh",
+   "detail": "python fit3.py",
+   "allowed": true
+  },
+  {
+   "t_s": 751.6,
+   "tool": "str_replace",
+   "detail": "panel-motion.js (642 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 754.0,
+   "tool": "execute_pwsh",
+   "detail": "node --input-type=module -e \"import('./src/panel-motion.js').then(m=>{let s={x:12,velocity",
+   "allowed": true
+  },
+  {
+   "t_s": 760.5,
+   "tool": "evaluate_candidate",
+   "detail": [
+    "evaluate_candidate",
+    "full calibration"
+   ],
+   "allowed": true
+  },
+  {
+   "t_s": 795.7,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 5",
+   "allowed": true
+  },
+  {
+   "t_s": 797.0,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json m=json.load(open(r'.kiroclops-evidence\\calibration\\before\\realisti",
+   "allowed": true
+  },
+  {
+   "t_s": 816.8,
+   "tool": "fs_write",
+   "detail": "resid.py (889 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 817.2,
+   "tool": "execute_pwsh",
+   "detail": "python resid.py",
+   "allowed": true
+  },
+  {
+   "t_s": 842.5,
+   "tool": "execute_pwsh",
+   "detail": "python -c \"import PIL; print(PIL.__version__)\"; Get-ChildItem .kiroclops-evidence\\calibrat",
+   "allowed": true
+  },
+  {
+   "t_s": 852.8,
+   "tool": "fs_write",
+   "detail": "track.py (1449 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 852.8,
+   "tool": "execute_pwsh",
+   "detail": "python .kiroclops-scratch\\track.py .kiroclops-evidence\\calibration\\before .kiroclops-scrat",
+   "allowed": true
+  },
+  {
+   "t_s": 952.2,
+   "tool": "execute_pwsh",
+   "detail": "python latfit.py",
+   "allowed": true
+  },
+  {
+   "t_s": 953.1,
+   "tool": "fs_write",
+   "detail": "latfit.py (1878 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 957.2,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-scratch | Select-Object Name, Length | Format-Table -AutoSize | O",
+   "allowed": true
+  },
+  {
+   "t_s": 961.7,
+   "tool": "execute_pwsh",
+   "detail": "python latfit.py",
+   "allowed": true
+  },
+  {
+   "t_s": 1052.1,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 20",
+   "allowed": true
+  },
+  {
+   "t_s": 1082.5,
+   "tool": "fs_write",
+   "detail": "near.py (849 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1082.5,
+   "tool": "execute_pwsh",
+   "detail": "python near.py interrupt-wide-w1280-r1; python near.py interrupt-wide-w1280-r2; python nea",
+   "allowed": true
+  },
+  {
+   "t_s": 1093.2,
+   "tool": "execute_pwsh",
+   "detail": "python near.py interrupt-wide-w1280-r1; python near.py interrupt-wide-w1280-r2; python nea",
+   "allowed": true
+  },
+  {
+   "t_s": 1093.8,
+   "tool": "fs_write",
+   "detail": "near.py (1182 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1100.6,
+   "tool": "execute_pwsh",
+   "detail": "python near.py interrupt-wide-w1280-r1; python near.py interrupt-wide-w1280-r2; python nea",
+   "allowed": true
+  },
+  {
+   "t_s": 1177.3,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1266.5,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1298.7,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1330.2,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1360.5,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1361.3,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1361.7,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1392.5,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1392.6,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1393.4,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1394.2,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1394.9,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1426.5,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1428.0,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1428.1,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1428.0,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1473.3,
+   "tool": "fs_write",
+   "detail": "panel-motion.input-time.js (4504 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1480.3,
+   "tool": "fs_write",
+   "detail": "input-clock.js (2121 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1480.8,
+   "tool": "get_job",
+   "detail": "job ef4d46e4 wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 1530.1,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json d=json.load(open(r'.kiroclops-evidence\\jobs\\ef4d46e4d3c44a018197c7",
+   "allowed": true
+  },
+  {
+   "t_s": 1536.6,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json d=json.load(open(r'.kiroclops-evidence\\jobs\\ef4d46e4d3c44a018197c7",
+   "allowed": true
+  },
+  {
+   "t_s": 1546.7,
+   "tool": "fs_write",
+   "detail": "windows.py (1172 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1548.4,
+   "tool": "execute_pwsh",
+   "detail": "python .kiroclops-scratch\\windows.py .kiroclops-evidence\\jobs\\ef4d46e4d3c44a018197c738f83d",
+   "allowed": true
+  },
+  {
+   "t_s": 1582.8,
+   "tool": "execute_pwsh",
+   "detail": "python .kiroclops-scratch\\track.py .kiroclops-evidence\\candidates\\candidate-01 .kiroclops-",
+   "allowed": true
+  },
+  {
+   "t_s": 1677.2,
+   "tool": "execute_pwsh",
+   "detail": "python latfit.py c01_track.json",
+   "allowed": true
+  },
+  {
+   "t_s": 1808.1,
+   "tool": "fs_write",
+   "detail": "input-clock.js (2256 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1812.7,
+   "tool": "str_replace",
+   "detail": "spring.js (1666 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1853.4,
+   "tool": "fs_write",
+   "detail": "panel-motion.js (6601 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1874.6,
+   "tool": "fs_write",
+   "detail": "test-lead.mjs (4216 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1875.2,
+   "tool": "execute_pwsh",
+   "detail": "node test-lead.mjs",
+   "allowed": true
+  },
+  {
+   "t_s": 1891.7,
+   "tool": "execute_pwsh",
+   "detail": "node --input-type=module -e \"import('./src/motion/spring.js').then(S=>{const a=S.stepSprin",
+   "allowed": true
+  },
+  {
+   "t_s": 1899.9,
+   "tool": "str_replace",
+   "detail": "test-lead.mjs (394 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1900.2,
+   "tool": "execute_pwsh",
+   "detail": "$env:DBG='1'; node test-lead.mjs | Select-Object -First 30",
+   "allowed": true
+  },
+  {
+   "t_s": 1968.4,
+   "tool": "str_replace",
+   "detail": "input-clock.js (1734 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1969.8,
+   "tool": "str_replace",
+   "detail": "panel-motion.js (447 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 1970.8,
+   "tool": "execute_pwsh",
+   "detail": "node test-lead.mjs",
+   "allowed": true
+  },
+  {
+   "t_s": 1980.8,
+   "tool": "evaluate_candidate",
+   "detail": "case_ids ['realistic-v4-suite-panel-calibration-open-wide-w1280-r1', 'realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1', 'realistic-v5-suite-panel-calibration-interrupt-early-w768-r1']",
+   "allowed": true
+  },
+  {
+   "t_s": 1980.9,
+   "tool": "inspect_session",
+   "detail": "",
+   "allowed": true
+  },
+  {
+   "t_s": 2022.2,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2022.2,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2022.5,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2023.3,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2023.9,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2055.5,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence\\candidates | Select-Object Name, LastWriteTime | Format-",
+   "allowed": true
+  },
+  {
+   "t_s": 2055.9,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2092.3,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2092.3,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2092.4,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2092.6,
+   "tool": "get_job",
+   "detail": "job 974699da wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2137.0,
+   "tool": "get_job",
+   "detail": "job 974699da wait 15",
+   "allowed": true
+  },
+  {
+   "t_s": 2162.6,
+   "tool": "str_replace",
+   "detail": "panel-motion.js (167 chars of arguments)",
+   "allowed": true
+  },
+  {
+   "t_s": 2162.6,
+   "tool": "cancel_job",
+   "detail": "",
+   "allowed": true
+  },
+  {
+   "t_s": 2162.7,
+   "tool": "execute_pwsh",
+   "detail": "node test-lead.mjs 2>&1 | Select-Object -Last 3",
+   "allowed": true
+  },
+  {
+   "t_s": 2171.5,
+   "tool": "evaluate_candidate",
+   "detail": [
+    "evaluate_candidate",
+    "full calibration"
+   ],
+   "allowed": true
+  },
+  {
+   "t_s": 2203.5,
+   "tool": "read_file",
+   "detail": "panel-motion.js",
+   "allowed": true
+  },
+  {
+   "t_s": 2218.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2218.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2218.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2218.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2218.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2219.4,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2220.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2220.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2221.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2222.0,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2256.2,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence\\candidates | Select-Object Name, LastWriteTime | Format-",
+   "allowed": true
+  },
+  {
+   "t_s": 2256.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2256.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2257.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2257.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2258.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2259.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2259.6,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2300.0,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2300.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2300.0,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2333.9,
+   "tool": "inspect_session",
+   "detail": "",
+   "allowed": true
+  },
+  {
+   "t_s": 2345.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2345.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2345.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2345.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2345.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2346.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2347.5,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2347.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2348.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2349.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2383.1,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence\\candidates | Select-Object Name, LastWriteTime | Format-",
+   "allowed": true
+  },
+  {
+   "t_s": 2383.4,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2386.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2386.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2386.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2423.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2423.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2423.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2423.2,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2455.5,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence\\jobs | Select-Object Name, LastWriteTime | Format-Table ",
+   "allowed": true
+  },
+  {
+   "t_s": 2456.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 20",
+   "allowed": true
+  },
+  {
+   "t_s": 2483.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2484.0,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2483.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2515.8,
+   "tool": "inspect_session",
+   "detail": "",
+   "allowed": true
+  },
+  {
+   "t_s": 2524.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2524.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2524.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2525.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2526.5,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2526.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2563.8,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2563.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2564.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2565.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2596.5,
+   "tool": "execute_pwsh",
+   "detail": "Get-ChildItem .kiroclops-evidence\\inspect -Filter *.json | Sort-Object LastWriteTime -Desc",
+   "allowed": true
+  },
+  {
+   "t_s": 2608.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2608.4,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2608.5,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2608.6,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2608.5,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2609.5,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2610.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2610.4,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2640.5,
+   "tool": "execute_pwsh",
+   "detail": "Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2641.1,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2641.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2642.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2643.5,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2644.3,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2644.6,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2674.8,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2675.8,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2676.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2676.9,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2677.7,
+   "tool": "execute_pwsh",
+   "detail": "Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2711.7,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2711.8,
+   "tool": "execute_pwsh",
+   "detail": "Start-Sleep -Seconds 45; Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2762.0,
+   "tool": "execute_pwsh",
+   "detail": "Start-Sleep -Seconds 40; Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2762.6,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2812.3,
+   "tool": "execute_pwsh",
+   "detail": "Start-Sleep -Seconds 50; Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2812.4,
+   "tool": "execute_pwsh",
+   "detail": "Start-Sleep -Seconds 50; Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2812.4,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2812.4,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2868.6,
+   "tool": "execute_pwsh",
+   "detail": "Start-Sleep -Seconds 55; Get-Date -Format \"HH:mm:ss\"",
+   "allowed": true
+  },
+  {
+   "t_s": 2930.0,
+   "tool": "get_job",
+   "detail": "job 6dbff94f wait 25",
+   "allowed": true
+  },
+  {
+   "t_s": 2943.5,
+   "tool": "execute_pwsh",
+   "detail": "python -c \" import json d=json.load(open(r'.kiroclops-evidence\\jobs\\6dbff94f50f541f493a135",
+   "allowed": true
+  },
+  {
+   "t_s": 2948.1,
+   "tool": "finalize_candidate",
+   "detail": "candidate-02",
+   "allowed": true
+  }
+ ],
+ "jobs": [
+  {
+   "job_id": "6dbff94f",
+   "operation": "evaluate",
+   "candidate_id": "candidate-02",
+   "status": "succeeded",
+   "partial": false,
+   "case_ids": null,
+   "created_s": 2171.7,
+   "duration_s": 686.0,
+   "error": null,
+   "eligible": true,
+   "score": 0.006695273331283642,
+   "cases": 16,
+   "cases_passed": 16,
+   "failing_windows": [],
+   "failing_window_count": 0
+  },
+  {
+   "job_id": "974699da",
+   "operation": "evaluate",
+   "candidate_id": "probe-01",
+   "status": "cancelled",
+   "partial": true,
+   "case_ids": [
+    "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+    "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+    "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1"
+   ],
+   "created_s": 1982.8,
+   "duration_s": 151.0,
+   "error": "job_cancelled"
+  },
+  {
+   "job_id": "d19d9b76",
+   "operation": "finalize",
+   "candidate_id": "candidate-02",
+   "status": "succeeded",
+   "partial": false,
+   "case_ids": null,
+   "created_s": 2948.5,
+   "duration_s": 2260.1,
+   "error": null,
+   "eligible": false,
+   "score": 0.012081197944574046,
+   "cases": 56,
+   "cases_passed": 55,
+   "failing_windows": [
+    {
+     "case": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r1",
+     "object": "bookmark",
+     "window": "motion-2",
+     "error": 0.7822087870229343,
+     "before": 0.00639053724369917
+    },
+    {
+     "case": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r1",
+     "object": "handle",
+     "window": "motion-2",
+     "error": 0.8617090250708945,
+     "before": 0.00458936714156291
+    },
+    {
+     "case": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r1",
+     "object": "star",
+     "window": "motion-2",
+     "error": 0.8098857770557019,
+     "before": 0.005699469849452008
+    }
+   ],
+   "failing_window_count": 3
+  },
+  {
+   "job_id": "ef4d46e4",
+   "operation": "evaluate",
+   "candidate_id": "candidate-01",
+   "status": "succeeded",
+   "partial": false,
+   "case_ids": null,
+   "created_s": 760.7,
+   "duration_s": 696.4,
+   "error": null,
+   "eligible": true,
+   "score": 0.024434871866282418,
+   "cases": 16,
+   "cases_passed": 16,
+   "failing_windows": [],
+   "failing_window_count": 0
+  },
+  {
+   "job_id": "f4c1465c",
+   "operation": "prepare",
+   "candidate_id": null,
+   "status": "succeeded",
+   "partial": false,
+   "case_ids": null,
+   "created_s": 6.8,
+   "duration_s": 426.4,
+   "error": null,
+   "eligible": null,
+   "score": null,
+   "cases": 0,
+   "cases_passed": 0,
+   "failing_windows": [],
+   "failing_window_count": 0
+  }
+ ],
+ "candidate_diffs": {
+  "candidate-01": [
+   {
+    "file": "src/panel-motion.js",
+    "added": 3,
+    "removed": 1
+   }
+  ],
+  "candidate-02": [
+   {
+    "file": "src/panel-motion.js",
+    "added": 86,
+    "removed": 15
+   },
+   {
+    "file": "src/motion/input-clock.js",
+    "added": 45,
+    "removed": 0
+   },
+   {
+    "file": "src/motion/spring.js",
+    "added": 33,
+    "removed": 0
+   }
+  ]
+ },
+ "source": {
+  "audit": "C:\\kc3d\\s\\v6p01\\kiro\\tool-audit.jsonl",
+  "audit_sha256": "6eaa0326415834ca43dbd64e7d001a90c57d87e781bbf48a8a5f8a9cee5c3587"
+ }
+}

@@ -1,0 +1,30 @@
+# Evidence (public subset)
+
+This folder holds the parts of the frozen KiroClops evidence that back the numbers in the [technical report](../submission/TECHNICAL_REPORT.md) and are small, in English and free of personal data. `scripts/build_public_evidence.py` produced every file from the internal evidence roots. [`MANIFEST.json`](MANIFEST.json) gives, for each file, its source path, the source's SHA-256, this file's SHA-256 and the transformation applied:
+
+- copied byte for byte;
+- copied with the AWS account number inside ARNs masked (two AWS equivalence results);
+- extracted from a larger file.
+
+Frames, recordings, closure receipts (up to 33 MB each) and the Kiro session workspaces are not included. They hold gigabytes of images and local machine paths, and can be shown on request.
+
+| Path | What it shows | Report |
+|---|---|---|
+| `closures/game-v4g01-closure-02.summary.json` | Game domain closure: every acceptance axis passes | Summary, §6.2 |
+| `closures/svg-v5s01c-closure-01.summary.json` | SVG domain closure: pass, with the historical candidate re-measured | Summary, §6.2 |
+| `svg-focus-ring-blind-qualification.json` | Connector endpoints at focus rings against blind marks: 32/32 within 2 px, 32/32 attachment decisions agree | §3.1 |
+| `opencv5-symbol-diff/` | Python symbol tables of OpenCV 4.14.0 and 5.0.0 and their difference | §3.2 |
+| `lightglue-sweep/` | OpenCV 5.0.0 LightGlue: `main.json` reproduces the failure (cold sweep of 1,470 keypoint-count pairs, 89 C++ exceptions); `order-1.json` and `order-2.json` validate the warm-up and helper-process design (1,617 pairs in two random orders, identical results, 0 helper restarts) | §3.2 |
+| `subpixel-benchmark/` | Sub-pixel refinement on synthetic shifts: integer peak, three-point parabola, symmetric upsampling | §3.3 |
+| `marks-error/` | Tracker scatter against independent marks on real panel and SVG recordings | §3.3 |
+| `feature-cross-check/` | ALIKED + LightGlue cross-check of the template tracker on panel and SVG calibration recordings | §3.3 |
+| `v6-tracker-equivalence/` | V6 defaults reproduce the stored panel and SVG observations bit for bit | §3.3 |
+| `panel-v6p01/heldout-outcome.json` | V6 panel run, sealed candidate 02: 55 of 56 held-out comparisons (regression 43/44, validation 12/12), with the failing drag-release windows | §6.2 |
+| `aws/standard-equivalence/`, `aws/cool-equivalence/` | The same 17 recordings measured locally and on the Graviton4 worker, with the standard wheel and with COOL | §5.2 |
+| `aws/speed/` | Speed and cost: COOL against the standard wheel and the local engine | §5.2 |
+| `aws/wake/result.json` | Wake-up from a stopped worker to a finished job | §5.2 |
+| `inspect-window-post-freeze/result.json` | The post-freeze `inspect_window` check over 102 calibration windows | §6.4 |
+| `tests/` | Full-suite results on the engineering machine (`full-tests-02`, `full-tests-03`) and the full run of this public tree (`public-tree-tests.log`: 3,757 tests, 173 skipped, no failures) | §6.4 |
+| `source-epochs.json` | Tree hashes of the frozen source epochs | §6.4, §8 |
+
+The Agentic Vision trace of the V6 panel run, with the agent's own helper scripts and code changes, is in [`submission/evidence/agentic-trace-v6p01`](../submission/evidence/agentic-trace-v6p01).

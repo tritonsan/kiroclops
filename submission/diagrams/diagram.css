@@ -1,0 +1,91 @@
+/* Shared style for the KiroClops submission diagrams. One typeface, three sizes, 16 px minimum. */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #ffffff; }
+body {
+  font-family: "Segoe UI", "Segoe UI Variable Text", system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+#canvas { position: relative; width: 1600px; background: #ffffff; overflow: hidden; }
+
+.title { position: absolute; left: 48px; top: 26px; font-size: 34px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.4; }
+.subtitle { position: absolute; left: 48px; top: 76px; font-size: 18px; color: #475569; line-height: 1.4; }
+
+/* Zones and groups ------------------------------------------------------- */
+.zone { position: absolute; }
+.zone-local { border: 2px solid #cbd5e1; background: #f8fafc; border-radius: 16px; }
+.zone-label { position: absolute; left: 22px; top: 14px; font-size: 16px; font-weight: 600; letter-spacing: 0.05em; color: #334155; text-transform: uppercase; line-height: 1.4; }
+.harness { border: 2px solid #94a3b8; background: #ffffff; border-radius: 14px; }
+.harness .zone-label { text-transform: none; letter-spacing: 0; color: #0f172a; font-size: 17px; }
+
+/* AWS groups follow the AWS architecture icon guidelines: square corners,
+   AWS Cloud in squid ink with the logo in the corner, Region dashed teal. */
+.aws-cloud { border: 2px solid #242f3e; background: #ffffff; }
+.aws-region { border: 2px dashed #00a4a6; background: #ffffff; }
+.group-head { position: absolute; left: 0; top: 0; display: flex; align-items: center; gap: 10px; }
+.group-head img { display: block; }
+.group-head span { font-size: 16px; font-weight: 600; line-height: 1.4; }
+.aws-cloud > .group-head img { width: 40px; height: 40px; }
+.aws-region > .group-head img { width: 32px; height: 32px; }
+.aws-region > .group-head span { color: #00797b; }
+
+/* Nodes -------------------------------------------------------------------- */
+.node { position: absolute; background: #ffffff; border: 2px solid #cbd5e1; border-radius: 12px; padding: 13px 16px; display: flex; flex-direction: column; gap: 5px; }
+.node .head { display: flex; align-items: center; gap: 9px; }
+.node .head svg { width: 24px; height: 24px; flex: none; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.node .t { font-size: 19px; font-weight: 600; line-height: 1.4; }
+.node .s { font-size: 16px; color: #475569; line-height: 1.4; }
+.node .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 3px; }
+.chip { font-family: Consolas, "Cascadia Mono", ui-monospace, monospace; font-size: 16px; line-height: 1.4; color: #1e293b; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1px 7px; white-space: nowrap; }
+
+.node.cv { border-color: #16a34a; background: #f0fdf4; }
+.node.cv .t { color: #14532d; } .node.cv .head svg { stroke: #15803d; }
+.node.agent { border-color: #7c3aed; background: #f5f3ff; }
+.node.agent .t { color: #4c1d95; } .node.agent .head svg { stroke: #6d28d9; }
+.node.neutral .head svg { stroke: #334155; }
+.node.evidence { border-color: #94a3b8; background: #f8fafc; }
+.node.evidence .head svg { stroke: #475569; }
+.node.strong { border-width: 3px; }
+
+/* AWS service tiles: icon with the service name underneath ------------------ */
+.svc { position: absolute; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+.svc img { width: 56px; height: 56px; display: block; }
+.svc .t { font-size: 16px; font-weight: 600; line-height: 1.4; }
+.svc .s { font-size: 16px; color: #475569; line-height: 1.4; }
+.stack { position: absolute; border: 1.5px solid #e2e8f0; border-radius: 10px; background: #ffffff; padding: 12px; display: flex; flex-direction: column; gap: 14px; }
+.stack .row { display: flex; align-items: center; gap: 10px; }
+.stack .row img { width: 40px; height: 40px; flex: none; }
+.stack .row .t { font-size: 16px; font-weight: 600; line-height: 1.4; }
+.stack .row .s { font-size: 16px; color: #475569; line-height: 1.4; }
+
+/* Edge decorations --------------------------------------------------------- */
+svg.edges { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+.badge { position: absolute; width: 30px; height: 30px; border-radius: 50%; background: #0f172a; color: #ffffff; font-size: 16px; font-weight: 700; line-height: 30px; text-align: center; transform: translate(-50%, -50%); }
+.badge.agent { background: #6d28d9; } .badge.cv { background: #15803d; } .badge.aws { background: #c2410c; }
+.elabel { position: absolute; font-size: 16px; line-height: 1.4; color: #334155; background: #ffffff; padding: 1px 6px; border-radius: 6px; white-space: nowrap; transform: translate(-50%, -50%); }
+
+/* Panels at the bottom ------------------------------------------------------ */
+.panel-head { position: absolute; font-size: 16px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: #334155; line-height: 1.4; }
+.steps { position: absolute; display: flex; flex-direction: column; gap: 8px; }
+.step { display: flex; align-items: center; gap: 10px; font-size: 16px; line-height: 1.4; color: #1e293b; white-space: nowrap; }
+.step .num { width: 26px; height: 26px; border-radius: 50%; background: #0f172a; color: #fff; font-weight: 700; font-size: 16px; line-height: 26px; text-align: center; flex: none; }
+.step .num.agent { background: #6d28d9; } .step .num.cv { background: #15803d; } .step .num.aws { background: #c2410c; }
+.legend { position: absolute; display: flex; flex-direction: column; gap: 9px; }
+.legend .item { display: flex; align-items: center; gap: 10px; font-size: 16px; line-height: 1.4; color: #1e293b; white-space: nowrap; }
+.legend .sw { width: 26px; height: 18px; border-radius: 5px; border: 2px solid; flex: none; }
+.legend svg { width: 40px; height: 14px; flex: none; }
+
+/* Agent-loop page ---------------------------------------------------------- */
+.center-note { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2px; }
+.center-note .big { font-size: 26px; font-weight: 600; line-height: 1.4; color: #0f172a; }
+.center-note .small { font-size: 16px; line-height: 1.4; color: #475569; }
+.track { position: absolute; height: 3px; background: #cbd5e1; border-radius: 2px; }
+.dot { position: absolute; width: 16px; height: 16px; border-radius: 50%; border: 3px solid #ffffff; transform: translate(-50%, -50%); box-shadow: 0 0 0 2px #94a3b8; background: #94a3b8; }
+.dot.agent { background: #6d28d9; box-shadow: 0 0 0 2px #6d28d9; } .dot.cv { background: #15803d; box-shadow: 0 0 0 2px #15803d; } .dot.dark { background: #0f172a; box-shadow: 0 0 0 2px #0f172a; }
+.mile { position: absolute; font-size: 16px; line-height: 1.4; color: #334155; }
+.mile b { color: #0f172a; font-weight: 600; }
+.rail { position: absolute; display: flex; align-items: center; gap: 10px; }
+.pill { font-size: 16px; line-height: 1.4; color: #1e293b; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 999px; padding: 3px 13px; white-space: nowrap; }
+.node.warn { border-color: #d97706; background: #fffbeb; }
+.node.warn .s { color: #78350f; }
