@@ -7,7 +7,7 @@ This repository is the public English edition of the KiroClops source epoch `v6c
 * Edited for publication: 6 files (listed below).
 * Renamed: `README.en.md` to `README.md`.
 * Not published: 48 internal working documents (phase plans, results logs, roadmap and notes written in Turkish).
-* Added: 496 files (`LICENSE`, `.gitattributes`, `submission/`, `evidence/`, `scripts/build_public_evidence.py`).
+* Added: 520 files: `LICENSE`, `.gitattributes`, `submission/`, `evidence/`, the session replay in `docs/replay/` and the post-freeze analysis scripts (`scripts/build_public_evidence.py`, `v6_inspect_window_check.py`, `v6_agent_baseline_posthoc.py`, `phase4_aws_speed_posthoc.py`, `phase4_aws_cool_kernels*.py`).
 
 Tests on this tree: the full suite ran 3,757 tests on a clean copy of this tree (no evidence folders, models or Kiro installation): OK, 173 skipped (`evidence/tests/public-tree-tests.log`).
 

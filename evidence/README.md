@@ -3,7 +3,7 @@
 This folder holds the parts of the frozen KiroClops evidence that back the numbers in the [technical report](../submission/TECHNICAL_REPORT.md) and are small, in English and free of personal data. `scripts/build_public_evidence.py` produced every file from the internal evidence roots. [`MANIFEST.json`](MANIFEST.json) gives, for each file, its source path, the source's SHA-256, this file's SHA-256 and the transformation applied:
 
 - copied byte for byte;
-- copied with the AWS account number inside ARNs masked (two AWS equivalence results);
+- copied with a local user path or an AWS account number (in ARNs, queue URLs and bucket names) masked: the two AWS equivalence results and the public test log;
 - extracted from a larger file.
 
 Frames, recordings, closure receipts (up to 33 MB each) and the Kiro session workspaces are not included. They hold gigabytes of images and local machine paths, and can be shown on request.
@@ -19,9 +19,12 @@ Frames, recordings, closure receipts (up to 33 MB each) and the Kiro session wor
 | `marks-error/` | Tracker scatter against independent marks on real panel and SVG recordings | §3.3 |
 | `feature-cross-check/` | ALIKED + LightGlue cross-check of the template tracker on panel and SVG calibration recordings | §3.3 |
 | `v6-tracker-equivalence/` | V6 defaults reproduce the stored panel and SVG observations bit for bit | §3.3 |
+| `v6-agent-baseline/result.json` | No-agent baseline, post-hoc: the unchanged app scores 0.0502 on calibration against 0.0244 and 0.0067 for Kiro's two candidates, and 0.0500 on the held-out cases against 0.0121 for the sealed candidate; the recorded scores are reproduced exactly | §4.2 |
 | `panel-v6p01/heldout-outcome.json` | V6 panel run, sealed candidate 02: 55 of 56 held-out comparisons (regression 43/44, validation 12/12), with the failing drag-release windows | §6.2 |
 | `aws/standard-equivalence/`, `aws/cool-equivalence/` | The same 17 recordings measured locally and on the Graviton4 worker, with the standard wheel and with COOL | §5.2 |
 | `aws/speed/` | Speed and cost: COOL against the standard wheel and the local engine | §5.2 |
+| `aws/speed-posthoc/result.json` | Bootstrap intervals for the speed test, post-hoc: paired COOL/standard ratio 1.003 (95% interval 0.991–1.010) | §5.2 |
+| `aws/cool-kernels/` | Both engines on one Graviton4 instance, three alternating rounds: per-kernel times (`REPORT.md`, `summary.json`), the six raw runs, and an in-process profile of the measurement | §5.2 |
 | `aws/wake/result.json` | Wake-up from a stopped worker to a finished job | §5.2 |
 | `inspect-window-post-freeze/result.json` | The post-freeze `inspect_window` check over 102 calibration windows | §6.4 |
 | `tests/` | Full-suite results on the engineering machine (`full-tests-02`, `full-tests-03`) and the full run of this public tree (`public-tree-tests.log`: 3,757 tests, 173 skipped, no failures) | §6.4 |

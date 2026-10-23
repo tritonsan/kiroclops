@@ -195,7 +195,7 @@
    "source_sha256": "634df4b8c3b9c568d9ee51a7da978452970584c3d51eabdb7a95dd46812be9a5",
    "transform": "masked user path or AWS account number",
    "report_section": "5.2",
-   "sha256": "a4753dd57dee658d7d1208e27897f3a1be5daa8ce522c309202ff29083c4fc5a"
+   "sha256": "334f7effdada4d6d3261a59ebe0f58c51de25d226b4b5cdb36e809af749c7282"
   },
   "aws/cool-equivalence/posthoc-runtime-excluded.json": {
    "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\v6-cool-equivalence-02\\posthoc-runtime-excluded.json",
@@ -209,7 +209,7 @@
    "source_sha256": "6d2d0694143355368fd3d03807692de5ddf6747dc4d6a5e5d4b1cef45b3b9184",
    "transform": "masked user path or AWS account number",
    "report_section": "5.2",
-   "sha256": "ec03357398417890205a445464c2e4b7f2378b59f27f797b62b632540e3f2b00"
+   "sha256": "0fb3c0de1a477b728c023511da591eacf761b3985601241b5acc3d34c1aaf0d0"
   },
   "aws/wake/result.json": {
    "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\live-cool-wake-02\\result.json",
@@ -217,6 +217,83 @@
    "transform": "copied",
    "report_section": "5.2",
    "sha256": "99e464cd2d01975fca51b212111da27a06b2b1a1fb988a508ebdc4481430f6fd"
+  },
+  "aws/speed-posthoc/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\speed-01-posthoc-01\\result.json",
+   "source_sha256": "d23b9eb51a4b3c79fb58326657f7c0fcbc4435165599e2c30486d4a40c9d2b08",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "d23b9eb51a4b3c79fb58326657f7c0fcbc4435165599e2c30486d4a40c9d2b08"
+  },
+  "aws/cool-kernels/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\REPORT.md",
+   "source_sha256": "b49be6f8e4884129a2c8fdf6677781b845d14c660c6d74f7f59ae915db5ed6f0",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "b49be6f8e4884129a2c8fdf6677781b845d14c660c6d74f7f59ae915db5ed6f0"
+  },
+  "aws/cool-kernels/summary.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\summary.json",
+   "source_sha256": "0a1c2ba4e783fd2f2f989b971615d9fc349cb5592d43214ab884308ee3d030c9",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "0a1c2ba4e783fd2f2f989b971615d9fc349cb5592d43214ab884308ee3d030c9"
+  },
+  "aws/cool-kernels/runs/result-cool-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\runs\\result-cool-1.json",
+   "source_sha256": "448157e006b9813f5a16aff4db74f89e01018865d1a82dafa5d0e9ded6a8eb71",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "448157e006b9813f5a16aff4db74f89e01018865d1a82dafa5d0e9ded6a8eb71"
+  },
+  "aws/cool-kernels/runs/result-cool-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\runs\\result-cool-2.json",
+   "source_sha256": "5b10cbe3ce7757ffdb083b3bccb8633f031d1128612fd9988b43fe13b0328dd4",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "5b10cbe3ce7757ffdb083b3bccb8633f031d1128612fd9988b43fe13b0328dd4"
+  },
+  "aws/cool-kernels/runs/result-cool-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\runs\\result-cool-3.json",
+   "source_sha256": "b2075657478ae97cf41b73c742bce37b6835cc3ef23f1fdfaf50d0a74fa84ca0",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "b2075657478ae97cf41b73c742bce37b6835cc3ef23f1fdfaf50d0a74fa84ca0"
+  },
+  "aws/cool-kernels/runs/result-stock-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\runs\\result-stock-1.json",
+   "source_sha256": "9eb5079d984435b5e09c18b832e3bc56d642c51b2bae656c2ba8e848606cd04f",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "9eb5079d984435b5e09c18b832e3bc56d642c51b2bae656c2ba8e848606cd04f"
+  },
+  "aws/cool-kernels/runs/result-stock-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\runs\\result-stock-2.json",
+   "source_sha256": "60b42cecbe9dcffaa9f16af42911d867dd79a2b49f7b223e6460495b7df6d7bc",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "60b42cecbe9dcffaa9f16af42911d867dd79a2b49f7b223e6460495b7df6d7bc"
+  },
+  "aws/cool-kernels/runs/result-stock-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-kernels-01\\runs\\result-stock-3.json",
+   "source_sha256": "b6b83c11f2304222c7e584ec9dc06931c15e52446fa48a0aec16c3cd43c2e60b",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "b6b83c11f2304222c7e584ec9dc06931c15e52446fa48a0aec16c3cd43c2e60b"
+  },
+  "v6-agent-baseline/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\agent-baseline-posthoc-01\\result.json",
+   "source_sha256": "dfaf3cde0025220ffd58a9810b853142295a20d9544a1494c237f2628703acbf",
+   "transform": "copied",
+   "report_section": "4.2",
+   "sha256": "dfaf3cde0025220ffd58a9810b853142295a20d9544a1494c237f2628703acbf"
+  },
+  "tests/public-tree-tests.log": {
+   "source": "C:\\kc3d\\publish\\public-tree-tests.log",
+   "source_sha256": "41f270e47949c2fa2ab31cbf10adab6e92091823195e11d70e7f3a9067f61ef9",
+   "transform": "masked user path or AWS account number",
+   "report_section": "6.4",
+   "sha256": "5c994fe34d6db6b9f0c85fb657adef094f39f3d77514a07d6e3eef29da461511"
   },
   "panel-v6p01/heldout-outcome.json": {
    "source": "C:\\kc3d\\s\\v6p01\\measurements\\d19d9b76a015463fbf9708cb4fbde348\\comparison.json",
@@ -231,13 +308,6 @@
    "transform": "tree hashes of frozen source epochs",
    "report_section": "6.4, 8",
    "sha256": "ec5ac87d3b8e50df64e452ec1b60e69fa1af7e4becfd0c3d8f2f8cd9a784fe02"
-  },
-  "tests/public-tree-tests.log": {
-   "source": "unittest run of this public tree (clean copy, no evidence folders, models or Kiro installation)",
-   "source_sha256": "41f270e47949c2fa2ab31cbf10adab6e92091823195e11d70e7f3a9067f61ef9",
-   "transform": "masked user path or AWS account number",
-   "report_section": "6.4",
-   "sha256": "578044881547749c9184d331bbc7a873b42126bf92b3b607fad05eaa87eae23e"
   }
  },
  "not_copied": []

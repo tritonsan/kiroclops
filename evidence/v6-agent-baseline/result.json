@@ -1,0 +1,781 @@
+{
+ "kind": "V6AgentBaselinePosthoc",
+ "schema_version": 1,
+ "session": "C:\\kc3d\\s\\v6p01",
+ "label": "post-hoc analysis of recorded evaluations; no measurement was repeated",
+ "jobs": {
+  "candidate-01 (calibration)": {
+   "job_id": "ef4d46e4d3c44a018197c738f83db961",
+   "source_sha256": "34331fd06d2a3b1bf6eb5ad8e0770e30a25832edd61e4a28ace8cace7249b2d2",
+   "summary": {
+    "cases": 16,
+    "cases_with_both": 16,
+    "candidate_score": 0.024434871866282418,
+    "unchanged_app_score": 0.05020205345919244,
+    "ratio_unchanged_over_candidate": 2.0545249319873067,
+    "cases_candidate_better": 15,
+    "recomputed_case_scores_match": true,
+    "recorded_job_score": 0.024434871866282418,
+    "recomputed_job_score_matches": true
+   },
+   "cases": [
+    {
+     "case_id": "realistic-suite-panel-calibration-open-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.0024154603822899644,
+     "candidate": 0.0024154603822899644,
+     "unchanged_app": 0.017266652319665187
+    },
+    {
+     "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.013507306451484846,
+     "candidate": 0.013507306451484846,
+     "unchanged_app": 0.013809243962199104
+    },
+    {
+     "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.02424887898823806,
+     "candidate": 0.02424887898823806,
+     "unchanged_app": 0.053333234291969935
+    },
+    {
+     "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.026716002924203022,
+     "candidate": 0.026716002924203022,
+     "unchanged_app": 0.06964657069425992
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.021879964230605124,
+     "candidate": 0.021879964230605124,
+     "unchanged_app": 0.027968332009695084
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.020528021961903765,
+     "candidate": 0.020528021961903765,
+     "unchanged_app": 0.032566385304181926
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.02097020218533218,
+     "candidate": 0.02097020218533218,
+     "unchanged_app": 0.049666057772344584
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.02153862929278952,
+     "candidate": 0.02153862929278952,
+     "unchanged_app": 0.021450022410513494
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.03120057108117135,
+     "candidate": 0.03120057108117135,
+     "unchanged_app": 0.03358597412224795
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.029820626572415448,
+     "candidate": 0.029820626572415448,
+     "unchanged_app": 0.036699726796581233
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.02400701768220963,
+     "candidate": 0.02400701768220963,
+     "unchanged_app": 0.08169348461375275
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.01861503609911031,
+     "candidate": 0.01861503609911031,
+     "unchanged_app": 0.07271383932718878
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.03333852375668281,
+     "candidate": 0.03333852375668281,
+     "unchanged_app": 0.07908909880675305
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.04347575017126735,
+     "candidate": 0.04347575017126735,
+     "unchanged_app": 0.09702381206222113
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.030351243470336013,
+     "candidate": 0.030351243470336013,
+     "unchanged_app": 0.05848338167369722
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.028344714610479313,
+     "candidate": 0.028344714610479313,
+     "unchanged_app": 0.05823703917980767
+    }
+   ]
+  },
+  "candidate-02 (calibration)": {
+   "job_id": "6dbff94f50f541f493a135b4f871d716",
+   "source_sha256": "e3a65d51f65f159b0f4781d41f07088147d66410caf944a037e3d8f0388e94d8",
+   "summary": {
+    "cases": 16,
+    "cases_with_both": 16,
+    "candidate_score": 0.006695273331283642,
+    "unchanged_app_score": 0.05020205345919244,
+    "ratio_unchanged_over_candidate": 7.49813353020608,
+    "cases_candidate_better": 16,
+    "recomputed_case_scores_match": true,
+    "recorded_job_score": 0.006695273331283642,
+    "recomputed_job_score_matches": true
+   },
+   "cases": [
+    {
+     "case_id": "realistic-suite-panel-calibration-open-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.0029850432756971038,
+     "candidate": 0.0029850432756971038,
+     "unchanged_app": 0.017266652319665187
+    },
+    {
+     "case_id": "realistic-suite-panel-calibration-open-close-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.003168964929273872,
+     "candidate": 0.003168964929273872,
+     "unchanged_app": 0.013809243962199104
+    },
+    {
+     "case_id": "realistic-suite-panel-calibration-interrupt-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.008155144776348815,
+     "candidate": 0.008155144776348815,
+     "unchanged_app": 0.053333234291969935
+    },
+    {
+     "case_id": "realistic-suite-panel-calibration-reverse-w960-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.007519697065520636,
+     "candidate": 0.007519697065520636,
+     "unchanged_app": 0.06964657069425992
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.004949609610207167,
+     "candidate": 0.004949609610207167,
+     "unchanged_app": 0.027968332009695084
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-calibration-interrupt-w768-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.005795934400189155,
+     "candidate": 0.005795934400189155,
+     "unchanged_app": 0.032566385304181926
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-calibration-reverse-w768-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.008523149573056697,
+     "candidate": 0.008523149573056697,
+     "unchanged_app": 0.049666057772344584
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-calibration-open-wide-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.0020363768929785794,
+     "candidate": 0.0020363768929785794,
+     "unchanged_app": 0.021450022410513494
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.005304544620815219,
+     "candidate": 0.005304544620815219,
+     "unchanged_app": 0.03358597412224795
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-calibration-interrupt-wide-w1280-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.003551022224116704,
+     "candidate": 0.003551022224116704,
+     "unchanged_app": 0.036699726796581233
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.0089136927234749,
+     "candidate": 0.0089136927234749,
+     "unchanged_app": 0.08169348461375275
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w768-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.012825768187742611,
+     "candidate": 0.012825768187742611,
+     "unchanged_app": 0.07271383932718878
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.007864673214858476,
+     "candidate": 0.007864673214858476,
+     "unchanged_app": 0.07908909880675305
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-interrupt-early-w1280-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.010353601214099737,
+     "candidate": 0.010353601214099737,
+     "unchanged_app": 0.09702381206222113
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r1",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.00960676304519844,
+     "candidate": 0.00960676304519844,
+     "unchanged_app": 0.05848338167369722
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-calibration-reverse-wide-w1280-r2",
+     "role": "calibration",
+     "pass": true,
+     "recorded_score": 0.005570387546960162,
+     "candidate": 0.005570387546960162,
+     "unchanged_app": 0.05823703917980767
+    }
+   ]
+  },
+  "candidate-02 (held-out, after sealing)": {
+   "job_id": "d19d9b76a015463fbf9708cb4fbde348",
+   "source_sha256": "f15cf5c812c5c84f76fd2e58dfca0242636904c17ff77419f9dfea290dd5b3ed",
+   "summary": {
+    "cases": 56,
+    "cases_with_both": 56,
+    "candidate_score": 0.012081197944574046,
+    "unchanged_app_score": 0.05000417928775885,
+    "ratio_unchanged_over_candidate": 4.139008359698048,
+    "cases_candidate_better": 53,
+    "recomputed_case_scores_match": true
+   },
+   "by_role": {
+    "regression": {
+     "cases": 44,
+     "cases_with_both": 44,
+     "candidate_score": 0.013465537202541407,
+     "unchanged_app_score": 0.05340847759125625,
+     "ratio_unchanged_over_candidate": 3.966308717425417,
+     "cases_candidate_better": 42,
+     "recomputed_case_scores_match": true
+    },
+    "validation": {
+     "cases": 12,
+     "cases_with_both": 12,
+     "candidate_score": 0.007005287332027053,
+     "unchanged_app_score": 0.037521752174935044,
+     "ratio_unchanged_over_candidate": 5.3562045918361685,
+     "cases_candidate_better": 11,
+     "recomputed_case_scores_match": true
+    }
+   },
+   "cases": [
+    {
+     "case_id": "realistic-suite-known-panel-interrupt-w768-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.006902750171792807,
+     "candidate": 0.006902750171792807,
+     "unchanged_app": 0.04781981581126457
+    },
+    {
+     "case_id": "realistic-suite-known-panel-interrupt-w768-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.008196635140037906,
+     "candidate": 0.008196635140037906,
+     "unchanged_app": 0.04789306510114148
+    },
+    {
+     "case_id": "realistic-suite-known-panel-interrupt-w1280-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.00602675247866122,
+     "candidate": 0.00602675247866122,
+     "unchanged_app": 0.055937152152629
+    },
+    {
+     "case_id": "realistic-suite-known-panel-interrupt-w1280-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.005116555018805911,
+     "candidate": 0.005116555018805911,
+     "unchanged_app": 0.05266651679165404
+    },
+    {
+     "case_id": "realistic-suite-known-panel-drag-release-w768-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.004206026994782111,
+     "candidate": 0.004206026994782111,
+     "unchanged_app": 0.010766884128947158
+    },
+    {
+     "case_id": "realistic-suite-known-panel-drag-release-w768-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.012521922313522213,
+     "candidate": 0.012521922313522213,
+     "unchanged_app": 0.005018419631704595
+    },
+    {
+     "case_id": "realistic-suite-known-panel-drag-release-w1280-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.004923458199589797,
+     "candidate": 0.004923458199589797,
+     "unchanged_app": 0.009447451538151817
+    },
+    {
+     "case_id": "realistic-suite-known-panel-drag-release-w1280-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.0040947016432749716,
+     "candidate": 0.0040947016432749716,
+     "unchanged_app": 0.01503235737058514
+    },
+    {
+     "case_id": "realistic-suite-known-panel-reverse-w768-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.005342285048130484,
+     "candidate": 0.005342285048130484,
+     "unchanged_app": 0.06434380613427601
+    },
+    {
+     "case_id": "realistic-suite-known-panel-reverse-w768-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.005020224841502472,
+     "candidate": 0.005020224841502472,
+     "unchanged_app": 0.06530942145501821
+    },
+    {
+     "case_id": "realistic-suite-known-panel-reverse-w1280-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.009557957526418076,
+     "candidate": 0.009557957526418076,
+     "unchanged_app": 0.07009666211748157
+    },
+    {
+     "case_id": "realistic-suite-known-panel-reverse-w1280-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.007433608426988615,
+     "candidate": 0.007433608426988615,
+     "unchanged_app": 0.06960962871877562
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-interrupt-new-w768-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.009204168049211592,
+     "candidate": 0.009204168049211592,
+     "unchanged_app": 0.0997732764445476
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-interrupt-new-w768-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.009931978329644167,
+     "candidate": 0.009931978329644167,
+     "unchanged_app": 0.09997237591132432
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-interrupt-new-w1280-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.008132748300293646,
+     "candidate": 0.008132748300293646,
+     "unchanged_app": 0.05447574102563734
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-interrupt-new-w1280-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.007904645018393957,
+     "candidate": 0.007904645018393957,
+     "unchanged_app": 0.09169499423209722
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-reverse-new-w768-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.007046962596183469,
+     "candidate": 0.007046962596183469,
+     "unchanged_app": 0.06113546707502564
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-reverse-new-w768-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.004978936611178733,
+     "candidate": 0.004978936611178733,
+     "unchanged_app": 0.06103463463304792
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-reverse-new-w1280-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.006537781842591177,
+     "candidate": 0.006537781842591177,
+     "unchanged_app": 0.0630946490160247
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-reverse-new-w1280-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.005309676102211694,
+     "candidate": 0.005309676102211694,
+     "unchanged_app": 0.06609114377702441
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-drag-release-new-w768-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.0071063186553724815,
+     "candidate": 0.0071063186553724815,
+     "unchanged_app": 0.012330706445334332
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-drag-release-new-w768-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.006731700048737074,
+     "candidate": 0.006731700048737074,
+     "unchanged_app": 0.010797427389680234
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-drag-release-new-w1280-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.009571826163704979,
+     "candidate": 0.009571826163704979,
+     "unchanged_app": 0.015736521828257157
+    },
+    {
+     "case_id": "realistic-suite-panel-validation-drag-release-new-w1280-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.010742590647628772,
+     "candidate": 0.010742590647628772,
+     "unchanged_app": 0.017950065623871473
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w640-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.004316152530470215,
+     "candidate": 0.004316152530470215,
+     "unchanged_app": 0.07349118736630253
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w640-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.0044563685298699245,
+     "candidate": 0.0044563685298699245,
+     "unchanged_app": 0.06337454724142218
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w1120-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.005563219035942735,
+     "candidate": 0.005563219035942735,
+     "unchanged_app": 0.07459452405777059
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-reverse-v3-w1120-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.0056281020928082735,
+     "candidate": 0.0056281020928082735,
+     "unchanged_app": 0.06841788391445741
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w640-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.00581815514883198,
+     "candidate": 0.00581815514883198,
+     "unchanged_app": 0.013031928944193614
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w640-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.007702690156818179,
+     "candidate": 0.007702690156818179,
+     "unchanged_app": 0.014109398327466504
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w1120-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.009014264981670947,
+     "candidate": 0.009014264981670947,
+     "unchanged_app": 0.017376434441256156
+    },
+    {
+     "case_id": "realistic-v3-suite-panel-validation-drag-release-v3-w1120-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.010015798073359257,
+     "candidate": 0.010015798073359257,
+     "unchanged_app": 0.01837539045786827
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1024-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.0069548682094766005,
+     "candidate": 0.0069548682094766005,
+     "unchanged_app": 0.08103705272041946
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1024-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.008667813713771257,
+     "candidate": 0.008667813713771257,
+     "unchanged_app": 0.08070600916732376
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1440-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.006966277954408692,
+     "candidate": 0.006966277954408692,
+     "unchanged_app": 0.06369563490557315
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-interrupt-v4-w1440-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.005406836266740185,
+     "candidate": 0.005406836266740185,
+     "unchanged_app": 0.04955148890502115
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1024-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.006258908530731651,
+     "candidate": 0.006258908530731651,
+     "unchanged_app": 0.07142380151743305
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1024-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.00835566811760915,
+     "candidate": 0.00835566811760915,
+     "unchanged_app": 0.07133191833331887
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1440-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.00880966201103285,
+     "candidate": 0.00880966201103285,
+     "unchanged_app": 0.048607697604623204
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-reverse-v4-w1440-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.010662262723498787,
+     "candidate": 0.010662262723498787,
+     "unchanged_app": 0.05565084616039138
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1024-r1",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.009198395452306116,
+     "candidate": 0.009198395452306116,
+     "unchanged_app": 0.013572828953535681
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1024-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.008392398290444135,
+     "candidate": 0.008392398290444135,
+     "unchanged_app": 0.01637457188875491
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r1",
+     "role": "regression",
+     "pass": false,
+     "recorded_score": 0.2766790442091841,
+     "candidate": 0.2766790442091841,
+     "unchanged_app": 0.007093454744332514
+    },
+    {
+     "case_id": "realistic-v4-suite-panel-validation-drag-release-v4-w1440-r2",
+     "role": "regression",
+     "pass": true,
+     "recorded_score": 0.011074540714188523,
+     "candidate": 0.011074540714188523,
+     "unchanged_app": 0.28012823001030895
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w896-r1",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.00792319470032951,
+     "candidate": 0.00792319470032951,
+     "unchanged_app": 0.04789015759548545
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w896-r2",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.00508677852731934,
+     "candidate": 0.00508677852731934,
+     "unchanged_app": 0.046889920675626515
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w1360-r1",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.0066700061131377605,
+     "candidate": 0.0066700061131377605,
+     "unchanged_app": 0.03264612283987194
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-interrupt-v5-w1360-r2",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.006337177702353076,
+     "candidate": 0.006337177702353076,
+     "unchanged_app": 0.04357017333397954
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w896-r1",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.0059586522426359895,
+     "candidate": 0.0059586522426359895,
+     "unchanged_app": 0.05540726345117133
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w896-r2",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.005555966404532688,
+     "candidate": 0.005555966404532688,
+     "unchanged_app": 0.05646015917123353
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w1360-r1",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.006910430194724651,
+     "candidate": 0.006910430194724651,
+     "unchanged_app": 0.0667522751227201
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-reverse-v5-w1360-r2",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.005411965338184602,
+     "candidate": 0.005411965338184602,
+     "unchanged_app": 0.04797551679602255
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w896-r1",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.0071372210057728406,
+     "candidate": 0.0071372210057728406,
+     "unchanged_app": 0.014903237892879121
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w896-r2",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.005930657533324863,
+     "candidate": 0.005930657533324863,
+     "unchanged_app": 0.013191258352227715
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w1360-r1",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.010750537582023413,
+     "candidate": 0.010750537582023413,
+     "unchanged_app": 0.014714904260111543
+    },
+    {
+     "case_id": "realistic-v5-suite-panel-validation-drag-release-v5-w1360-r2",
+     "role": "validation",
+     "pass": true,
+     "recorded_score": 0.010390860639985908,
+     "candidate": 0.010390860639985908,
+     "unchanged_app": 0.009860036607891224
+    }
+   ]
+  }
+ }
+}

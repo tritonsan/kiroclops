@@ -6,6 +6,12 @@ KiroClops is an OpenCV 5 measurement harness for an AI coding agent (Kiro CLI). 
 
 Entered in the OpenCV AI Competition 2026 (powered by AWS). Technical report: [`submission/TECHNICAL_REPORT.md`](submission/TECHNICAL_REPORT.md). Engineering history: [`docs/history/README.md`](docs/history/README.md).
 
+## For judges: three checks in ten minutes
+
+1. **Read the summary** of the [technical report](submission/TECHNICAL_REPORT.md): the results, what did not work, and a reading guide mapped to the judging criteria.
+2. **Measure on the live AWS service** (about five minutes): follow [`submission/JUDGE_ACCESS.md`](submission/JUDGE_ACCESS.md) with the accounts from the Devpost testing instructions. The receipt shows OpenCV 5.1.0-dev from the COOL image on Graviton4, and `--compare-local` checks the result against your local OpenCV 5.
+3. **Replay the agent session** in the browser: the [session replay](https://tritonsan.github.io/kiroclops/replay/) shows one logged Kiro session in which OpenCV 5 measurements changed the agent's next steps. The same evidence in text form is in [`submission/AGENTIC_VISION.md`](submission/AGENTIC_VISION.md).
+
 ## What is verified today
 
 | Domain | Target | Status (frozen evidence) |

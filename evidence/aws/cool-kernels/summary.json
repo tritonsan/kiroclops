@@ -1,0 +1,328 @@
+{
+ "kind": "CoolKernelBenchmarkSummary",
+ "schema_version": 1,
+ "label": "post-hoc measurement after the V6 freeze; same c8g.xlarge instance, three alternating rounds per engine",
+ "instance": "c8g.xlarge (Graviton4), image ami-033e481a24f94c8cb",
+ "environments": {
+  "cool": {
+   "opencv_version": "5.1.0-dev",
+   "numpy_version": "2.5.1",
+   "python": "3.12.3",
+   "machine": "aarch64",
+   "cpu": "0xd4f",
+   "build_information_sha256": "12740978f31483f2352d9e8b367f4f6053c3bfb58618e2ff42d53443da2a8ec4",
+   "build_lines": [
+    "Baseline:                    SVE NEON FP16 NEON_DOTPROD NEON_FP16 NEON_BF16",
+    "Dispatched code generation:",
+    "Parallel framework:            pthreads",
+    "Custom HAL:                  YES (carotene (ver 0.0.1) KleidiCV (ver 0.7.0))"
+   ],
+   "engine_check": [
+    true,
+    true,
+    true
+   ]
+  },
+  "stock": {
+   "opencv_version": "5.0.0",
+   "numpy_version": "2.2.6",
+   "python": "3.12.3",
+   "machine": "aarch64",
+   "cpu": "0xd4f",
+   "build_information_sha256": "d62ce4a07bd0f0b67ebc35cf2e8d42511d97bb19cb238b6afeff407f03810889",
+   "build_lines": [
+    "Baseline:                    NEON FP16",
+    "Dispatched code generation:  NEON_DOTPROD NEON_FP16 NEON_BF16",
+    "Parallel framework:            pthreads",
+    "Custom HAL:                  YES (carotene (ver 0.0.1) KleidiCV (ver 26.03))"
+   ],
+   "engine_check": [
+    true,
+    true,
+    true
+   ]
+  }
+ },
+ "kernels": {
+  "1": {
+   "imdecode_png_frame": {
+    "cool_ms": 1.9490481874981924,
+    "standard_ms": 1.9668374999994853,
+    "standard_over_cool": 1.0091271794178303
+   },
+   "cvtColor_bgr2gray_frame": {
+    "cool_ms": 0.18706507031218678,
+    "standard_ms": 0.18209089453158356,
+    "standard_over_cool": 0.9734093822416875
+   },
+   "matchTemplate_ccoeff_normed_200px_window_48px": {
+    "cool_ms": 1.7974360624997132,
+    "standard_ms": 1.889392562496539,
+    "standard_over_cool": 1.0511598169833873
+   },
+   "matchTemplate_ccoeff_normed_full_frame_64px": {
+    "cool_ms": 45.352976000003764,
+    "standard_ms": 45.10093299995788,
+    "standard_over_cool": 0.994442635913333
+   },
+   "resize_cubic_x8_48px_patch": {
+    "cool_ms": 0.26072983593738996,
+    "standard_ms": 0.34044889843798387,
+    "standard_over_cool": 1.3057535100038844
+   },
+   "goodFeaturesToTrack_frame": {
+    "cool_ms": 4.036768999995388,
+    "standard_ms": 3.947248499997613,
+    "standard_over_cool": 0.9778237248656345
+   },
+   "calcOpticalFlowPyrLK_100_points": {
+    "cool_ms": 1.1209927187501023,
+    "standard_ms": 1.3084550937492168,
+    "standard_over_cool": 1.1672288961949133
+   },
+   "canny_frame": {
+    "cool_ms": 0.8290952343763536,
+    "standard_ms": 0.8581838749996962,
+    "standard_over_cool": 1.0350848001740391
+   },
+   "findContours_edges": {
+    "cool_ms": 0.3270426171884111,
+    "standard_ms": 0.3996354375006561,
+    "standard_over_cool": 1.2219674638624356
+   },
+   "connectedComponentsWithStats_mask": {
+    "cool_ms": 1.683298843747849,
+    "standard_ms": 1.8765604375019507,
+    "standard_over_cool": 1.1148112199280114
+   },
+   "gaussianBlur_5x5_frame": {
+    "cool_ms": 0.4142464296874593,
+    "standard_ms": 0.5006519218753169,
+    "standard_over_cool": 1.2085847601705315
+   },
+   "integral_frame": {
+    "cool_ms": 0.19205516796905187,
+    "standard_ms": 0.193987117187433,
+    "standard_over_cool": 1.0100593451288562
+   },
+   "absdiff_frame": {
+    "cool_ms": 0.08554787695302934,
+    "standard_ms": 0.08189124023427752,
+    "standard_over_cool": 0.9572562540533937
+   },
+   "phaseCorrelate_crop": {
+    "cool_ms": 4.0905506250084045,
+    "standard_ms": 4.6729428750040825,
+    "standard_over_cool": 1.14237502561027
+   }
+  },
+  "4": {
+   "imdecode_png_frame": {
+    "cool_ms": 1.9496954999880245,
+    "standard_ms": 1.9687071874940898,
+    "standard_over_cool": 1.0097511060092113
+   },
+   "cvtColor_bgr2gray_frame": {
+    "cool_ms": 0.0630123300779939,
+    "standard_ms": 0.062378923828099175,
+    "standard_over_cool": 0.9899478998933905
+   },
+   "matchTemplate_ccoeff_normed_200px_window_48px": {
+    "cool_ms": 1.8262173750009936,
+    "standard_ms": 1.9651087499994446,
+    "standard_over_cool": 1.0760541307402551
+   },
+   "matchTemplate_ccoeff_normed_full_frame_64px": {
+    "cool_ms": 29.213844999958383,
+    "standard_ms": 45.50069199990503,
+    "standard_over_cool": 1.5575043956031753
+   },
+   "resize_cubic_x8_48px_patch": {
+    "cool_ms": 0.14406117187482081,
+    "standard_ms": 0.1823702812497885,
+    "standard_over_cool": 1.2659225166393595
+   },
+   "goodFeaturesToTrack_frame": {
+    "cool_ms": 3.060343000001353,
+    "standard_ms": 3.8667692500098383,
+    "standard_over_cool": 1.2635084531400986
+   },
+   "calcOpticalFlowPyrLK_100_points": {
+    "cool_ms": 0.6608534218752737,
+    "standard_ms": 0.7215038281245256,
+    "standard_over_cool": 1.0917758828836006
+   },
+   "canny_frame": {
+    "cool_ms": 0.4587467968750758,
+    "standard_ms": 0.4579490703129352,
+    "standard_over_cool": 0.9982610743713642
+   },
+   "findContours_edges": {
+    "cool_ms": 0.33866078906186203,
+    "standard_ms": 0.4123440703125425,
+    "standard_over_cool": 1.2175725198503007
+   },
+   "connectedComponentsWithStats_mask": {
+    "cool_ms": 0.17617500000000064,
+    "standard_ms": 0.8324053281238974,
+    "standard_over_cool": 4.724877696176497
+   },
+   "gaussianBlur_5x5_frame": {
+    "cool_ms": 0.17354164062499677,
+    "standard_ms": 0.20379054296881804,
+    "standard_over_cool": 1.1743034250159339
+   },
+   "integral_frame": {
+    "cool_ms": 0.19219602343767406,
+    "standard_ms": 0.19339815234342694,
+    "standard_over_cool": 1.006254702278701
+   },
+   "absdiff_frame": {
+    "cool_ms": 0.07999406054715053,
+    "standard_ms": 0.08499954687501976,
+    "standard_over_cool": 1.0625732247323396
+   },
+   "phaseCorrelate_crop": {
+    "cool_ms": 3.5076446875024203,
+    "standard_ms": 4.683727875004706,
+    "standard_over_cool": 1.3352914255234052
+   }
+  }
+ },
+ "pipeline": [
+  {
+   "recording": "panel-calibration-reverse-w960",
+   "cool_s": 3.758001115999946,
+   "standard_s": 3.9339518030000136,
+   "standard_over_cool": 1.046820285989524,
+   "share_cool": {
+    "opencv": 0.6479090693910844,
+    "numpy": 0.16026352571359803,
+    "python": 0.19182740489531766
+   },
+   "share_standard": {
+    "opencv": 0.6758576037310882,
+    "numpy": 0.14465567612171643,
+    "python": 0.17948672014719544
+   },
+   "top_opencv_cool": [
+    [
+     "<matchTemplate>",
+     1.8529086950000002
+    ],
+    [
+     "<imdecode>",
+     0.44498813000000004
+    ],
+    [
+     "<phaseCorrelate>",
+     0.095777104
+    ],
+    [
+     "<inRange>",
+     0.058872150000000005
+    ],
+    [
+     "<integral>",
+     0.050305253
+    ]
+   ],
+   "results_identical_within_engine": {
+    "cool": true,
+    "stock": true
+   }
+  },
+  {
+   "recording": "game-reference-h03",
+   "cool_s": 0.1677332550000301,
+   "standard_s": 0.16781927600004565,
+   "standard_over_cool": 1.0005128440392785,
+   "share_cool": {
+    "opencv": 0.35498007518173974,
+    "numpy": 0.06015131691359357,
+    "python": 0.5848686079046667
+   },
+   "share_standard": {
+    "opencv": 0.3582057440880051,
+    "numpy": 0.061370869030308334,
+    "python": 0.5804233868816865
+   },
+   "top_opencv_cool": [
+    [
+     "<imdecode>",
+     0.053998382000000004
+    ],
+    [
+     "<matchTemplate>",
+     0.030726224000000003
+    ],
+    [
+     "<phaseCorrelate>",
+     0.0059347110000000005
+    ],
+    [
+     "<cvtColor>",
+     0.002936736
+    ],
+    [
+     "<minMaxLoc>",
+     0.000812346
+    ]
+   ],
+   "results_identical_within_engine": {
+    "cool": true,
+    "stock": true
+   }
+  },
+  {
+   "recording": "svg-three-to-four-w960-r1",
+   "cool_s": 5.734289319000027,
+   "standard_s": 6.188901009999881,
+   "standard_over_cool": 1.079279517601866,
+   "share_cool": {
+    "opencv": 0.5437232630063813,
+    "numpy": 0.21716183644616444,
+    "python": 0.23911490054745424
+   },
+   "share_standard": {
+    "opencv": 0.6009271393980121,
+    "numpy": 0.18407053903764065,
+    "python": 0.21500232156434732
+   },
+   "top_opencv_cool": [
+    [
+     "<matchTemplate>",
+     2.387840481
+    ],
+    [
+     "<imdecode>",
+     0.328704567
+    ],
+    [
+     "<findContours>",
+     0.101261898
+    ],
+    [
+     "<integral>",
+     0.089512351
+    ],
+    [
+     "<phaseCorrelate>",
+     0.081373869
+    ]
+   ],
+   "results_identical_within_engine": {
+    "cool": true,
+    "stock": true
+   }
+  }
+ ],
+ "runs_sha256": {
+  "result-cool-1.json": "448157e006b9813f5a16aff4db74f89e01018865d1a82dafa5d0e9ded6a8eb71",
+  "result-cool-2.json": "5b10cbe3ce7757ffdb083b3bccb8633f031d1128612fd9988b43fe13b0328dd4",
+  "result-cool-3.json": "b2075657478ae97cf41b73c742bce37b6835cc3ef23f1fdfaf50d0a74fa84ca0",
+  "result-stock-1.json": "9eb5079d984435b5e09c18b832e3bc56d642c51b2bae656c2ba8e848606cd04f",
+  "result-stock-2.json": "60b42cecbe9dcffaa9f16af42911d867dd79a2b49f7b223e6460495b7df6d7bc",
+  "result-stock-3.json": "b6b83c11f2304222c7e584ec9dc06931c15e52446fa48a0aec16c3cd43c2e60b"
+ }
+}

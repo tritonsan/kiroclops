@@ -2,6 +2,18 @@
 
 Supplement to the technical report for the Agentic Vision Award. It shows, from a recorded session, that OpenCV 5 output changes what the agent does next, and evaluates task success, failure handling, observability and human control. Workflow diagram: `diagrams/agent-loop.png` (system context: `diagrams/architecture.png`). Trace data: `evidence/agentic-trace-v6p01/` (extracted from the session's own audit log, SHA-256 of `kiro/tool-audit.jsonl` recorded in `trace.json`).
 
+## 0. Award requirements and where they are met
+
+| Requirement (official wording, abridged) | Where it is met |
+|---|---|
+| An agent uses OpenCV 5 tools within a multi-step perception, decision and action loop | Kiro CLI calls eight KiroClops MCP tools; each `evaluate_candidate` re-records the app and measures it with OpenCV 5 (§1, `diagrams/agent-loop.png`) |
+| Image or video results influence a subsequent plan, tool call or action | Candidate 01's measured windows and timing offset led Kiro to write its own frame-tracking and latency-fit scripts, rewrite its input clock, probe three cases and call `evaluate_candidate` again (§2) |
+| A developer-agent workflow qualifies only when it iteratively invokes, evaluates and adjusts an OpenCV 5 workload and culminates in a running image or video workload | Kiro invoked the OpenCV 5 measurement three times (two candidates and a cancelled probe), evaluated its output, adjusted the application that the workload measures, and sealed a candidate that was then re-recorded and measured on 56 held-out recordings |
+| Using an AI coding assistant to write the entry does not qualify | Kiro does not write KiroClops. It is the agent inside the loop at run time, editing the user's application while KiroClops measures it. KiroClops itself was built with AI coding assistants, as the technical report discloses; that is not the claim here |
+| Agent workflow diagram | `diagrams/agent-loop.png` |
+| Trace showing that OpenCV 5 output changes a later decision, tool call or action | §2 and `evidence/agentic-trace-v6p01/` |
+| Evaluation of task success, failure handling, observability and human control | §3 and §4 |
+
 ## 1. The loop
 
 ![Perception, decision and action in one agent session](diagrams/agent-loop.png)
@@ -10,7 +22,7 @@ Perception: every `evaluate_candidate` call snapshots the agent's edited target,
 Decision: the agent reads the bounded feedback (per-window error against its limit, worse-than-baseline flags, lag, trajectories, paths of the candidate frames) and decides what to edit, whether to probe a subset of cases, or to finalize.
 Action: the agent edits the motion source, calls `evaluate_candidate` again (full or `case_ids` probe), and finally `finalize_candidate`, which seals the candidate and reveals 56 held-out cases it never saw.
 
-The agent may use any model; here it was Kiro CLI with `claude-opus-5.5`. The OpenCV workload is invoked through MCP (`kiroclops.local_engine.mcp`, eight tools), the measurement code is `kiroclops.visual`, and the same workload runs on the AWS Graviton4/COOL worker. Using an AI assistant to write code is not the claim; the claim is the measured feedback loop below.
+The agent may use any model; here it was Kiro CLI with `claude-opus-5.5`. The OpenCV workload is invoked through MCP (`kiroclops.local_engine.mcp`, eight tools), the measurement code is `kiroclops.visual`, and the same workload runs on the AWS Graviton4/COOL worker. Kiro is the agent inside the loop at run time, not the tool that wrote this entry; the claim is the measured feedback loop below.
 
 ## 2. Trace of the V6 panel session (`v6p01`, 16 October 2026)
 
@@ -41,6 +53,15 @@ In candidate 01 these windows also carried a measured lag of about −10 ms (Kir
 ## 3. Task effectiveness and evaluation
 
 * Calibration error improved from 0.0244 to 0.0067 across two candidates within the 60-minute authoring budget.
+* **Against a no-agent baseline.** The unchanged app the agent started from was measured on the same recordings. The table scores it with the same formula as the candidates (mean of the per-window errors per case, then over cases). This is a post-hoc recomputation from the recorded per-window errors, `evidence/v6-agent-baseline/result.json` at the repository root; the formula reproduces every recorded candidate score exactly.
+
+  | | unchanged app | candidate | candidate better on |
+  |---|---:|---:|---:|
+  | calibration, candidate 01 | 0.0502 | 0.0244 | 15 of 16 cases |
+  | calibration, candidate 02 | 0.0502 | 0.0067 | 16 of 16 cases |
+  | held-out, sealed candidate 02 | 0.0500 | 0.0121 | 53 of 56 cases |
+
+* This is one logged session: a case study with a complete audit trail, not a statistical estimate of how often an agent succeeds.
 * The sealed candidate passed 55 of 56 held-out comparisons. The one failure is a genuine regression: after a drag release at 1,440 px Kiro's panel springs back toward where the drag started, while the reference and the unchanged app travel on to the other side (post-release position error 0.78–0.86 against limits of 0.05–0.076; 0.005–0.006 before the change). The calibration set has no drag-release case; the held-out set exists to catch exactly this, and it did. The run is therefore recorded as **failed** under the pre-registered rule, and the panel domain is not accepted.
 * Across the project the same loop produced the accepted game and SVG results (technical report §6): game regression 48/48 and validation 30/30; SVG 28/28 windows with 112 raw records independently reviewed.
 
@@ -49,7 +70,7 @@ In candidate 01 these windows also carried a measured lag of about −10 ms (Kir
 * **Budgets and refusal**: three full candidates, a frozen wall clock, a separate validation clock; an evaluation that the measured duration cannot fit is refused (`budget_insufficient`) instead of started and killed. Partial probes never count as candidates and cannot be finalized.
 * **Recording failures**: a host timing stall re-records only the affected scenario; failed attempts are kept beside the canonical one; a stalling host is refused before any recording starts. Every attempt is in the job result.
 * **Observability**: every tool call is logged by the guard before it runs (`kiro/tool-audit.jsonl`); every job has `job.json`, `result.json`, a worker log with tracebacks, and the full feedback JSON in the workspace; `inspect_window` renders reference/candidate/difference strips and an error-over-time plot on demand (available, unused by the agent in this run; a window-alignment defect in it was found and fixed after the freeze, technical report §6.4).
-* **Security boundary**: the guard limits writes to the motion files and a scratch folder, denies session folders, parent traversal and control files, and closes writes and shell after sealing. It is a cooperative boundary, not an OS sandbox; the post-run native audit replays Kiro's own logs against pinned envelope rules and matches them one-to-one with the guard decisions. The pinned rules cover kiro-cli 2.27.x; this run used 2.31.0 and is reported as native-uncertified.
+* **Security boundary**: the guard limits writes to the motion files and a scratch folder, denies session folders, parent traversal and control files, and closes writes and shell after sealing. In `v6p01` the guard allowed all 230 calls; the agent never attempted a denied path. It is a cooperative boundary, not an OS sandbox; the post-run native audit replays Kiro's own logs against pinned envelope rules and matches them one-to-one with the guard decisions. The pinned rules cover kiro-cli 2.27.x; this run used 2.31.0 and is reported as native-uncertified.
 * **Human control**: recipes and thresholds are pre-registered and hash-bound; held-out cases open only after sealing; results are never rewritten; a rerun gets a new identifier; the user decides every session start, every power-removal window and every post-hoc label. Acceptance of a domain requires independent raw review and source review by AI reviewer agents that never see production coordinates; no human pixel review is claimed (technical report, §6.1).
 
 ## 5. Files
@@ -58,4 +79,5 @@ In candidate 01 these windows also carried a measured lag of about −10 ms (Kir
 * `evidence/agentic-trace-v6p01/candidate-0{1,2}-*.diff` — the agent's code changes against the unchanged baseline.
 * `evidence/agentic-trace-v6p01/agent-scratch/` — the helper scripts the agent wrote during the run (`windows.py`, `track.py`, `latfit.py`, `fit3.py`, `sim.py`) and its draft `input-clock.js`, copied unchanged from the session workspace.
 * Held-out outcome per case: `evidence/panel-v6p01/heldout-outcome.json` (repository root).
+* No-agent baseline, per case: `evidence/v6-agent-baseline/result.json` (repository root).
 * Internal sources, available on request: session `C:/kc3d/s/v6p01` (frozen); run log and receipts `artifacts/phase4-v6/v6p01-logs`, `artifacts/phase4-v6/kiro-power-window-05`.

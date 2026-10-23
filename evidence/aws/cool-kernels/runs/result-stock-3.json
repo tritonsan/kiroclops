@@ -1,0 +1,404 @@
+{
+ "kind": "CoolKernelBenchmarkRun",
+ "schema_version": 1,
+ "engine": "stock",
+ "round": 3,
+ "environment": {
+  "opencv_version": "5.0.0",
+  "cv2_file": "/srv/kiroclops-bench/stock/lib/python3.12/site-packages/cv2/__init__.py",
+  "numpy_version": "2.2.6",
+  "python": "3.12.3",
+  "machine": "aarch64",
+  "cpu": "0xd4f",
+  "use_optimized": true,
+  "default_threads": 4,
+  "build_information_sha256": "d62ce4a07bd0f0b67ebc35cf2e8d42511d97bb19cb238b6afeff407f03810889",
+  "build_lines": [
+   "Version control:               5.0.0-dirty",
+   "CPU/HW features:",
+   "Baseline:                    NEON FP16",
+   "Dispatched code generation:  NEON_DOTPROD NEON_FP16 NEON_BF16",
+   "requested:                 NEON_FP16 NEON_BF16 NEON_DOTPROD",
+   "NEON_DOTPROD (3 files):    + NEON_DOTPROD",
+   "NEON_FP16 (6 files):       + NEON_FP16",
+   "NEON_BF16 (0 files):       + NEON_BF16",
+   "C++ Compiler:                /opt/rh/gcc-toolset-14/root/usr/bin/c++  (ver 14.2.1)",
+   "3rdparty dependencies:       ittnotify libprotobuf libjpeg-turbo libwebp libtiff libopenjp2 tegra_hal kleidicv_hal kleidicv kleidicv_thread",
+   "Parallel framework:            pthreads",
+   "Other third-party libraries:",
+   "Lapack:                      YES (OpenBLAS /usr/lib64/libopenblasp.so)",
+   "ASM kernels:               YES (ARM64: NEON SGEMM, NEON SGEMV)",
+   "Custom HAL:                  YES (carotene (ver 0.0.1) KleidiCV (ver 26.03))"
+  ]
+ },
+ "engine_check": true,
+ "frames": {
+  "frame_shape": [
+   640,
+   960,
+   3
+  ],
+  "frames_loaded": 10
+ },
+ "kernels": {
+  "1": {
+   "imdecode_png_frame": {
+    "median_s": 0.0019685198124932413,
+    "min_s": 0.001967015125003968,
+    "max_s": 0.0019719609999953036,
+    "calls_per_batch": 16
+   },
+   "cvtColor_bgr2gray_frame": {
+    "median_s": 0.00018209089453158356,
+    "min_s": 0.00018194364453094636,
+    "max_s": 0.00018331548437444667,
+    "calls_per_batch": 256
+   },
+   "matchTemplate_ccoeff_normed_200px_window_48px": {
+    "median_s": 0.0018936571249952294,
+    "min_s": 0.0018915866249926694,
+    "max_s": 0.0018945453124956657,
+    "calls_per_batch": 16
+   },
+   "matchTemplate_ccoeff_normed_full_frame_64px": {
+    "median_s": 0.04541162400005305,
+    "min_s": 0.04516827599991302,
+    "max_s": 0.045776263000107065,
+    "calls_per_batch": 1
+   },
+   "resize_cubic_x8_48px_patch": {
+    "median_s": 0.000340645593750466,
+    "min_s": 0.0003403109843755914,
+    "max_s": 0.00034145946874986066,
+    "calls_per_batch": 128
+   },
+   "goodFeaturesToTrack_frame": {
+    "median_s": 0.003947248499997613,
+    "min_s": 0.003905321875009804,
+    "max_s": 0.003972019374998581,
+    "calls_per_batch": 8
+   },
+   "calcOpticalFlowPyrLK_100_points": {
+    "median_s": 0.00131118743750136,
+    "min_s": 0.0013091383750065688,
+    "max_s": 0.0013406536874995822,
+    "calls_per_batch": 32
+   },
+   "canny_frame": {
+    "median_s": 0.0008656360937528973,
+    "min_s": 0.0008626425937521276,
+    "max_s": 0.0008800633593750717,
+    "calls_per_batch": 64
+   },
+   "findContours_edges": {
+    "median_s": 0.00040178166406157345,
+    "min_s": 0.0004016736640615193,
+    "max_s": 0.00040339382812604185,
+    "calls_per_batch": 128
+   },
+   "connectedComponentsWithStats_mask": {
+    "median_s": 0.0018782834999910847,
+    "min_s": 0.0018757814374907866,
+    "max_s": 0.0019214114375074587,
+    "calls_per_batch": 16
+   },
+   "gaussianBlur_5x5_frame": {
+    "median_s": 0.0005037751875001106,
+    "min_s": 0.0005035671718758294,
+    "max_s": 0.0005043270781257547,
+    "calls_per_batch": 64
+   },
+   "integral_frame": {
+    "median_s": 0.000193987117187433,
+    "min_s": 0.00019308757812552813,
+    "max_s": 0.00019437378906239644,
+    "calls_per_batch": 256
+   },
+   "absdiff_frame": {
+    "median_s": 8.189124023427752e-05,
+    "min_s": 8.15057519529816e-05,
+    "max_s": 8.362745898438106e-05,
+    "calls_per_batch": 512
+   },
+   "phaseCorrelate_crop": {
+    "median_s": 0.004721830124992721,
+    "min_s": 0.004680598749985165,
+    "max_s": 0.004776561499994614,
+    "calls_per_batch": 8
+   }
+  },
+  "4": {
+   "imdecode_png_frame": {
+    "median_s": 0.001972989875000053,
+    "min_s": 0.0019697034374956957,
+    "max_s": 0.0019749883124973167,
+    "calls_per_batch": 16
+   },
+   "cvtColor_bgr2gray_frame": {
+    "median_s": 6.37176015620966e-05,
+    "min_s": 6.362723437502993e-05,
+    "max_s": 6.726967382819637e-05,
+    "calls_per_batch": 512
+   },
+   "matchTemplate_ccoeff_normed_200px_window_48px": {
+    "median_s": 0.0019540223125034117,
+    "min_s": 0.0019520884375054948,
+    "max_s": 0.0020503474374891084,
+    "calls_per_batch": 16
+   },
+   "matchTemplate_ccoeff_normed_full_frame_64px": {
+    "median_s": 0.04550069199990503,
+    "min_s": 0.0453832959999545,
+    "max_s": 0.047128069999871514,
+    "calls_per_batch": 1
+   },
+   "resize_cubic_x8_48px_patch": {
+    "median_s": 0.0001823702812497885,
+    "min_s": 0.00018230797265683663,
+    "max_s": 0.0001824562578125466,
+    "calls_per_batch": 256
+   },
+   "goodFeaturesToTrack_frame": {
+    "median_s": 0.0038683396250007718,
+    "min_s": 0.0038418501250134796,
+    "max_s": 0.0038924388749990158,
+    "calls_per_batch": 8
+   },
+   "calcOpticalFlowPyrLK_100_points": {
+    "median_s": 0.0007235203437510052,
+    "min_s": 0.000637343203123919,
+    "max_s": 0.000755545109374367,
+    "calls_per_batch": 64
+   },
+   "canny_frame": {
+    "median_s": 0.0004579490703129352,
+    "min_s": 0.00037818826562485697,
+    "max_s": 0.0004604004531234551,
+    "calls_per_batch": 128
+   },
+   "findContours_edges": {
+    "median_s": 0.00041711162499957766,
+    "min_s": 0.00041120278125106324,
+    "max_s": 0.0013664526718741854,
+    "calls_per_batch": 128
+   },
+   "connectedComponentsWithStats_mask": {
+    "median_s": 0.0008374571093767713,
+    "min_s": 0.0008344509843745129,
+    "max_s": 0.0008416162812494576,
+    "calls_per_batch": 64
+   },
+   "gaussianBlur_5x5_frame": {
+    "median_s": 0.00020379054296881804,
+    "min_s": 0.00015960829296890466,
+    "max_s": 0.00020690708203208175,
+    "calls_per_batch": 256
+   },
+   "integral_frame": {
+    "median_s": 0.00019339815234342694,
+    "min_s": 0.00019333893359352317,
+    "max_s": 0.00019357212890636077,
+    "calls_per_batch": 256
+   },
+   "absdiff_frame": {
+    "median_s": 8.72569746093177e-05,
+    "min_s": 8.631435937500598e-05,
+    "max_s": 8.942970703085251e-05,
+    "calls_per_batch": 512
+   },
+   "phaseCorrelate_crop": {
+    "median_s": 0.004683727875004706,
+    "min_s": 0.004675273624997089,
+    "max_s": 0.004756657750021986,
+    "calls_per_batch": 8
+   }
+  }
+ },
+ "pipeline": [
+  {
+   "name": "panel-calibration-reverse-w960",
+   "frames": 211,
+   "wall_s": [
+    3.904611330999842,
+    3.898996661999945,
+    3.9133141340000748
+   ],
+   "wall_median_s": 3.904611330999842,
+   "profiled_total_s": 4.118657779000001,
+   "share": {
+    "opencv": 0.6749561265259955,
+    "numpy": 0.14653704298455636,
+    "python": 0.17850683048944818
+   },
+   "top_opencv_tottime_s": [
+    [
+     "<matchTemplate>",
+     2.074423726
+    ],
+    [
+     "<imdecode>",
+     0.444204578
+    ],
+    [
+     "<phaseCorrelate>",
+     0.093425958
+    ],
+    [
+     "<inRange>",
+     0.054340915000000004
+    ],
+    [
+     "<integral>",
+     0.038085030000000006
+    ],
+    [
+     "<connectedComponentsWithStats>",
+     0.022908728
+    ],
+    [
+     "<findContours>",
+     0.020148884000000002
+    ],
+    [
+     "<cvtColor>",
+     0.018341094000000002
+    ],
+    [
+     "<minMaxLoc>",
+     0.010680716
+    ],
+    [
+     "<boundingRect>",
+     0.001822463
+    ],
+    [
+     "<contourArea>",
+     0.001507719
+    ],
+    [
+     "<createHanningWindow>",
+     1.9111e-05
+    ]
+   ],
+   "measurement_sha256": "48ac4e4e97019841ec33e25b7e0ea1d1f8f6500155cf24130b24f45ff755a16e"
+  },
+  {
+   "name": "game-reference-h03",
+   "frames": 240,
+   "wall_s": [
+    0.16781927600004565,
+    0.16982517099995675,
+    0.16766429599988442
+   ],
+   "wall_median_s": 0.16781927600004565,
+   "profiled_total_s": 0.265916089,
+   "share": {
+    "opencv": 0.3556960895284527,
+    "numpy": 0.060185602383765496,
+    "python": 0.5841183080877818
+   },
+   "top_opencv_tottime_s": [
+    [
+     "<imdecode>",
+     0.054323848
+    ],
+    [
+     "<matchTemplate>",
+     0.032686277
+    ],
+    [
+     "<phaseCorrelate>",
+     0.004053168
+    ],
+    [
+     "<cvtColor>",
+     0.0028118490000000004
+    ],
+    [
+     "<minMaxLoc>",
+     0.000699532
+    ],
+    [
+     "<createHanningWindow>",
+     5.996000000000001e-06
+    ],
+    [
+     "<getBuildInformation>",
+     3.53e-06
+    ],
+    [
+     "<getVersionMajor>",
+     1.113e-06
+    ]
+   ],
+   "measurement_sha256": "66ee9f2be6db66f00bcf15071083e7d7e2b43bd34353320e78e450ebea2b882d"
+  },
+  {
+   "name": "svg-three-to-four-w960-r1",
+   "frames": 180,
+   "wall_s": [
+    6.197022580000066,
+    6.174407188000032,
+    6.188901009999881
+   ],
+   "wall_median_s": 6.188901009999881,
+   "profiled_total_s": 6.607055461,
+   "share": {
+    "opencv": 0.6015295602495927,
+    "numpy": 0.1843678240920399,
+    "python": 0.2141026156583674
+   },
+   "top_opencv_tottime_s": [
+    [
+     "<matchTemplate>",
+     3.1134818220000002
+    ],
+    [
+     "<imdecode>",
+     0.329494738
+    ],
+    [
+     "<findContours>",
+     0.087185098
+    ],
+    [
+     "<phaseCorrelate>",
+     0.080116002
+    ],
+    [
+     "<Canny>",
+     0.079202722
+    ],
+    [
+     "<integral>",
+     0.062316399
+    ],
+    [
+     "<connectedComponentsWithStats>",
+     0.054985805000000006
+    ],
+    [
+     "<boundingRect>",
+     0.042360542
+    ],
+    [
+     "<inRange>",
+     0.041779267
+    ],
+    [
+     "<contourArea>",
+     0.03847823
+    ],
+    [
+     "<cvtColor>",
+     0.016121782
+    ],
+    [
+     "<minMaxLoc>",
+     0.014949068000000001
+    ]
+   ],
+   "measurement_sha256": "b4ba7ebf6b1b75d9a861280c2ce26d7105cac4227ba6484885e247b947364d1a"
+  }
+ ]
+}

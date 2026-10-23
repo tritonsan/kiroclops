@@ -1,6 +1,6 @@
 # KiroClops — Technical Report
 
-**OpenCV AI Competition 2026, powered by AWS.** Solo entry: one developer designed, built and evaluated the project, using AI coding and review agents as disclosed in §6.1. Draft of 22 October 2026. Every number below is taken from a frozen evidence folder named in the text; nothing was re-run to make it look better, and failed attempts are reported as recorded.
+**OpenCV AI Competition 2026, powered by AWS.** Solo entry: one developer designed, built and evaluated the project, using AI coding and review agents as disclosed in §6.1. Version of 23 October 2026. Every number below is taken from a frozen evidence folder named in the text; nothing was re-run to make it look better, and failed attempts are reported as recorded.
 
 ## Summary
 
@@ -14,6 +14,27 @@ Verified state at submission:
 | SVG diagram (node add/remove, drag, connector attachment) | **Accepted**: 28 window results pass, 112 raw records (244 sheets, 480 points) independently reviewed, 32/32 blind focus-ring marks within 2 px | closure `v5s01c-closure-01` (`evidence/closures/`) |
 | Web panel (spring animation with interruptions) | **Not accepted**: best run 55/56 held-out comparisons with one drag-release regression; four earlier attempts failed on behaviour or on recording stalls | `evidence/panel-v6p01/heldout-outcome.json` |
 | AWS | Live analysis service on a Graviton4 worker running the COOL build of OpenCV (5.1.0-dev); 17/17 recordings equivalent to the local 5.0.0 measurement | `evidence/aws/`, §5 |
+
+**What did not work.** These are part of the result, not footnotes.
+
+| item | what happened | what we did |
+|---|---|---|
+| Web panel domain | Not accepted in four attempts: V4 27/36 regression cases; V5 no eligible candidate; V5b a capture stall during finalization; V6 55/56 held-out cases with one drag-release regression | Every run is reported as failed. The next run adds drag-release cases to calibration under a new identifier |
+| COOL speed | No measurable speed-up on this workload (paired ratio 1.003, 95% interval 0.991–1.010) | Reported as measured; §5.2 shows where the time goes |
+| Learned features on tiny glyphs | ALIKED and LightGlue locate only 45% of the small, low-texture handle glyph | Used as a cross-check, never as a gate |
+| Native audit | Kiro CLI updated itself to 2.31, outside the certified 2.27.x rules | The V6 run is reported as native-uncertified |
+| `inspect_window` | Placed windows on the recording's first input and plotted absolute positions | Fixed after the freeze; never used in a recorded run (§6.4) |
+
+**Reading guide for judges.**
+
+| judging criterion | where to look |
+|---|---|
+| Technical execution (30%) | §3: OpenCV 5 tracking, OpenCV 5-specific features, measured accuracy. §6.4: tests |
+| Innovation (20%) | §1 and §4: a referee for coding agents, with held-out cases sealed until the agent commits |
+| Real-world impact (20%) | §1: users. §6.2: results. `AGENTIC_VISION.md` §3: the sealed candidate is 7.5 times closer to the reference than the app the agent started from |
+| User experience (10%) | The demo video, and `JUDGE_ACCESS.md`: one command against the live service |
+| Documentation and presentation (10%) | This report, `README.md`, the diagrams, `evidence/README.md` |
+| Cloud delivery, reproducibility and responsible operation (10%) | §5: AWS, COOL, receipts, judge access. §7: limitations. §8: reproducibility |
 
 ## 1. Problem and users
 
@@ -92,7 +113,7 @@ Budgets are frozen per session: three full candidates, a 60-minute authoring clo
 
 ### 4.2 Why this qualifies as a perception-decision-action loop
 
-OpenCV 5 output changes what the agent does next. In the V6 panel run (session `v6p01`, 230 audited tool calls: `get_job` 126, `execute_pwsh` 61, `fs_write` 18, `str_replace` 7, `read_file` 6, `inspect_session` 4, `evaluate_candidate` 3, `prepare_experiment` 1, `cancel_job` 1, `finalize_candidate` 1) the agent submitted candidate 01 (calibration error 0.0244), read the per-window measurement feedback, edited the motion code and submitted candidate 02 (0.0067, 3.6× lower), then chose it for finalization. The agent's own helper scripts, preserved in the workspace, show how it used the visual evidence: it printed every window's error, limit and the lag KiroClops measured (about −10 ms on candidate 01's worst windows), tracked the panel glyphs in candidate 01's exported frames, fitted the per-input latency of its motion model to those tracks, and then wrote an input-clock model and re-tuned the spring; candidate 02's measured lag is 0. It also started one partial probe on three chosen cases, one from each recipe family added in V4/V5, and cancelled it to apply a last fix. It did not use `inspect_window` in that run; we report tool usage as recorded. The trace is `kiro/tool-audit.jsonl` plus the job results in the session (`AGENTIC_VISION.md`).
+OpenCV 5 output changes what the agent does next. In the V6 panel run (session `v6p01`, 230 audited tool calls: `get_job` 126, `execute_pwsh` 61, `fs_write` 18, `str_replace` 7, `read_file` 6, `inspect_session` 4, `evaluate_candidate` 3, `prepare_experiment` 1, `cancel_job` 1, `finalize_candidate` 1) the agent submitted candidate 01 (calibration error 0.0244), read the per-window measurement feedback, edited the motion code and submitted candidate 02 (0.0067, 3.6× lower), then chose it for finalization. Scored with the same formula, the unchanged app the agent started from has a calibration error of 0.0502, so the sealed candidate is 7.5 times closer to the reference. On the 56 held-out cases it is 4.1 times closer (0.0121 against 0.0500) and better on 53 of them. This is a post-hoc recomputation from the recorded per-window errors (`evidence/v6-agent-baseline/result.json`). The agent's own helper scripts, preserved in the workspace, show how it used the visual evidence: it printed every window's error, limit and the lag KiroClops measured (about −10 ms on candidate 01's worst windows), tracked the panel glyphs in candidate 01's exported frames, fitted the per-input latency of its motion model to those tracks, and then wrote an input-clock model and re-tuned the spring; candidate 02's measured lag is 0. It also started one partial probe on three chosen cases, one from each recipe family added in V4/V5, and cancelled it to apply a last fix. It did not use `inspect_window` in that run; we report tool usage as recorded. The trace is `kiro/tool-audit.jsonl` plus the job results in the session (`AGENTIC_VISION.md`).
 
 ![Perception, decision and action in one agent session, with the recorded v6p01 timeline](diagrams/agent-loop.png)
 
@@ -114,6 +135,8 @@ The live deployment boots the worker from the AWS Marketplace "Cloud Optimized O
 
 **Equivalence.** The same 17 recordings (16 V6 panel calibration references and one Kiro candidate) measured locally (Windows x86, OpenCV 5.0.0) and on the worker: standard wheel 17/17 equivalent under the unchanged policy (max numeric difference 1.70e-6); COOL 17/17 after excluding the `opencv_runtime` build record that V6 adds to every result, max difference 1.43e-6, 96.4% of 285,031 values bit-identical (`evidence/aws/cool-equivalence`, labelled post-hoc because the policy predates that field).
 
+**Protocol.** Image `ami-033e481a24f94c8cb`, Cloud Optimized OpenCV for AWS Graviton4 from the AWS Marketplace, reporting OpenCV 5.1.0-dev and NumPy 2.5.1 from `/opt/cool`. The standard arm uses the `opencv-python` 5.0.0.93 wheel with NumPy 2.2.6. Both run on c8g.xlarge (four Graviton4 vCPUs) with four OpenCV threads. In the speed test below the two engines ran on separate instances (a fresh standard worker and the live COOL worker). The COOL hourly price includes the $0.01/h Marketplace fee. x86 and Arm coexist: the client and the local engine run on x86 Windows, the service worker on Arm, and the equivalence check above shows that both produce the same tracks and events.
+
 **Speed and cost** (`evidence/aws/speed`, 21 October). The same 17 recordings were submitted three times each to a fresh standard-wheel worker (OpenCV 5.0.0) and to the live COOL worker (OpenCV 5.1.0-dev), both c8g.xlarge with four threads, with a probe tag in each request so the service's exact-reuse cache never answered; the same recordings were measured three times locally (Windows x86, OpenCV 5.0.0). Worker time is the receipt's `worker_wall_seconds`: from claiming the job to the finished measurement, including the S3 download and integrity check, the sandbox start and the complete analysis.
 
 | engine | OpenCV | fresh jobs | median s | min–max s | median end-to-end s | USD/h | USD per analysis (compute) |
@@ -122,7 +145,9 @@ The live deployment boots the worker from the AWS Marketplace "Cloud Optimized O
 | Graviton4 COOL | 5.1.0-dev | 48 | 5.09 | 3.99–6.35 | 13.0 | 0.1695 | 0.00024 |
 | local x86 laptop | 5.0.0 | 51 | 3.74 | 3.03–4.79 | — | — | — |
 
-Paired per-recording ratio COOL/standard over 17 recordings: median 1.003, geometric mean 0.996, range 0.87–1.04. **On this workload COOL gives no measurable speed-up.** The pipeline is dominated by Python control flow, PNG decoding and small-template matching rather than by the large-image kernels COOL optimises, so this is the expected and honest result; the value of COOL here is a verified Marketplace build of OpenCV 5 on Graviton4 that returns the same numbers as the reference engine. End-to-end latency (upload, queue, polling, result) is 13–14 s per recording either way; compute cost is about 0.02 cents per analysis at on-demand prices plus the $0.01/h Marketplace fee. Three of 51 COOL jobs on the long-running live worker ended `worker_lease_exhausted` (the client reports them as interrupted and does not retry); the fresh standard worker had none. Wake-up from a stopped worker to a finished job took 45.9 s (`evidence/aws/wake`).
+Paired per-recording ratio COOL/standard over 17 recordings: median 1.003, geometric mean 0.996, range 0.87–1.04. A post-hoc bootstrap over the 17 recordings (10,000 resamples) puts the paired ratio at 1.003 with a 95% interval of 0.991–1.010, and the ratio of job-level medians at 0.991 (0.913–1.043) (`evidence/aws/speed-posthoc/result.json`): any difference is within about one per cent. **On this workload COOL gives no measurable speed-up.** The pipeline is dominated by Python control flow, PNG decoding and small-template matching rather than by the large-image kernels COOL optimises, so this is the expected and honest result; the value of COOL here is a verified Marketplace build of OpenCV 5 on Graviton4 that returns the same numbers as the reference engine. End-to-end latency (upload, queue, polling, result) is 13–14 s per recording either way; compute cost is about 0.02 cents per analysis at on-demand prices plus the $0.01/h Marketplace fee. Three of 51 COOL jobs on the long-running live worker ended `worker_lease_exhausted` (the client reports them as interrupted and does not retry); the fresh standard worker had none. Wake-up from a stopped worker to a finished job took 45.9 s (`evidence/aws/wake`).
+
+**Where the time goes** (`evidence/aws/cool-kernels`, 23 October, post-hoc). Both engines were then timed on one c8g.xlarge instance, in three alternating rounds, on real frames and recordings. COOL is clearly faster on large-image kernels: connected components 4.7×, full-frame template matching 1.56× with four threads (1.0× with one), phase correlation 1.34×, bicubic upsampling 1.27× and corner detection 1.26×. It gains little on what this tracker mostly does: template matching in a 200 px search window (1.08×) and PNG decoding (1.01×). In process, the full measurement is 4.7% faster on a panel recording and 7.9% faster on an SVG recording; 54–65% of the profiled time is inside OpenCV, mostly `matchTemplate` and `imdecode`. In the service, the per-job overhead (S3 download, integrity checks, sandbox and process start) dilutes that gain to the null result above, which also compared two separate instances. Batching the tracker's matches into larger OpenCV calls is where COOL could help this pipeline. Both builds use the KleidiCV HAL; COOL is compiled with an SVE baseline, the standard wheel with NEON and runtime dispatch.
 
 ### 5.3 Judge access and operations
 
@@ -148,6 +173,8 @@ Every domain is evaluated the same way: calibration cases the agent sees, a know
 | Panel, V6 demo (`v6p01`) | candidate 02 eligible, 0.0067 | 43/44 | 12/12 | native uncertified (CLI 2.31) | fail |
 
 The V6 panel failure is a genuine regression caught by the held-out set: after a drag release at 1,440 px Kiro's panel springs back toward where the drag started, while the reference and the unchanged app travel on to the other side, so no settled rest is observed in the scored window (post-release position error 0.78–0.86 of the panel scale against limits of 0.05–0.076; 0.005–0.006 for the unchanged app). The calibration set contains no drag-release case, which is exactly what held-out cases are for.
+
+Pass counts come from small samples. Exact two-sided 95% lower confidence bounds (Clopper–Pearson, computed after the fact) are 92.6% for 48/48, 88.4% for 30/30 and 89.1% for the 32/32 blind endpoint marks.
 
 ### 6.3 Recording reliability
 
@@ -193,9 +220,9 @@ The public repository carries an English subset of the evidence in `evidence/`; 
 |---|---|---|
 | Game closure | `evidence/closures/game-v4g01-closure-02.summary.json` | `C:/kc3d/r/v4g01-closure-02` (summary, receipt, replay validation) |
 | SVG closure | `evidence/closures/svg-v5s01c-closure-01.summary.json`, `evidence/svg-focus-ring-blind-qualification.json` | `C:/kc3d/r/v5s01c-closure-01`; raw proof `C:/kc3d/r/v5s01c-final-raw-proof-01.json`; `C:/kc3d/r/v5s-ring-score-01` |
-| V6 panel run | `evidence/panel-v6p01/heldout-outcome.json`, `submission/evidence/agentic-trace-v6p01/`, `submission/AGENTIC_VISION.md` | session `C:/kc3d/s/v6p01`; results log `reviews/phase4-v6/v6-results.md` |
+| V6 panel run | `evidence/panel-v6p01/heldout-outcome.json`, `evidence/v6-agent-baseline/result.json`, `submission/evidence/agentic-trace-v6p01/`, `submission/AGENTIC_VISION.md` | session `C:/kc3d/s/v6p01`; results log `reviews/phase4-v6/v6-results.md`; `artifacts/phase4-v6/agent-baseline-posthoc-01` |
 | Earlier panel runs (V4, V5, V5b) | — | `reviews/phase3d-v4/v4-results.md`, `reviews/phase3d-v5/v5-results.md` |
 | OpenCV 5 measurement (§3) | `evidence/{opencv5-symbol-diff, lightglue-sweep, subpixel-benchmark, marks-error, feature-cross-check, v6-tracker-equivalence}` | `artifacts/phase4-v6/{opencv-symbol-diff-01, lightglue-sweep-01, subpixel-benchmark-01, marks-error-01, cross-check-01, equivalence-01}` |
-| AWS and COOL (§5) | `evidence/aws/{standard-equivalence, cool-equivalence, speed, wake}` | `artifacts/phase4-aws/{v6-equivalence-01, v6-cool-equivalence-02, speed-01, live-cool-wake-02, live-cool-02}` |
+| AWS and COOL (§5) | `evidence/aws/{standard-equivalence, cool-equivalence, speed, speed-posthoc, cool-kernels, wake}` | `artifacts/phase4-aws/{v6-equivalence-01, v6-cool-equivalence-02, speed-01, speed-01-posthoc-01, cool-kernels-01, live-cool-wake-02, live-cool-02}` |
 | Tests and the post-freeze fix (§6.4) | `evidence/tests/`, `evidence/inspect-window-post-freeze/result.json` | `artifacts/phase4-v6/{full-tests-02, full-tests-03, clean-clone-01, clean-clone-02, post-freeze-inspect-window-01}` |
 | Source epochs | `evidence/source-epochs.json` | `C:/kc3d/code/{v4-final, v5b, v6, v6b, v6c}` with `epoch.json` manifests |

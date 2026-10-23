@@ -30,7 +30,7 @@ LIVE = Path('D:/Amazon Developer Hackathon')
 KC3D = Path('C:/kc3d')
 TURKISH = re.compile('[\u011f\u011e\u00fc\u00dc\u015f\u015e\u0131\u0130\u00f6\u00d6\u00e7\u00c7]')
 USER_PATH = re.compile(r'(?i)C:(\\\\|\\|/)Users(\\\\|\\|/)[^\\/"\s]+')
-ACCOUNT = re.compile(r'(arn:aws:[a-z0-9-]*:[a-z0-9-]*:)\d{12}')
+ACCOUNT = re.compile(r'(arn:aws:[a-z0-9-]*:[a-z0-9-]*:|amazonaws\.com/|kiroclops-probe-)\d{12}')
 
 ITEMS = [
     # (public path, source path, report section)
@@ -65,6 +65,17 @@ ITEMS = [
     ('aws/cool-equivalence/posthoc-runtime-excluded.json', LIVE/'artifacts/phase4-aws/v6-cool-equivalence-02/posthoc-runtime-excluded.json', '5.2'),
     ('aws/standard-equivalence/result.json', LIVE/'artifacts/phase4-aws/v6-equivalence-01/result.json', '5.2'),
     ('aws/wake/result.json', LIVE/'artifacts/phase4-aws/live-cool-wake-02/result.json', '5.2'),
+    ('aws/speed-posthoc/result.json', LIVE/'artifacts/phase4-aws/speed-01-posthoc-01/result.json', '5.2'),
+    ('aws/cool-kernels/REPORT.md', LIVE/'artifacts/phase4-aws/cool-kernels-01/REPORT.md', '5.2'),
+    ('aws/cool-kernels/summary.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/summary.json', '5.2'),
+    ('aws/cool-kernels/runs/result-cool-1.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-cool-1.json', '5.2'),
+    ('aws/cool-kernels/runs/result-cool-2.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-cool-2.json', '5.2'),
+    ('aws/cool-kernels/runs/result-cool-3.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-cool-3.json', '5.2'),
+    ('aws/cool-kernels/runs/result-stock-1.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-stock-1.json', '5.2'),
+    ('aws/cool-kernels/runs/result-stock-2.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-stock-2.json', '5.2'),
+    ('aws/cool-kernels/runs/result-stock-3.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-stock-3.json', '5.2'),
+    ('v6-agent-baseline/result.json', LIVE/'artifacts/phase4-v6/agent-baseline-posthoc-01/result.json', '4.2'),
+    ('tests/public-tree-tests.log', Path('C:/kc3d/publish/public-tree-tests.log'), '6.4'),
 ]
 HELDOUT_JOB = KC3D/'s/v6p01/measurements/d19d9b76a015463fbf9708cb4fbde348'
 EPOCHS = ('v4-final', 'v5b', 'v6', 'v6b', 'v6c')

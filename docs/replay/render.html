@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" class="render">
+<head>
+<meta charset="utf-8">
+<title>KiroClops session replay (render mode)</title>
+<!-- Wrapper for submission/video/tools/render_html.py, which opens a file path and cannot take a
+     query string. It loads the same code as index.html with render mode switched on, which is
+     what index.html?render=1 does: 1920x1080 layout and window.render(ms) for a 45 s animation. -->
+<link rel="icon" href="data:,">
+<script>window.__KC_RENDER = true;</script>
+<link rel="stylesheet" href="replay.css">
+</head>
+<body>
+<div id="app"></div>
+<script src="data.js"></script>
+<script src="replay.js"></script>
+</body>
+</html>

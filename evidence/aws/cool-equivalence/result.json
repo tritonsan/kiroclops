@@ -5,7 +5,7 @@
     "schema_version": 1,
     "run": "phase3b-service-20261020070448",
     "stack": "phase3b-service-20261020070448",
-    "bucket": "kiroclops-probe-002071550319-phase3b-service-20261020070448",
+    "bucket": "kiroclops-probe-<account>-phase3b-service-20261020070448",
     "region": "us-east-1",
     "purpose": "internal-jwt-e2e-cool",
     "created_at": "2026-10-20T07:04:48.890201+00:00",
@@ -24,7 +24,7 @@
     "Pool": "us-east-1_YRLT4ou6V",
     "Client": "468ni7moc6o9932lv19dna7i4t",
     "Controller": "phase3b-service-20261020070448-Controller-QQtg4LQJJX4y",
-    "Queue": "https://sqs.us-east-1.amazonaws.com/002071550319/phase3b-service-20261020070448-Queue-AGWSR1LgGZ2r",
+    "Queue": "https://sqs.us-east-1.amazonaws.com/<account>/phase3b-service-20261020070448-Queue-AGWSR1LgGZ2r",
     "GuardName": "phase3b-service-20261020070448-Guard-ohKQzFI7YbKj",
     "stack_status": "CREATE_COMPLETE"
   },

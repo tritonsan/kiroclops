@@ -1,0 +1,58 @@
+{
+ "kind": "CoolSpeedPosthoc",
+ "schema_version": 1,
+ "source": "artifacts/phase4-aws/speed-01/report.json",
+ "source_sha256": "353f995e6ef27d224ce6c728b2bd83ea675e6975b01617e6cbbbcf9fc13aac9c",
+ "resamples": 10000,
+ "seed": 20261023,
+ "label": "post-hoc analysis of recorded timings; no job was repeated",
+ "jobs": {
+  "standard": {
+   "count": 51,
+   "median_s": 5.13430457700008
+  },
+  "cool": {
+   "count": 48,
+   "median_s": 5.0857569859999785
+  },
+  "local": {
+   "count": 51,
+   "median_s": 3.741
+  }
+ },
+ "job_median_ratio_cool_over_standard": 0.9905444660962308,
+ "job_median_ratio_ci95": [
+  0.913429621707368,
+  1.04248983516228
+ ],
+ "paired_cool_over_standard": {
+  "recordings": 17,
+  "median_ratio": 1.0025523119886248,
+  "median_ratio_ci95": [
+   0.9905969183511015,
+   1.0101132577536402
+  ],
+  "geometric_mean_ratio": 0.9955173988444684,
+  "geometric_mean_ratio_ci95": [
+   0.9758504958575626,
+   1.0097694341994097
+  ],
+  "min_ratio": 0.8714234732577774,
+  "max_ratio": 1.0364978850678668
+ },
+ "paired_local_x86_over_graviton_standard": {
+  "recordings": 17,
+  "median_ratio": 0.7245382396409286,
+  "median_ratio_ci95": [
+   0.701810741351072,
+   0.7523027243206961
+  ],
+  "geometric_mean_ratio": 0.7225789693960425,
+  "geometric_mean_ratio_ci95": [
+   0.7077320941549173,
+   0.7378138193920061
+  ],
+  "min_ratio": 0.6688738347728097,
+  "max_ratio": 0.7826921796696451
+ }
+}
