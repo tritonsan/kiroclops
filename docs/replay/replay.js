@@ -409,7 +409,7 @@
     const X = (t) => R.l + (t - T0) / (T1 - T0) * (W - R.l - R.r);
     const Y = (px) => H - R.b - px / dr.size[0] * (H - R.t - R.b);
     const g = sv('g');
-    g.append(sv('rect', { class: 'win', x: X(dr.window_s[0]), y: R.t, width: X(dr.window_s[1]) - X(dr.window_s[0]), height: H - R.t - R.b }));
+    g.append(sv('rect', { class: 'win', x: X(dr.window_s[0]), y: R.t, width: Math.max(0, X(dr.window_s[1]) - X(dr.window_s[0])), height: Math.max(0, H - R.t - R.b) }));
     [0, 720, 1440].forEach((v) => { g.append(sv('line', { class: 'gl', x1: R.l, x2: W - R.r, y1: Y(v), y2: Y(v) }), sv('text', { class: 'ax', x: R.l - 8, y: Y(v) + 5, 'text-anchor': 'end' }, String(v))); });
     [-0.5, 0, 0.5].forEach((t) => g.append(sv('text', { class: 'ax', x: X(t), y: H - 8, 'text-anchor': 'middle' }, (t > 0 ? '+' : t < 0 ? MINUS : '') + Math.abs(t).toFixed(1) + ' s')));
     g.append(sv('line', { class: 'rel', x1: X(0), x2: X(0), y1: R.t, y2: H - R.b }), sv('text', { x: X(0) - 6, y: R.t + 16, 'text-anchor': 'end', fill: '#e6e9f2' }, 'release'));
@@ -558,7 +558,7 @@
         sv('rect', { width: 6, height: 6, fill: 'rgba(251,113,133,.10)' }), sv('rect', { width: 2.2, height: 6, fill: 'rgba(251,113,133,.55)' })),
       sv('clipPath', { id: 'kc-lit' }, TL.lit = sv('rect', { x: 0, y: 0, width: 0, height: H })));
     kids.push(defs);
-    [[y1, G.l1], [y2, G.l2], [y3, G.l3]].forEach(([y, h]) => kids.push(sv('rect', { class: 'lane', x: G.gl, y, width: W - G.gl - G.gr, height: h, rx: 5 })));
+    [[y1, G.l1], [y2, G.l2], [y3, G.l3]].forEach(([y, h]) => kids.push(sv('rect', { class: 'lane', x: G.gl, y, width: Math.max(0, W - G.gl - G.gr), height: h, rx: 5 })));
     if (!narrow) {
       const lab = (y, h, t) => sv('text', { class: 'lane-l', x: 4, y: y + h / 2 + (RENDER ? 6 : 4.5) }, t);
       kids.push(lab(y1, G.l1, 'OpenCV 5 jobs'), lab(y2, G.l2, 'MCP calls'), lab(y3, G.l3, 'Shell + file tools'));
