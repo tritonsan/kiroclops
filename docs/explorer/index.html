@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Step through three real recordings and see what OpenCV 5 measured from the pixels: positions, tracks and events, frame by frame. Runs in the browser, no installation.">
+<title>KiroClops: what OpenCV 5 measures</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="explorer.css">
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="bg-glow" aria-hidden="true"></div>
+<div id="app">
+  <header class="top">
+    <p class="kicker">Measurement explorer &middot; three real recordings</p>
+    <h1><span class="brand">KiroClops</span>: what OpenCV 5 measures</h1>
+    <p class="sub">Step through real recordings and see the positions, tracks and events that OpenCV 5 measured from their pixels.</p>
+    <p class="badges"><span class="badge">OpenCV 5</span><span class="badge">pixels only</span><span class="badge">3 recordings</span><span class="badge">runs in the browser, no installation</span></p>
+    <p class="intro">Each tab is a real recording: PNG frames with their capture times. KiroClops measures every frame from the pixels alone, with no access to the DOM or the game engine. OpenCV 5 template matching finds each selected object, contours give its visible box, edge and line extraction give connector end points, and a fixed rule set turns the tracks into events such as motion start, reversal and stop. This page shows exactly what that measurement returned. Boxes and rings are measured positions, the curves are the raw x and y tracks, and each marker is an event, drawn as the interval between the two frames that bracket it. A frame without a valid measurement gets no position. Press Play or drag the slider to step through a recording.</p>
+  </header>
+  <main id="main">
+    <noscript><p class="card noscript">This page replays measurements in the browser and needs JavaScript. The same evidence in text form is in the repository: <a href="https://github.com/tritonsan/kiroclops/blob/main/submission/TECHNICAL_REPORT.md">TECHNICAL_REPORT.md</a>.</p></noscript>
+    <div id="explorer"></div>
+  </main>
+  <footer class="foot">
+    <p>Measured with KiroClops (OpenCV 5.0.0 locally). Source: <a href="https://github.com/tritonsan/kiroclops" target="_blank" rel="noopener">github.com/tritonsan/kiroclops</a> &middot; <a href="../replay/">Session replay</a></p>
+  </footer>
+</div>
+<script src="data.js" charset="utf-8"></script>
+<script src="explorer.js" charset="utf-8"></script>
+</body>
+</html>

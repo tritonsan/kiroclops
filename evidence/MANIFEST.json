@@ -288,12 +288,306 @@
    "report_section": "4.2",
    "sha256": "dfaf3cde0025220ffd58a9810b853142295a20d9544a1494c237f2628703acbf"
   },
+  "agent-sessions/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\agent-sessions-posthoc-01\\REPORT.md",
+   "source_sha256": "1f23ca4926ac97f66b0ceec20f1943ffdfa92c48aaacfa27dac7476c696c6bff",
+   "transform": "copied",
+   "report_section": "4.2",
+   "sha256": "1f23ca4926ac97f66b0ceec20f1943ffdfa92c48aaacfa27dac7476c696c6bff"
+  },
+  "agent-sessions/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\agent-sessions-posthoc-01\\result.json",
+   "source_sha256": "f1ece835684713a32f62331876d59215e3f05eab5517cb15390e982b45f3cedb",
+   "transform": "copied",
+   "report_section": "4.2",
+   "sha256": "f1ece835684713a32f62331876d59215e3f05eab5517cb15390e982b45f3cedb"
+  },
+  "aws/cool-scaling/REPORT.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\REPORT.md",
+   "source_sha256": "897b34afea48d3b0084df62989b6f9b6d71159d303719582c90b6ff76ca0a95d",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "897b34afea48d3b0084df62989b6f9b6d71159d303719582c90b6ff76ca0a95d"
+  },
+  "aws/cool-scaling/summary.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\summary.json",
+   "source_sha256": "1c5d23d9392d33afbce7842e800a8689184e12752950953a85763bd8bce3fa4f",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "1c5d23d9392d33afbce7842e800a8689184e12752950953a85763bd8bce3fa4f"
+  },
+  "aws/judge-dryrun/result.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\judge-dryrun-01\\result.json",
+   "source_sha256": "4a3265ff9cc3092890a36bb301bf762c6e73cb9b9a9cb3d381fc06337e466192",
+   "transform": "copied",
+   "report_section": "5.3",
+   "sha256": "4a3265ff9cc3092890a36bb301bf762c6e73cb9b9a9cb3d381fc06337e466192"
+  },
+  "aws/judge-dryrun/judge-check-01-svg.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\judge-dryrun-01\\judge-check-01-svg.json",
+   "source_sha256": "702efe7fd7cbc057a5e0cc9a1a0f5af9688f263d6fa5fd0fefb105356f2a963c",
+   "transform": "copied",
+   "report_section": "5.3",
+   "sha256": "702efe7fd7cbc057a5e0cc9a1a0f5af9688f263d6fa5fd0fefb105356f2a963c"
+  },
+  "aws/judge-dryrun/judge-check-02-game-compare-local.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\judge-dryrun-01\\judge-check-02-game-compare-local.json",
+   "source_sha256": "dca2b36e89056405126f441aab6201b0f68bab428159cd790b84f03b92c3553c",
+   "transform": "copied",
+   "report_section": "5.3",
+   "sha256": "dca2b36e89056405126f441aab6201b0f68bab428159cd790b84f03b92c3553c"
+  },
   "tests/public-tree-tests.log": {
    "source": "C:\\kc3d\\publish\\public-tree-tests.log",
-   "source_sha256": "41f270e47949c2fa2ab31cbf10adab6e92091823195e11d70e7f3a9067f61ef9",
+   "source_sha256": "ee3a529b7c8940e8fe006c40f3aa3184efab9e13c336e9fe468ef40d13fc86c9",
    "transform": "masked user path or AWS account number",
    "report_section": "6.4",
-   "sha256": "5c994fe34d6db6b9f0c85fb657adef094f39f3d77514a07d6e3eef29da461511"
+   "sha256": "91d7d1ae3d31fc70219ba01796603354628c24a3a4eb818c509f574369a49970"
+  },
+  "aws/cool-scaling/c8a.xlarge/result-stock-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8a.xlarge\\runs\\result-stock-1.json",
+   "source_sha256": "b8dfb795be9f0d5a5f021c62b1deaf9c5a64c687a544b06ba9f8c4f196f79990",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "b8dfb795be9f0d5a5f021c62b1deaf9c5a64c687a544b06ba9f8c4f196f79990"
+  },
+  "aws/cool-scaling/c8a.xlarge/result-stock-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8a.xlarge\\runs\\result-stock-2.json",
+   "source_sha256": "2fc4694fc977a5313389e028e4b2cadf29b5183c17e1cff97ca2fb8f9f733e85",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "2fc4694fc977a5313389e028e4b2cadf29b5183c17e1cff97ca2fb8f9f733e85"
+  },
+  "aws/cool-scaling/c8a.xlarge/result-stock-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8a.xlarge\\runs\\result-stock-3.json",
+   "source_sha256": "3e8c2b88820a18fa4257264a85abee2c4efa58673bb87b248c85b03a4c29f1d2",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "3e8c2b88820a18fa4257264a85abee2c4efa58673bb87b248c85b03a4c29f1d2"
+  },
+  "aws/cool-scaling/c8g.4xlarge/result-cool-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.4xlarge\\runs\\result-cool-1.json",
+   "source_sha256": "2ee05ebb6dc9bc6e71b86ff8f50910ea562f4423e85ce98870b6422e1bbc8e6e",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "2ee05ebb6dc9bc6e71b86ff8f50910ea562f4423e85ce98870b6422e1bbc8e6e"
+  },
+  "aws/cool-scaling/c8g.4xlarge/result-cool-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.4xlarge\\runs\\result-cool-2.json",
+   "source_sha256": "7d916de59cdba6ed2f565e2b3b4c772557365e5f9dd84cdc7c80a548af4b5e41",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "7d916de59cdba6ed2f565e2b3b4c772557365e5f9dd84cdc7c80a548af4b5e41"
+  },
+  "aws/cool-scaling/c8g.4xlarge/result-cool-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.4xlarge\\runs\\result-cool-3.json",
+   "source_sha256": "7a9d98b366755949dcaf583cb49254163d88049e35cc210d74dcf3dd84ebdbbb",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "7a9d98b366755949dcaf583cb49254163d88049e35cc210d74dcf3dd84ebdbbb"
+  },
+  "aws/cool-scaling/c8g.4xlarge/result-stock-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.4xlarge\\runs\\result-stock-1.json",
+   "source_sha256": "c87675c9b1b29c82c0ad1b91a83ae3b326615cef92b0e145baf04e57d1abe174",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "c87675c9b1b29c82c0ad1b91a83ae3b326615cef92b0e145baf04e57d1abe174"
+  },
+  "aws/cool-scaling/c8g.4xlarge/result-stock-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.4xlarge\\runs\\result-stock-2.json",
+   "source_sha256": "de07b4d24c4e0e133089ae4b8f027a5e759d36d3e6cef5b5fb04121f4fe3d367",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "de07b4d24c4e0e133089ae4b8f027a5e759d36d3e6cef5b5fb04121f4fe3d367"
+  },
+  "aws/cool-scaling/c8g.4xlarge/result-stock-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.4xlarge\\runs\\result-stock-3.json",
+   "source_sha256": "075ef94a2d8e9f207fe905aaeef2c67ab647221fdab165754471a6b09535fa40",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "075ef94a2d8e9f207fe905aaeef2c67ab647221fdab165754471a6b09535fa40"
+  },
+  "aws/cool-scaling/c8g.xlarge/result-cool-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.xlarge\\runs\\result-cool-1.json",
+   "source_sha256": "f6e20b4a8d46b949303c925d275060df473c640a84a8d92eae38faa42865b824",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "f6e20b4a8d46b949303c925d275060df473c640a84a8d92eae38faa42865b824"
+  },
+  "aws/cool-scaling/c8g.xlarge/result-cool-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.xlarge\\runs\\result-cool-2.json",
+   "source_sha256": "87a53929c92ce6d9e17c67f097f10f9b0798c8dafce43a33380f0c7e5ed08898",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "87a53929c92ce6d9e17c67f097f10f9b0798c8dafce43a33380f0c7e5ed08898"
+  },
+  "aws/cool-scaling/c8g.xlarge/result-cool-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.xlarge\\runs\\result-cool-3.json",
+   "source_sha256": "f175a17b45f179d6f9f12b25a7ec6ec1c385b35e80c86a2555ab4807b81f048d",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "f175a17b45f179d6f9f12b25a7ec6ec1c385b35e80c86a2555ab4807b81f048d"
+  },
+  "aws/cool-scaling/c8g.xlarge/result-stock-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.xlarge\\runs\\result-stock-1.json",
+   "source_sha256": "3ea326b699100243529e92a8f79fd9e53b9bacabd4f399d8f727034c38213dd9",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "3ea326b699100243529e92a8f79fd9e53b9bacabd4f399d8f727034c38213dd9"
+  },
+  "aws/cool-scaling/c8g.xlarge/result-stock-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.xlarge\\runs\\result-stock-2.json",
+   "source_sha256": "5d0897c76df3b34d47fbf39adcdc252546837f0288fc5d7c64dc06865bff3ab1",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "5d0897c76df3b34d47fbf39adcdc252546837f0288fc5d7c64dc06865bff3ab1"
+  },
+  "aws/cool-scaling/c8g.xlarge/result-stock-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8g.xlarge\\runs\\result-stock-3.json",
+   "source_sha256": "8f57b33b3cbae459b3b8d233bd0223ba0e959d5895735223a2c95d2a9fbc420a",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "8f57b33b3cbae459b3b8d233bd0223ba0e959d5895735223a2c95d2a9fbc420a"
+  },
+  "aws/cool-scaling/c8i.xlarge/result-stock-1.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8i.xlarge\\runs\\result-stock-1.json",
+   "source_sha256": "8c338e1230c5c3d35880c1ffe6e19bb1689e77509e3150cc5514b9e2335b4326",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "8c338e1230c5c3d35880c1ffe6e19bb1689e77509e3150cc5514b9e2335b4326"
+  },
+  "aws/cool-scaling/c8i.xlarge/result-stock-2.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8i.xlarge\\runs\\result-stock-2.json",
+   "source_sha256": "18f0bf7c943cb713a6a45c98e47ef8ea7071a98fe97b1f8542c56e972f2480bf",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "18f0bf7c943cb713a6a45c98e47ef8ea7071a98fe97b1f8542c56e972f2480bf"
+  },
+  "aws/cool-scaling/c8i.xlarge/result-stock-3.json": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-aws\\cool-scaling-01\\c8i.xlarge\\runs\\result-stock-3.json",
+   "source_sha256": "32394e19e8e30dc44813800184bc17d2aa1c2f3ef6613f15b7f8d64c3954fed5",
+   "transform": "copied",
+   "report_section": "5.2",
+   "sha256": "32394e19e8e30dc44813800184bc17d2aa1c2f3ef6613f15b7f8d64c3954fed5"
+  },
+  "lightglue-platforms/gdb-linux-x86-64-opencv-5.x-3f12ad88-2x64.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\gdb-linux-x86-64-opencv-5.x-3f12ad88-2x64.txt",
+   "source_sha256": "d11c5546074279a78e6729910db9ff9c9866c1f69cd225e15a99e118e96488ec",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "d11c5546074279a78e6729910db9ff9c9866c1f69cd225e15a99e118e96488ec"
+  },
+  "lightglue-platforms/gdb-linux-x86-64-zen3-opencv-5.x-4058787c-8x8-then-50x200.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\gdb-linux-x86-64-zen3-opencv-5.x-4058787c-8x8-then-50x200.txt",
+   "source_sha256": "8c2a9f03294458acbe9492dfc8207e8fb13ddccf74da881a46719394fd4e07f1",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "8c2a9f03294458acbe9492dfc8207e8fb13ddccf74da881a46719394fd4e07f1"
+  },
+  "lightglue-platforms/lightglue_repro.py": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\lightglue_repro.py",
+   "source_sha256": "68b64cbba5ee28243dd9b4d3e2d2b942dcaa10dda843f08bb46b0f0b1bd52409",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "68b64cbba5ee28243dd9b4d3e2d2b942dcaa10dda843f08bb46b0f0b1bd52409"
+  },
+  "lightglue-platforms/linux-aarch64-graviton4-cool-5.1.0-dev.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-aarch64-graviton4-cool-5.1.0-dev.txt",
+   "source_sha256": "51278975943b43fc4d26b588284312179b467cc23f4b87a41c4833d3d0e869e7",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "51278975943b43fc4d26b588284312179b467cc23f4b87a41c4833d3d0e869e7"
+  },
+  "lightglue-platforms/linux-aarch64-graviton4-opencv-5.x-3f12ad88.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-aarch64-graviton4-opencv-5.x-3f12ad88.txt",
+   "source_sha256": "9a667d74f0ecfc594d60718c6597df41beb02507846b99752423f9e1370ccaea",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "9a667d74f0ecfc594d60718c6597df41beb02507846b99752423f9e1370ccaea"
+  },
+  "lightglue-platforms/linux-aarch64-graviton4-opencv-python-5.0.0.93.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-aarch64-graviton4-opencv-python-5.0.0.93.txt",
+   "source_sha256": "efbae7bff135b314392bdc7582209282af79e1dbd247848fb06d43f0080d24dd",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "efbae7bff135b314392bdc7582209282af79e1dbd247848fb06d43f0080d24dd"
+  },
+  "lightglue-platforms/linux-x86-64-amd-c8a-opencv-5.x-3f12ad88.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-x86-64-amd-c8a-opencv-5.x-3f12ad88.txt",
+   "source_sha256": "349fa235a8e1738745d435f83ee9d9c2060d73f8264d74dec56ef79a891e8d52",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "349fa235a8e1738745d435f83ee9d9c2060d73f8264d74dec56ef79a891e8d52"
+  },
+  "lightglue-platforms/linux-x86-64-amd-c8a-opencv-python-5.0.0.93.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-x86-64-amd-c8a-opencv-python-5.0.0.93.txt",
+   "source_sha256": "b8764de1fd5718e4c8128bb9910f991bb14e95a9f40b8bedd4b9a4bc327dbccb",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "b8764de1fd5718e4c8128bb9910f991bb14e95a9f40b8bedd4b9a4bc327dbccb"
+  },
+  "lightglue-platforms/linux-x86-64-amd-zen3-c6a-opencv-5.x-4058787c.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-x86-64-amd-zen3-c6a-opencv-5.x-4058787c.txt",
+   "source_sha256": "dab39c9450905a3347936f72a1460978b10303e20ecbc8ef134feb1088783d2b",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "dab39c9450905a3347936f72a1460978b10303e20ecbc8ef134feb1088783d2b"
+  },
+  "lightglue-platforms/linux-x86-64-amd-zen3-c6a-opencv-python-5.0.0.93.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-x86-64-amd-zen3-c6a-opencv-python-5.0.0.93.txt",
+   "source_sha256": "aa8084267cd9541a91f6de7d0faa758919834d5946814edddd4e55afbca34558",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "aa8084267cd9541a91f6de7d0faa758919834d5946814edddd4e55afbca34558"
+  },
+  "lightglue-platforms/linux-x86-64-intel-c8i-opencv-python-5.0.0.93.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\linux-x86-64-intel-c8i-opencv-python-5.0.0.93.txt",
+   "source_sha256": "3c9054a6ecc39eb619da6615960db68a91750fa15a720844b8e89572215877ab",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "3c9054a6ecc39eb619da6615960db68a91750fa15a720844b8e89572215877ab"
+  },
+  "lightglue-platforms/README.md": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\README.md",
+   "source_sha256": "9426c2753785c58dfef39a887fb1e3bfb2ff0f917e47f7744b618e984bbe5053",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "9426c2753785c58dfef39a887fb1e3bfb2ff0f917e47f7744b618e984bbe5053"
+  },
+  "lightglue-platforms/repro_issue_30501.py": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\repro_issue_30501.py",
+   "source_sha256": "3b486825883a57282ef6916cee1ce3890c66e7272d5844c3b50f1597106ff076",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "3b486825883a57282ef6916cee1ce3890c66e7272d5844c3b50f1597106ff076"
+  },
+  "lightglue-platforms/repro_windows_abort.py": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\repro_windows_abort.py",
+   "source_sha256": "eff9ef15e2f687e6ddee7d3b0b19b5794e2c80b1e144ecc1c49275f0ef1251f3",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "eff9ef15e2f687e6ddee7d3b0b19b5794e2c80b1e144ecc1c49275f0ef1251f3"
+  },
+  "lightglue-platforms/windows-x64-ryzen5600-opencv-python-5.0.0.93-abort.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\windows-x64-ryzen5600-opencv-python-5.0.0.93-abort.txt",
+   "source_sha256": "2f8f4b17b9b515f323519b4f0388e2bd957544b9417366ff9a51417b15d57b1d",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "2f8f4b17b9b515f323519b4f0388e2bd957544b9417366ff9a51417b15d57b1d"
+  },
+  "lightglue-platforms/windows-x64-ryzen5600-opencv-python-5.0.0.93-issue-30501.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\windows-x64-ryzen5600-opencv-python-5.0.0.93-issue-30501.txt",
+   "source_sha256": "6e9b0ccc39a984ef2603fdbfb881ae3b0aa79975fc0e17c043577887e6733d5b",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "6e9b0ccc39a984ef2603fdbfb881ae3b0aa79975fc0e17c043577887e6733d5b"
+  },
+  "lightglue-platforms/windows-x64-ryzen5600-opencv-python-5.0.0.93.txt": {
+   "source": "D:\\Amazon Developer Hackathon\\artifacts\\phase4-v6\\lightglue-platforms-01\\windows-x64-ryzen5600-opencv-python-5.0.0.93.txt",
+   "source_sha256": "569e3266376ab175be9ac9bdc611f397d80f2aa1c528a2c23a4c99a1968a0e30",
+   "transform": "copied",
+   "report_section": "3.2",
+   "sha256": "569e3266376ab175be9ac9bdc611f397d80f2aa1c528a2c23a4c99a1968a0e30"
   },
   "panel-v6p01/heldout-outcome.json": {
    "source": "C:\\kc3d\\s\\v6p01\\measurements\\d19d9b76a015463fbf9708cb4fbde348\\comparison.json",

@@ -1,0 +1,6 @@
+[ WARN:0@0.867] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+matching
+Traceback (most recent call last):
+  File "D:\Amazon Developer Hackathon\artifacts\phase4-v6\lightglue-platforms-01\repro_issue_30501.py", line 18, in <module>
+    print(len(matcher.match(desc0, desc1)), 'matches')
+cv2.error: Unknown C++ exception from OpenCV code

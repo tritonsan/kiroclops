@@ -1,0 +1,21 @@
+OpenCV 5.1.0-dev | NumPy 2.5.1 | Python 3.12.3 | linux
+8x8 -> 50x200 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.4065830111503601', '0.6534878015518188']
+  50x200: 6 matches, first distances ['0.3207055926322937', '0.5800529718399048']
+8x8 -> 1000x1000 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.4065830111503601', '0.6534878015518188']
+  1000x1000: 19 matches, first distances ['0.4883822202682495', '0.8973950147628784']
+1000x1000 -> 8x8 -> 50x200 | exit code 0 (0x0)
+  1000x1000: 19 matches, first distances ['0.4883822202682495', '0.8973950147628784']
+  8x8: 3 matches, first distances ['0.4065830111503601', '0.6534878015518188']
+  50x200: 6 matches, first distances ['0.3207055926322937', '0.5800529718399048']
+8x8 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.4065830111503601', '0.6534878015518188']
+33x2 -> 8x8 | exit code 0 (0x0)
+  33x2: 0 matches, first distances []
+  8x8: 3 matches, first distances ['0.4065830111503601', '0.6534878015518188']
+2x64 | exit code 0 (0x0)
+  2x64: 0 matches, first distances []
+1000x1000 -> 2x64 | exit code 0 (0x0)
+  1000x1000: 19 matches, first distances ['0.4883822202682495', '0.8973950147628784']
+  2x64: 0 matches, first distances []

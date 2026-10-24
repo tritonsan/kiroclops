@@ -1,0 +1,751 @@
+{
+ "kind": "CoolScalingRun",
+ "schema_version": 1,
+ "engine": "cool",
+ "round": 3,
+ "environment": {
+  "opencv_version": "5.1.0-dev",
+  "cv2_file": "/opt/cool/python_3.12/site-packages/cv2/python-3.12/cv2.cpython-312-aarch64-linux-gnu.so",
+  "numpy_version": "2.5.1",
+  "python": "3.12.3",
+  "machine": "aarch64",
+  "cpu_count": 4,
+  "lscpu": {
+   "Architecture": "aarch64",
+   "CPU(s)": "4",
+   "Vendor ID": "ARM",
+   "Model name": "Neoverse-V2",
+   "Thread(s) per core": "1",
+   "Core(s) per socket": "4",
+   "Socket(s)": "1",
+   "BogoMIPS": "2000.00",
+   "L1d cache": "256 KiB (4 instances)",
+   "L2 cache": "8 MiB (4 instances)",
+   "L3 cache": "36 MiB (1 instance)",
+   "NUMA node(s)": "1"
+  },
+  "cpu_features": [
+   "sve",
+   "sve2",
+   "i8mm",
+   "bf16",
+   "asimddp"
+  ],
+  "use_optimized": true,
+  "default_threads": 4,
+  "build_information_sha256": "12740978f31483f2352d9e8b367f4f6053c3bfb58618e2ff42d53443da2a8ec4",
+  "build_lines": [
+   "Version control:               unknown",
+   "CPU/HW features:",
+   "Baseline:                    SVE NEON FP16 NEON_DOTPROD NEON_FP16 NEON_BF16",
+   "Dispatched code generation:",
+   "requested:                 NEON_DOTPROD NEON_FP16 NEON_BF16",
+   "C++ Compiler:                /usr/bin/c++  (ver 13.3.0)",
+   "Parallel framework:            pthreads",
+   "Other third-party libraries:",
+   "Lapack:                      YES (Unknown /opt/arm/armpl_25.07.1_gcc/lib/libarmpl_lp64.so /opt/arm/armpl_25.07.1_gcc/lib/libamath.so /opt/arm/armpl_25.07.1_gcc/lib/libastring.so -lgfortran -lm)",
+   "ASM kernels:               YES (ARM64: NEON SGEMM, NEON SGEMV)",
+   "Custom HAL:                  YES (carotene (ver 0.0.1) KleidiCV (ver 0.7.0))"
+  ],
+  "instance": {
+   "instance_type": "c8g.xlarge",
+   "availability_zone": "us-east-1a",
+   "ami_id": "ami-033e481a24f94c8cb"
+  }
+ },
+ "engine_check": true,
+ "thread_counts": {
+  "native_kernels": [
+   1,
+   2,
+   4
+  ],
+  "tiled_kernels": [
+   1,
+   4
+  ],
+  "pipeline": [
+   1,
+   4
+  ]
+ },
+ "frames": {
+  "native": {
+   "shape": [
+    640,
+    960,
+    3
+   ],
+   "phase_correlate_side": 512,
+   "png_bytes": 66171
+  },
+  "1080p": {
+   "shape": [
+    1080,
+    1920,
+    3
+   ],
+   "phase_correlate_side": 1024,
+   "png_bytes": 269254
+  },
+  "2160p": {
+   "shape": [
+    2160,
+    3840,
+    3
+   ],
+   "phase_correlate_side": 2048,
+   "png_bytes": 1101689
+  }
+ },
+ "kernels": {
+  "native": {
+   "1": {
+    "imdecode_png_frame": {
+     "median_s": 0.0019580255625015752,
+     "min_s": 0.001956453375001388,
+     "max_s": 0.0019625231250017805,
+     "calls_per_batch": 16
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 0.00018753036718699434,
+     "min_s": 0.0001873998789063691,
+     "max_s": 0.00018781258203137696,
+     "calls_per_batch": 256
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.03914775899988854,
+     "min_s": 0.03903675999981715,
+     "max_s": 0.03958332199999859,
+     "calls_per_batch": 1
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.004123387250018595,
+     "min_s": 0.004080273750020069,
+     "max_s": 0.004155233749997933,
+     "calls_per_batch": 8
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.0011332872187495013,
+     "min_s": 0.0011242806562492547,
+     "max_s": 0.0011689974687527638,
+     "calls_per_batch": 32
+    },
+    "canny_frame": {
+     "median_s": 0.0008189833125022972,
+     "min_s": 0.0008176049843733324,
+     "max_s": 0.0008272680937508881,
+     "calls_per_batch": 64
+    },
+    "findContours_edges": {
+     "median_s": 0.00032784148437592364,
+     "min_s": 0.00032696128906195554,
+     "max_s": 0.0003325689374999996,
+     "calls_per_batch": 128
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.0016994404687551423,
+     "min_s": 0.0016973332187504298,
+     "max_s": 0.0017008167187526624,
+     "calls_per_batch": 32
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.00042116059374919246,
+     "min_s": 0.00041852983593670956,
+     "max_s": 0.00042658629687508665,
+     "calls_per_batch": 128
+    },
+    "integral_frame": {
+     "median_s": 0.00019390226562521207,
+     "min_s": 0.00019343726562492947,
+     "max_s": 0.00019436136328110365,
+     "calls_per_batch": 256
+    },
+    "absdiff_frame": {
+     "median_s": 8.083926367152827e-05,
+     "min_s": 8.049239453145063e-05,
+     "max_s": 8.169060156237862e-05,
+     "calls_per_batch": 512
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.004121749500001215,
+     "min_s": 0.004112822750016676,
+     "max_s": 0.004151371249975,
+     "calls_per_batch": 8
+    },
+    "matchTemplate_ccoeff_normed_200px_window_48px": {
+     "median_s": 0.0018004546249983377,
+     "min_s": 0.0017984014375045376,
+     "max_s": 0.0018107068750055078,
+     "calls_per_batch": 32
+    },
+    "resize_cubic_x8_48px_patch": {
+     "median_s": 0.0002514306484382445,
+     "min_s": 0.000251308820313767,
+     "max_s": 0.000251768374999628,
+     "calls_per_batch": 128
+    }
+   },
+   "2": {
+    "imdecode_png_frame": {
+     "median_s": 0.0019562408125040065,
+     "min_s": 0.0019544594374991675,
+     "max_s": 0.0019613953124917316,
+     "calls_per_batch": 16
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 0.00010204689843718029,
+     "min_s": 0.00010199837109370335,
+     "max_s": 0.00010212993749991739,
+     "calls_per_batch": 512
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.02280404600003294,
+     "min_s": 0.022720618499988632,
+     "max_s": 0.02285606199995982,
+     "calls_per_batch": 2
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.0032116979375018673,
+     "min_s": 0.003183333562503776,
+     "max_s": 0.0032517724999934217,
+     "calls_per_batch": 16
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.0007689585937491472,
+     "min_s": 0.0007668596093743929,
+     "max_s": 0.0007729650937484678,
+     "calls_per_batch": 64
+    },
+    "canny_frame": {
+     "median_s": 0.0005083769843743369,
+     "min_s": 0.0005072012499987011,
+     "max_s": 0.0005088303281262085,
+     "calls_per_batch": 64
+    },
+    "findContours_edges": {
+     "median_s": 0.0003423311875003776,
+     "min_s": 0.000341731398437517,
+     "max_s": 0.0003426989765635824,
+     "calls_per_batch": 128
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.0002002922304686905,
+     "min_s": 0.000199468671874925,
+     "max_s": 0.0002011556015624194,
+     "calls_per_batch": 256
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.00022910164453104898,
+     "min_s": 0.00022886224609397487,
+     "max_s": 0.00023037387109425822,
+     "calls_per_batch": 256
+    },
+    "integral_frame": {
+     "median_s": 0.0001935604023435289,
+     "min_s": 0.00019328821875053137,
+     "max_s": 0.00019476925390637945,
+     "calls_per_batch": 256
+    },
+    "absdiff_frame": {
+     "median_s": 8.196693359385776e-05,
+     "min_s": 8.098319140659171e-05,
+     "max_s": 8.286664453116543e-05,
+     "calls_per_batch": 512
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.0036825010624994547,
+     "min_s": 0.003665449624989492,
+     "max_s": 0.0036959940624967658,
+     "calls_per_batch": 16
+    },
+    "matchTemplate_ccoeff_normed_200px_window_48px": {
+     "median_s": 0.0018156353437461803,
+     "min_s": 0.00181508306250322,
+     "max_s": 0.0018253013125004713,
+     "calls_per_batch": 32
+    },
+    "resize_cubic_x8_48px_patch": {
+     "median_s": 0.00014152314062432225,
+     "min_s": 0.00014133091796875163,
+     "max_s": 0.00014192930859380226,
+     "calls_per_batch": 256
+    }
+   },
+   "4": {
+    "imdecode_png_frame": {
+     "median_s": 0.0019616663124963907,
+     "min_s": 0.001956799124997133,
+     "max_s": 0.00196975737500793,
+     "calls_per_batch": 16
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 6.540695507828431e-05,
+     "min_s": 6.322475195297272e-05,
+     "max_s": 7.310066406240878e-05,
+     "calls_per_batch": 512
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.02302087999999003,
+     "min_s": 0.02286704250002458,
+     "max_s": 0.028484993000006398,
+     "calls_per_batch": 2
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.0031345822499986298,
+     "min_s": 0.0027498175000033598,
+     "max_s": 0.0031632982500013895,
+     "calls_per_batch": 16
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.0006666309218736899,
+     "min_s": 0.0006642855937499803,
+     "max_s": 0.0006673727968724563,
+     "calls_per_batch": 64
+    },
+    "canny_frame": {
+     "median_s": 0.00038486978125007454,
+     "min_s": 0.0003338848906224712,
+     "max_s": 0.0004755474374995572,
+     "calls_per_batch": 64
+    },
+    "findContours_edges": {
+     "median_s": 0.00034389803906265115,
+     "min_s": 0.00034274742968776195,
+     "max_s": 0.0003459174374995655,
+     "calls_per_batch": 128
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.00018505748046937498,
+     "min_s": 0.0001664136679693229,
+     "max_s": 0.00018603113671922245,
+     "calls_per_batch": 256
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.00017305453515614744,
+     "min_s": 0.00014012574999977545,
+     "max_s": 0.00017617391406243854,
+     "calls_per_batch": 256
+    },
+    "integral_frame": {
+     "median_s": 0.0001934513593750964,
+     "min_s": 0.00019318776562560203,
+     "max_s": 0.00019362026562497192,
+     "calls_per_batch": 256
+    },
+    "absdiff_frame": {
+     "median_s": 8.177989843760614e-05,
+     "min_s": 8.07635742190449e-05,
+     "max_s": 8.350198046880308e-05,
+     "calls_per_batch": 512
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.00355977343750169,
+     "min_s": 0.003551679625005022,
+     "max_s": 0.003575471624998272,
+     "calls_per_batch": 16
+    },
+    "matchTemplate_ccoeff_normed_200px_window_48px": {
+     "median_s": 0.0018319773437482922,
+     "min_s": 0.0018271181562496963,
+     "max_s": 0.001839762468748063,
+     "calls_per_batch": 32
+    },
+    "resize_cubic_x8_48px_patch": {
+     "median_s": 0.000137983351562454,
+     "min_s": 0.0001379524921869546,
+     "max_s": 0.00013865690625003424,
+     "calls_per_batch": 256
+    }
+   }
+  },
+  "1080p": {
+   "1": {
+    "imdecode_png_frame": {
+     "median_s": 0.017543561500019678,
+     "min_s": 0.017529568499980996,
+     "max_s": 0.01756805749994328,
+     "calls_per_batch": 2
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 0.0006067664062499034,
+     "min_s": 0.0006054343124972661,
+     "max_s": 0.0006206262031263066,
+     "calls_per_batch": 64
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.16901056500000777,
+     "min_s": 0.1685225349999655,
+     "max_s": 0.16964043100006165,
+     "calls_per_batch": 1
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.028777127500006827,
+     "min_s": 0.028716058500094732,
+     "max_s": 0.02897136149999824,
+     "calls_per_batch": 2
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.0027778491249961235,
+     "min_s": 0.002741655000008336,
+     "max_s": 0.0028336841874931906,
+     "calls_per_batch": 16
+    },
+    "canny_frame": {
+     "median_s": 0.0029890148124991356,
+     "min_s": 0.0029764778749949983,
+     "max_s": 0.0029950034999899344,
+     "calls_per_batch": 16
+    },
+    "findContours_edges": {
+     "median_s": 0.0013917234999993866,
+     "min_s": 0.0013896405625004604,
+     "max_s": 0.0013964381250062274,
+     "calls_per_batch": 32
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.0057213979999914955,
+     "min_s": 0.005718714875001751,
+     "max_s": 0.005725948624984767,
+     "calls_per_batch": 8
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.0017094472500005509,
+     "min_s": 0.0016231739687455615,
+     "max_s": 0.0017889830937534157,
+     "calls_per_batch": 32
+    },
+    "integral_frame": {
+     "median_s": 0.0006809725781238285,
+     "min_s": 0.0006754555312511457,
+     "max_s": 0.0006852382187503281,
+     "calls_per_batch": 64
+    },
+    "absdiff_frame": {
+     "median_s": 0.0003044122187496612,
+     "min_s": 0.0003020935390622981,
+     "max_s": 0.0003323249218762925,
+     "calls_per_batch": 128
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.018580449999944904,
+     "min_s": 0.018437480499983394,
+     "max_s": 0.019112231999997675,
+     "calls_per_batch": 2
+    }
+   },
+   "4": {
+    "imdecode_png_frame": {
+     "median_s": 0.01753410599997096,
+     "min_s": 0.017521285000043463,
+     "max_s": 0.017544988000054218,
+     "calls_per_batch": 2
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 0.0002228492617186717,
+     "min_s": 0.00017483128906281564,
+     "max_s": 0.0002376761132811822,
+     "calls_per_batch": 256
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.09060290399997939,
+     "min_s": 0.08145416000002115,
+     "max_s": 0.09142426099992917,
+     "calls_per_batch": 1
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.01831296199998178,
+     "min_s": 0.014862909500038768,
+     "max_s": 0.018984218500008865,
+     "calls_per_batch": 2
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.0014949097500007724,
+     "min_s": 0.0012297424062452933,
+     "max_s": 0.001696724031248209,
+     "calls_per_batch": 32
+    },
+    "canny_frame": {
+     "median_s": 0.0018199136875054478,
+     "min_s": 0.0011732774374948463,
+     "max_s": 0.0018258741250036792,
+     "calls_per_batch": 32
+    },
+    "findContours_edges": {
+     "median_s": 0.001386871062500461,
+     "min_s": 0.0013794218125013913,
+     "max_s": 0.0013994361562481572,
+     "calls_per_batch": 32
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.0005322228750017644,
+     "min_s": 0.0005050087812499271,
+     "max_s": 0.0005433878906231371,
+     "calls_per_batch": 64
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.0006286769843732998,
+     "min_s": 0.0006275743281243251,
+     "max_s": 0.0006315561093757083,
+     "calls_per_batch": 64
+    },
+    "integral_frame": {
+     "median_s": 0.0006814842187523595,
+     "min_s": 0.0006771897500001955,
+     "max_s": 0.0006869264687487942,
+     "calls_per_batch": 64
+    },
+    "absdiff_frame": {
+     "median_s": 0.0003138218125009473,
+     "min_s": 0.0003043327734371104,
+     "max_s": 0.0003223927734374854,
+     "calls_per_batch": 128
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.015754982500084225,
+     "min_s": 0.015374602499946377,
+     "max_s": 0.0160183864999226,
+     "calls_per_batch": 2
+    }
+   }
+  },
+  "2160p": {
+   "1": {
+    "imdecode_png_frame": {
+     "median_s": 0.06967702099996131,
+     "min_s": 0.06960744100001648,
+     "max_s": 0.06971880600008262,
+     "calls_per_batch": 1
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 0.002468537062497944,
+     "min_s": 0.002434030312500113,
+     "max_s": 0.0024990110624969475,
+     "calls_per_batch": 16
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.6570563580000908,
+     "min_s": 0.6542350149998128,
+     "max_s": 0.666172313000061,
+     "calls_per_batch": 1
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.15525071499996557,
+     "min_s": 0.15406788899986168,
+     "max_s": 0.15657702299995435,
+     "calls_per_batch": 1
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.019706444999997075,
+     "min_s": 0.019553807999955097,
+     "max_s": 0.01991585949997443,
+     "calls_per_batch": 2
+    },
+    "canny_frame": {
+     "median_s": 0.012056412250046833,
+     "min_s": 0.011983148000012989,
+     "max_s": 0.012154798250037402,
+     "calls_per_batch": 4
+    },
+    "findContours_edges": {
+     "median_s": 0.005387576624997337,
+     "min_s": 0.005299644249987523,
+     "max_s": 0.005439280624983667,
+     "calls_per_batch": 8
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.022931152500063945,
+     "min_s": 0.022871280499998647,
+     "max_s": 0.023008586500054662,
+     "calls_per_batch": 2
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.00757410100004563,
+     "min_s": 0.007484135249967494,
+     "max_s": 0.007636257999990903,
+     "calls_per_batch": 4
+    },
+    "integral_frame": {
+     "median_s": 0.0027133722499996793,
+     "min_s": 0.002693826187496029,
+     "max_s": 0.0027529654999938202,
+     "calls_per_batch": 16
+    },
+    "absdiff_frame": {
+     "median_s": 0.001522953593749321,
+     "min_s": 0.0015115585312486246,
+     "max_s": 0.0015292947500000764,
+     "calls_per_batch": 32
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.11066754500006937,
+     "min_s": 0.11022565400003259,
+     "max_s": 0.11165694900000744,
+     "calls_per_batch": 1
+    }
+   },
+   "4": {
+    "imdecode_png_frame": {
+     "median_s": 0.06971085100008168,
+     "min_s": 0.06964788200002658,
+     "max_s": 0.06980904000010923,
+     "calls_per_batch": 1
+    },
+    "cvtColor_bgr2gray_frame": {
+     "median_s": 0.0009052489999987756,
+     "min_s": 0.0008196168124925407,
+     "max_s": 0.001466413437498204,
+     "calls_per_batch": 16
+    },
+    "matchTemplate_ccoeff_normed_full_frame_64px": {
+     "median_s": 0.3296750389999943,
+     "min_s": 0.31414106600004743,
+     "max_s": 0.34460805399999117,
+     "calls_per_batch": 1
+    },
+    "goodFeaturesToTrack_frame": {
+     "median_s": 0.09414361099993585,
+     "min_s": 0.08358978000001116,
+     "max_s": 0.09940667799992298,
+     "calls_per_batch": 1
+    },
+    "calcOpticalFlowPyrLK_100_points": {
+     "median_s": 0.011435632749964952,
+     "min_s": 0.011354302249969805,
+     "max_s": 0.011515645749966552,
+     "calls_per_batch": 4
+    },
+    "canny_frame": {
+     "median_s": 0.006514659749996099,
+     "min_s": 0.00543113524997807,
+     "max_s": 0.008852477249945423,
+     "calls_per_batch": 4
+    },
+    "findContours_edges": {
+     "median_s": 0.0052353808750069675,
+     "min_s": 0.005177046499994731,
+     "max_s": 0.005331194999996569,
+     "calls_per_batch": 8
+    },
+    "connectedComponentsWithStats_mask": {
+     "median_s": 0.0020844689999961474,
+     "min_s": 0.0020619821874987565,
+     "max_s": 0.0021024796875082075,
+     "calls_per_batch": 16
+    },
+    "gaussianBlur_5x5_frame": {
+     "median_s": 0.002826036812493271,
+     "min_s": 0.0028034955000038053,
+     "max_s": 0.002895178812494237,
+     "calls_per_batch": 16
+    },
+    "integral_frame": {
+     "median_s": 0.002690333187501892,
+     "min_s": 0.0026728387500014605,
+     "max_s": 0.0029221072500007494,
+     "calls_per_batch": 16
+    },
+    "absdiff_frame": {
+     "median_s": 0.0015168845624984328,
+     "min_s": 0.0014846804062500496,
+     "max_s": 0.0015296312500012732,
+     "calls_per_batch": 32
+    },
+    "phaseCorrelate_crop": {
+     "median_s": 0.09092536399998608,
+     "min_s": 0.09009121799999775,
+     "max_s": 0.0918822739999996,
+     "calls_per_batch": 1
+    }
+   }
+  }
+ },
+ "pipeline": [
+  {
+   "threads": 1,
+   "name": "panel-calibration-reverse-w960",
+   "wall_s": [
+    4.079809593999926,
+    4.06420268099987
+   ],
+   "wall_median_s": 4.072006137499898,
+   "measurement_sha256": [
+    "37d0ff53aa835e3c9b14eedf63254d0ac9c1c76d065f379f6ae26fad5b32428c"
+   ]
+  },
+  {
+   "threads": 1,
+   "name": "game-reference-h03",
+   "wall_s": [
+    0.15577128600011747,
+    0.15517494400000942
+   ],
+   "wall_median_s": 0.15547311500006344,
+   "measurement_sha256": [
+    "562a8e8215d302acb9d25d9b3ec25b30a6915a53468bd7c92bd2c9d8fd1ca882"
+   ]
+  },
+  {
+   "threads": 1,
+   "name": "svg-three-to-four-w960-r1",
+   "wall_s": [
+    6.251412638999909,
+    6.252490376000196
+   ],
+   "wall_median_s": 6.251951507500053,
+   "measurement_sha256": [
+    "1709ff24c9ba95ac8dc7b49129332550b47c28e328b7a0e5e32b02d13d0f188a"
+   ]
+  },
+  {
+   "threads": 4,
+   "name": "panel-calibration-reverse-w960",
+   "wall_s": [
+    3.8806383189998996,
+    3.89695727000003
+   ],
+   "wall_median_s": 3.8887977944999648,
+   "measurement_sha256": [
+    "37d0ff53aa835e3c9b14eedf63254d0ac9c1c76d065f379f6ae26fad5b32428c"
+   ]
+  },
+  {
+   "threads": 4,
+   "name": "game-reference-h03",
+   "wall_s": [
+    0.169582716999912,
+    0.16858261099991978
+   ],
+   "wall_median_s": 0.1690826639999159,
+   "measurement_sha256": [
+    "562a8e8215d302acb9d25d9b3ec25b30a6915a53468bd7c92bd2c9d8fd1ca882"
+   ]
+  },
+  {
+   "threads": 4,
+   "name": "svg-three-to-four-w960-r1",
+   "wall_s": [
+    5.604570730999967,
+    5.505945428999894
+   ],
+   "wall_median_s": 5.5552580799999305,
+   "measurement_sha256": [
+    "1709ff24c9ba95ac8dc7b49129332550b47c28e328b7a0e5e32b02d13d0f188a"
+   ]
+  }
+ ],
+ "throughput": {
+  "processes": 4,
+  "threads_per_process": 1,
+  "passes": 2,
+  "analyses": 24,
+  "wall_s": 23.074902534484863,
+  "analyses_per_hour": 3744.327841509942,
+  "latest_start_after_signal_s": 6.866455078125e-05,
+  "per_recording_median_s": {
+   "panel-calibration-reverse-w960": 4.366811863500061,
+   "game-reference-h03": 0.15533643600008418,
+   "svg-three-to-four-w960-r1": 6.988183153500017
+  }
+ }
+}

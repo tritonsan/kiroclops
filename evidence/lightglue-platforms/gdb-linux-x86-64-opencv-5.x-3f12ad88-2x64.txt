@@ -1,0 +1,65 @@
+gdb: warning: Couldn't determine a path for the index cache directory.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fffd43ff6c0 (LWP 10811)]
+[New Thread 0x7fffd3bfe6c0 (LWP 10812)]
+[New Thread 0x7fffd33fd6c0 (LWP 10813)]
+[New Thread 0x7fffd2bfc6c0 (LWP 10814)]
+[New Thread 0x7fffd23fb6c0 (LWP 10815)]
+[New Thread 0x7fffd1bfa6c0 (LWP 10816)]
+[New Thread 0x7fffd13f96c0 (LWP 10817)]
+[New Thread 0x7fffd0bf86c0 (LWP 10818)]
+[New Thread 0x7fffd03f76c0 (LWP 10819)]
+[New Thread 0x7fffcfbf66c0 (LWP 10820)]
+[New Thread 0x7fffcf3f56c0 (LWP 10821)]
+[New Thread 0x7fffcebf46c0 (LWP 10822)]
+[New Thread 0x7fffce3f36c0 (LWP 10823)]
+[New Thread 0x7fffcdbf26c0 (LWP 10824)]
+[New Thread 0x7fffcd3f16c0 (LWP 10825)]
+[ WARN:0@0.285] global net_impl_backend.cpp:388 setPreferableTarget Targets are not supported by the new graph engine for now
+[New Thread 0x7fffc9dff6c0 (LWP 10826)]
+[New Thread 0x7fffc95fe6c0 (LWP 10827)]
+[New Thread 0x7fffc8dfd6c0 (LWP 10828)]
+[New Thread 0x7fffc85fc6c0 (LWP 10829)]
+[New Thread 0x7fffc7b726c0 (LWP 10830)]
+[New Thread 0x7fffc73716c0 (LWP 10831)]
+[New Thread 0x7fffc6b706c0 (LWP 10832)]
+[New Thread 0x7fffc636f6c0 (LWP 10833)]
+[New Thread 0x7fffc5b6e6c0 (LWP 10834)]
+[New Thread 0x7fffc536d6c0 (LWP 10835)]
+[New Thread 0x7fffc4b6c6c0 (LWP 10836)]
+[New Thread 0x7fff9ffff6c0 (LWP 10837)]
+[New Thread 0x7fff9f7fe6c0 (LWP 10838)]
+[New Thread 0x7fff9effd6c0 (LWP 10839)]
+[New Thread 0x7fff9e7fc6c0 (LWP 10840)]
+
+Thread 1 "python" received signal SIGFPE, Arithmetic exception.
+0x00007fffcbe49b8e in cv::dnn::GatherNDLayerImpl::forward_impl<long, unsigned long> () at /srv/opencv5x/src/modules/dnn/src/layers/gatherND.cpp:133
+133	        const int inner_size = out.total() / outer_size;
+#0  0x00007fffcbe49b8e in cv::dnn::GatherNDLayerImpl::forward_impl<long, unsigned long> () at /srv/opencv5x/src/modules/dnn/src/layers/gatherND.cpp:133
+#1  0x00007fffcbe4a84b in cv::dnn::GatherNDLayerImpl::widthDispatch<long> () at /srv/opencv5x/src/modules/dnn/src/layers/gatherND.cpp:101
+#2  cv::dnn::GatherNDLayerImpl::forward () at /srv/opencv5x/src/modules/dnn/src/layers/gatherND.cpp:87
+#3  0x00007fffcbb617e9 in cv::dnn::dnn5_v20261023::Net::Impl::forwardGraph () at /srv/opencv5x/src/modules/dnn/src/net_impl2.cpp:1784
+#4  0x00007fffcbb66457 in cv::dnn::dnn5_v20261023::Net::Impl::forwardMainGraph () at /srv/opencv5x/src/modules/dnn/src/net_impl2.cpp:887
+#5  0x00007fffcbb6707c in cv::dnn::dnn5_v20261023::Net::Impl::forwardWithMultipleOutputs () at /srv/opencv5x/src/modules/dnn/src/net_impl2.cpp:1111
+#6  0x00007fffcbb47856 in cv::dnn::dnn5_v20261023::Net::Impl::forward () at /srv/opencv5x/src/modules/dnn/src/net_impl.cpp:1158
+#7  0x00007fffcbb2403d in cv::dnn::dnn5_v20261023::Net::forward () at /srv/opencv5x/src/modules/dnn/src/net.cpp:106
+#8  0x00007fffcc4a0453 in cv::ALIKEDLightGlueMatcherImpl::lightglueMatch () at /srv/opencv5x/src/modules/features/src/matchers_lightglue.cpp:318
+#9  0x00007fffcc49f9b5 in cv::LightGlueMatcherImpl::knnMatchImpl () at /srv/opencv5x/src/modules/features/src/matchers_lightglue.cpp:269
+#10 0x00007fffcc4975ca in cv::DescriptorMatcher::knnMatch () at /srv/opencv5x/src/modules/features/src/matchers.cpp:668
+#11 0x00007fffcc49a6f2 in cv::DescriptorMatcher::match () at /srv/opencv5x/src/modules/features/src/matchers.cpp:624
+#12 0x00007fffcc49a9f9 in cv::DescriptorMatcher::match () at /srv/opencv5x/src/modules/features/src/matchers.cpp:594
+#13 0x00007fffca9bbb57 in pyopencv_cv_DescriptorMatcher_match () at /srv/opencv5x/build/modules/python_bindings_generator/pyopencv_generated_types_content.h:2379
+#14 0x0000000000551418 in ?? ()
+#15 0x00000000005499b5 in PyObject_Vectorcall ()
+#16 0x00000000005d710f in _PyEval_EvalFrameDefault ()
+#17 0x00000000005d55eb in PyEval_EvalCode ()
+#18 0x0000000000608852 in ?? ()
+#19 0x00000000006b50d3 in ?? ()
+#20 0x00000000006b4e3a in _PyRun_SimpleFileObject ()
+#21 0x00000000006b4c6f in _PyRun_AnyFileObject ()
+#22 0x00000000006bccd5 in Py_RunMain ()
+#23 0x00000000006bc7bd in Py_BytesMain ()
+#24 0x00007ffff7c2a1ca in __libc_start_call_main (main=main@entry=0x5188c0, argc=argc@entry=4, argv=argv@entry=0x7fffffffeb38) at ../sysdeps/nptl/libc_start_call_main.h:58
+#25 0x00007ffff7c2a28b in __libc_start_main_impl (main=0x5188c0, argc=4, argv=0x7fffffffeb38, init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, stack_end=0x7fffffffeb28) at ../csu/libc-start.c:360
+#26 0x0000000000657a05 in _start ()

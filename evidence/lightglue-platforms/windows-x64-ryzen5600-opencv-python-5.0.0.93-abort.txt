@@ -1,0 +1,3 @@
+returncode 3221226505 0xc0000409
+['8x8: 3 matches, distances [0.40658873, 0.65346801]']
+stderr tail: []

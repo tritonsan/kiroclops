@@ -10,7 +10,7 @@ Entered in the OpenCV AI Competition 2026 (powered by AWS). Technical report: [`
 
 1. **Read the summary** of the [technical report](submission/TECHNICAL_REPORT.md): the results, what did not work, and a reading guide mapped to the judging criteria.
 2. **Measure on the live AWS service** (about five minutes): follow [`submission/JUDGE_ACCESS.md`](submission/JUDGE_ACCESS.md) with the accounts from the Devpost testing instructions. The receipt shows OpenCV 5.1.0-dev from the COOL image on Graviton4, and `--compare-local` checks the result against your local OpenCV 5.
-3. **Replay the agent session** in the browser: the [session replay](https://tritonsan.github.io/kiroclops/replay/) shows one logged Kiro session in which OpenCV 5 measurements changed the agent's next steps. The same evidence in text form is in [`submission/AGENTIC_VISION.md`](submission/AGENTIC_VISION.md).
+3. **Replay the agent session** in the browser: the [session replay](https://tritonsan.github.io/kiroclops/replay/) shows one logged Kiro session in which OpenCV 5 measurements changed the agent's next steps. The same evidence in text form is in [`submission/AGENTIC_VISION.md`](submission/AGENTIC_VISION.md). The [measurement explorer](https://tritonsan.github.io/kiroclops/explorer/) steps through three real recordings with the tracks and events OpenCV 5 measured.
 
 ## What is verified today
 

@@ -1,0 +1,22 @@
+OpenCV 5.0.0 | NumPy 2.2.6 | Python 3.12.3 | linux
+8x8 -> 50x200 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.40656834840774536', '0.6534992456436157']
+  50x200: 6 matches, first distances ['0.3207044005393982', '0.58006751537323']
+8x8 -> 1000x1000 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.40656834840774536', '0.6534992456436157']
+  1000x1000: 19 matches, first distances ['0.4883769154548645', '0.8973891139030457']
+1000x1000 -> 8x8 -> 50x200 | exit code 0 (0x0)
+  1000x1000: 19 matches, first distances ['0.4883769154548645', '0.8973891139030457']
+  8x8: 3 matches, first distances ['0.40656834840774536', '0.6534992456436157']
+  50x200: 6 matches, first distances ['0.3207044005393982', '0.58006751537323']
+8x8 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.40656834840774536', '0.6534992456436157']
+33x2 -> 8x8 | exit code -8 (0xfffffff8)
+
+  stderr: [ WARN:0@0.610] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+2x64 | exit code -8 (0xfffffff8)
+
+  stderr: [ WARN:0@0.595] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+1000x1000 -> 2x64 | exit code -8 (0xfffffff8)
+  1000x1000: 19 matches, first distances ['0.4883769154548645', '0.8973891139030457']
+  stderr: [ WARN:0@0.597] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now

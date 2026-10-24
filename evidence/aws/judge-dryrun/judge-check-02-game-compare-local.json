@@ -1,0 +1,93 @@
+{
+  "kind": "JudgeCheck",
+  "checked_at": "2026-10-23T14:32:36.964413+00:00",
+  "sample": "game-reference-h03",
+  "api_url": "https://2oq1i28pd2.execute-api.us-east-1.amazonaws.com",
+  "job_id": "72a75a30741d4f26b1a71164b82ffa42",
+  "status": "succeeded",
+  "end_to_end_seconds": 7.9,
+  "engine": {
+    "opencv_version": "5.1.0-dev",
+    "numpy_version": "2.5.1",
+    "architecture": "aarch64",
+    "system": "Linux",
+    "build_information_sha256": "12740978f31483f2352d9e8b367f4f6053c3bfb58618e2ff42d53443da2a8ec4",
+    "opencv_libraries": [
+      "libopencv_calib.so.5.1.0",
+      "libopencv_core.so.5.1.0",
+      "libopencv_dnn.so.5.1.0",
+      "libopencv_features.so.5.1.0",
+      "libopencv_flann.so.5.1.0",
+      "libopencv_geometry.so.5.1.0",
+      "libopencv_highgui.so.5.1.0",
+      "libopencv_imgcodecs.so.5.1.0",
+      "libopencv_imgproc.so.5.1.0",
+      "libopencv_objdetect.so.5.1.0",
+      "libopencv_photo.so.5.1.0",
+      "libopencv_ptcloud.so.5.1.0",
+      "libopencv_stereo.so.5.1.0",
+      "libopencv_stitching.so.5.1.0",
+      "libopencv_video.so.5.1.0",
+      "libopencv_videoio.so.5.1.0"
+    ],
+    "cool_build": true
+  },
+  "worker_wall_seconds": 1.260365905999997,
+  "origin": "fresh",
+  "measurement_sha256": "6a1b4deb200423bcb8f2a8cce4338cff029a48184dbade16317c93f1b519c848",
+  "measurement_status": "ok",
+  "objects": [
+    {
+      "id": "character",
+      "valid_ratio": 1.0,
+      "frames": 240
+    }
+  ],
+  "events": 4,
+  "remote_opencv_runtime": {
+    "version": "5.1.0-dev",
+    "major": 5,
+    "wheel": {},
+    "modules": [
+      "calib",
+      "core",
+      "dnn",
+      "features",
+      "flann",
+      "geometry",
+      "highgui",
+      "imgcodecs",
+      "imgproc",
+      "objdetect",
+      "photo",
+      "ptcloud",
+      "python3",
+      "stereo",
+      "stitching",
+      "ts",
+      "video",
+      "videoio"
+    ],
+    "opencv5_symbols": {
+      "ALIKED": true,
+      "LightGlueMatcher": true,
+      "DISK": true,
+      "ANNIndex": true,
+      "finiteMask": true
+    },
+    "shared_symbols_present": true
+  },
+  "local": {
+    "seconds": 0.81,
+    "opencv_version": "5.0.0",
+    "policy_equivalent": false,
+    "policy_differences": 33,
+    "difference_fields": [
+      "opencv_runtime",
+      "phase_shifts_px"
+    ],
+    "equivalent_excluding_build_record_and_phase_shifts": true,
+    "remaining_difference_paths": [],
+    "note": "opencv_runtime is the engine build record (version, modules, wheel flags) and camera.phase_shifts_px is a report-only phaseCorrelate diagnostic whose last digits differ between x86 and Arm FFTs; neither enters any decision. Every tracked position, validity flag and event is compared by the policy."
+  }
+}

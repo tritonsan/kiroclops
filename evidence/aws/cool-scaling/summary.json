@@ -1,0 +1,1503 @@
+{
+ "kind": "CoolScalingSummary",
+ "schema_version": 1,
+ "label": "Post-hoc measurement after the V6 freeze; changes no recorded result",
+ "method": "Each instance ran three rounds per engine in alternating order on identical inputs (input.zip SHA-256 in each state.json). Kernels: median of seven timed batches; 1080p and 2160p frames are tiled from the 960 x 640 panel frames. Prices: AWS Price List API, us-east-1 on-demand Linux, effective 2026-10-01; COOL fee from its Marketplace listing.",
+ "instances": [
+  {
+   "instance_type": "c8a.xlarge",
+   "cpu": "AMD EPYC 9R45",
+   "vcpus": 4,
+   "threads_per_core": "1",
+   "cpu_features": [
+    "avx2",
+    "avx512f",
+    "avx512bw",
+    "avx512_vnni",
+    "avx512_bf16"
+   ],
+   "architecture": "x86_64",
+   "ec2_usd_per_hour": 0.21554,
+   "engines": {
+    "stock": {
+     "opencv_version": "5.0.0",
+     "numpy_version": "2.2.6",
+     "rounds": 3,
+     "engine_check": true,
+     "usd_per_hour": 0.21554,
+     "kernels_s": {
+      "native": {
+       "1": {
+        "imdecode_png_frame": 0.0016994814062520902,
+        "cvtColor_bgr2gray_frame": 0.0001103806992188705,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03201728800002002,
+        "goodFeaturesToTrack_frame": 0.0014898764999990988,
+        "calcOpticalFlowPyrLK_100_points": 0.0007802703750012796,
+        "canny_frame": 0.0005766881249993361,
+        "findContours_edges": 0.00023708266406252676,
+        "connectedComponentsWithStats_mask": 0.003145671124997307,
+        "gaussianBlur_5x5_frame": 0.0003621603984376165,
+        "integral_frame": 9.267808398449873e-05,
+        "absdiff_frame": 5.170187890624067e-05,
+        "phaseCorrelate_crop": 0.0010623715937505551,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.001738762781247516,
+        "resize_cubic_x8_48px_patch": 4.699715527345383e-05
+       },
+       "2": {
+        "imdecode_png_frame": 0.0016772357812513405,
+        "cvtColor_bgr2gray_frame": 6.237862890645651e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.032001417999936166,
+        "goodFeaturesToTrack_frame": 0.001495184749998657,
+        "calcOpticalFlowPyrLK_100_points": 0.00045778460937562215,
+        "canny_frame": 0.0002290456132811869,
+        "findContours_edges": 0.00023855115624993317,
+        "connectedComponentsWithStats_mask": 0.0016450608124998212,
+        "gaussianBlur_5x5_frame": 0.00018642740624974508,
+        "integral_frame": 9.284650195295896e-05,
+        "absdiff_frame": 5.183053808599514e-05,
+        "phaseCorrelate_crop": 0.0010708351249988368,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0017381385312482678,
+        "resize_cubic_x8_48px_patch": 4.689405566404847e-05
+       },
+       "4": {
+        "imdecode_png_frame": 0.0016731776250011876,
+        "cvtColor_bgr2gray_frame": 3.790916015622425e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03205951199993251,
+        "goodFeaturesToTrack_frame": 0.0015003234687505085,
+        "calcOpticalFlowPyrLK_100_points": 0.0002896862031249725,
+        "canny_frame": 0.0001337598359376635,
+        "findContours_edges": 0.00023842132812479377,
+        "connectedComponentsWithStats_mask": 0.0008413122343746693,
+        "gaussianBlur_5x5_frame": 9.992054492191649e-05,
+        "integral_frame": 9.377444335934015e-05,
+        "absdiff_frame": 5.171598046871395e-05,
+        "phaseCorrelate_crop": 0.0010622160312507845,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0017251286562505186,
+        "resize_cubic_x8_48px_patch": 4.6984192382804046e-05
+       }
+      },
+      "1080p": {
+       "1": {
+        "imdecode_png_frame": 0.015369322499964255,
+        "cvtColor_bgr2gray_frame": 0.0003691724453132039,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.13769857100010086,
+        "goodFeaturesToTrack_frame": 0.01614003149995824,
+        "calcOpticalFlowPyrLK_100_points": 0.0016312049062499057,
+        "canny_frame": 0.002145375812503403,
+        "findContours_edges": 0.0009472882499999002,
+        "connectedComponentsWithStats_mask": 0.010647854000012558,
+        "gaussianBlur_5x5_frame": 0.0011460749062521813,
+        "integral_frame": 0.0003339586328126032,
+        "absdiff_frame": 0.000171132281249875,
+        "phaseCorrelate_crop": 0.00634897500000875
+       },
+       "4": {
+        "imdecode_png_frame": 0.015363851999950384,
+        "cvtColor_bgr2gray_frame": 9.502910937486675e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.1402560970000195,
+        "goodFeaturesToTrack_frame": 0.014923325499978546,
+        "calcOpticalFlowPyrLK_100_points": 0.0005818333281251142,
+        "canny_frame": 0.00046368798437512737,
+        "findContours_edges": 0.0009479109375014616,
+        "connectedComponentsWithStats_mask": 0.002823809375001929,
+        "gaussianBlur_5x5_frame": 0.00029960549999952235,
+        "integral_frame": 0.000332969132812444,
+        "absdiff_frame": 0.00017159360546870062,
+        "phaseCorrelate_crop": 0.006358049625006856
+       }
+      },
+      "2160p": {
+       "1": {
+        "imdecode_png_frame": 0.06136508400004459,
+        "cvtColor_bgr2gray_frame": 0.0014760031562524034,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.5210987450000175,
+        "goodFeaturesToTrack_frame": 0.07026401099994928,
+        "calcOpticalFlowPyrLK_100_points": 0.012196830999982922,
+        "canny_frame": 0.009945527750005567,
+        "findContours_edges": 0.0034924568750014373,
+        "connectedComponentsWithStats_mask": 0.042789734000052704,
+        "gaussianBlur_5x5_frame": 0.0063318392499951415,
+        "integral_frame": 0.001396391906251182,
+        "absdiff_frame": 0.0012173425937511695,
+        "phaseCorrelate_crop": 0.04598881800006893
+       },
+       "4": {
+        "imdecode_png_frame": 0.061504348000084974,
+        "cvtColor_bgr2gray_frame": 0.0003782867578125959,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.5216954689999511,
+        "goodFeaturesToTrack_frame": 0.06142432899991945,
+        "calcOpticalFlowPyrLK_100_points": 0.0057724672499972485,
+        "canny_frame": 0.004121755625007495,
+        "findContours_edges": 0.003433037562501795,
+        "connectedComponentsWithStats_mask": 0.011410430000012184,
+        "gaussianBlur_5x5_frame": 0.0015603191249979886,
+        "integral_frame": 0.001393267250001884,
+        "absdiff_frame": 0.0012114441562509626,
+        "phaseCorrelate_crop": 0.0454060900000286
+       }
+      }
+     },
+     "pipeline_s": {
+      "1": {
+       "panel-calibration-reverse-w960": 2.9630084809999744,
+       "game-reference-h03": 0.10378172749994974,
+       "svg-three-to-four-w960-r1": 4.770359014500002
+      },
+      "4": {
+       "panel-calibration-reverse-w960": 2.9642591179999727,
+       "game-reference-h03": 0.10334892200006607,
+       "svg-three-to-four-w960-r1": 4.656871564499966
+      }
+     },
+     "throughput_analyses_per_hour": 5016.445474941996,
+     "throughput_runs": [
+      4970.0,
+      5102.1,
+      5016.4
+     ],
+     "throughput_range": [
+      4970.0037830346255,
+      5102.079437306269
+     ],
+     "latest_start_after_signal_s": 0.00011086463928222656,
+     "sequential_analyses_per_hour_by_threads": {
+      "1": 1378.0521070474074,
+      "4": 1398.152439124612
+     },
+     "usd_per_1000_analyses": 0.04296667851303462,
+     "measurement_hashes_per_recording": {
+      "panel-calibration-reverse-w960": [
+       "6c959514403a3ebe480f14d214c0cbc813015556dcab87846970d02e2bae4545"
+      ],
+      "game-reference-h03": [
+       "cccc68eba34108177bd979e172bec993864ded1212d62157b26c005b2abb7174"
+      ],
+      "svg-three-to-four-w960-r1": [
+       "05a4a2a9f600055912015fa7feab0dbfb683f587d39fbb1a9e6b6d6ec4e97d8a"
+      ]
+     }
+    }
+   },
+   "runs_sha256": {
+    "result-stock-1.json": "b8dfb795be9f0d5a5f021c62b1deaf9c5a64c687a544b06ba9f8c4f196f79990",
+    "result-stock-2.json": "2fc4694fc977a5313389e028e4b2cadf29b5183c17e1cff97ca2fb8f9f733e85",
+    "result-stock-3.json": "3e8c2b88820a18fa4257264a85abee2c4efa58673bb87b248c85b03a4c29f1d2"
+   }
+  },
+  {
+   "instance_type": "c8g.4xlarge",
+   "cpu": "Neoverse-V2",
+   "vcpus": 16,
+   "threads_per_core": "1",
+   "cpu_features": [
+    "sve",
+    "sve2",
+    "i8mm",
+    "bf16",
+    "asimddp"
+   ],
+   "architecture": "aarch64",
+   "ec2_usd_per_hour": 0.63808,
+   "engines": {
+    "cool": {
+     "opencv_version": "5.1.0-dev",
+     "numpy_version": "2.5.1",
+     "rounds": 3,
+     "engine_check": true,
+     "usd_per_hour": 0.67808,
+     "kernels_s": {
+      "native": {
+       "1": {
+        "imdecode_png_frame": 0.0019938270624919596,
+        "cvtColor_bgr2gray_frame": 0.00018950102343762154,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.04007993699997314,
+        "goodFeaturesToTrack_frame": 0.0044495279999807735,
+        "calcOpticalFlowPyrLK_100_points": 0.0012107785625019574,
+        "canny_frame": 0.0008537653437485915,
+        "findContours_edges": 0.00032233350781218917,
+        "connectedComponentsWithStats_mask": 0.0017010742812502144,
+        "gaussianBlur_5x5_frame": 0.0004309642031241623,
+        "integral_frame": 0.00020137170312484187,
+        "absdiff_frame": 7.133337109399562e-05,
+        "phaseCorrelate_crop": 0.004293852625011141,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.001851577343749966,
+        "resize_cubic_x8_48px_patch": 0.00025133571875102234
+       },
+       "2": {
+        "imdecode_png_frame": 0.0020195591875022956,
+        "cvtColor_bgr2gray_frame": 0.00010313415625007316,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.02299562149994472,
+        "goodFeaturesToTrack_frame": 0.0034724251875033474,
+        "calcOpticalFlowPyrLK_100_points": 0.0007599150156245571,
+        "canny_frame": 0.0004969504375011979,
+        "findContours_edges": 0.0003451457421874693,
+        "connectedComponentsWithStats_mask": 0.00020328889062515287,
+        "gaussianBlur_5x5_frame": 0.00021240321874937962,
+        "integral_frame": 0.00020110123046901407,
+        "absdiff_frame": 7.052717578126533e-05,
+        "phaseCorrelate_crop": 0.0038049148749905726,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.001882036124996489,
+        "resize_cubic_x8_48px_patch": 0.0001416836718748371
+       },
+       "4": {
+        "imdecode_png_frame": 0.0020166406874935205,
+        "cvtColor_bgr2gray_frame": 6.231518359367527e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.02284917999998015,
+        "goodFeaturesToTrack_frame": 0.002861660874998506,
+        "calcOpticalFlowPyrLK_100_points": 0.0005369805625008439,
+        "canny_frame": 0.0003036043281259282,
+        "findContours_edges": 0.00035413341406265175,
+        "connectedComponentsWithStats_mask": 0.00016533226562476244,
+        "gaussianBlur_5x5_frame": 0.00011081812304691852,
+        "integral_frame": 0.0002026007500006699,
+        "absdiff_frame": 7.183498437490776e-05,
+        "phaseCorrelate_crop": 0.0035578426249998074,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0018934561249892568,
+        "resize_cubic_x8_48px_patch": 0.0001398094921873927
+       },
+       "8": {
+        "imdecode_png_frame": 0.0020127936874985153,
+        "cvtColor_bgr2gray_frame": 4.228142285156444e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.02286212249998698,
+        "goodFeaturesToTrack_frame": 0.0025614853750113298,
+        "calcOpticalFlowPyrLK_100_points": 0.000435684031250716,
+        "canny_frame": 0.00017113519531264387,
+        "findContours_edges": 0.0003629302968750636,
+        "connectedComponentsWithStats_mask": 0.00015564818359425914,
+        "gaussianBlur_5x5_frame": 6.718707617170416e-05,
+        "integral_frame": 0.0002027695078119507,
+        "absdiff_frame": 6.931736523441145e-05,
+        "phaseCorrelate_crop": 0.003491650874991592,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0018965540624975574,
+        "resize_cubic_x8_48px_patch": 0.00014097596484319297
+       },
+       "16": {
+        "imdecode_png_frame": 0.002011557687509935,
+        "cvtColor_bgr2gray_frame": 2.428904687490352e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.022956856999996944,
+        "goodFeaturesToTrack_frame": 0.0026028858750066775,
+        "calcOpticalFlowPyrLK_100_points": 0.00043973840625000093,
+        "canny_frame": 0.00012320915234376173,
+        "findContours_edges": 0.00036126682812565036,
+        "connectedComponentsWithStats_mask": 0.000217781749999979,
+        "gaussianBlur_5x5_frame": 4.9160330078068526e-05,
+        "integral_frame": 0.00020265999218782582,
+        "absdiff_frame": 6.869892968763835e-05,
+        "phaseCorrelate_crop": 0.0034577180624921766,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0018974248749970002,
+        "resize_cubic_x8_48px_patch": 0.00013821516015610769
+       }
+      },
+      "1080p": {
+       "1": {
+        "imdecode_png_frame": 0.017631499000003714,
+        "cvtColor_bgr2gray_frame": 0.0006541918125009261,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.1735362699999996,
+        "goodFeaturesToTrack_frame": 0.030463456999996197,
+        "calcOpticalFlowPyrLK_100_points": 0.003113449250008671,
+        "canny_frame": 0.0032152693124913867,
+        "findContours_edges": 0.0014876974687467737,
+        "connectedComponentsWithStats_mask": 0.0057836131250041944,
+        "gaussianBlur_5x5_frame": 0.002016739250002786,
+        "integral_frame": 0.0007474907812508036,
+        "absdiff_frame": 0.00030745126562514713,
+        "phaseCorrelate_crop": 0.01948206399998753
+       },
+       "4": {
+        "imdecode_png_frame": 0.01766710650008463,
+        "cvtColor_bgr2gray_frame": 0.00016976150390624056,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.08131345799995415,
+        "goodFeaturesToTrack_frame": 0.01457230124998432,
+        "calcOpticalFlowPyrLK_100_points": 0.001191777937499694,
+        "canny_frame": 0.0009965231249999817,
+        "findContours_edges": 0.0014745494374999168,
+        "connectedComponentsWithStats_mask": 0.0004549809609386557,
+        "gaussianBlur_5x5_frame": 0.000421391062500831,
+        "integral_frame": 0.0007469059218756513,
+        "absdiff_frame": 0.00033925130468759335,
+        "phaseCorrelate_crop": 0.016034252499991908
+       },
+       "16": {
+        "imdecode_png_frame": 0.01766652549997616,
+        "cvtColor_bgr2gray_frame": 4.606260546879959e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.05996219800022118,
+        "goodFeaturesToTrack_frame": 0.011290716500013787,
+        "calcOpticalFlowPyrLK_100_points": 0.000814861015623336,
+        "canny_frame": 0.0003075547187503247,
+        "findContours_edges": 0.0014468883437501745,
+        "connectedComponentsWithStats_mask": 0.00043913159375019717,
+        "gaussianBlur_5x5_frame": 0.00013572625781232972,
+        "integral_frame": 0.0007532165156263204,
+        "absdiff_frame": 0.0002973581953122917,
+        "phaseCorrelate_crop": 0.015283297999985734
+       }
+      },
+      "2160p": {
+       "1": {
+        "imdecode_png_frame": 0.06998425200004021,
+        "cvtColor_bgr2gray_frame": 0.0026632215000006454,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6727080880000358,
+        "goodFeaturesToTrack_frame": 0.1659145159999298,
+        "calcOpticalFlowPyrLK_100_points": 0.021251586999994743,
+        "canny_frame": 0.012638389000017014,
+        "findContours_edges": 0.005909619749999706,
+        "connectedComponentsWithStats_mask": 0.02323180749999665,
+        "gaussianBlur_5x5_frame": 0.007728762250053478,
+        "integral_frame": 0.0029867063749975387,
+        "absdiff_frame": 0.0017893736249980918,
+        "phaseCorrelate_crop": 0.11486547699996663
+       },
+       "4": {
+        "imdecode_png_frame": 0.07002766299979157,
+        "cvtColor_bgr2gray_frame": 0.0007090211718754347,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.30752437600006033,
+        "goodFeaturesToTrack_frame": 0.0824619550000989,
+        "calcOpticalFlowPyrLK_100_points": 0.009952260749969355,
+        "canny_frame": 0.005215775124980837,
+        "findContours_edges": 0.005624498499997799,
+        "connectedComponentsWithStats_mask": 0.0019189642499952697,
+        "gaussianBlur_5x5_frame": 0.0021571555000008402,
+        "integral_frame": 0.002990239249996307,
+        "absdiff_frame": 0.0018144689999957109,
+        "phaseCorrelate_crop": 0.0948484919999828
+       },
+       "16": {
+        "imdecode_png_frame": 0.06997164199992767,
+        "cvtColor_bgr2gray_frame": 0.00019272870312558865,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.2168911210000033,
+        "goodFeaturesToTrack_frame": 0.07236156800001936,
+        "calcOpticalFlowPyrLK_100_points": 0.0076888442499694065,
+        "canny_frame": 0.0013751921562494829,
+        "findContours_edges": 0.005401874249997718,
+        "connectedComponentsWithStats_mask": 0.001514209531247701,
+        "gaussianBlur_5x5_frame": 0.0006023716874992147,
+        "integral_frame": 0.0029559776249996617,
+        "absdiff_frame": 0.0016705173750004576,
+        "phaseCorrelate_crop": 0.09271028499983913
+       }
+      }
+     },
+     "pipeline_s": {
+      "1": {
+       "panel-calibration-reverse-w960": 4.320489081999995,
+       "game-reference-h03": 0.15535115950001455,
+       "svg-three-to-four-w960-r1": 6.646100309999952
+      },
+      "4": {
+       "panel-calibration-reverse-w960": 4.062479200000098,
+       "game-reference-h03": 0.1721371909999334,
+       "svg-three-to-four-w960-r1": 5.797777981000081
+      },
+      "16": {
+       "panel-calibration-reverse-w960": 4.01694250449998,
+       "game-reference-h03": 0.17956110099999023,
+       "svg-three-to-four-w960-r1": 5.723141579500066
+      }
+     },
+     "throughput_analyses_per_hour": 14125.580089546469,
+     "throughput_runs": [
+      14125.6,
+      14251.8,
+      13167.2
+     ],
+     "throughput_range": [
+      13167.2242643589,
+      14251.753907818524
+     ],
+     "latest_start_after_signal_s": 0.0034360885620117188,
+     "sequential_analyses_per_hour_by_threads": {
+      "1": 971.0535629992607,
+      "4": 1076.5127046981163,
+      "16": 1088.748619389249
+     },
+     "usd_per_1000_analyses": 0.04800369228742741,
+     "measurement_hashes_per_recording": {
+      "panel-calibration-reverse-w960": [
+       "37d0ff53aa835e3c9b14eedf63254d0ac9c1c76d065f379f6ae26fad5b32428c"
+      ],
+      "game-reference-h03": [
+       "562a8e8215d302acb9d25d9b3ec25b30a6915a53468bd7c92bd2c9d8fd1ca882"
+      ],
+      "svg-three-to-four-w960-r1": [
+       "1709ff24c9ba95ac8dc7b49129332550b47c28e328b7a0e5e32b02d13d0f188a"
+      ]
+     }
+    },
+    "stock": {
+     "opencv_version": "5.0.0",
+     "numpy_version": "2.2.6",
+     "rounds": 3,
+     "engine_check": true,
+     "usd_per_hour": 0.63808,
+     "kernels_s": {
+      "native": {
+       "1": {
+        "imdecode_png_frame": 0.0020244127500035347,
+        "cvtColor_bgr2gray_frame": 0.00018418033203104756,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03947002799998245,
+        "goodFeaturesToTrack_frame": 0.004428636000000097,
+        "calcOpticalFlowPyrLK_100_points": 0.0014390605000045298,
+        "canny_frame": 0.0008839926093742179,
+        "findContours_edges": 0.0004013195078131915,
+        "connectedComponentsWithStats_mask": 0.0018886571249936424,
+        "gaussianBlur_5x5_frame": 0.0005126770312529061,
+        "integral_frame": 0.00020098804296875272,
+        "absdiff_frame": 7.337794531259156e-05,
+        "phaseCorrelate_crop": 0.004819651749997433,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0019460001875017952,
+        "resize_cubic_x8_48px_patch": 0.00034035424999956376
+       },
+       "2": {
+        "imdecode_png_frame": 0.00202051862500241,
+        "cvtColor_bgr2gray_frame": 0.00010340925195295725,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03973953799993524,
+        "goodFeaturesToTrack_frame": 0.0043313650000129655,
+        "calcOpticalFlowPyrLK_100_points": 0.0008650608124991521,
+        "canny_frame": 0.0005377927343754862,
+        "findContours_edges": 0.00041645501562648235,
+        "connectedComponentsWithStats_mask": 0.0010701937812527262,
+        "gaussianBlur_5x5_frame": 0.0002554453593752726,
+        "integral_frame": 0.00020121486718771564,
+        "absdiff_frame": 7.29688007812257e-05,
+        "phaseCorrelate_crop": 0.004810156874995641,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0020000134999946795,
+        "resize_cubic_x8_48px_patch": 0.00018230848437550407
+       },
+       "4": {
+        "imdecode_png_frame": 0.0020298300625043453,
+        "cvtColor_bgr2gray_frame": 6.280081250009673e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.04010790100005579,
+        "goodFeaturesToTrack_frame": 0.004258797125004321,
+        "calcOpticalFlowPyrLK_100_points": 0.0005866794843747414,
+        "canny_frame": 0.0003248348125000078,
+        "findContours_edges": 0.0004228179843739355,
+        "connectedComponentsWithStats_mask": 0.0005616609531244876,
+        "gaussianBlur_5x5_frame": 0.0001312638437500624,
+        "integral_frame": 0.0002000366328123171,
+        "absdiff_frame": 7.446543750000423e-05,
+        "phaseCorrelate_crop": 0.004826662124997938,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0020478368750005416,
+        "resize_cubic_x8_48px_patch": 0.0001825340820316157
+       },
+       "8": {
+        "imdecode_png_frame": 0.002020330374996604,
+        "cvtColor_bgr2gray_frame": 4.2561433593713005e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.04117437099989729,
+        "goodFeaturesToTrack_frame": 0.004256046375019196,
+        "calcOpticalFlowPyrLK_100_points": 0.000469896570312045,
+        "canny_frame": 0.00017336806640644298,
+        "findContours_edges": 0.00043060041406217664,
+        "connectedComponentsWithStats_mask": 0.0003248050624993226,
+        "gaussianBlur_5x5_frame": 7.734266210901453e-05,
+        "integral_frame": 0.00020081566015628383,
+        "absdiff_frame": 7.385034375007038e-05,
+        "phaseCorrelate_crop": 0.004827137874997334,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0020800866249999217,
+        "resize_cubic_x8_48px_patch": 0.00018239117578122688
+       },
+       "16": {
+        "imdecode_png_frame": 0.0020168575000099054,
+        "cvtColor_bgr2gray_frame": 2.4236131835886354e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.04138805599995976,
+        "goodFeaturesToTrack_frame": 0.004330555499990396,
+        "calcOpticalFlowPyrLK_100_points": 0.0004558641874989888,
+        "canny_frame": 0.00012019475781244182,
+        "findContours_edges": 0.0004317542812497521,
+        "connectedComponentsWithStats_mask": 0.00023227661328117932,
+        "gaussianBlur_5x5_frame": 5.245165625011872e-05,
+        "integral_frame": 0.00019900652343718406,
+        "absdiff_frame": 7.438673242177174e-05,
+        "phaseCorrelate_crop": 0.004820627750007134,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.002094119812497297,
+        "resize_cubic_x8_48px_patch": 0.00018247167187546154
+       }
+      },
+      "1080p": {
+       "1": {
+        "imdecode_png_frame": 0.017634008000072754,
+        "cvtColor_bgr2gray_frame": 0.0006622819687507331,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.16969891999997344,
+        "goodFeaturesToTrack_frame": 0.029941414499944585,
+        "calcOpticalFlowPyrLK_100_points": 0.0032307530624962055,
+        "canny_frame": 0.0033837305624899727,
+        "findContours_edges": 0.0017623966250042145,
+        "connectedComponentsWithStats_mask": 0.006395042625001679,
+        "gaussianBlur_5x5_frame": 0.002010669499995288,
+        "integral_frame": 0.0007294905624988246,
+        "absdiff_frame": 0.0003208854296889996,
+        "phaseCorrelate_crop": 0.02247500799990121
+       },
+       "4": {
+        "imdecode_png_frame": 0.017652213500014113,
+        "cvtColor_bgr2gray_frame": 0.000167997437499956,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.1714263530000153,
+        "goodFeaturesToTrack_frame": 0.026704733999963537,
+        "calcOpticalFlowPyrLK_100_points": 0.001251922468753719,
+        "canny_frame": 0.0010165603749996421,
+        "findContours_edges": 0.001719623406252424,
+        "connectedComponentsWithStats_mask": 0.0019029826874970013,
+        "gaussianBlur_5x5_frame": 0.00047906420312671116,
+        "integral_frame": 0.0007517055781249837,
+        "absdiff_frame": 0.00030943685937501186,
+        "phaseCorrelate_crop": 0.02246428649993959
+       },
+       "16": {
+        "imdecode_png_frame": 0.01766429999997854,
+        "cvtColor_bgr2gray_frame": 4.527213378913153e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.17686021099984828,
+        "goodFeaturesToTrack_frame": 0.029555362499991134,
+        "calcOpticalFlowPyrLK_100_points": 0.0008417645312484012,
+        "canny_frame": 0.0003057153203123164,
+        "findContours_edges": 0.001723657187504557,
+        "connectedComponentsWithStats_mask": 0.0006859140624975169,
+        "gaussianBlur_5x5_frame": 0.00015175032031233826,
+        "integral_frame": 0.000738245562498463,
+        "absdiff_frame": 0.0003081673203126911,
+        "phaseCorrelate_crop": 0.022454853500107674
+       }
+      },
+      "2160p": {
+       "1": {
+        "imdecode_png_frame": 0.07039729799998895,
+        "cvtColor_bgr2gray_frame": 0.0026658461249979837,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6545978209999248,
+        "goodFeaturesToTrack_frame": 0.13517119000016464,
+        "calcOpticalFlowPyrLK_100_points": 0.021762235499977578,
+        "canny_frame": 0.013527474999989408,
+        "findContours_edges": 0.006737359124997511,
+        "connectedComponentsWithStats_mask": 0.02569893299994419,
+        "gaussianBlur_5x5_frame": 0.008974460249987715,
+        "integral_frame": 0.0029226137500018012,
+        "absdiff_frame": 0.0018895101250109292,
+        "phaseCorrelate_crop": 0.12806803800003763
+       },
+       "4": {
+        "imdecode_png_frame": 0.07014416300012272,
+        "cvtColor_bgr2gray_frame": 0.0007244877812482287,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6726172459998452,
+        "goodFeaturesToTrack_frame": 0.10927121100007753,
+        "calcOpticalFlowPyrLK_100_points": 0.010598137999977553,
+        "canny_frame": 0.005036890625007118,
+        "findContours_edges": 0.006447234375002608,
+        "connectedComponentsWithStats_mask": 0.0074940814999990835,
+        "gaussianBlur_5x5_frame": 0.0022898856249895516,
+        "integral_frame": 0.002891217750004671,
+        "absdiff_frame": 0.0017971047812466168,
+        "phaseCorrelate_crop": 0.12387057899991305
+       },
+       "16": {
+        "imdecode_png_frame": 0.07034156000008807,
+        "cvtColor_bgr2gray_frame": 0.00018586987890589768,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6879173530001026,
+        "goodFeaturesToTrack_frame": 0.11349633400004677,
+        "calcOpticalFlowPyrLK_100_points": 0.008348686750025536,
+        "canny_frame": 0.0013446683749975819,
+        "findContours_edges": 0.006360126125002807,
+        "connectedComponentsWithStats_mask": 0.002654619875002595,
+        "gaussianBlur_5x5_frame": 0.0006485534375002544,
+        "integral_frame": 0.002841639312507027,
+        "absdiff_frame": 0.0016869099999965442,
+        "phaseCorrelate_crop": 0.1226677759998438
+       }
+      }
+     },
+     "pipeline_s": {
+      "1": {
+       "panel-calibration-reverse-w960": 4.237345460500023,
+       "game-reference-h03": 0.15563972549989558,
+       "svg-three-to-four-w960-r1": 6.53207055900009
+      },
+      "4": {
+       "panel-calibration-reverse-w960": 4.252309489500021,
+       "game-reference-h03": 0.17223873049999838,
+       "svg-three-to-four-w960-r1": 6.458350003499959
+      },
+      "16": {
+       "panel-calibration-reverse-w960": 4.321850306499755,
+       "game-reference-h03": 0.18060240449983667,
+       "svg-three-to-four-w960-r1": 6.553568913500044
+      }
+     },
+     "throughput_analyses_per_hour": 14269.200537333714,
+     "throughput_runs": [
+      14333.6,
+      14269.2,
+      13334.7
+     ],
+     "throughput_range": [
+      13334.686432297045,
+      14333.645198779539
+     ],
+     "latest_start_after_signal_s": 0.0008304119110107422,
+     "sequential_analyses_per_hour_by_threads": {
+      "1": 988.5533082925236,
+      "4": 992.3827070879913,
+      "16": 976.8432413398774
+     },
+     "usd_per_1000_analyses": 0.04471729150701453,
+     "measurement_hashes_per_recording": {
+      "panel-calibration-reverse-w960": [
+       "48ac4e4e97019841ec33e25b7e0ea1d1f8f6500155cf24130b24f45ff755a16e"
+      ],
+      "game-reference-h03": [
+       "66ee9f2be6db66f00bcf15071083e7d7e2b43bd34353320e78e450ebea2b882d"
+      ],
+      "svg-three-to-four-w960-r1": [
+       "b4ba7ebf6b1b75d9a861280c2ce26d7105cac4227ba6484885e247b947364d1a"
+      ]
+     }
+    }
+   },
+   "standard_over_cool": {
+    "kernels": {
+     "native": {
+      "1": {
+       "imdecode_png_frame": 1.0153401907752961,
+       "cvtColor_bgr2gray_frame": 0.9719226244267467,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 0.9847826856616291,
+       "goodFeaturesToTrack_frame": 0.9953046705221842,
+       "calcOpticalFlowPyrLK_100_points": 1.188541443144525,
+       "canny_frame": 1.0354046528673895,
+       "findContours_edges": 1.2450443347857718,
+       "connectedComponentsWithStats_mask": 1.1102731643238781,
+       "gaussianBlur_5x5_frame": 1.1896046760644805,
+       "integral_frame": 0.9980947662946899,
+       "absdiff_frame": 1.0286622402283752,
+       "phaseCorrelate_crop": 1.1224539291180093,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.050995894970607,
+       "resize_cubic_x8_48px_patch": 1.3541817760360786
+      },
+      "2": {
+       "imdecode_png_frame": 1.0004750727317384,
+       "cvtColor_bgr2gray_frame": 1.002667357865585,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.7281349843069373,
+       "goodFeaturesToTrack_frame": 1.2473602068090028,
+       "calcOpticalFlowPyrLK_100_points": 1.1383652049409474,
+       "canny_frame": 1.0821858555546393,
+       "findContours_edges": 1.2066062672164755,
+       "connectedComponentsWithStats_mask": 5.264398747819777,
+       "gaussianBlur_5x5_frame": 1.2026435422180657,
+       "integral_frame": 1.0005650722197799,
+       "absdiff_frame": 1.0346196338207683,
+       "phaseCorrelate_crop": 1.2641956608838876,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.062686031065642,
+       "resize_cubic_x8_48px_patch": 1.286728964340752
+      },
+      "4": {
+       "imdecode_png_frame": 1.0065402702090762,
+       "cvtColor_bgr2gray_frame": 1.0077931072078354,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.7553321826030794,
+       "goodFeaturesToTrack_frame": 1.4882256532254348,
+       "calcOpticalFlowPyrLK_100_points": 1.0925525528194875,
+       "canny_frame": 1.0699281347704426,
+       "findContours_edges": 1.193951114421336,
+       "connectedComponentsWithStats_mask": 3.3971648002406947,
+       "gaussianBlur_5x5_frame": 1.184497987702675,
+       "integral_frame": 0.9873439896528303,
+       "absdiff_frame": 1.0366179953679406,
+       "phaseCorrelate_crop": 1.3566260888220707,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.0815338406704094,
+       "resize_cubic_x8_48px_patch": 1.3055914814922394
+      },
+      "8": {
+       "imdecode_png_frame": 1.0037443914619264,
+       "cvtColor_bgr2gray_frame": 1.006622547758896,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.8009863694816934,
+       "goodFeaturesToTrack_frame": 1.6615540406903049,
+       "calcOpticalFlowPyrLK_100_points": 1.078526034023132,
+       "canny_frame": 1.013047410205247,
+       "findContours_edges": 1.1864548586044554,
+       "connectedComponentsWithStats_mask": 2.0867899322617127,
+       "gaussianBlur_5x5_frame": 1.151153860473949,
+       "integral_frame": 0.9903641939226934,
+       "absdiff_frame": 1.0653945587852292,
+       "phaseCorrelate_crop": 1.3824801069233355,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.09677159545912,
+       "resize_cubic_x8_48px_patch": 1.2937749777708554
+      },
+      "16": {
+       "imdecode_png_frame": 1.0026346808410604,
+       "cvtColor_bgr2gray_frame": 0.9978214444029156,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.8028624737247467,
+       "goodFeaturesToTrack_frame": 1.6637515849515632,
+       "calcOpticalFlowPyrLK_100_points": 1.0366713050754544,
+       "canny_frame": 0.9755343294391836,
+       "findContours_edges": 1.1951118885999295,
+       "connectedComponentsWithStats_mask": 1.0665568316959604,
+       "gaussianBlur_5x5_frame": 1.066950855838914,
+       "integral_frame": 0.9819724223256867,
+       "absdiff_frame": 1.082793178292512,
+       "phaseCorrelate_crop": 1.3941644931376012,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.1036641503398694,
+       "resize_cubic_x8_48px_patch": 1.3202001261610388
+      }
+     },
+     "1080p": {
+      "1": {
+       "imdecode_png_frame": 1.0001423021416975,
+       "cvtColor_bgr2gray_frame": 1.0123666424666475,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 0.9778873315645993,
+       "goodFeaturesToTrack_frame": 0.9828633204678091,
+       "calcOpticalFlowPyrLK_100_points": 1.0376764813131956,
+       "canny_frame": 1.0523941336248601,
+       "findContours_edges": 1.18464718938377,
+       "connectedComponentsWithStats_mask": 1.1057175656086162,
+       "gaussianBlur_5x5_frame": 0.9969903149316455,
+       "integral_frame": 0.9759191428128938,
+       "absdiff_frame": 1.043695263496595,
+       "phaseCorrelate_crop": 1.1536256117378318
+      },
+      "4": {
+       "imdecode_png_frame": 0.9991570209830091,
+       "cvtColor_bgr2gray_frame": 0.9896085604469028,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 2.108216243861034,
+       "goodFeaturesToTrack_frame": 1.8325680715660657,
+       "calcOpticalFlowPyrLK_100_points": 1.0504662230786097,
+       "canny_frame": 1.0201071600818703,
+       "findContours_edges": 1.1662026124861757,
+       "connectedComponentsWithStats_mask": 4.18255454815301,
+       "gaussianBlur_5x5_frame": 1.1368637015783087,
+       "integral_frame": 1.0064260519414272,
+       "absdiff_frame": 0.9121169324903946,
+       "phaseCorrelate_crop": 1.4010186318290128
+      },
+      "16": {
+       "imdecode_png_frame": 0.9998740272954281,
+       "cvtColor_bgr2gray_frame": 0.9828391887166807,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 2.949528484582835,
+       "goodFeaturesToTrack_frame": 2.617669348083892,
+       "calcOpticalFlowPyrLK_100_points": 1.0330160789499607,
+       "canny_frame": 0.9940192807137467,
+       "findContours_edges": 1.191285557693435,
+       "connectedComponentsWithStats_mask": 1.5619783961335825,
+       "gaussianBlur_5x5_frame": 1.1180616246133095,
+       "integral_frame": 0.9801239712389888,
+       "absdiff_frame": 1.036350519914366,
+       "phaseCorrelate_crop": 1.4692413574693521
+      }
+     },
+     "2160p": {
+      "1": {
+       "imdecode_png_frame": 1.0059019849201003,
+       "cvtColor_bgr2gray_frame": 1.0009855075882113,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 0.9730785650965593,
+       "goodFeaturesToTrack_frame": 0.8147038201300111,
+       "calcOpticalFlowPyrLK_100_points": 1.0240287231246759,
+       "canny_frame": 1.070348048313056,
+       "findContours_edges": 1.1400664357461994,
+       "connectedComponentsWithStats_mask": 1.1061960202600636,
+       "gaussianBlur_5x5_frame": 1.1611769077158012,
+       "integral_frame": 0.9785407010437073,
+       "absdiff_frame": 1.0559617614867571,
+       "phaseCorrelate_crop": 1.1149393302922064
+      },
+      "4": {
+       "imdecode_png_frame": 1.0016636282768925,
+       "cvtColor_bgr2gray_frame": 1.0218140303651062,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 2.1871997750178775,
+       "goodFeaturesToTrack_frame": 1.3251106040348726,
+       "calcOpticalFlowPyrLK_100_points": 1.0648975409944104,
+       "canny_frame": 0.9657031801242818,
+       "findContours_edges": 1.1462771969812298,
+       "connectedComponentsWithStats_mask": 3.905274160275553,
+       "gaussianBlur_5x5_frame": 1.061530160894131,
+       "integral_frame": 0.9668850912207917,
+       "absdiff_frame": 0.9904301375503604,
+       "phaseCorrelate_crop": 1.3059836417845792
+      },
+      "16": {
+       "imdecode_png_frame": 1.0052866845708834,
+       "cvtColor_bgr2gray_frame": 0.9644120252538537,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 3.171717448959527,
+       "goodFeaturesToTrack_frame": 1.5684615070808914,
+       "calcOpticalFlowPyrLK_100_points": 1.0858181644216236,
+       "canny_frame": 0.9778039882548868,
+       "findContours_edges": 1.1773924809533458,
+       "connectedComponentsWithStats_mask": 1.7531390604939605,
+       "gaussianBlur_5x5_frame": 1.0766665348976914,
+       "integral_frame": 0.9613196285636135,
+       "absdiff_frame": 1.0098129030211866,
+       "phaseCorrelate_crop": 1.3231301791387724
+      }
+     }
+    },
+    "pipeline": {
+     "1": {
+      "panel-calibration-reverse-w960": 0.9807559700020158,
+      "game-reference-h03": 1.0018575078603196,
+      "svg-three-to-four-w960-r1": 0.9828426075922615
+     },
+     "4": {
+      "panel-calibration-reverse-w960": 1.046727695122702,
+      "game-reference-h03": 1.0005898754329332,
+      "svg-three-to-four-w960-r1": 1.113935377426428
+     },
+     "16": {
+      "panel-calibration-reverse-w960": 1.0759054434207616,
+      "game-reference-h03": 1.0057991596957656,
+      "svg-three-to-four-w960-r1": 1.1450999110304236
+     }
+    },
+    "throughput": 0.9899349338169662
+   },
+   "runs_sha256": {
+    "result-cool-1.json": "2ee05ebb6dc9bc6e71b86ff8f50910ea562f4423e85ce98870b6422e1bbc8e6e",
+    "result-cool-2.json": "7d916de59cdba6ed2f565e2b3b4c772557365e5f9dd84cdc7c80a548af4b5e41",
+    "result-cool-3.json": "7a9d98b366755949dcaf583cb49254163d88049e35cc210d74dcf3dd84ebdbbb",
+    "result-stock-1.json": "c87675c9b1b29c82c0ad1b91a83ae3b326615cef92b0e145baf04e57d1abe174",
+    "result-stock-2.json": "de07b4d24c4e0e133089ae4b8f027a5e759d36d3e6cef5b5fb04121f4fe3d367",
+    "result-stock-3.json": "075ef94a2d8e9f207fe905aaeef2c67ab647221fdab165754471a6b09535fa40"
+   }
+  },
+  {
+   "instance_type": "c8g.xlarge",
+   "cpu": "Neoverse-V2",
+   "vcpus": 4,
+   "threads_per_core": "1",
+   "cpu_features": [
+    "sve",
+    "sve2",
+    "i8mm",
+    "bf16",
+    "asimddp"
+   ],
+   "architecture": "aarch64",
+   "ec2_usd_per_hour": 0.15952,
+   "engines": {
+    "cool": {
+     "opencv_version": "5.1.0-dev",
+     "numpy_version": "2.5.1",
+     "rounds": 3,
+     "engine_check": true,
+     "usd_per_hour": 0.16952,
+     "kernels_s": {
+      "native": {
+       "1": {
+        "imdecode_png_frame": 0.0019580255625015752,
+        "cvtColor_bgr2gray_frame": 0.00018753036718699434,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03914775899988854,
+        "goodFeaturesToTrack_frame": 0.004123387250018595,
+        "calcOpticalFlowPyrLK_100_points": 0.0011304726562499923,
+        "canny_frame": 0.0008267424062502471,
+        "findContours_edges": 0.00032784148437592364,
+        "connectedComponentsWithStats_mask": 0.0016994404687551423,
+        "gaussianBlur_5x5_frame": 0.00041896439062405477,
+        "integral_frame": 0.0001938449687504118,
+        "absdiff_frame": 8.425663671873806e-05,
+        "phaseCorrelate_crop": 0.004135742874993298,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0018004546249983377,
+        "resize_cubic_x8_48px_patch": 0.0002515765859367747
+       },
+       "2": {
+        "imdecode_png_frame": 0.0019562408125040065,
+        "cvtColor_bgr2gray_frame": 0.00010265524414032612,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.02280404600003294,
+        "goodFeaturesToTrack_frame": 0.0032121954999979607,
+        "calcOpticalFlowPyrLK_100_points": 0.0007784328437523413,
+        "canny_frame": 0.0005109993749989883,
+        "findContours_edges": 0.00034222731249933247,
+        "connectedComponentsWithStats_mask": 0.00020307046874989965,
+        "gaussianBlur_5x5_frame": 0.00023057906640655546,
+        "integral_frame": 0.0001935604023435289,
+        "absdiff_frame": 8.319808203127721e-05,
+        "phaseCorrelate_crop": 0.0036771898749989873,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.00182311915624922,
+        "resize_cubic_x8_48px_patch": 0.0001445511640625341
+       },
+       "4": {
+        "imdecode_png_frame": 0.0019546805624983676,
+        "cvtColor_bgr2gray_frame": 6.225549609339964e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.022757912999963992,
+        "goodFeaturesToTrack_frame": 0.0031345822499986298,
+        "calcOpticalFlowPyrLK_100_points": 0.0006666309218736899,
+        "canny_frame": 0.00038486978125007454,
+        "findContours_edges": 0.0003428669609366608,
+        "connectedComponentsWithStats_mask": 0.00018505748046937498,
+        "gaussianBlur_5x5_frame": 0.00017305453515614744,
+        "integral_frame": 0.0001932807304685369,
+        "absdiff_frame": 8.193253124977318e-05,
+        "phaseCorrelate_crop": 0.00355977343750169,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0018369426562472313,
+        "resize_cubic_x8_48px_patch": 0.00013855717968702663
+       }
+      },
+      "1080p": {
+       "1": {
+        "imdecode_png_frame": 0.017508459000055154,
+        "cvtColor_bgr2gray_frame": 0.0006067633749999857,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.1681957829999874,
+        "goodFeaturesToTrack_frame": 0.028719870000031733,
+        "calcOpticalFlowPyrLK_100_points": 0.002808744624999804,
+        "canny_frame": 0.0029890148124991356,
+        "findContours_edges": 0.0013897432187448544,
+        "connectedComponentsWithStats_mask": 0.0057213979999914955,
+        "gaussianBlur_5x5_frame": 0.0017078199375006875,
+        "integral_frame": 0.0006809725781238285,
+        "absdiff_frame": 0.000306066445313391,
+        "phaseCorrelate_crop": 0.018580449999944904
+       },
+       "4": {
+        "imdecode_png_frame": 0.017525159000001622,
+        "cvtColor_bgr2gray_frame": 0.00022247938671871026,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.09028376800006299,
+        "goodFeaturesToTrack_frame": 0.018231398000011723,
+        "calcOpticalFlowPyrLK_100_points": 0.0014949097500007724,
+        "canny_frame": 0.0018199136875054478,
+        "findContours_edges": 0.0013792719375018692,
+        "connectedComponentsWithStats_mask": 0.0005208650000021464,
+        "gaussianBlur_5x5_frame": 0.0006231654218744609,
+        "integral_frame": 0.0006805598593739859,
+        "absdiff_frame": 0.0003138218125009473,
+        "phaseCorrelate_crop": 0.015747977500041088
+       }
+      },
+      "2160p": {
+       "1": {
+        "imdecode_png_frame": 0.06964140900004168,
+        "cvtColor_bgr2gray_frame": 0.002447061875002987,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6484154389997911,
+        "goodFeaturesToTrack_frame": 0.15235948700001245,
+        "calcOpticalFlowPyrLK_100_points": 0.019233540500067647,
+        "canny_frame": 0.012173244499990687,
+        "findContours_edges": 0.005347916000005171,
+        "connectedComponentsWithStats_mask": 0.023077798500025892,
+        "gaussianBlur_5x5_frame": 0.00757410100004563,
+        "integral_frame": 0.0027682713124903557,
+        "absdiff_frame": 0.0015456845000016983,
+        "phaseCorrelate_crop": 0.11022292699999525
+       },
+       "4": {
+        "imdecode_png_frame": 0.0695831419999422,
+        "cvtColor_bgr2gray_frame": 0.0009052489999987756,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.3296750389999943,
+        "goodFeaturesToTrack_frame": 0.09414361099993585,
+        "calcOpticalFlowPyrLK_100_points": 0.011435632749964952,
+        "canny_frame": 0.006514659749996099,
+        "findContours_edges": 0.0052353808750069675,
+        "connectedComponentsWithStats_mask": 0.0020844689999961474,
+        "gaussianBlur_5x5_frame": 0.002826036812493271,
+        "integral_frame": 0.002701058437502013,
+        "absdiff_frame": 0.0015168845624984328,
+        "phaseCorrelate_crop": 0.09092536399998608
+       }
+      }
+     },
+     "pipeline_s": {
+      "1": {
+       "panel-calibration-reverse-w960": 4.072006137499898,
+       "game-reference-h03": 0.15547311500006344,
+       "svg-three-to-four-w960-r1": 6.251951507500053
+      },
+      "4": {
+       "panel-calibration-reverse-w960": 3.919397272499964,
+       "game-reference-h03": 0.17025914949999787,
+       "svg-three-to-four-w960-r1": 5.5824207160000014
+      }
+     },
+     "throughput_analyses_per_hour": 3737.1537288411137,
+     "throughput_runs": [
+      3737.2,
+      2906.6,
+      3744.3
+     ],
+     "throughput_range": [
+      2906.5860584973884,
+      3744.327841509942
+     ],
+     "latest_start_after_signal_s": 0.003048419952392578,
+     "sequential_analyses_per_hour_by_threads": {
+      "1": 1030.590329507553,
+      "4": 1116.6164047191703
+     },
+     "usd_per_1000_analyses": 0.045360724310521724,
+     "measurement_hashes_per_recording": {
+      "panel-calibration-reverse-w960": [
+       "37d0ff53aa835e3c9b14eedf63254d0ac9c1c76d065f379f6ae26fad5b32428c"
+      ],
+      "game-reference-h03": [
+       "562a8e8215d302acb9d25d9b3ec25b30a6915a53468bd7c92bd2c9d8fd1ca882"
+      ],
+      "svg-three-to-four-w960-r1": [
+       "1709ff24c9ba95ac8dc7b49129332550b47c28e328b7a0e5e32b02d13d0f188a"
+      ]
+     }
+    },
+    "stock": {
+     "opencv_version": "5.0.0",
+     "numpy_version": "2.2.6",
+     "rounds": 3,
+     "engine_check": true,
+     "usd_per_hour": 0.15952,
+     "kernels_s": {
+      "native": {
+       "1": {
+        "imdecode_png_frame": 0.001974587749998591,
+        "cvtColor_bgr2gray_frame": 0.0001825497929686115,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03858008400015933,
+        "goodFeaturesToTrack_frame": 0.004094905750008593,
+        "calcOpticalFlowPyrLK_100_points": 0.0013240773750027302,
+        "canny_frame": 0.0008626579062500639,
+        "findContours_edges": 0.00040118703125102684,
+        "connectedComponentsWithStats_mask": 0.0018725203124958512,
+        "gaussianBlur_5x5_frame": 0.0005022244062473646,
+        "integral_frame": 0.00019518399999984837,
+        "absdiff_frame": 8.544918359376652e-05,
+        "phaseCorrelate_crop": 0.004699772000009261,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0018985936874997833,
+        "resize_cubic_x8_48px_patch": 0.00034036279687477133
+       },
+       "2": {
+        "imdecode_png_frame": 0.001974972625006899,
+        "cvtColor_bgr2gray_frame": 0.00010266039843731534,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03891045000000304,
+        "goodFeaturesToTrack_frame": 0.00400031887500063,
+        "calcOpticalFlowPyrLK_100_points": 0.0008777609218757476,
+        "canny_frame": 0.0005325727812497405,
+        "findContours_edges": 0.00041424870312667395,
+        "connectedComponentsWithStats_mask": 0.001079688937501544,
+        "gaussianBlur_5x5_frame": 0.0002769329062495274,
+        "integral_frame": 0.00019455732812501125,
+        "absdiff_frame": 8.5511220702994e-05,
+        "phaseCorrelate_crop": 0.0047022802500009675,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.0019431938124938597,
+        "resize_cubic_x8_48px_patch": 0.00018233691406255303
+       },
+       "4": {
+        "imdecode_png_frame": 0.0019753378749953754,
+        "cvtColor_bgr2gray_frame": 6.269261328140097e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.03925384799981657,
+        "goodFeaturesToTrack_frame": 0.004014233374988407,
+        "calcOpticalFlowPyrLK_100_points": 0.0006118991406225405,
+        "canny_frame": 0.0003399675859379059,
+        "findContours_edges": 0.0004174202968751928,
+        "connectedComponentsWithStats_mask": 0.0005885728281249669,
+        "gaussianBlur_5x5_frame": 0.00016045267578146394,
+        "integral_frame": 0.0001949726171877053,
+        "absdiff_frame": 8.511468750005413e-05,
+        "phaseCorrelate_crop": 0.004719415625004331,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.001978091187496034,
+        "resize_cubic_x8_48px_patch": 0.00018243546093721363
+       }
+      },
+      "1080p": {
+       "1": {
+        "imdecode_png_frame": 0.017555393999998614,
+        "cvtColor_bgr2gray_frame": 0.0006165231874994959,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.1632837219999601,
+        "goodFeaturesToTrack_frame": 0.027340909000031388,
+        "calcOpticalFlowPyrLK_100_points": 0.0029050308124993762,
+        "canny_frame": 0.003069116375002068,
+        "findContours_edges": 0.0016460835624982906,
+        "connectedComponentsWithStats_mask": 0.0063258598749769135,
+        "gaussianBlur_5x5_frame": 0.0018514289999984612,
+        "integral_frame": 0.0006701228750003452,
+        "absdiff_frame": 0.00030780977343702887,
+        "phaseCorrelate_crop": 0.021383015000026262
+       },
+       "4": {
+        "imdecode_png_frame": 0.017559495499995137,
+        "cvtColor_bgr2gray_frame": 0.000162329460937638,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.16565028199988774,
+        "goodFeaturesToTrack_frame": 0.024472755499914456,
+        "calcOpticalFlowPyrLK_100_points": 0.0012448279999972556,
+        "canny_frame": 0.0010602603750022865,
+        "findContours_edges": 0.0016223459062487677,
+        "connectedComponentsWithStats_mask": 0.001974147500000356,
+        "gaussianBlur_5x5_frame": 0.0005649353906242993,
+        "integral_frame": 0.0006695006406225446,
+        "absdiff_frame": 0.0003063690859370638,
+        "phaseCorrelate_crop": 0.021277510499999153
+       }
+      },
+      "2160p": {
+       "1": {
+        "imdecode_png_frame": 0.06975932000000284,
+        "cvtColor_bgr2gray_frame": 0.002537148000001821,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6317308939999293,
+        "goodFeaturesToTrack_frame": 0.12280045300008169,
+        "calcOpticalFlowPyrLK_100_points": 0.019568879499956893,
+        "canny_frame": 0.012826086999950803,
+        "findContours_edges": 0.0062447801250016255,
+        "connectedComponentsWithStats_mask": 0.02533234400004858,
+        "gaussianBlur_5x5_frame": 0.007852969999987636,
+        "integral_frame": 0.0026740401250009427,
+        "absdiff_frame": 0.0015649957500016853,
+        "phaseCorrelate_crop": 0.1213018020000618
+       },
+       "4": {
+        "imdecode_png_frame": 0.06982735100007176,
+        "cvtColor_bgr2gray_frame": 0.0006702495937496167,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.6435162180000589,
+        "goodFeaturesToTrack_frame": 0.09955323700000918,
+        "calcOpticalFlowPyrLK_100_points": 0.009879965499976606,
+        "canny_frame": 0.005123506625011487,
+        "findContours_edges": 0.005977805875005515,
+        "connectedComponentsWithStats_mask": 0.007879808749976291,
+        "gaussianBlur_5x5_frame": 0.0023828937499956737,
+        "integral_frame": 0.002632234875008521,
+        "absdiff_frame": 0.0015318330625007093,
+        "phaseCorrelate_crop": 0.11751580899999681
+       }
+      }
+     },
+     "pipeline_s": {
+      "1": {
+       "panel-calibration-reverse-w960": 3.9655105615000252,
+       "game-reference-h03": 0.15450477900003534,
+       "svg-three-to-four-w960-r1": 6.109123885500026
+      },
+      "4": {
+       "panel-calibration-reverse-w960": 4.0238096880000285,
+       "game-reference-h03": 0.1705584970000018,
+       "svg-three-to-four-w960-r1": 6.1159943855000165
+      }
+     },
+     "throughput_analyses_per_hour": 3100.5387246639684,
+     "throughput_runs": [
+      3100.5,
+      3046.7,
+      3825.2
+     ],
+     "throughput_range": [
+      3046.654472634742,
+      3825.1511072362455
+     ],
+     "latest_start_after_signal_s": 0.003144979476928711,
+     "sequential_analyses_per_hour_by_threads": {
+      "1": 1055.8073129505285,
+      "4": 1047.489836186838
+     },
+     "usd_per_1000_analyses": 0.05144912357683535,
+     "measurement_hashes_per_recording": {
+      "panel-calibration-reverse-w960": [
+       "48ac4e4e97019841ec33e25b7e0ea1d1f8f6500155cf24130b24f45ff755a16e"
+      ],
+      "game-reference-h03": [
+       "66ee9f2be6db66f00bcf15071083e7d7e2b43bd34353320e78e450ebea2b882d"
+      ],
+      "svg-three-to-four-w960-r1": [
+       "b4ba7ebf6b1b75d9a861280c2ce26d7105cac4227ba6484885e247b947364d1a"
+      ]
+     }
+    }
+   },
+   "standard_over_cool": {
+    "kernels": {
+     "native": {
+      "1": {
+       "imdecode_png_frame": 1.0084586165850948,
+       "cvtColor_bgr2gray_frame": 0.9734412389145675,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 0.9854991699593628,
+       "goodFeaturesToTrack_frame": 0.9930926933894278,
+       "calcOpticalFlowPyrLK_100_points": 1.171259974916124,
+       "canny_frame": 1.0434421891610886,
+       "findContours_edges": 1.2237225926875093,
+       "connectedComponentsWithStats_mask": 1.101845193711017,
+       "gaussianBlur_5x5_frame": 1.1987281436956794,
+       "integral_frame": 1.006907743121054,
+       "absdiff_frame": 1.014153744102193,
+       "phaseCorrelate_crop": 1.1363791565540393,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.0545079343510455,
+       "resize_cubic_x8_48px_patch": 1.352919213874339
+      },
+      "2": {
+       "imdecode_png_frame": 1.009575412384386,
+       "cvtColor_bgr2gray_frame": 1.0000502097777115,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.7062958915249877,
+       "goodFeaturesToTrack_frame": 1.2453534895379716,
+       "calcOpticalFlowPyrLK_100_points": 1.1276000607125045,
+       "canny_frame": 1.0422180677829498,
+       "findContours_edges": 1.2104489852120788,
+       "connectedComponentsWithStats_mask": 5.316819053740809,
+       "gaussianBlur_5x5_frame": 1.2010322990953617,
+       "integral_frame": 1.0051504634698631,
+       "absdiff_frame": 1.0278027884206176,
+       "phaseCorrelate_crop": 1.2787700417570258,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.0658622097371158,
+       "resize_cubic_x8_48px_patch": 1.2614005237873593
+      },
+      "4": {
+       "imdecode_png_frame": 1.0105681270348361,
+       "cvtColor_bgr2gray_frame": 1.0070213429404775,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.7248439257096502,
+       "goodFeaturesToTrack_frame": 1.2806278651613503,
+       "calcOpticalFlowPyrLK_100_points": 0.9178979260408209,
+       "canny_frame": 0.8833314604063632,
+       "findContours_edges": 1.2174410031659613,
+       "connectedComponentsWithStats_mask": 3.1804865527841732,
+       "gaussianBlur_5x5_frame": 0.9271798374812147,
+       "integral_frame": 1.0087535198934061,
+       "absdiff_frame": 1.0388387396525085,
+       "phaseCorrelate_crop": 1.3257629194279559,
+       "matchTemplate_ccoeff_normed_200px_window_48px": 1.076838833683116,
+       "resize_cubic_x8_48px_patch": 1.3166799537151332
+      }
+     },
+     "1080p": {
+      "1": {
+       "imdecode_png_frame": 1.0026807042209318,
+       "cvtColor_bgr2gray_frame": 1.016085038915723,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 0.9707955757723864,
+       "goodFeaturesToTrack_frame": 0.9519858202701189,
+       "calcOpticalFlowPyrLK_100_points": 1.0342808622195687,
+       "canny_frame": 1.0267986502335058,
+       "findContours_edges": 1.1844515881034121,
+       "connectedComponentsWithStats_mask": 1.1056493316819276,
+       "gaussianBlur_5x5_frame": 1.084089112291275,
+       "integral_frame": 0.984067342104471,
+       "absdiff_frame": 1.0056959139112842,
+       "phaseCorrelate_crop": 1.1508340756057938
+      },
+      "4": {
+       "imdecode_png_frame": 1.0019592689569043,
+       "cvtColor_bgr2gray_frame": 0.7296382075292115,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.834773688220148,
+       "goodFeaturesToTrack_frame": 1.342341135874425,
+       "calcOpticalFlowPyrLK_100_points": 0.8327111385798456,
+       "canny_frame": 0.5825882745327243,
+       "findContours_edges": 1.176233534619107,
+       "connectedComponentsWithStats_mask": 3.7901327599132615,
+       "gaussianBlur_5x5_frame": 0.9065576663817329,
+       "integral_frame": 0.983749822151406,
+       "absdiff_frame": 0.9762517254473475,
+       "phaseCorrelate_crop": 1.3511265494215774
+      }
+     },
+     "2160p": {
+      "1": {
+       "imdecode_png_frame": 1.0016931162314808,
+       "cvtColor_bgr2gray_frame": 1.0368139955589493,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 0.9742687419263205,
+       "goodFeaturesToTrack_frame": 0.8059915100663975,
+       "calcOpticalFlowPyrLK_100_points": 1.0174351154894268,
+       "canny_frame": 1.0536292933211533,
+       "findContours_edges": 1.167703480195947,
+       "connectedComponentsWithStats_mask": 1.0976932656735068,
+       "gaussianBlur_5x5_frame": 1.0368187590765328,
+       "integral_frame": 0.9659602774250324,
+       "absdiff_frame": 1.0124936557233806,
+       "phaseCorrelate_crop": 1.1005133441980453
+      },
+      "4": {
+       "imdecode_png_frame": 1.003509600071376,
+       "cvtColor_bgr2gray_frame": 0.7404035726640109,
+       "matchTemplate_ccoeff_normed_full_frame_64px": 1.951971310755104,
+       "goodFeaturesToTrack_frame": 1.0574614245471954,
+       "calcOpticalFlowPyrLK_100_points": 0.8639631681077626,
+       "canny_frame": 0.7864580533180654,
+       "findContours_edges": 1.1418091668445345,
+       "connectedComponentsWithStats_mask": 3.7802475114721568,
+       "gaussianBlur_5x5_frame": 0.8431927494579823,
+       "integral_frame": 0.9745197802691226,
+       "absdiff_frame": 1.0098547380412752,
+       "phaseCorrelate_crop": 1.2924425466145486
+      }
+     }
+    },
+    "pipeline": {
+     "1": {
+      "panel-calibration-reverse-w960": 0.9738469018945886,
+      "game-reference-h03": 0.9937716820041349,
+      "svg-three-to-four-w960-r1": 0.9771547137195984
+     },
+     "4": {
+      "panel-calibration-reverse-w960": 1.0266399163546556,
+      "game-reference-h03": 1.0017581874506187,
+      "svg-three-to-four-w960-r1": 1.095581056435019
+     }
+    },
+    "throughput": 1.205323997121223
+   },
+   "runs_sha256": {
+    "result-cool-1.json": "f6e20b4a8d46b949303c925d275060df473c640a84a8d92eae38faa42865b824",
+    "result-cool-2.json": "87a53929c92ce6d9e17c67f097f10f9b0798c8dafce43a33380f0c7e5ed08898",
+    "result-cool-3.json": "f175a17b45f179d6f9f12b25a7ec6ec1c385b35e80c86a2555ab4807b81f048d",
+    "result-stock-1.json": "3ea326b699100243529e92a8f79fd9e53b9bacabd4f399d8f727034c38213dd9",
+    "result-stock-2.json": "5d0897c76df3b34d47fbf39adcdc252546837f0288fc5d7c64dc06865bff3ab1",
+    "result-stock-3.json": "8f57b33b3cbae459b3b8d233bd0223ba0e959d5895735223a2c95d2a9fbc420a"
+   }
+  },
+  {
+   "instance_type": "c8i.xlarge",
+   "cpu": "Intel(R) Xeon(R) 6975P-C",
+   "vcpus": 4,
+   "threads_per_core": "2",
+   "cpu_features": [
+    "avx2",
+    "avx512f",
+    "avx512bw",
+    "avx512_vnni",
+    "avx512_bf16",
+    "amx_tile",
+    "amx_bf16"
+   ],
+   "architecture": "x86_64",
+   "ec2_usd_per_hour": 0.18742,
+   "engines": {
+    "stock": {
+     "opencv_version": "5.0.0",
+     "numpy_version": "2.2.6",
+     "rounds": 3,
+     "engine_check": true,
+     "usd_per_hour": 0.18742,
+     "kernels_s": {
+      "native": {
+       "1": {
+        "imdecode_png_frame": 0.0021565334999991137,
+        "cvtColor_bgr2gray_frame": 0.00019619860156216973,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.04393597600005705,
+        "goodFeaturesToTrack_frame": 0.003200180374996364,
+        "calcOpticalFlowPyrLK_100_points": 0.0011618214687487693,
+        "canny_frame": 0.0009731155312486806,
+        "findContours_edges": 0.0003813383281254801,
+        "connectedComponentsWithStats_mask": 0.0023316440000016314,
+        "gaussianBlur_5x5_frame": 0.00075315914062557,
+        "integral_frame": 9.475262304703413e-05,
+        "absdiff_frame": 0.00018942532812449286,
+        "phaseCorrelate_crop": 0.002019436124996332,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.002327810687503984,
+        "resize_cubic_x8_48px_patch": 8.263301367184006e-05
+       },
+       "2": {
+        "imdecode_png_frame": 0.002162914500004831,
+        "cvtColor_bgr2gray_frame": 0.00010764456835943292,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.04356370899995454,
+        "goodFeaturesToTrack_frame": 0.003219049312498612,
+        "calcOpticalFlowPyrLK_100_points": 0.0008659356718752065,
+        "canny_frame": 0.00041759527343732117,
+        "findContours_edges": 0.0003928989218753287,
+        "connectedComponentsWithStats_mask": 0.0012366848124969465,
+        "gaussianBlur_5x5_frame": 0.00031023105468719336,
+        "integral_frame": 9.020459179698292e-05,
+        "absdiff_frame": 0.00015164243749987705,
+        "phaseCorrelate_crop": 0.002021905562500592,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.002328507312498118,
+        "resize_cubic_x8_48px_patch": 8.339635937493206e-05
+       },
+       "4": {
+        "imdecode_png_frame": 0.0021547499999883257,
+        "cvtColor_bgr2gray_frame": 9.976807812495103e-05,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.043383319999975356,
+        "goodFeaturesToTrack_frame": 0.0032723565624976914,
+        "calcOpticalFlowPyrLK_100_points": 0.000783372359371981,
+        "canny_frame": 0.00038024796874935873,
+        "findContours_edges": 0.0004574283593754558,
+        "connectedComponentsWithStats_mask": 0.0008109050468743106,
+        "gaussianBlur_5x5_frame": 0.0003013331093750793,
+        "integral_frame": 9.074915820317386e-05,
+        "absdiff_frame": 0.00014045599609380233,
+        "phaseCorrelate_crop": 0.0020135474999989356,
+        "matchTemplate_ccoeff_normed_200px_window_48px": 0.002329025874999502,
+        "resize_cubic_x8_48px_patch": 8.317032226567989e-05
+       }
+      },
+      "1080p": {
+       "1": {
+        "imdecode_png_frame": 0.010927517500022077,
+        "cvtColor_bgr2gray_frame": 0.0006376563437502369,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.18699952200006464,
+        "goodFeaturesToTrack_frame": 0.02152373199999147,
+        "calcOpticalFlowPyrLK_100_points": 0.0025259809375057785,
+        "canny_frame": 0.0032362409375039647,
+        "findContours_edges": 0.0016111203124999918,
+        "connectedComponentsWithStats_mask": 0.007894071750001785,
+        "gaussianBlur_5x5_frame": 0.0023955254999918907,
+        "integral_frame": 0.00036206400781235715,
+        "absdiff_frame": 0.0006390995312504089,
+        "phaseCorrelate_crop": 0.010313946749988645
+       },
+       "4": {
+        "imdecode_png_frame": 0.010930018000010477,
+        "cvtColor_bgr2gray_frame": 0.00028984659375019817,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.18702449800002796,
+        "goodFeaturesToTrack_frame": 0.022213829999998325,
+        "calcOpticalFlowPyrLK_100_points": 0.0016210454374956385,
+        "canny_frame": 0.001216381687502377,
+        "findContours_edges": 0.0017404871875044137,
+        "connectedComponentsWithStats_mask": 0.0026735044374959216,
+        "gaussianBlur_5x5_frame": 0.0010234781562488138,
+        "integral_frame": 0.00035199075781289224,
+        "absdiff_frame": 0.0006230470000012645,
+        "phaseCorrelate_crop": 0.010282482249976965
+       }
+      },
+      "2160p": {
+       "1": {
+        "imdecode_png_frame": 0.043783140999948955,
+        "cvtColor_bgr2gray_frame": 0.0025406572500017433,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.7454390030000013,
+        "goodFeaturesToTrack_frame": 0.12640891700004886,
+        "calcOpticalFlowPyrLK_100_points": 0.015118598499952896,
+        "canny_frame": 0.014862435499992444,
+        "findContours_edges": 0.0056520746250043885,
+        "connectedComponentsWithStats_mask": 0.03119053199998234,
+        "gaussianBlur_5x5_frame": 0.009921817249988862,
+        "integral_frame": 0.001418216499999403,
+        "absdiff_frame": 0.002532571374999293,
+        "phaseCorrelate_crop": 0.06163373000003958
+       },
+       "4": {
+        "imdecode_png_frame": 0.043599417999985235,
+        "cvtColor_bgr2gray_frame": 0.0011347398124996744,
+        "matchTemplate_ccoeff_normed_full_frame_64px": 0.7451088909999726,
+        "goodFeaturesToTrack_frame": 0.10775601699992876,
+        "calcOpticalFlowPyrLK_100_points": 0.010046367749993124,
+        "canny_frame": 0.005538365625000097,
+        "findContours_edges": 0.0057252783749959235,
+        "connectedComponentsWithStats_mask": 0.010538812749985027,
+        "gaussianBlur_5x5_frame": 0.003997741375002306,
+        "integral_frame": 0.0014213868437451538,
+        "absdiff_frame": 0.0025153483124995546,
+        "phaseCorrelate_crop": 0.060143409999909636
+       }
+      }
+     },
+     "pipeline_s": {
+      "1": {
+       "panel-calibration-reverse-w960": 4.0582106360000125,
+       "game-reference-h03": 0.11852234549996865,
+       "svg-three-to-four-w960-r1": 6.392833235500007
+      },
+      "4": {
+       "panel-calibration-reverse-w960": 4.112752416500143,
+       "game-reference-h03": 0.11842564450000737,
+       "svg-three-to-four-w960-r1": 6.415008897000007
+      }
+     },
+     "throughput_analyses_per_hour": 2597.4902716108913,
+     "throughput_runs": [
+      2469.8,
+      2600.9,
+      2597.5
+     ],
+     "throughput_range": [
+      2469.8368779644015,
+      2600.8902390366347
+     ],
+     "latest_start_after_signal_s": 0.00019669532775878906,
+     "sequential_analyses_per_hour_by_threads": {
+      "1": 1021.8016310479596,
+      "4": 1014.4477118997294
+     },
+     "usd_per_1000_analyses": 0.07215426446381541,
+     "measurement_hashes_per_recording": {
+      "panel-calibration-reverse-w960": [
+       "6c959514403a3ebe480f14d214c0cbc813015556dcab87846970d02e2bae4545"
+      ],
+      "game-reference-h03": [
+       "cccc68eba34108177bd979e172bec993864ded1212d62157b26c005b2abb7174"
+      ],
+      "svg-three-to-four-w960-r1": [
+       "05a4a2a9f600055912015fa7feab0dbfb683f587d39fbb1a9e6b6d6ec4e97d8a"
+      ]
+     }
+    }
+   },
+   "runs_sha256": {
+    "result-stock-1.json": "8c338e1230c5c3d35880c1ffe6e19bb1689e77509e3150cc5514b9e2335b4326",
+    "result-stock-2.json": "18f0bf7c943cb713a6a45c98e47ef8ea7071a98fe97b1f8542c56e972f2480bf",
+    "result-stock-3.json": "32394e19e8e30dc44813800184bc17d2aa1c2f3ef6613f15b7f8d64c3954fed5"
+   }
+  }
+ ]
+}

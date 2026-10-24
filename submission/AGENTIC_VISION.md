@@ -61,7 +61,17 @@ In candidate 01 these windows also carried a measured lag of about −10 ms (Kir
   | calibration, candidate 02 | 0.0502 | 0.0067 | 16 of 16 cases |
   | held-out, sealed candidate 02 | 0.0500 | 0.0121 | 53 of 56 cases |
 
-* This is one logged session: a case study with a complete audit trail, not a statistical estimate of how often an agent succeeds.
+* **Beyond this session.** `v6p01` is the case study with the most detailed trace. All 13 Kiro sessions logged between 1 and 16 October (7 web panel, 6 game; 1,135 audited tool calls) were read back the same way, post-hoc and read-only, with every recorded score reproduced exactly (`evidence/agent-sessions/REPORT.md`):
+
+  | across the 13 logged sessions | result |
+  |---|---|
+  | sessions in which a candidate was measured | 11 (two ended before any candidate: an operator interruption and a request timeout) |
+  | candidates closer to the reference than the unchanged app on calibration | 17 of 17 |
+  | sessions in which the second candidate, written after the feedback, lowered the error | 5 of 6 (by 5% to 73%); in `v2g01` the mean error rose while more cases passed (6/12, then 9/12) |
+  | sessions that reached sealed held-out scoring | 7; the sealed candidate was closer to the reference than the unchanged app in all 7, and on 308 of 326 held-out cases |
+  | sessions in which every held-out case passed | 1 of 7 (`v4g01`, the accepted game run) |
+
+  These are 13 single runs under recipes and gates that changed between versions, not a controlled experiment; panel and game errors are in different units, and the unchanged app is a no-agent reference, not a competing agent. They show that this case study is typical: the measured feedback is followed by an edit that usually lowers the error, and the sealed held-out set is what still finds the failures.
 * The sealed candidate passed 55 of 56 held-out comparisons. The one failure is a genuine regression: after a drag release at 1,440 px Kiro's panel springs back toward where the drag started, while the reference and the unchanged app travel on to the other side (post-release position error 0.78–0.86 against limits of 0.05–0.076; 0.005–0.006 before the change). The calibration set has no drag-release case; the held-out set exists to catch exactly this, and it did. The run is therefore recorded as **failed** under the pre-registered rule, and the panel domain is not accepted.
 * Across the project the same loop produced the accepted game and SVG results (technical report §6): game regression 48/48 and validation 30/30; SVG 28/28 windows with 112 raw records independently reviewed.
 
@@ -69,8 +79,8 @@ In candidate 01 these windows also carried a measured lag of about −10 ms (Kir
 
 * **Budgets and refusal**: three full candidates, a frozen wall clock, a separate validation clock; an evaluation that the measured duration cannot fit is refused (`budget_insufficient`) instead of started and killed. Partial probes never count as candidates and cannot be finalized.
 * **Recording failures**: a host timing stall re-records only the affected scenario; failed attempts are kept beside the canonical one; a stalling host is refused before any recording starts. Every attempt is in the job result.
-* **Observability**: every tool call is logged by the guard before it runs (`kiro/tool-audit.jsonl`); every job has `job.json`, `result.json`, a worker log with tracebacks, and the full feedback JSON in the workspace; `inspect_window` renders reference/candidate/difference strips and an error-over-time plot on demand (available, unused by the agent in this run; a window-alignment defect in it was found and fixed after the freeze, technical report §6.4).
-* **Security boundary**: the guard limits writes to the motion files and a scratch folder, denies session folders, parent traversal and control files, and closes writes and shell after sealing. In `v6p01` the guard allowed all 230 calls; the agent never attempted a denied path. It is a cooperative boundary, not an OS sandbox; the post-run native audit replays Kiro's own logs against pinned envelope rules and matches them one-to-one with the guard decisions. The pinned rules cover kiro-cli 2.27.x; this run used 2.31.0 and is reported as native-uncertified.
+* **Observability**: every tool call is logged by the guard before it runs (`kiro/tool-audit.jsonl`); every job has `job.json`, `result.json`, a worker log with tracebacks, and the full feedback JSON in the workspace; `inspect_window` renders reference/candidate/difference strips and an error-over-time plot on demand (available, but not called in any of the 13 logged sessions; a window-alignment defect in it was found and fixed after the freeze, technical report §6.4).
+* **Security boundary**: the guard limits writes to the motion files and a scratch folder, denies session folders, parent traversal and control files, and closes writes and shell after sealing. In `v6p01` the guard allowed all 230 calls; the agent never attempted a denied path. Across the 13 logged sessions it refused 5 of 1,135 calls: three accesses to the CLI's own tool-output files outside the experiment folder (two file reads and one shell command), one shell command on a path outside the boundary and one file deletion. It is a cooperative boundary, not an OS sandbox; the post-run native audit replays Kiro's own logs against pinned envelope rules and matches them one-to-one with the guard decisions. The pinned rules cover kiro-cli 2.27.x; this run used 2.31.0 and is reported as native-uncertified.
 * **Human control**: recipes and thresholds are pre-registered and hash-bound; held-out cases open only after sealing; results are never rewritten; a rerun gets a new identifier; the user decides every session start, every power-removal window and every post-hoc label. Acceptance of a domain requires independent raw review and source review by AI reviewer agents that never see production coordinates; no human pixel review is claimed (technical report, §6.1).
 
 ## 5. Files
@@ -80,4 +90,5 @@ In candidate 01 these windows also carried a measured lag of about −10 ms (Kir
 * `evidence/agentic-trace-v6p01/agent-scratch/` — the helper scripts the agent wrote during the run (`windows.py`, `track.py`, `latfit.py`, `fit3.py`, `sim.py`) and its draft `input-clock.js`, copied unchanged from the session workspace.
 * Held-out outcome per case: `evidence/panel-v6p01/heldout-outcome.json` (repository root).
 * No-agent baseline, per case: `evidence/v6-agent-baseline/result.json` (repository root).
+* All 13 logged sessions, per session and per candidate, with the source files and their SHA-256: `evidence/agent-sessions/REPORT.md` and `result.json` (repository root), produced by `scripts/agent_sessions_posthoc.py`.
 * Internal sources, available on request: session `C:/kc3d/s/v6p01` (frozen); run log and receipts `artifacts/phase4-v6/v6p01-logs`, `artifacts/phase4-v6/kiro-power-window-05`.

@@ -75,8 +75,20 @@ ITEMS = [
     ('aws/cool-kernels/runs/result-stock-2.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-stock-2.json', '5.2'),
     ('aws/cool-kernels/runs/result-stock-3.json', LIVE/'artifacts/phase4-aws/cool-kernels-01/runs/result-stock-3.json', '5.2'),
     ('v6-agent-baseline/result.json', LIVE/'artifacts/phase4-v6/agent-baseline-posthoc-01/result.json', '4.2'),
+    ('agent-sessions/REPORT.md', LIVE/'artifacts/phase4-v6/agent-sessions-posthoc-01/REPORT.md', '4.2'),
+    ('agent-sessions/result.json', LIVE/'artifacts/phase4-v6/agent-sessions-posthoc-01/result.json', '4.2'),
+    ('aws/cool-scaling/REPORT.md', LIVE/'artifacts/phase4-aws/cool-scaling-01/REPORT.md', '5.2'),
+    ('aws/cool-scaling/summary.json', LIVE/'artifacts/phase4-aws/cool-scaling-01/summary.json', '5.2'),
+    ('aws/judge-dryrun/result.json', LIVE/'artifacts/phase4-aws/judge-dryrun-01/result.json', '5.3'),
+    ('aws/judge-dryrun/judge-check-01-svg.json', LIVE/'artifacts/phase4-aws/judge-dryrun-01/judge-check-01-svg.json', '5.3'),
+    ('aws/judge-dryrun/judge-check-02-game-compare-local.json', LIVE/'artifacts/phase4-aws/judge-dryrun-01/judge-check-02-game-compare-local.json', '5.3'),
     ('tests/public-tree-tests.log', Path('C:/kc3d/publish/public-tree-tests.log'), '6.4'),
 ]
+# Every round of the scaling benchmark, and the cross-platform LightGlue reproduction (outputs, backtraces, scripts).
+ITEMS += [(f'aws/cool-scaling/{run.parent.parent.name}/{run.name}', run, '5.2')
+          for run in sorted((LIVE/'artifacts/phase4-aws/cool-scaling-01').glob('*/runs/result-*.json'))]
+ITEMS += [(f'lightglue-platforms/{path.name}', path, '3.2')
+          for path in sorted((LIVE/'artifacts/phase4-v6/lightglue-platforms-01').glob('*')) if path.is_file()]
 HELDOUT_JOB = KC3D/'s/v6p01/measurements/d19d9b76a015463fbf9708cb4fbde348'
 EPOCHS = ('v4-final', 'v5b', 'v6', 'v6b', 'v6c')
 

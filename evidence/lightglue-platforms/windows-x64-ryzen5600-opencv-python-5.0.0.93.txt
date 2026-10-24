@@ -1,0 +1,21 @@
+OpenCV 5.0.0 | NumPy 2.2.6 | Python 3.10.11 | win32
+8x8 -> 50x200 | exit code 3221226505 (0xc0000409)
+  8x8: 3 matches, first distances ['0.40658873319625854', '0.6534680128097534']
+  stderr: [ WARN:0@6.373] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+8x8 -> 1000x1000 | exit code 3221226505 (0xc0000409)
+  8x8: 3 matches, first distances ['0.40658873319625854', '0.6534680128097534']
+  stderr: [ WARN:0@2.439] global net_impl_backend.cpp:345 cv::dnn::dnn5_v20260605::Net::Impl::setPreferableTarget Targets are not supported by the new graph engine for now
+1000x1000 -> 8x8 -> 50x200 | exit code 0 (0x0)
+  1000x1000: 19 matches, first distances ['0.4883806109428406', '0.897391140460968']
+  8x8: 3 matches, first distances ['0.4065893888473511', '0.6534759998321533']
+  50x200: 6 matches, first distances ['0.3207176923751831', '0.5800645351409912']
+8x8 | exit code 0 (0x0)
+  8x8: 3 matches, first distances ['0.40658873319625854', '0.6534680128097534']
+33x2 -> 8x8 | exit code 0 (0x0)
+  33x2: cv2.error: Unknown C++ exception from OpenCV code
+  8x8: 3 matches, first distances ['0.4065893888473511', '0.6534759998321533']
+2x64 | exit code 0 (0x0)
+  2x64: cv2.error: Unknown C++ exception from OpenCV code
+1000x1000 -> 2x64 | exit code 0 (0x0)
+  1000x1000: 19 matches, first distances ['0.4883806109428406', '0.897391140460968']
+  2x64: cv2.error: Unknown C++ exception from OpenCV code

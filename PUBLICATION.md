@@ -7,7 +7,7 @@ This repository is the public English edition of the KiroClops source epoch `v6c
 * Edited for publication: 6 files (listed below).
 * Renamed: `README.en.md` to `README.md`.
 * Not published: 48 internal working documents (phase plans, results logs, roadmap and notes written in Turkish).
-* Added: 520 files: `LICENSE`, `.gitattributes`, `submission/`, `evidence/`, the session replay in `docs/replay/` and the post-freeze analysis scripts (`scripts/build_public_evidence.py`, `v6_inspect_window_check.py`, `v6_agent_baseline_posthoc.py`, `phase4_aws_speed_posthoc.py`, `phase4_aws_cool_kernels*.py`).
+* Added: 854 files: `LICENSE`, `.gitattributes`, `submission/`, `evidence/`, the session replay in `docs/replay/`, the measurement explorer in `docs/explorer/` and the post-freeze analysis scripts (`scripts/build_public_evidence.py`, `v6_inspect_window_check.py`, `v6_agent_baseline_posthoc.py`, `agent_sessions_posthoc.py`, `phase4_aws_speed_posthoc.py`, `phase4_aws_cool_kernels*.py`, `phase4_aws_cool_scaling*.py`, `upstream_lightglue_5x_check.py`).
 
 Tests on this tree: the full suite ran 3,757 tests on a clean copy of this tree (no evidence folders, models or Kiro installation): OK, 173 skipped (`evidence/tests/public-tree-tests.log`).
 
@@ -17,7 +17,7 @@ Tests on this tree: the full suite ran 3,757 tests on a clean copy of this tree 
 |---|---|
 | `.gitignore` | ignores the judge check outputs and a local service.json |
 | `ARCHITECTURE.md` | links to unpublished documents removed; translated pinned files disclosed |
-| `README.md` | renamed from README.en.md; links to unpublished documents removed; repository notes added |
+| `README.md` | renamed from README.en.md; links to unpublished documents removed; repository notes and links to the replay and explorer pages added |
 | `docs/history/README.md` | rewritten as a summary; links to unpublished documents removed |
 | `scripts/phase4_aws_invite_judges.py` | example judge usernames in the docstring replaced by placeholders |
 | `scripts/prove_native_progressive_tools.py` | hard-coded user profile path replaced by Path.home() |

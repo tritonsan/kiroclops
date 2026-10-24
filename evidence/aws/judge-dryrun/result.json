@@ -1,0 +1,50 @@
+{
+ "kind": "JudgePathDryRun",
+ "schema_version": 1,
+ "checked_at": "2026-10-23",
+ "label": "post-freeze packaging check; changes no recorded result",
+ "repository": "https://github.com/tritonsan/kiroclops",
+ "commit": "2d29cd58a769d29e9d994edf706bae50886d1248",
+ "environment": {
+  "python": "3.10.11",
+  "system": "Windows",
+  "fresh_venv_packages": {
+   "kiroclops": "0.1.0",
+   "numpy": "2.2.6",
+   "opencv-python": "5.0.0.93"
+  }
+ },
+ "steps": [
+  "git clone https://github.com/tritonsan/kiroclops.git",
+  "py -3.10 -m venv .venv",
+  "pip install -e .",
+  "python -m kiroclops.cloud --config <config> usage",
+  "python scripts/judge_check.py --config <config> --sample svg-three-to-four-w960-r1 --output judge-check-01",
+  "python scripts/judge_check.py --config <config> --sample game-reference-h03 --output judge-check-02 --compare-local"
+ ],
+ "deviation_from_judge_path": "The login step used the synthetic owner account renewed with services.analysis_api.deploy relogin-probe, not a judge account; judge passwords are never handled by tooling. The client code of the clone (kiroclops/cloud/__main__.py, remote.py) is identical to the live repository apart from comments. Judge account logins were checked separately when the accounts were created (live-cool-02/judges/*/login-check.json).",
+ "checks": {
+  "judge-check-01-svg.json": {
+   "sample": "svg-three-to-four-w960-r1",
+   "status": "succeeded",
+   "end_to_end_seconds": 30.8,
+   "worker_wall_seconds": 7.079571780999999,
+   "opencv": "5.1.0-dev",
+   "architecture": "aarch64",
+   "cool_build": true,
+   "local_equivalent_excluding_build_record_and_phase_shifts": null,
+   "sha256": "702efe7fd7cbc057a5e0cc9a1a0f5af9688f263d6fa5fd0fefb105356f2a963c"
+  },
+  "judge-check-02-game-compare-local.json": {
+   "sample": "game-reference-h03",
+   "status": "succeeded",
+   "end_to_end_seconds": 7.9,
+   "worker_wall_seconds": 1.260365905999997,
+   "opencv": "5.1.0-dev",
+   "architecture": "aarch64",
+   "cool_build": true,
+   "local_equivalent_excluding_build_record_and_phase_shifts": true,
+   "sha256": "dca2b36e89056405126f441aab6201b0f68bab428159cd790b84f03b92c3553c"
+  }
+ }
+}

@@ -699,6 +699,8 @@
         link(tree + 'submission/evidence/agentic-trace-v6p01', 'candidate diffs', 'the code changes of candidate 01 and candidate 02'),
         link(gh + 'evidence/panel-v6p01/heldout-outcome.json', 'panel-v6p01/heldout-outcome.json', 'result of each of the 56 held-out cases'),
         link(gh + 'evidence/v6-agent-baseline/result.json', 'v6-agent-baseline/result.json', 'unchanged app against the candidates, per case (post-hoc)'),
+        link(gh + 'evidence/agent-sessions/REPORT.md', 'agent-sessions/REPORT.md', 'all 13 logged Kiro sessions, every candidate against the unchanged app (post-hoc)'),
+        link('../explorer/', 'Measurement explorer', 'what OpenCV 5 measures on three real recordings, frame by frame'),
         link(gh + 'submission/diagrams/agent-loop.png', 'agent-loop.png', 'the perception, decision and action loop'),
         link(gh + 'submission/TECHNICAL_REPORT.md', 'TECHNICAL_REPORT.md', 'the technical report'),
         link(D.meta.repo, 'Repository', 'KiroClops source and evidence')));
