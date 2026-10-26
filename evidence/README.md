@@ -33,5 +33,6 @@ Frames, recordings, closure receipts (up to 33 MB each) and the Kiro session wor
 | `inspect-window-post-freeze/result.json` | The post-freeze `inspect_window` check over 102 calibration windows | §6.4 |
 | `tests/` | Full-suite results on the engineering machine (`full-tests-02`, `full-tests-03`) and the full run of this public tree (`public-tree-tests.log`: 3,757 tests, 173 skipped, no failures) | §6.4 |
 | `source-epochs.json` | Tree hashes of the frozen source epochs | §6.4, §8 |
+| `ide-demo-2026-10-26/README.md` | Post-freeze demonstration runs in the Kiro IDE for the video: per run the session, candidates, held-out outcome and how it differs from the recorded runs (written by hand from the session results; not part of `MANIFEST.json`) | §8 |
 
 The Agentic Vision trace of the V6 panel run, with the agent's own helper scripts and code changes, is in [`submission/evidence/agentic-trace-v6p01`](../submission/evidence/agentic-trace-v6p01).

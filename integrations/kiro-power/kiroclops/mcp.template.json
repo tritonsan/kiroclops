@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "kiroclops": {
+      "type": "stdio",
+      "command": "{python}",
+      "args": ["-B", "{power}/server.py"],
+      "env": {
+        "PYTHONPATH": "{code}",
+        "PYTHONUTF8": "1",
+        "KIROCLOPS_ANALYSIS_BACKEND": "local",
+        "KIROCLOPS_SESSIONS": "{sessions}",
+        "PATH": "{path}"
+      },
+      "timeout": 30000,
+      "autoApprove": ["start_session", "inspect_session", "prepare_experiment", "evaluate_candidate", "get_job",
+                      "inspect_window", "finalize_candidate", "cancel_job", "build_report"]
+    }
+  }
+}

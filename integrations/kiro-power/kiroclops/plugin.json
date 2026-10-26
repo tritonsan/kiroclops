@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kiroclops",
+  "version": "0.7.0",
+  "description": "Make an app's motion match a reference: KiroClops sets up a session for the opened project, records every candidate and measures it with OpenCV 5.",
+  "author": {"name": "KiroClops"},
+  "keywords": ["kiroclops", "reference", "motion", "animation", "match the reference", "opencv", "panel", "diagram"]
+}

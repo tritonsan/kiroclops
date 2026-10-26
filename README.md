@@ -50,6 +50,12 @@ from kiroclops.visual.tracking import analyze_package
 observations = analyze_package("path/to/package", selection, {"min_valid_ratio": .95})
 ```
 
+## Kiro IDE power (post-freeze addition, 25–26 October 2026)
+
+`integrations/kiro-power/` holds a Kiro power. `python scripts/install_kiro_power.py` renders it with this checkout's paths (run it with the environment that has `pip install -e .[kiro]`); add the rendered folder in Kiro as a custom power, or pass `--activate` to replace an installed one. Then open a copy of `fixtures/phase3a-web/target` or `fixtures/phase3a-svg/target` in the Kiro IDE and ask, for example, *"Use KiroClops to make this panel move like the reference."*
+
+Kiro calls `start_session`, and KiroClops creates a session from a snapshot of the opened project (`kiroclops/local_engine/workspace_mcp.py`); the run continues with the same eight tools as the CLI. Kiro edits the project itself, and each evaluation copies only the editable files into KiroClops's sealed measurement copy. Supported today: the panel and SVG demo applications and a Godot game project (`player.gd`, compared with the original Heart project; this needs Godot 4.5.1, the Heart project and the Tiny reference recordings, none of which a fresh clone carries). The CLI launcher's guard hook and native audit do not run inside the IDE, and no recorded result in the report comes from an IDE run; the demonstration runs shown in the video are summarized in [`evidence/ide-demo-2026-10-26`](evidence/ide-demo-2026-10-26/README.md).
+
 ## Repository map
 
 | Path | Purpose |
@@ -59,11 +65,12 @@ observations = analyze_package("path/to/package", selection, {"min_valid_ratio":
 | `kiroclops/local_engine` | sessions, jobs, suites, feedback, guard, native audit, closures |
 | `kiroclops/integration`, `kiroclops/ground`, `kiroclops/portable*` | earlier Godot-generation runners kept for their recorded evidence |
 | `services/analysis_api`, `kiroclops/cloud` | AWS analysis service and client |
+| `integrations/kiro-power` | Kiro IDE power: the workspace session server's configuration and instructions (post-freeze) |
 | `scripts/` | versioned evidence producers (`phase3d_*`, `v6_equivalence.py`, model fetch) |
 | `tests/` | about 3,750 unittest cases. Tests that read local evidence a fresh clone does not carry (`artifacts/`, the staged Kiro 2.27 proofs in `reviews/`, the third-party `vendor/heart` project, `.venv-kiro`, frozen `C:/kc3d` code snapshots) are marked with `tests/evidence.py` and skip with the missing path as the reason |
 | `submission/` | technical report, diagrams, judge access to the live AWS service, sample recordings, Agentic Vision trace |
 | `evidence/` | public subset of the frozen results and receipts, indexed in `evidence/README.md` |
-| `ARCHITECTURE.md`, `docs/` | design overview, capture clock, engineering history |
+| `ARCHITECTURE.md`, `docs/` | design overview, capture clock, engineering history; `docs/replay` and `docs/explorer` are the session replay and measurement explorer pages |
 
 ## About this repository
 

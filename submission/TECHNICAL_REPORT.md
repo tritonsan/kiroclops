@@ -1,6 +1,6 @@
 # KiroClops — Technical Report
 
-**OpenCV AI Competition 2026, powered by AWS.** Solo entry: one developer designed, built and evaluated the project, using AI coding and review agents as disclosed in §6.1. Version of 23 October 2026. Every number below is taken from a frozen evidence folder named in the text; nothing was re-run to make it look better, and failed attempts are reported as recorded.
+**OpenCV AI Competition 2026, powered by AWS.** Solo entry: one developer designed, built and evaluated the project, using AI coding and review agents as disclosed in §6.1. Version of 26 October 2026. Every number below is taken from a frozen evidence folder named in the text; nothing was re-run to make it look better, and failed attempts are reported as recorded.
 
 ## Summary
 
@@ -228,6 +228,10 @@ python scripts\phase4_aws_deploy.py start --engine cool --output <folder>
 ```
 
 The core package installs on any OS with `pip install -e .` (OpenCV 5.0.0.93, NumPy 2.2.6); web capture adds Playwright 1.63.0 and Kiro sessions add `mcp` 2.2.0 (`pip install -e .[kiro]`). The public subset of the evidence is in `evidence/` with a SHA-256 manifest; Appendix A maps it to the internal sources.
+
+**Kiro IDE power (post-freeze addition, 25–26 October).** `scripts/install_kiro_power.py` installs the power in `integrations/kiro-power/`. Its server (`kiroclops/local_engine/workspace_mcp.py`) sets up a session for the project open in the Kiro IDE when Kiro calls `start_session`: the session is created from a snapshot of the project, Kiro edits the project itself, and each evaluation copies only the editable files into KiroClops's sealed measurement copy, reporting any other change as not measured. It supports copies of the panel and SVG demo applications and, since 26 October, the Godot game (`player.gd`, the ground stage against the original Heart project), which needs Godot 4.5.1, the Heart project and the Tiny reference recordings, none of which a fresh clone carries. The CLI launcher's guard hook and native audit do not run in the IDE, and no result in this report comes from an IDE run.
+
+**Demonstration runs in the Kiro IDE (post-freeze, 26 October).** The video shows IDE runs with Claude Opus 5.5; they are demonstrations and change no result above (`evidence/ide-demo-2026-10-26/README.md`). With the server's quick profile (for the panel and diagram, four calibration cases with the reference recorded on the spot; 30 minutes), the web panel passed 3 of 12 held-out cases, failing every interrupt and reverse case, and the SVG diagram 6 of 12, the other six falling under the 95% tracking-coverage rule; neither is accepted. The game passed all 18 held-out cases and the jump and wall checks, numerically, with no independent review. Re-run in the IDE with each era's frozen suite and a byte copy of its code, the V5 SVG system passed 24 of 24 held-out cases and the V4 game 48 of 48 regression and 30 of 30 validation cases; the V6 panel produced no eligible candidate within its hour, so its held-out cases stayed closed.
 
 ## 9. Questions a judge may ask
 
