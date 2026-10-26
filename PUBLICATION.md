@@ -17,7 +17,7 @@ Tests on this tree: the full suite ran 3,765 tests on a clean copy of this tree 
 |---|---|
 | `.gitignore` | ignores the judge check outputs and a local service.json |
 | `ARCHITECTURE.md` | links to unpublished documents removed; translated pinned files disclosed |
-| `README.md` | renamed from README.en.md; links to unpublished documents removed; repository notes, links to the replay and explorer pages and the Kiro IDE power section added |
+| `README.md` | renamed from README.en.md; links to unpublished documents removed; repository notes, the demo video link, links to the replay and explorer pages and the Kiro IDE power section added |
 | `docs/history/README.md` | rewritten as a summary; links to unpublished documents removed |
 | `scripts/phase4_aws_invite_judges.py` | example judge usernames in the docstring replaced by placeholders |
 | `scripts/prove_native_progressive_tools.py` | hard-coded user profile path replaced by Path.home() |

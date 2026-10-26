@@ -4,6 +4,8 @@
 
 KiroClops is an OpenCV 5 measurement harness for an AI coding agent (Kiro CLI). It turns a reference recording of a game character, a web panel animation or an SVG diagram into pixel-measured motion, exposes that measurement to the agent through eight MCP tools while the agent edits the real application code, re-records every candidate the agent submits, and decides pass/fail against frozen, pre-registered thresholds. Held-out recordings are revealed only after the agent seals a candidate. Every run leaves a hash-bound evidence chain (sources, frames, measurements, native tool-call audit) that a reviewer who never saw the production coordinates can replay.
 
+**Demo video (4:33):** [youtu.be/PTGg2bPKyrU](https://youtu.be/PTGg2bPKyrU)
+
 Entered in the OpenCV AI Competition 2026 (powered by AWS). Technical report: [`submission/TECHNICAL_REPORT.md`](submission/TECHNICAL_REPORT.md). Engineering history: [`docs/history/README.md`](docs/history/README.md).
 
 ## For judges: three checks in ten minutes
